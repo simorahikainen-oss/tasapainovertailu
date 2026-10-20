@@ -20,8 +20,8 @@ th{background:#eef0f4;cursor:pointer;position:sticky;top:0}td.num{text-align:rig
  <input id="q" placeholder="Hae rahastoa…">
  <label><input type="checkbox" id="only"> Vain ylituottajat (jakso)</label>
  <label>Osakepaino ≥ <input id="minEq" type="number" style="width:60px" value="0"></label>
- <a class="btn" href="Tasapainorahastot_historia.xlsx" download>⬇ Excel</a>
- <a class="btn" href="history.json" download>⬇ JSON</a>
+ <button id="csv">⬇ Excel (CSV)</button>
+ <a class="btn" href="https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/history.json" target="_blank">⬇ JSON</a>
 </div>
 <div class="cards" id="cards"></div>
 <table><thead><tr id="hd"></tr></thead><tbody id="tb"></tbody></table>
@@ -34,7 +34,8 @@ const sg=v=>v==null?'–':(v>0?'+':'')+f(v);
 let H,sortK='vy1',sortD=-1;
 const cols=[['n','#'],['name','Rahasto'],['ytd','YTD %'],['y1','1v %'],['y3','3v p.a.'],['y5','5v p.a.'],['y10','10v p.a.'],['vp','vs 50/50 (jakso)'],['eq','Osake %'],['deq','Osake Δ'],['fi','Korko %'],['dfi','Korko Δ'],['feat','Erityispiirteet'],['expl','Selitys tuottoerolle'],['asof','Allok. pvm']];
 async function load(){
- H=await (await fetch('history.json?t='+Date.now(),{cache:'no-store'})).json();
+ const RAW='https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/history.json';
+ try{H=await (await fetch(RAW+'?t='+Date.now(),{cache:'no-store'})).json()}catch(e){H=await (await fetch('history.json?t='+Date.now(),{cache:'no-store'})).json()}
  const m=document.getElementById('month');
  m.innerHTML=H.snapshots.map((s,i)=>`<option value="${i}">${s.period}</option>`).reverse().join('');
  document.getElementById('upd').textContent='Viimeisin data: '+H.snapshots.at(-1).return_date;
@@ -60,10 +61,11 @@ function render(){
  const q=document.getElementById('q').value.toLowerCase(),only=document.getElementById('only').checked,mn=+document.getElementById('minEq').value||0;
  rows=rows.filter(r=>(r.name+r.isin).toLowerCase().includes(q)&&(!only||r.vp>0)&&((r.eq??0)>=mn));
  rows.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (x==null)-(y==null)||(x>y?1:x<y?-1:0)*sortD});
- document.getElementById('tb').innerHTML=rows.map(r=>`<tr><td>${r.n}</td><td>${r.name}<br><small>${r.isin}</small></td>
+ window._rows=rows;document.getElementById('tb').innerHTML=rows.map(r=>`<tr><td>${r.n}</td><td>${r.name}<br><small>${r.isin}</small></td>
  <td class="num">${f(r.ytd)}</td><td class="num">${f(r.y1)}</td><td class="num">${f(r.y3)}</td><td class="num">${f(r.y5)}</td><td class="num">${f(r.y10)}</td><td class="num ${cls(r.vp)}">${sg(r.vp)}</td>
  <td class="num">${f(r.eq,1)}</td><td class="num ${cls(r.deq)}">${sg(r.deq)}</td><td class="num">${f(r.fi,1)}</td><td class="num ${cls(r.dfi)}">${sg(r.dfi)}</td>
  <td>${r.feat||''}</td><td>${r.expl||''}</td><td>${r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||'')}</td></tr>`).join('');
 }
+document.getElementById('csv').onclick=()=>{const k=cols.map(c=>c[0]),q=v=>v==null?'':typeof v=='number'?String(v).replace('.',','):'"'+String(v).replace(/"/g,'""')+'"';const s='\ufeff'+cols.map(c=>c[1]).join(';')+'\n'+(window._rows||[]).map(r=>k.map(x=>q(r[x])).join(';')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/csv'}));a.download='tasapainovertailu_'+H.snapshots[+document.getElementById('month').value].period+'.csv';a.click()};
 load().catch(e=>document.getElementById('tb').innerHTML='<tr><td>history.json ei latautunut: '+e+'</td></tr>');
 </script></body></html>
