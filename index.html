@@ -13,7 +13,7 @@ th{background:#eef0f4;cursor:pointer;position:sticky;top:0}td.num,th.num{text-al
 .g-ret{background:#f1f6ff}.g-vs{background:#fff6e0;font-weight:600}.g-al{background:#eefaf2}.g-tx{background:#fafafa}
 th.g-ret{background:#dce8fb}th.g-vs{background:#fbe7b5}th.g-al{background:#d3f0dd}th.g-tx{background:#eceef2}
 .sep{border-left:2px solid #c5cad3}tr.bm td{background:#e9ecf2!important;color:#1d2330;font-style:italic;color:#fff;font-weight:600}tr.bm td small{color:#5a6475}tr.bm:first-child,tr.bm{}tr.bm.mix td{background:#34405a!important;font-weight:800;font-size:1.05em}
-tbody tr:nth-child(even) td{box-shadow:inset 0 0 0 999px rgba(0,0,0,.045)}tbody tr:nth-child(odd) td{background-color:#fff}tr.mixr td{font-weight:800;border-top:2px solid #34405a;border-bottom:2px solid #34405a}tr:hover td{filter:brightness(.96)}.grp th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;position:static}
+tbody tr:nth-child(even) td{box-shadow:inset 0 0 0 999px rgba(0,0,0,.045)}tbody tr:nth-child(odd) td{background-color:#fff}tr.mixr td{background:#dbeafe!important;box-shadow:none!important;font-weight:800;border-top:2px solid #34405a;border-bottom:2px solid #34405a}tr:hover td{filter:brightness(.96)}.grp th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;position:static}
 .pos{color:#0a7a32}.neg{color:#b42318}.muted{color:#778}small{color:#778}
 .cat{font-size:13px;color:#4a5568;margin:2px 0 4px}.g-co{background:#f6f0fb}th.g-co{background:#e6d8f3}td a.nm{color:inherit;font-weight:600;text-decoration:none;border-bottom:1px dotted #8894a8}</style></head><body>
 <header><h1>Tasapainorahastot vs. 50/50 ETF-salkku (SPYI + VAGF)</h1><div class="cat">Morningstar Category: <b>EAA Fund EUR Moderate Allocation - Global</b></div><small id="upd"></small></header>
@@ -93,7 +93,7 @@ document.getElementById('csv').onclick=async()=>{
   if(num.includes(k)){cell.numFmt=(k=='vp'||k=='deq'||k=='dfi')?'+0.00;-0.00;0.00':'0.00';cell.alignment={horizontal:'center',vertical:'top'};
    if((k=='vp'||k=='deq'||k=='dfi')&&typeof cell.value=='number')cell.font={color:{argb:cell.value>0?'FF1A7F37':cell.value<0?'FFC62828':'FF000000'}}}
   else cell.alignment={vertical:'top',wrapText:k!='name'||true};
-  cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:r.mix?'FFE3E8F4':r.bm?'FFEEF1F6':(ri%2?'FFF3F4F6':'FFFFFFFF')}};
+  cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:r.mix?'FFDBEAFE':r.bm?'FFEEF1F6':(ri%2?'FFF3F4F6':'FFFFFFFF')}};
   if(r.mix)cell.font={...(cell.font||{}),bold:true};if(r.bm)cell.font={...(cell.font||{}),italic:true};
   cell.border={left:sepK.includes(k)?{style:'medium',color:{argb:'FFC5CAD3'}}:undefined,top:r.mix?{style:'medium',color:{argb:'FF34405A'}}:undefined,bottom:r.mix?{style:'medium',color:{argb:'FF34405A'}}:{style:'hair',color:{argb:'FFDDDDDD'}}}})});
  ws.autoFilter={from:{row:1,column:1},to:{row:1,column:cols.length}};
