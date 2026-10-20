@@ -1,0 +1,69 @@
+<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tasapainorahastot vs. 50/50 ETF</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#f6f7f9;color:#1d2330}
+header{background:#1d2330;color:#fff;padding:16px 24px}h1{margin:0;font-size:20px}
+main{padding:16px 24px;max-width:1500px;margin:auto}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+select,input,button,a.btn{padding:6px 10px;border:1px solid #ccd;border-radius:6px;background:#fff;font-size:14px;text-decoration:none;color:inherit}
+.cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}.card{background:#fff;border-radius:8px;padding:12px 16px;box-shadow:0 1px 3px #0001;min-width:160px}
+.card b{display:block;font-size:20px}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}
+th{background:#eef0f4;cursor:pointer;position:sticky;top:0}td.num{text-align:right;white-space:nowrap}
+.pos{color:#0a7a32}.neg{color:#b42318}.muted{color:#778}small{color:#778}
+</style></head><body>
+<header><h1>Tasapainorahastot vs. 50/50 ETF-salkku (SPYI + VAGF)</h1><small id="upd"></small></header>
+<main>
+<div class="bar">
+ <label>Kuukausi <select id="month"></select></label>
+ <label>Jakso <select id="per"><option value="y1">1v</option><option value="ytd">YTD</option><option value="y3">3v p.a.</option><option value="y5">5v p.a.</option><option value="y10">10v p.a.</option></select></label>
+ <input id="q" placeholder="Hae rahastoa…">
+ <label><input type="checkbox" id="only"> Vain ylituottajat (jakso)</label>
+ <label>Osakepaino ≥ <input id="minEq" type="number" style="width:60px" value="0"></label>
+ <a class="btn" href="Tasapainorahastot_historia.xlsx" download>⬇ Excel</a>
+ <a class="btn" href="history.json" download>⬇ JSON</a>
+</div>
+<div class="cards" id="cards"></div>
+<table><thead><tr id="hd"></tr></thead><tbody id="tb"></tbody></table>
+<p><small>Lähteet: Morningstar (tuotot, kuun lopun trailing returns, EUR) sekä rahastoyhtiöiden kuukausiraportit ja puolivuotiskatsaukset (allokaatiot). Allokaatioiden päivämäärä voi poiketa tuottopäivästä. 50/50 = SPYI + VAGF kuukausittain tasapainotettuna (Xetra-kurssit); VAGF:n historia ennen 8/2019 korvattu AGGH- ja XBAE-proxyillä, joten 10v luku on suuntaa antava. 3v/5v/10v vuosituottoja (p.a.).</small></p>
+</main>
+<script>
+const f=(v,d=2)=>v==null||isNaN(v)?'–':(+v).toFixed(d).replace('.',',');
+const cls=v=>v==null?'muted':v>=0?'pos':'neg';
+const sg=v=>v==null?'–':(v>0?'+':'')+f(v);
+let H,sortK='vy1',sortD=-1;
+const cols=[['n','#'],['name','Rahasto'],['ytd','YTD %'],['y1','1v %'],['y3','3v p.a.'],['y5','5v p.a.'],['y10','10v p.a.'],['vp','vs 50/50 (jakso)'],['eq','Osake %'],['deq','Osake Δ'],['fi','Korko %'],['dfi','Korko Δ'],['feat','Erityispiirteet'],['expl','Selitys tuottoerolle'],['asof','Allok. pvm']];
+async function load(){
+ H=await (await fetch('history.json?t='+Date.now(),{cache:'no-store'})).json();
+ const m=document.getElementById('month');
+ m.innerHTML=H.snapshots.map((s,i)=>`<option value="${i}">${s.period}</option>`).reverse().join('');
+ document.getElementById('upd').textContent='Viimeisin data: '+H.snapshots.at(-1).return_date;
+ document.getElementById('hd').innerHTML=cols.map(c=>`<th data-k="${c[0]}">${c[1]}</th>`).join('');
+ document.querySelectorAll('th').forEach(t=>t.onclick=()=>{sortD=sortK==t.dataset.k?-sortD:-1;sortK=t.dataset.k;render()});
+ ['month','per','q','only','minEq'].forEach(id=>document.getElementById(id).oninput=render);render();
+}
+function render(){
+ const i=+document.getElementById('month').value,s=H.snapshots[i],p=H.snapshots[i-1];
+ const nm=Object.fromEntries(H.funds.map(x=>[x.n,x.name]));
+ const pv=p?Object.fromEntries(p.funds.map(x=>[x.n,x])):{};
+ let rows=s.funds.map(x=>{const a=x.allocation||{},pa=(pv[x.n]||{}).allocation||{};
+  return{n:x.n,name:nm[x.n]||x.isin,isin:x.isin,ytd:x.returns?.ytd,y1:x.returns?.y1,y3:x.returns?.y3,y5:x.returns?.y5,y10:x.returns?.y10,vp:(x.vs_50_50_rebalanced||x.vs_50_50||{})[document.getElementById('per').value],vy1:(x.vs_50_50_rebalanced||x.vs_50_50||{}).y1,eq:a.equity_pct,fi:a.fixed_income_pct,
+  deq:p&&a.equity_pct!=null&&pa.equity_pct!=null?a.equity_pct-pa.equity_pct:null,dfi:p&&a.fixed_income_pct!=null&&pa.fixed_income_pct!=null?a.fixed_income_pct-pa.fixed_income_pct:null,
+  feat:x.features,expl:x.explanation,asof:a.as_of,src:a.source_url}});
+ const avg=k=>{const v=rows.map(r=>r[k]).filter(v=>v!=null);return v.length?v.reduce((a,b)=>a+b,0)/v.length:null};
+ const b=s.benchmark,per=document.getElementById('per').value,bb=b.etf_50_50_rebalanced||b.etf_50_50;
+ document.getElementById('cards').innerHTML=[
+  ['50/50 kk-rebal. ('+per+')',f(bb[per])+' %'],['50/50 YTD',f(bb.ytd)+' %'],['SPYI 1v',f(b.SPYI.y1)+' %'],['VAGF 1v',f(b.VAGF.y1)+' %'],
+  ['Rahastot ka. ('+per+')',f(avg(per))+' %'],['Ylituottajia ('+per+')',rows.filter(r=>r.vp>0).length+' / '+rows.filter(r=>r.vp!=null).length],
+  ['Ka. osakepainon muutos',p?sg(avg('deq'))+' %-yks.':'ei edellistä kk'],['Ka. korkopainon muutos',p?sg(avg('dfi'))+' %-yks.':'ei edellistä kk']
+ ].map(c=>`<div class="card"><small>${c[0]}</small><b>${c[1]}</b></div>`).join('');
+ const q=document.getElementById('q').value.toLowerCase(),only=document.getElementById('only').checked,mn=+document.getElementById('minEq').value||0;
+ rows=rows.filter(r=>(r.name+r.isin).toLowerCase().includes(q)&&(!only||r.vp>0)&&((r.eq??0)>=mn));
+ rows.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (x==null)-(y==null)||(x>y?1:x<y?-1:0)*sortD});
+ document.getElementById('tb').innerHTML=rows.map(r=>`<tr><td>${r.n}</td><td>${r.name}<br><small>${r.isin}</small></td>
+ <td class="num">${f(r.ytd)}</td><td class="num">${f(r.y1)}</td><td class="num">${f(r.y3)}</td><td class="num">${f(r.y5)}</td><td class="num">${f(r.y10)}</td><td class="num ${cls(r.vp)}">${sg(r.vp)}</td>
+ <td class="num">${f(r.eq,1)}</td><td class="num ${cls(r.deq)}">${sg(r.deq)}</td><td class="num">${f(r.fi,1)}</td><td class="num ${cls(r.dfi)}">${sg(r.dfi)}</td>
+ <td>${r.feat||''}</td><td>${r.expl||''}</td><td>${r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||'')}</td></tr>`).join('');
+}
+load().catch(e=>document.getElementById('tb').innerHTML='<tr><td>history.json ei latautunut: '+e+'</td></tr>');
+</script></body></html>

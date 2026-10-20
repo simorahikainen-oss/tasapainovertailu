@@ -1,0 +1,1399 @@
+{
+ "schema_version": 1,
+ "description": "Tasapainorahastojen kuukausivertailu vs. 50/50 ETF (SPYI+VAGF). Snapshots lisätään perään, ei ylikirjoiteta.",
+ "funds": [
+  {
+   "n": 1,
+   "name": "LocalTapiola World 50 (A)",
+   "isin": "FI0008805635",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/portfolio"
+  },
+  {
+   "n": 2,
+   "name": "Nordea Premium AM Balanced I Acc EUR",
+   "isin": "FI4000171178",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio"
+  },
+  {
+   "n": 3,
+   "name": "Nordea Savings 50 Fund A Acc EUR",
+   "isin": "FI0008806807",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio"
+  },
+  {
+   "n": 4,
+   "name": "Nordea Premium AM Balanced Fund P Acc EUR",
+   "isin": "FI0008806419",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio"
+  },
+  {
+   "n": 5,
+   "name": "UB Smart I (non-UCITS)",
+   "isin": "FI0008811484",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/portfolio"
+  },
+  {
+   "n": 6,
+   "name": "Obsido Rebalanced 50 Fund A1",
+   "isin": "FI4000153358",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/portfolio"
+  },
+  {
+   "n": 7,
+   "name": "OP-Private Strategia 50 A",
+   "isin": "FI4000120670",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio"
+  },
+  {
+   "n": 8,
+   "name": "Alexandria Tasapainoinen",
+   "isin": "FI4000020664",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio"
+  },
+  {
+   "n": 9,
+   "name": "Säästöpankki Ryhti B",
+   "isin": "FI0008807078",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio"
+  },
+  {
+   "n": 10,
+   "name": "Ålandsbanken Kapitalförvaltning B",
+   "isin": "FI0008809934",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio"
+  },
+  {
+   "n": 11,
+   "name": "Evli Global Multi Manager 50 Fund B",
+   "isin": "FI0008801253",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/portfolio"
+  },
+  {
+   "n": 12,
+   "name": "Danske Invest Kompassi 50 K",
+   "isin": "FI0008805338",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio"
+  },
+  {
+   "n": 13,
+   "name": "S-Bank Asset Management 50 A Growth",
+   "isin": "FI0008803879",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/portfolio"
+  },
+  {
+   "n": 14,
+   "name": "OP-Maltillinen A",
+   "isin": "FI4000036108",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/portfolio"
+  },
+  {
+   "n": 15,
+   "name": "POP Optimal",
+   "isin": "FI0008809975",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio"
+  },
+  {
+   "n": 16,
+   "name": "Nordea Stable Return Fund A Acc EUR",
+   "isin": "FI0008810254",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001FCD/portfolio"
+  },
+  {
+   "n": 17,
+   "name": "Nordea Responsible Balanced Fund A Acc EUR",
+   "isin": "FI4000400098",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio"
+  },
+  {
+   "n": 18,
+   "name": "Finlandia Asset Allocator 50",
+   "isin": "FI4000548953",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio"
+  },
+  {
+   "n": 19,
+   "name": "Obsido Global Balanced Investment Fund A2",
+   "isin": "FI4000452586",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio"
+  },
+  {
+   "n": 20,
+   "name": "Nordnet One Tasapaino EUR",
+   "isin": "SE0017832439",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio"
+  },
+  {
+   "n": 21,
+   "name": "Säästöpankki Tasapainoinen B",
+   "isin": "FI4000278676",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio"
+  },
+  {
+   "n": 22,
+   "name": "Aktia Wealth Allocation 50 B",
+   "isin": "FI4000297817",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio"
+  },
+  {
+   "n": 23,
+   "name": "Säästöpankki Tasapainoinen D",
+   "isin": "FI4000517719",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio"
+  },
+  {
+   "n": 24,
+   "name": "OP - Tavoite 3A",
+   "isin": "FI4000410949",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/portfolio"
+  }
+ ],
+ "snapshots": [
+  {
+   "period": "2026-09",
+   "return_date": "2026-09-30",
+   "benchmark": {
+    "SPYI": {
+     "isin": "IE00B3YLTY66",
+     "ytd": 17.18,
+     "y1": 21.19
+    },
+    "VAGF": {
+     "isin": "IE00BG47KH54",
+     "ytd": -3.35,
+     "y1": -3.17
+    },
+    "etf_50_50": {
+     "ytd": 6.92,
+     "y1": 9.01,
+     "method": "0.5*SPYI+0.5*VAGF"
+    },
+    "etf_50_50_rebalanced": {
+     "ytd": 6.38,
+     "y1": 9.01,
+     "y3": 10.13,
+     "y5": 4.67,
+     "y10": 5.58,
+     "method": "50/50 kk-rebalansointi, Xetra-päätöskurssit (Yahoo)",
+     "proxy_notes": "Korko-osuus: VAGF.DE (IE00BG47KH54) 8/2019 alkaen. 12/2017-7/2019 proxy iShares Core Global Aggregate Bond EUR Hedged Acc (AGGH, IE00BDBRDM35, Xetra EUNA.DE); 10/2016-11/2017 proxy Xtrackers ESG Global Aggregate Bond EUR Hedged (XBAE.DE, ESG-versio). y5 puhdasta VAGF-dataa; y10 sisältää ~33 kk proxya. vagf-kentän y10 on siis ketjutettu sarja."
+    },
+    "SPYI_px": {
+     "ytd": 16.94,
+     "y1": 22.25,
+     "y3": 18.46,
+     "y5": 11.75,
+     "y10": 11.86
+    },
+    "VAGF_px": {
+     "ytd": -3.52,
+     "y1": -3.14,
+     "y3": 2.03,
+     "y5": -2.28,
+     "y10": -0.76
+    }
+   },
+   "funds": [
+    {
+     "n": 1,
+     "isin": "FI0008805635",
+     "allocation": {
+      "equity_pct": 62.5,
+      "fixed_income_pct": 37.5,
+      "other_assets": {
+       "käteinen/muut (ei-arvopaperit)": 0.78
+      },
+      "fi_segments": {
+       "vaihtovelkakirjat (SPDR Global Convertible)": 6.42,
+       "high yield (T.Rowe Global HY 5.20, Robeco HY 0.54)": 5.74,
+       "pohjoismaiset/euro yrityslainat IG (LT Pohjoinen Yrityskorko 4.57, LT Yrityskorko 1.45)": 6.02,
+       "kehittyvät markkinat (Amundi EM Local 4.6, GS EMD HC ~1.06, Frontier 1.05)": 6.7,
+       "valtionlainat/duraatio (Robeco Global Dyn. Duration 3.75, iShares UST 20+ 1.14, LT Pitkäkorko 1.16)": 6.05,
+       "lyhyet korot (LT Lyhytkorko)": 2.44,
+       "inflaatiosidonnaiset (PIMCO Real Return)": 1.71,
+       "senior loans (GS)": 0.76
+      },
+      "source_url": "https://www.seligson.fi/resource/vsk/LT_puolivuosikertomus.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": null,
+      "bonds": null,
+      "cash": 1.84,
+      "other": 98.16,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 12.25,
+      "y1": 15.88,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/quote",
+      "y3": 12.06,
+      "y5": 5.63,
+      "y10": 6.17
+     },
+     "vs_50_50": {
+      "ytd": 5.33,
+      "y1": 6.87
+     },
+     "features": "Osake 62,5 %, korko 37,5 % (vaihtovelkakirjat 6,4, HY 5,7, IG)",
+     "explanation": "Osakeylipaino ja vaihtovelkakirjat, ei negatiivista globaalia valtionlainaa",
+     "vs_50_50_rebalanced": {
+      "ytd": 5.87,
+      "y1": 6.87,
+      "y3": 1.93,
+      "y5": 0.96,
+      "y10": 0.59
+     }
+    },
+    {
+     "n": 2,
+     "isin": "FI4000171178",
+     "allocation": {
+      "equity_pct": 50.79,
+      "fixed_income_pct": 40.79,
+      "other_assets": {
+       "yhdistelmä-/vaihtoehtoiset rahastot (esim. Alpha 10 MA)": 6.13,
+       "johdannaiset (markkina-arvo)": 0.37,
+       "kassa ja muut varat, netto": 1.92
+      },
+      "fi_segments": {
+       "pitkän koron rahastot": 34.79,
+       "lyhyen koron rahastot": 6.0
+      },
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "source_type": "puolivuosikatsaus (Nordea Premium Varainhoito Tasapaino)",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 61.27,
+      "bonds": 38.64,
+      "cash": 5.76,
+      "other": 0.2,
+      "as_of": "2026-08-31"
+     },
+     "returns": {
+      "ytd": 8.89,
+      "y1": 13.2,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/quote",
+      "y3": 11.16,
+      "y5": 5.15,
+      "y10": 6.23
+     },
+     "vs_50_50": {
+      "ytd": 1.97,
+      "y1": 4.19
+     },
+     "features": "Osake 50,8, korko 40,8 (pitkät 34,8, lyhyet 6,0), vaihtoehtoiset 6,1, johdannaiset (futuurialtistus ei osakepainossa)",
+     "explanation": "Futuureilla lisätty osakealtistus ja euro- ja yrityskorot globaalia aggregaattia parempia; I-sarjan matalat kulut",
+     "vs_50_50_rebalanced": {
+      "ytd": 2.51,
+      "y1": 4.19,
+      "y3": 1.03,
+      "y5": 0.48,
+      "y10": 0.65
+     }
+    },
+    {
+     "n": 3,
+     "isin": "FI0008806807",
+     "allocation": {
+      "equity_pct": 50.04,
+      "fixed_income_pct": 41.6,
+      "other_assets": {
+       "yhdistelmä-/vaihtoehtoiset rahastot (Alpha 10 MA ym.)": 5.68,
+       "johdannaiset (markkina-arvo)": 0.37,
+       "kassa ja muut varat, netto": 2.32
+      },
+      "fi_segments": {
+       "pitkän koron rahastot": 35.91,
+       "lyhyen koron rahastot": 5.69,
+       "esimerkkejä 30.4.2026 (nordeafunds.com): Euro Bond 5.63, Pro Euro Bond 5.61, Moderate Yield 5.58, Corporate Bond 5.46, European Covered 4.93, Global HY 3.93, US Corp Stars HY-EUR 2.31, Active Rates Opp. 2.27, EM Bond 0.99, EM Select Bond 0.49": "ks. teksti"
+      },
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 53.58,
+      "bonds": 49.93,
+      "cash": 4.29,
+      "other": 0.17,
+      "as_of": "2026-08-31"
+     },
+     "returns": {
+      "ytd": 7.78,
+      "y1": 11.58,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/quote",
+      "y3": 10.0,
+      "y5": 4.48,
+      "y10": 5.54
+     },
+     "vs_50_50": {
+      "ytd": 0.86,
+      "y1": 2.57
+     },
+     "features": "Osake 50,0, korko 41,6 (pitkät 35,9, lyhyet 5,7), vaihtoehtoiset 5,7",
+     "explanation": "Korkopuoli (euro, yrityslainat, covered) voitti VAGF:n; korkeammat kulut kuin Premiumissa",
+     "vs_50_50_rebalanced": {
+      "ytd": 1.4,
+      "y1": 2.57,
+      "y3": -0.13,
+      "y5": -0.19,
+      "y10": -0.04
+     }
+    },
+    {
+     "n": 4,
+     "isin": "FI0008806419",
+     "allocation": {
+      "equity_pct": 50.79,
+      "fixed_income_pct": 40.79,
+      "other_assets": {
+       "yhdistelmä-/vaihtoehtoiset rahastot (esim. Alpha 10 MA)": 6.13,
+       "johdannaiset (markkina-arvo)": 0.37,
+       "kassa ja muut varat, netto": 1.92
+      },
+      "fi_segments": {
+       "pitkän koron rahastot": 34.79,
+       "lyhyen koron rahastot": 6.0
+      },
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "source_type": "puolivuosikatsaus (Nordea Premium Varainhoito Tasapaino)",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 61.27,
+      "bonds": 38.64,
+      "cash": 5.76,
+      "other": 0.2,
+      "as_of": "2026-08-31"
+     },
+     "returns": {
+      "ytd": 8.39,
+      "y1": 12.51,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/quote",
+      "y3": 10.47,
+      "y5": 4.48,
+      "y10": 5.55
+     },
+     "vs_50_50": {
+      "ytd": 1.47,
+      "y1": 3.5
+     },
+     "features": "Sama salkku kuin rahastolla 2 (P-sarja)",
+     "explanation": "Kuten rahasto 2, ero I-sarjaan on kuluissa",
+     "vs_50_50_rebalanced": {
+      "ytd": 2.01,
+      "y1": 3.5,
+      "y3": 0.34,
+      "y5": -0.19,
+      "y10": -0.03
+     }
+    },
+    {
+     "n": 5,
+     "isin": "FI0008811484",
+     "allocation": {
+      "equity_pct": 33.48,
+      "fixed_income_pct": 32.66,
+      "other_assets": {
+       "reaaliomaisuus (metsä, kiinteistöt, infra; esim. UB Uusiutuva Energia 5.77, UB Timberland 4.85)": 31.29,
+       "käteinen": 2.57
+      },
+      "fi_segments": {
+       "high yield (UB High Yield)": 8.09,
+       "UB Fixed Income": 6.55,
+       "lyhyet korot (UB Short-Term Bond)": 5.9,
+       "muut korkosijoitukset (erittelemättä)": 12.12
+      },
+      "source_url": "https://unitedbankers.fi/api/products/file?id=fb876b21-fb92-ec11-bad2-005056ab348e&lang=fi",
+      "source_type": "kuukausiraportti",
+      "as_of": "2026-09-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 19.34,
+      "bonds": 64.17,
+      "cash": 14.98,
+      "other": 2.02,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 4.44,
+      "y1": 5.83,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/quote",
+      "y3": 8.21,
+      "y5": 4.59,
+      "y10": 5.28
+     },
+     "vs_50_50": {
+      "ytd": -2.48,
+      "y1": -3.18
+     },
+     "features": "Osake 33,5, korko 32,7 (HY 8,1, lyhyet 5,9), reaaliomaisuus 31,3",
+     "explanation": "Matala osakepaino; reaaliomaisuus (metsä, uusiutuva energia) tuotti heikosti",
+     "vs_50_50_rebalanced": {
+      "ytd": -1.94,
+      "y1": -3.18,
+      "y3": -1.92,
+      "y5": -0.08,
+      "y10": -0.3
+     }
+    },
+    {
+     "n": 6,
+     "isin": "FI4000153358",
+     "allocation": {
+      "equity_pct": 53.0,
+      "fixed_income_pct": 41.9,
+      "other_assets": {
+       "muut": 5.0
+      },
+      "fi_segments": {
+       "investment grade": 15.5,
+       "lyhyt korko": 8.8,
+       "high yield": 7.9,
+       "kehittyvät korot": 5.0,
+       "pitkä korko (valtio)": 4.7
+      },
+      "source_url": "https://www.obsido.fi/wp-content/uploads/2026/07/Fact-Sheet-OR50-A2-30.6.2026.pdf",
+      "source_type": "kuukausikatsaus/fact sheet (A2-sarja, sama salkku)",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 58.5,
+      "bonds": 32.2,
+      "cash": 9.21,
+      "other": 0.09,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 7.54,
+      "y1": 9.74,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/quote",
+      "y3": 9.92,
+      "y5": 5.28,
+      "y10": 5.3
+     },
+     "vs_50_50": {
+      "ytd": 0.62,
+      "y1": 0.73
+     },
+     "features": "Osake 53, korko 41,9 (IG 15,5, lyhyet 8,8, HY 7,9, EM 5,0, valtio 4,7)",
+     "explanation": "HY- ja EM-korot sekä lyhyt duraatio kompensoivat; lähellä vertailusalkkua",
+     "vs_50_50_rebalanced": {
+      "ytd": 1.16,
+      "y1": 0.73,
+      "y3": -0.21,
+      "y5": 0.61,
+      "y10": -0.28
+     }
+    },
+    {
+     "n": 7,
+     "isin": "FI4000120670",
+     "allocation": {
+      "equity_pct": 57.4,
+      "fixed_income_pct": 31.0,
+      "other_assets": {
+       "vaihtoehtoiset sijoitukset": 8.0,
+       "käteinen": 3.6,
+       "muut": 0.1
+      },
+      "fi_segments": {
+       "valtionlainat (OP-Eurooppa Obligaatio, top-omistus)": 7.1,
+       "yrityslainat IG (OP-Yrityslaina 6.1, OP-Kestävä Yrityslaina 3.3)": 9.4,
+       "high yield (OP-High Yield)": 2.6,
+       "kehittyvät markkinat (OP-Kehittyvät Korkomarkkinat)": 1.9,
+       "muut korkosijoitukset (jäännös, erittelemättä)": 10.0
+      },
+      "source_url": "https://www.op-mediapankki.fi/l/MQv-G62wv8MN",
+      "source_type": "kuukausikatsaus",
+      "as_of": "2026-09-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 66.56,
+      "bonds": 10.08,
+      "cash": 6.52,
+      "other": 18.43,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 8.72,
+      "y1": 11.43,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/quote",
+      "y3": 10.39,
+      "y5": 4.94,
+      "y10": 5.17
+     },
+     "vs_50_50": {
+      "ytd": 1.8,
+      "y1": 2.42
+     },
+     "features": "Osake 57,4, korko 31,0, vaihtoehtoiset 8,0",
+     "explanation": "Osakeylipaino; matalampi korkopaino",
+     "vs_50_50_rebalanced": {
+      "ytd": 2.34,
+      "y1": 2.42,
+      "y3": 0.26,
+      "y5": 0.27,
+      "y10": -0.41
+     }
+    },
+    {
+     "n": 8,
+     "isin": "FI4000020664",
+     "allocation": {
+      "equity_pct": 64.4,
+      "fixed_income_pct": 33.9,
+      "other_assets": {
+       "käteinen": 1.7
+      },
+      "fi_segments": {
+       "valtionlainat": 13.02,
+       "investment grade": 10.03,
+       "rahamarkkina": 8.17,
+       "high yield": 1.73,
+       "kehittyvät markkinat": 0.98
+      },
+      "source_url": "https://assets.ctfassets.net/3gh7jphuo2o7/2QcrINv5Qrd3bR4VpmI9vV/b73cdde8e919fed4b6b2e087eef860a3/Rahastoraportti_puolivuosikatsaus_2026_Final.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 61.84,
+      "bonds": 30.62,
+      "cash": 5.37,
+      "other": 2.12,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 6.61,
+      "y1": 9.04,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/quote",
+      "y3": 9.76,
+      "y5": 2.28,
+      "y10": 5.2
+     },
+     "vs_50_50": {
+      "ytd": -0.31,
+      "y1": 0.03
+     },
+     "features": "Osake 64,4, korko 33,9 (valtio 13,0, IG 10,0, rahamarkkina 8,2)",
+     "explanation": "Osakeylipainosta huolimatta osakevalinta heikko (alituotto indeksiin H1)",
+     "vs_50_50_rebalanced": {
+      "ytd": 0.23,
+      "y1": 0.03,
+      "y3": -0.37,
+      "y5": -2.39,
+      "y10": -0.38
+     }
+    },
+    {
+     "n": 9,
+     "isin": "FI0008807078",
+     "allocation": {
+      "equity_pct": 52.12,
+      "fixed_income_pct": 42.84,
+      "other_assets": {
+       "kassa ja muut varat, netto": 5.04
+      },
+      "fi_segments": {
+       "kehittyvät markkinat USD (iShares ESG USD EM Bond EUR-H)": 10.93,
+       "high yield (iShares EUR HY ESG 4.33, iShares EUR HY 3.68, SP High Yield 3.75)": 11.76,
+       "yrityslainat IG (SP Yrityslaina 6.72, Amundi EUR Corp PAB 1.77)": 8.49,
+       "valtionlainat (SP Pitkäkorko 5.77, Amundi Euro Gov Green 2.19)": 7.96,
+       "rahamarkkina (Amundi Smart Overnight)": 3.7,
+       "AAA CLO (Janus Henderson)": 1.46
+      },
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 53.52,
+      "bonds": 37.83,
+      "cash": 4.96,
+      "other": 3.67,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 6.37,
+      "y1": 8.67,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/quote",
+      "y3": 8.93,
+      "y5": 3.43,
+      "y10": 5.0
+     },
+     "vs_50_50": {
+      "ytd": -0.55,
+      "y1": -0.34
+     },
+     "features": "Osake 52,1, korko 42,8 (HY 11,8, EM 10,9, IG), kassa 5,0",
+     "explanation": "HY- ja EM-painotus tuki, mutta osakepuoli jäi globaalista indeksistä ja kulut korkeat",
+     "vs_50_50_rebalanced": {
+      "ytd": -0.01,
+      "y1": -0.34,
+      "y3": -1.2,
+      "y5": -1.24,
+      "y10": -0.58
+     }
+    },
+    {
+     "n": 10,
+     "isin": "FI0008809934",
+     "allocation": {
+      "equity_pct": 45.09,
+      "fixed_income_pct": 40.99,
+      "other_assets": {
+       "kassa och övriga tillgångar (käteinen ja muut)": 13.92
+      },
+      "fi_segments": {
+       "yrityslainat kiinteäkorkoiset": 23.43,
+       "yrityslainat vaihtuvakorkoiset (FRN)": 12.32,
+       "yritystodistukset (lyhyet korot)": 4.96,
+       "valtion- ja kuntalainat": 0.28
+      },
+      "source_url": "https://assets.alandsbanken.com/pdf/fund/Halvarsrapport-2026.pdf",
+      "source_type": "halvårsrapport (puolivuosikatsaus)",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 44.02,
+      "bonds": 35.96,
+      "cash": 19.87,
+      "other": null,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 4.78,
+      "y1": 8.85,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/quote",
+      "y3": 9.44,
+      "y5": 4.43,
+      "y10": 4.67
+     },
+     "vs_50_50": {
+      "ytd": -2.14,
+      "y1": -0.16
+     },
+     "features": "Osake 45,1, korko 41,0 (yrityslainat, FRN 12,3), kassa 13,9",
+     "explanation": "Alipaino osakkeissa ja suuri kassa; lyhyt duraatio auttoi 1v jaksolla",
+     "vs_50_50_rebalanced": {
+      "ytd": -1.6,
+      "y1": -0.16,
+      "y3": -0.69,
+      "y5": -0.24,
+      "y10": -0.91
+     }
+    },
+    {
+     "n": 11,
+     "isin": "FI0008801253",
+     "allocation": {
+      "equity_pct": 53.62,
+      "fixed_income_pct": 44.98,
+      "other_assets": {
+       "muut ja käteinen": 1.4
+      },
+      "fi_segments": {
+       "investment grade": 20.01,
+       "high yield": 15.76,
+       "kehittyvät markkinat": 9.21,
+       "(sis. rahamarkkina Evli Euro Liquidity)": 0.94
+      },
+      "source_url": "https://www.evli.com/artikkelit/evlin-sijoitusrahastojen-puolivuosikatsaus-30-6-2026 (PDF: https://dl.avl-investmentfonds.de/fds/FI0008811997-HALBJAHRBER-EN-20260630.pdf)",
+      "source_type": "semi-annual review (puolivuosikatsaus)",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 78.49,
+      "bonds": 20.5,
+      "cash": 0.91,
+      "other": 0.08,
+      "as_of": "2026-08-31"
+     },
+     "returns": {
+      "ytd": 7.42,
+      "y1": 9.9,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/quote",
+      "y3": 9.4,
+      "y5": 4.22,
+      "y10": 4.8
+     },
+     "vs_50_50": {
+      "ytd": 0.5,
+      "y1": 0.89
+     },
+     "features": "Osake 53,6, korko 45,0 (IG 20,0, HY 15,8, EM 9,2)",
+     "explanation": "Vahva HY- ja EM-painotus; TER 1,69 % syö osan",
+     "vs_50_50_rebalanced": {
+      "ytd": 1.04,
+      "y1": 0.89,
+      "y3": -0.73,
+      "y5": -0.45,
+      "y10": -0.78
+     }
+    },
+    {
+     "n": 12,
+     "isin": "FI0008805338",
+     "allocation": {
+      "equity_pct": 50.44,
+      "fixed_income_pct": 33.87,
+      "other_assets": {
+       "sijoitusrahastot (läpivalaisematon, mm. Global Tactical Allocation 9.75, Global Alternative Opportunities 3.67)": 13.84,
+       "muut": 1.84
+      },
+      "fi_segments": {
+       "yrityslainat IG (Euro Yrityslaina, top10)": 10.3,
+       "valtionlainat (Euro Government Bond Index, top10)": 6.31,
+       "high yield (Global HY Bonds, top10)": 4.82,
+       "kehittyvät markkinat HC (EMD Hard Currency, top10)": 4.12,
+       "duraatiojakauma korko-osasta: <0.5v 8.27, 0.5-1v 3.37, 1-3v 24.78, 3-5v 30.53, 5-7v 18.01, 7-10v 8.13, 10+v 6.91": null
+      },
+      "source_url": "https://www.danskeinvest.fi/w/show_funds.product?p_nFund=2310&p_nFundgroup=59&p_nId=59 ; https://www.danskeinvest.fi/docs/FACTSHEET_2310_59_fi.pdf",
+      "source_type": "kuukausikatsaus + rahastosivun omistusanalyysi (läpivalaistu)",
+      "as_of": "2026-08-31"
+     },
+     "allocation_morningstar": {
+      "stocks": 50.31,
+      "bonds": 43.3,
+      "cash": 5.84,
+      "other": 0.42,
+      "as_of": "2026-08-31"
+     },
+     "returns": {
+      "ytd": 5.6,
+      "y1": 8.71,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/quote",
+      "y3": 9.42,
+      "y5": 3.75,
+      "y10": 4.79
+     },
+     "vs_50_50": {
+      "ytd": -1.32,
+      "y1": -0.3
+     },
+     "features": "Osake 50,4, korko 33,9, monivarainrahastot 13,8",
+     "explanation": "Monivarainrahastot ja taktinen allokaatio jäivät jälkeen; kulut 1,4 %",
+     "vs_50_50_rebalanced": {
+      "ytd": -0.78,
+      "y1": -0.3,
+      "y3": -0.71,
+      "y5": -0.92,
+      "y10": -0.79
+     }
+    },
+    {
+     "n": 13,
+     "isin": "FI0008803879",
+     "allocation": {
+      "equity_pct": 49.74,
+      "fixed_income_pct": 48.95,
+      "other_assets": {
+       "käteinen": 1.3
+      },
+      "fi_segments": {
+       "valtionlainat (S-Pankki Euro Valtionlaina 9.10, JPM EUR Gov 3.20, iShares EUR Govt 3-7 1.45, Xtrackers Eurozone Gov 1.18)": 14.93,
+       "yrityslainat IG (S-Pankki Yrityslaina 8.26, iShares Core EUR Corp 4.00)": 12.26,
+       "high yield (S-Pankki HY Eurooppa 5.78, Xtrackers EUR HY 1.71)": 7.49,
+       "kehittyvät markkinat (S-Pankki EM Korko 7.25, SPDR EM 2.63, iShares JPM USD EM 2.59)": 12.47,
+       "lyhyet korot (S-Pankki Lyhyt Korko)": 1.8
+      },
+      "source_url": "https://dokumentit.s-pankki.fi/tiedostot/rahastojen-puolivuosikatsaus-2026",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 92.35,
+      "bonds": 6.96,
+      "cash": 0.62,
+      "other": 0.04,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 6.05,
+      "y1": 8.78,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/quote",
+      "y3": 9.37,
+      "y5": 4.51,
+      "y10": 4.58
+     },
+     "vs_50_50": {
+      "ytd": -0.87,
+      "y1": -0.23
+     },
+     "features": "Osake 49,7, korko 49,0 (valtionlainoja 14,9, IG)",
+     "explanation": "Suuri korkopaino ja valtionlainat, osakepaino alle 50 %",
+     "vs_50_50_rebalanced": {
+      "ytd": -0.33,
+      "y1": -0.23,
+      "y3": -0.76,
+      "y5": -0.16,
+      "y10": -1.0
+     }
+    },
+    {
+     "n": 14,
+     "isin": "FI4000036108",
+     "allocation": {
+      "equity_pct": 57.6,
+      "fixed_income_pct": 41.1,
+      "other_assets": {
+       "käteinen": 1.2,
+       "muut": 0.0
+      },
+      "fi_segments": {
+       "valtionlainat (suurimpia omistuksia: Ranskan, Italian, Espanjan valtio)": null
+      },
+      "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_51c4501e8d35e3f67fcadbd14004453c3bd74df274324ff94d23a5d9b6ad68de748b3017a3875269d460d8a9087930fe876a49a4_iv_eb4c2e35a6d66b820eedc8eb",
+      "source_type": "kuukausikatsaus",
+      "as_of": "2026-09-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 69.93,
+      "bonds": 14.2,
+      "cash": 5.55,
+      "other": 11.85,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 7.75,
+      "y1": 10.29,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/quote",
+      "y3": 9.94,
+      "y5": 4.3,
+      "y10": 4.34
+     },
+     "vs_50_50": {
+      "ytd": 0.83,
+      "y1": 1.28
+     },
+     "features": "Osake 57,6, korko 41,1 (valtionlainat suurimpia)",
+     "explanation": "Osakeylipaino",
+     "vs_50_50_rebalanced": {
+      "ytd": 1.37,
+      "y1": 1.28,
+      "y3": -0.19,
+      "y5": -0.37,
+      "y10": -1.24
+     }
+    },
+    {
+     "n": 15,
+     "isin": "FI0008809975",
+     "allocation": {
+      "equity_pct": 51.83,
+      "fixed_income_pct": 42.6,
+      "other_assets": {
+       "käteinen (syöttörahasto)": 0.56,
+       "kassa Ryhdin sisällä (läpivalaistu)": 5.01
+      },
+      "fi_segments": {
+       "läpivalaisu Säästöpankki Ryhti (99,44 %)": "ks. rahasto 9"
+      },
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": null,
+      "bonds": null,
+      "cash": 0.18,
+      "other": 99.82,
+      "as_of": "2026-08-31"
+     },
+     "returns": {
+      "ytd": 5.71,
+      "y1": 7.78,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/quote",
+      "y3": 8.02,
+      "y5": 2.59,
+      "y10": 4.05
+     },
+     "vs_50_50": {
+      "ytd": -1.21,
+      "y1": -1.23
+     },
+     "features": "Syöttörahasto: 99,4 % Ryhti B",
+     "explanation": "Kuten Ryhti, mutta korkeammat kulut (1,93 %)",
+     "vs_50_50_rebalanced": {
+      "ytd": -0.67,
+      "y1": -1.23,
+      "y3": -2.11,
+      "y5": -2.08,
+      "y10": -1.53
+     }
+    },
+    {
+     "n": 16,
+     "isin": "FI0008810254",
+     "allocation": {
+      "equity_pct": 52.75,
+      "fixed_income_pct": 37.3,
+      "other_assets": {
+       "yhdistelmärahastot": 8.03,
+       "johdannaiset (markkina-arvo)": -0.3,
+       "kassa ja muut varat, netto": 2.21
+      },
+      "fi_segments": {
+       "pitkän koron rahastot": 34.33,
+       "lyhyen koron rahastot": 2.97
+      },
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 18.44,
+      "bonds": 78.87,
+      "cash": 8.63,
+      "other": 0.2,
+      "as_of": "2026-06-30"
+     },
+     "returns": {
+      "ytd": 1.02,
+      "y1": 2.68,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P00001FCD/quote",
+      "y3": 5.09,
+      "y5": 1.77,
+      "y10": 2.97
+     },
+     "vs_50_50": {
+      "ytd": -5.9,
+      "y1": -6.33
+     },
+     "features": "Osake 52,8 (johdannaisilla laskettu), korko 37,3, yhdistelmärahastot 8,0; matalan volatiliteetin strategia",
+     "explanation": "Puolustava osakevalinta ja suojaukset jäivät nousumarkkinassa selvästi jälkeen",
+     "vs_50_50_rebalanced": {
+      "ytd": -5.36,
+      "y1": -6.33,
+      "y3": -5.04,
+      "y5": -2.9,
+      "y10": -2.61
+     }
+    },
+    {
+     "n": 17,
+     "isin": "FI4000400098",
+     "allocation": {
+      "equity_pct": 50.6,
+      "fixed_income_pct": 41.52,
+      "other_assets": {
+       "johdannaiset (markkina-arvo)": 0.38,
+       "kassa ja muut varat, netto": 1.65,
+       "luokittelematon erotus": 5.85
+      },
+      "fi_segments": {
+       "pitkän koron rahastot": 41.52
+      },
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 75.85,
+      "bonds": 26.17,
+      "cash": 1.61,
+      "other": 0.01,
+      "as_of": "2026-08-31"
+     },
+     "returns": {
+      "ytd": 6.19,
+      "y1": 8.73,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/quote",
+      "y3": 10.12,
+      "y5": 4.13,
+      "y10": null
+     },
+     "vs_50_50": {
+      "ytd": -0.73,
+      "y1": -0.28
+     },
+     "features": "Osake 50,6, korko 41,5, luokittelematon 5,9; vastuullisuusrajaukset",
+     "explanation": "Vastuullisuusrajaukset (esim. energia ja puolustus pois) heikensivät osakepuolta",
+     "vs_50_50_rebalanced": {
+      "ytd": -0.19,
+      "y1": -0.28,
+      "y3": -0.01,
+      "y5": -0.54,
+      "y10": null
+     }
+    },
+    {
+     "n": 18,
+     "isin": "FI4000548953",
+     "allocation": {
+      "equity_pct": 54.93,
+      "fixed_income_pct": 44.26,
+      "other_assets": {
+       "käteinen": 0.81
+      },
+      "fi_segments": {
+       "Finlandia Korkotuotto A (yhdistelmäkorko)": 22.53,
+       "Finlandia Korkostrategia (yhdistelmäkorko)": 21.73
+      },
+      "source_url": "https://finlandiagroup.fi/hubfs/PDF-files/Finlandia%20Rahastot%20Puolivuotiskatsaus%202026-H1.pdf",
+      "source_type": "puolivuotiskatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 60.4,
+      "bonds": 38.5,
+      "cash": 1.11,
+      "other": 0.01,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 6.87,
+      "y1": 8.38,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/quote",
+      "y3": 9.08,
+      "y5": null,
+      "y10": null
+     },
+     "vs_50_50": {
+      "ytd": -0.05,
+      "y1": -0.63
+     },
+     "features": "Osake 54,9, korko 44,3 (yhdistelmäkorkorahastot)",
+     "explanation": "Lähellä vertailusalkkua; pieni koko ja kulut",
+     "vs_50_50_rebalanced": {
+      "ytd": 0.49,
+      "y1": -0.63,
+      "y3": -1.05,
+      "y5": null,
+      "y10": null
+     }
+    },
+    {
+     "n": 19,
+     "isin": "FI4000452586",
+     "allocation": {
+      "equity_pct": 53.9,
+      "fixed_income_pct": 32.5,
+      "other_assets": {
+       "muut (sis. Obsido Omakotitalotontti I Ky vaihtoehtorahasto 6,3 %)": 13.6
+      },
+      "fi_segments": {
+       "investment grade": 11.9,
+       "high yield": 7.9,
+       "pitkä korko (valtio)": 4.8,
+       "lyhyt korko": 4.5,
+       "kehittyvät korot": 3.4
+      },
+      "source_url": "https://www.obsido.fi/wp-content/uploads/2026/07/Fact-Sheet-OGB-A2-30.6.2026.pdf",
+      "source_type": "fact sheet / kuukausikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 57.11,
+      "bonds": 28.35,
+      "cash": 4.42,
+      "other": 10.12,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 8.47,
+      "y1": 9.91,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/quote",
+      "y3": 9.9,
+      "y5": 5.99,
+      "y10": null
+     },
+     "vs_50_50": {
+      "ytd": 1.55,
+      "y1": 0.9
+     },
+     "features": "Osake 53,9, korko 32,5 (IG 11,9, HY 7,9), muut 13,6 (tonttirahasto 6,3)",
+     "explanation": "Matala korkopaino ja vaihtoehtoiset, HY tuki",
+     "vs_50_50_rebalanced": {
+      "ytd": 2.09,
+      "y1": 0.9,
+      "y3": -0.23,
+      "y5": 1.32,
+      "y10": null
+     }
+    },
+    {
+     "n": 20,
+     "isin": "SE0017832439",
+     "allocation": {
+      "equity_pct": 60.26,
+      "fixed_income_pct": 36.82,
+      "other_assets": {
+       "muut varat ja velat (käteinen)": 2.92
+      },
+      "fi_segments": {
+       "yrityslainat IG (SEB Corporate Bond)": 9.45,
+       "valtionlainat (SEB Euro Bond)": 8.41,
+       "dynaaminen korko (SEB Dynamisk Räntefond)": 8.48,
+       "vihreät joukkolainat (SEB Green Bond)": 5.73,
+       "lyhyet korot (SEB Euro Short Rate)": 2.79,
+       "hybridipääoma (SEB Hybrid Cap)": 1.03,
+       "high yield (SEB Global HY)": 0.92
+      },
+      "source_url": "https://nordnetab.com/wp-content/uploads/2026/08/Halvarsredogorelse-Nordnet-One-Tasapaino-EUR-2026.pdf",
+      "source_type": "halvårsredogörelse (puolivuosikatsaus)",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 60.27,
+      "bonds": 42.11,
+      "cash": -2.42,
+      "other": 0.01,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 9.37,
+      "y1": 12.88,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/quote",
+      "y3": 12.66,
+      "y5": null,
+      "y10": null
+     },
+     "vs_50_50": {
+      "ytd": 2.45,
+      "y1": 3.87
+     },
+     "features": "Osake 60,3, korko 36,8 (IG, valtio, vihreät)",
+     "explanation": "Osakeylipaino ja matalat kulut (0,46 %)",
+     "vs_50_50_rebalanced": {
+      "ytd": 2.99,
+      "y1": 3.87,
+      "y3": 2.53,
+      "y5": null,
+      "y10": null
+     }
+    },
+    {
+     "n": 21,
+     "isin": "FI4000278676",
+     "allocation": {
+      "equity_pct": 51.54,
+      "fixed_income_pct": 35.35,
+      "other_assets": {
+       "kassa ja muut varat, netto": 7.01,
+       "kiinteistö (SP Kiinteistö A)": 2.09,
+       "katastrofilainat (Schroder GAIA Cat Bond)": 2.42,
+       "hedge/multi-strategy (Janus Henderson Global Multi-Strategy)": 1.55
+      },
+      "fi_segments": {
+       "valtionlainat (SP Pitkäkorko)": 8.0,
+       "lyhyet yrityslainat 0-1v (Amundi Euro Corp 0-1Y)": 6.99,
+       "yrityslainat IG (SP Yrityslaina)": 5.14,
+       "high yield (SP High Yield 4.67, UniInstitutional Structured Credit HY 1.76)": 6.43,
+       "kehittyvät markkinat (JH EMD HC 4.71, SP Kehittyvät Korkomarkkinat 1.48)": 6.19,
+       "lyhyet korot (SP Lyhytkorko)": 2.6
+      },
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 54.62,
+      "bonds": 28.44,
+      "cash": 10.35,
+      "other": 6.04,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 6.82,
+      "y1": 9.76,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/quote",
+      "y3": 8.27,
+      "y5": 3.09,
+      "y10": null
+     },
+     "vs_50_50": {
+      "ytd": -0.1,
+      "y1": 0.75
+     },
+     "features": "Osake 51,5, korko 35,4, kassa 7,0, kiinteistö 2,1, katastrofilainat",
+     "explanation": "Matala korkopaino; katastrofilainat ja HY tukivat",
+     "vs_50_50_rebalanced": {
+      "ytd": 0.44,
+      "y1": 0.75,
+      "y3": -1.86,
+      "y5": -1.58,
+      "y10": null
+     }
+    },
+    {
+     "n": 22,
+     "isin": "FI4000297817",
+     "allocation": {
+      "equity_pct": 51.9,
+      "fixed_income_pct": 46.8,
+      "other_assets": {
+       "käteinen": 1.3
+      },
+      "fi_segments": {
+       "yrityslainat IG (Corporate Bond+ 11.0, Sustainable Corp 2.1, Schroder Euro Corp 0.6)": 13.7,
+       "lyhyet yrityskorot (Aktia Lyhyt Yrityskorko)": 5.2,
+       "high yield (European HY+ 3.6, Nordic HY 3.3, NB European HY 3.2)": 10.1,
+       "kehittyvät markkinat (EM Local 7.7, EM Bond+ 4.2, Frontier 2.3)": 14.2,
+       "leveraged loans (Barings European Loan)": 3.6,
+       "valtionlainat (Aktia Sustainable Gov.)": 0.0,
+       "luottoluokitusjakauma (kaavio, osuudet 51.1/30.6/18.5 – järjestys IG/HY/ei luokiteltu epävarma)": null
+      },
+      "source_url": "https://misc.aktia.fi/data-service/documents/investment/Rahastot/Puolivuosikatsaukset/Aktia/Puolivuosikatsaus_Aktia_VH50.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 0.0,
+      "bonds": null,
+      "cash": 1.9,
+      "other": 98.1,
+      "as_of": "2026-08-31"
+     },
+     "returns": {
+      "ytd": 8.46,
+      "y1": 11.92,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/quote",
+      "y3": 10.55,
+      "y5": 4.62,
+      "y10": null
+     },
+     "vs_50_50": {
+      "ytd": 1.54,
+      "y1": 2.91
+     },
+     "features": "Osake 51,9, korko 46,8 (IG 13,7, lyhyet 5,2, HY)",
+     "explanation": "Yrityslaina- ja HY-painotus voittivat globaalin aggregaatin",
+     "vs_50_50_rebalanced": {
+      "ytd": 2.08,
+      "y1": 2.91,
+      "y3": 0.42,
+      "y5": -0.05,
+      "y10": null
+     }
+    },
+    {
+     "n": 23,
+     "isin": "FI4000517719",
+     "allocation": {
+      "equity_pct": 51.54,
+      "fixed_income_pct": 35.35,
+      "other_assets": {
+       "kassa ja muut varat, netto": 7.01,
+       "kiinteistö (SP Kiinteistö A)": 2.09,
+       "katastrofilainat (Schroder GAIA Cat Bond)": 2.42,
+       "hedge/multi-strategy (Janus Henderson Global Multi-Strategy)": 1.55
+      },
+      "fi_segments": {
+       "valtionlainat (SP Pitkäkorko)": 8.0,
+       "lyhyet yrityslainat 0-1v (Amundi Euro Corp 0-1Y)": 6.99,
+       "yrityslainat IG (SP Yrityslaina)": 5.14,
+       "high yield (SP High Yield 4.67, UniInstitutional Structured Credit HY 1.76)": 6.43,
+       "kehittyvät markkinat (JH EMD HC 4.71, SP Kehittyvät Korkomarkkinat 1.48)": 6.19,
+       "lyhyet korot (SP Lyhytkorko)": 2.6
+      },
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
+      "source_type": "puolivuosikatsaus",
+      "as_of": "2026-06-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 54.62,
+      "bonds": 28.44,
+      "cash": 10.35,
+      "other": 6.04,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 7.3,
+      "y1": 10.41,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/quote",
+      "y3": 8.92,
+      "y5": null,
+      "y10": null
+     },
+     "vs_50_50": {
+      "ytd": 0.38,
+      "y1": 1.4
+     },
+     "features": "Sama salkku kuin rahastolla 21 (D-sarja)",
+     "explanation": "Kuten rahasto 21, matalammat kulut",
+     "vs_50_50_rebalanced": {
+      "ytd": 0.92,
+      "y1": 1.4,
+      "y3": -1.21,
+      "y5": null,
+      "y10": null
+     }
+    },
+    {
+     "n": 24,
+     "isin": "FI4000410949",
+     "allocation": {
+      "equity_pct": 70.7,
+      "fixed_income_pct": 27.6,
+      "other_assets": {
+       "käteinen": 1.8,
+       "muut": 0.0
+      },
+      "fi_segments": {
+       "high yield (JPMorgan EUR High Yield Bond, suurin omistus)": 6.2
+      },
+      "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_6f1c0dade50c2595e123d3e1063208ed92d55b99fb39978cbbfc05ed619edf4ec73c7090a4a1d53a60291468474e0bb9521358e9_iv_6051d90d181211913b349be7",
+      "source_type": "kuukausikatsaus",
+      "as_of": "2026-09-30"
+     },
+     "allocation_morningstar": {
+      "stocks": 4.17,
+      "bonds": 91.05,
+      "cash": 4.74,
+      "other": 0.02,
+      "as_of": "2026-09-30"
+     },
+     "returns": {
+      "ytd": 9.32,
+      "y1": 10.81,
+      "as_of": "2026-09-30",
+      "source": "https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/quote",
+      "y3": 9.65,
+      "y5": 5.28,
+      "y10": null
+     },
+     "vs_50_50": {
+      "ytd": 2.4,
+      "y1": 1.8
+     },
+     "features": "Osake 70,7, korko 27,6 (HY suurin korko-omistus)",
+     "explanation": "Selvä osakeylipaino ja HY",
+     "vs_50_50_rebalanced": {
+      "ytd": 2.94,
+      "y1": 1.8,
+      "y3": -0.48,
+      "y5": 0.61,
+      "y10": null
+     }
+    }
+   ],
+   "allocation_change_vs_prev": null
+  }
+ ]
+}
