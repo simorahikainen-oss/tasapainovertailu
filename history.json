@@ -6,145 +6,217 @@
    "n": 1,
    "name": "LocalTapiola World 50 (A)",
    "isin": "FI0008805635",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/portfolio",
+   "company_url": "https://www.lahitapiola.fi/henkilo/saastaminen-ja-sijoittaminen/sijoitusratkaisut/rahastot-ja-sijoitussalkut/maailma-50/",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 2,
    "name": "Nordea Premium AM Balanced I Acc EUR",
    "isin": "FI4000171178",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio",
+   "company_url": "https://www.nordeafunds.com/fi/rahastot/nordea-premium-tasapaino",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 3,
    "name": "Nordea Savings 50 Fund A Acc EUR",
    "isin": "FI0008806807",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio",
+   "company_url": "https://www.nordeafunds.com/fi/rahastot/nordea-saasto-50",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 4,
    "name": "Nordea Premium AM Balanced Fund P Acc EUR",
    "isin": "FI0008806419",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio",
+   "company_url": "https://www.nordeafunds.com/fi/rahastot/nordea-premium-tasapaino",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 5,
    "name": "UB Smart I (non-UCITS)",
    "isin": "FI0008811484",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/portfolio",
+   "company_url": "https://unitedbankers.fi/fi/palvelut-ja-tuotteet/rahastot/ub-smart/",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 6,
    "name": "Obsido Rebalanced 50 Fund A1",
    "isin": "FI4000153358",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/portfolio",
+   "company_url": "https://www.obsido.fi/rahastoyhtio/rahastot/",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200) – rahastoyhtiön rahastolistaus, ei rahastokohtaista sivua"
   },
   {
    "n": 7,
    "name": "OP-Private Strategia 50 A",
    "isin": "FI4000120670",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio",
+   "company_url": "https://www.op.fi/henkiloasiakkaat/saastot-ja-sijoitukset/rahastot/kaikki-rahastot/op-private-strategia-50",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 8,
    "name": "Alexandria Tasapainoinen",
    "isin": "FI4000020664",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio",
+   "company_url": "https://www.alexandria.fi/rahastot/alexandria-tasapainoinen/",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 9,
    "name": "Säästöpankki Ryhti B",
    "isin": "FI0008807078",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
+   "company_url": "https://www.saastopankki.fi/fi-fi/saastaminen-ja-sijoittaminen/rahastot/rahasto-osuuksien-arvot-ja-tuotot/saastopankki-ryhti-b",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 10,
    "name": "Ålandsbanken Kapitalförvaltning B",
    "isin": "FI0008809934",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio",
+   "company_url": "https://www.alandsbanken.fi/pankkipalvelut/sijoita-saasta/rahastot/varainhoito",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 11,
    "name": "Evli Global Multi Manager 50 Fund B",
    "isin": "FI0008801253",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/portfolio",
+   "company_url": "https://www.evli.com/tuotteet-ja-palvelut/rahastot/sijoitusrahastot/gmm75",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 12,
    "name": "Danske Invest Kompassi 50 K",
    "isin": "FI0008805338",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
+   "company_url": "https://www.danskeinvest.fi/w/show_funds.product?p_nFund=2310&p_nFundgroup=59&p_nId=59",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 13,
    "name": "S-Bank Asset Management 50 A Growth",
    "isin": "FI0008803879",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/portfolio",
+   "company_url": "https://www.s-pankki.fi/fi/saastaminen-ja-sijoittaminen/rahastot/s-pankki-varainhoito-50-a/",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 14,
    "name": "OP-Maltillinen A",
    "isin": "FI4000036108",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/portfolio",
+   "company_url": "https://www.op.fi/henkiloasiakkaat/saastot-ja-sijoitukset/rahastot/kaikki-rahastot/op-maltillinen",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 15,
    "name": "POP Optimal",
    "isin": "FI0008809975",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio",
+   "company_url": "https://www.poppankki.fi/palvelut/saastot-ja-sijoitukset/rahastot/pop-optimi",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 16,
    "name": "Nordea Stable Return Fund A Acc EUR",
    "isin": "FI0008810254",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001FCD/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001FCD/portfolio",
+   "company_url": "https://www.nordeafunds.com/fi/rahastot/vakaa-tuotto-a",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 17,
    "name": "Nordea Responsible Balanced Fund A Acc EUR",
    "isin": "FI4000400098",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio",
+   "company_url": "https://www.nordeafunds.com/fi/rahastot/nordea-vastuullinen-global-tasapaino",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 18,
    "name": "Finlandia Asset Allocator 50",
    "isin": "FI4000548953",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio",
+   "company_url": "https://finlandiagroup.fi/finlandia-asset-allocator-50-erikoissijoitusrahasto",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 19,
    "name": "Obsido Global Balanced Investment Fund A2",
    "isin": "FI4000452586",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
+   "company_url": "https://www.obsido.fi/rahastoyhtio/rahastot/",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200) – rahastoyhtiön rahastolistaus, ei rahastokohtaista sivua"
   },
   {
    "n": 20,
    "name": "Nordnet One Tasapaino EUR",
    "isin": "SE0017832439",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
+   "company_url": "https://www.nordnet.fi/rahastot/lista/nordnet-one-tasapaino-eur-48aa294d",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 21,
    "name": "Säästöpankki Tasapainoinen B",
    "isin": "FI4000278676",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio",
+   "company_url": "https://www.saastopankki.fi/fi-fi/saastaminen-ja-sijoittaminen/rahastot/rahasto-osuuksien-arvot-ja-tuotot/saastopankki-tasapainoinen-b",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 22,
    "name": "Aktia Wealth Allocation 50 B",
    "isin": "FI4000297817",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio",
+   "company_url": "https://www.aktia.fi/fi/sijoitustuotteet/aktia-varainhoitosalkku-50",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 23,
    "name": "Säästöpankki Tasapainoinen D",
    "isin": "FI4000517719",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio",
+   "company_url": "https://www.saastopankki.fi/fi-fi/saastaminen-ja-sijoittaminen/rahastot/rahasto-osuuksien-arvot-ja-tuotot/saastopankki-tasapainoinen-d",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   },
   {
    "n": 24,
    "name": "OP - Tavoite 3A",
    "isin": "FI4000410949",
-   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/portfolio"
+   "ms_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/portfolio",
+   "company_url": "https://www.op.fi/henkiloasiakkaat/saastot-ja-sijoitukset/rahastot/kaikki-rahastot/op-tavoite-3",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   }
  ],
  "snapshots": [
@@ -189,6 +261,26 @@
      "y3": 2.03,
      "y5": -2.28,
      "y10": -0.76
+    },
+    "SPYI_meta": {
+     "ongoing_cost_pct": 0.17,
+     "fund_size": 7143748482,
+     "fund_size_currency": "USD",
+     "fund_size_as_of": "2026-10-16",
+     "category": "Global Large-Cap Blend Equity",
+     "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+     "source_url": "https://global.morningstar.com/en-nd/investments/etfs/0P0000TKVG/quote",
+     "note": "Rahastokoko koko ETF, USD (perusvaluutta). Kategoria Global Large-Cap Blend Equity."
+    },
+    "VAGF_meta": {
+     "ongoing_cost_pct": 0.08,
+     "fund_size": 4937333565,
+     "fund_size_currency": "EUR",
+     "fund_size_as_of": "2026-10-16",
+     "category": "Global Diversified Bond - EUR Hedged",
+     "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+     "source_url": "https://global.morningstar.com/en-nd/investments/etfs/0P0001HSBO/quote",
+     "note": "Kategoria Global Diversified Bond - EUR Hedged."
     }
    },
    "funds": [
@@ -252,6 +344,15 @@
       "source": "puolivuosikatsaus",
       "source_url": "https://www.seligson.fi/resource/vsk/LT_puolivuosikertomus.pdf",
       "note": "MS ei läpivalaise (98 % muut); kuukausikatsausta osakepainolla ei löytynyt (LähiTapiola julkaisee vain viikkokatsauksen tuotoista), käytetään puolivuosikatsausta."
+     },
+     "costs": {
+      "ongoing_cost_pct": 0.99,
+      "fund_size": 188254220,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-08-31",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/quote"
      }
     },
     {
@@ -310,6 +411,16 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio",
       "note": "Morningstar net %; sisältää futuurien osakealtistuksen (Nordean luku 50,8 % ilman futuureja)."
+     },
+     "costs": {
+      "ongoing_cost_pct": 0.76,
+      "fund_size": 1769766770,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/quote",
+      "note": "Rahastokoko koko rahasto (kaikki osuussarjat), sama kuin P-sarjalla."
      }
     },
     {
@@ -369,6 +480,15 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.58,
+      "fund_size": 1240417927,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/quote"
      }
     },
     {
@@ -427,6 +547,16 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio",
       "note": "Morningstar net %; sisältää futuurien osakealtistuksen (Nordean luku 50,8 % ilman futuureja)."
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.41,
+      "fund_size": 1769766770,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/quote",
+      "note": "Rahastokoko koko rahasto (kaikki osuussarjat)."
      }
     },
     {
@@ -486,6 +616,15 @@
       "source": "kuukausikatsaus",
       "source_url": "https://unitedbankers.fi/api/products/file?id=fb876b21-fb92-ec11-bad2-005056ab348e&lang=fi",
       "note": "MS osake 19,3 % vs. UB:n kuukausiraportti 33,5 % samalta päivältä (reaaliomaisuus luokittuu MS:ssä eri tavoin); käytetään yhtiön lukua."
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.64,
+      "fund_size": 98445608,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-16",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/quote"
      }
     },
     {
@@ -545,6 +684,15 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.85,
+      "fund_size": 63794365,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-08-31",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/quote"
      }
     },
     {
@@ -606,6 +754,15 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.22,
+      "fund_size": 3057871825,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-16",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/quote"
      }
     },
     {
@@ -665,6 +822,16 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 2.21,
+      "fund_size": 198833711,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2025-05-31",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/quote",
+      "note": "Morningstarin rahastokoko vanha (31.5.2025); yhtiön sivun mukaan hallinnoitavat varat 276 115 986 € 31.8.2026 ja juoksevat kulut 1,87 % (Morningstar 2,21 %)."
      }
     },
     {
@@ -725,6 +892,15 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.16,
+      "fund_size": 762380197,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-16",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/quote"
      }
     },
     {
@@ -783,6 +959,15 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.34,
+      "fund_size": 312926327,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/quote"
      }
     },
     {
@@ -841,6 +1026,15 @@
       "source": "puolivuosikatsaus",
       "source_url": "https://www.evli.com/artikkelit/evlin-sijoitusrahastojen-puolivuosikatsaus-30-6-2026 (PDF: https://dl.avl-investmentfonds.de/fds/FI0008811997-HALBJAHRBER-EN-20260630.pdf)",
       "note": "MS osake 78,5 % vs. Evlin katsaus 53,6 %; MS-luku epäuskottava, käytetään yhtiön lukua."
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.89,
+      "fund_size": 19539387,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/quote"
      }
     },
     {
@@ -901,6 +1095,15 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.4,
+      "fund_size": 866545664.21573,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-19",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/quote"
      }
     },
     {
@@ -960,6 +1163,15 @@
       "source": "puolivuosikatsaus",
       "source_url": "https://dokumentit.s-pankki.fi/tiedostot/rahastojen-puolivuosikatsaus-2026",
       "note": "MS osake 92,4 % on virheellinen. S-Pankin kuukausikatsaus 30.9.2026 ei ilmoita osakepainoa (vain korkorahastot 30 %, ETF:t 36 %, osakerahastot 32 %, käteinen 1 %), mutta kertoo osakepainoa lisätyn elo- ja syyskuussa yli normaalin. Käytetään puolivuosikatsauksen 49,7 %; todellinen 30.9. paino todennäköisesti hieman yli 50 %. Kuukausikatsaus: https://lrs.altusinvestor.com/render/document/released-snapshot/category/18/reference/PIANO/lang/fi"
+     },
+     "costs": {
+      "ongoing_cost_pct": 0.99,
+      "fund_size": 180879253,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/quote"
      }
     },
     {
@@ -1016,6 +1228,15 @@
       "source": "kuukausikatsaus",
       "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_51c4501e8d35e3f67fcadbd14004453c3bd74df274324ff94d23a5d9b6ad68de748b3017a3875269d460d8a9087930fe876a49a4_iv_eb4c2e35a6d66b820eedc8eb",
       "note": "MS osake 69,9 % vs. OP:n kuukausikatsaus 57,6 % samalta päivältä; käytetään kuukausikatsausta."
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.4,
+      "fund_size": 2507397694,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-16",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/quote"
      }
     },
     {
@@ -1072,6 +1293,15 @@
       "source": "puolivuosikatsaus",
       "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
       "note": "MS ei läpivalaise (99,8 % muut); POPin kuukausikatsaus (Morningstar-snapshot) ei ilmoita osakepainoa, vain 'maltillinen osakeylipaino'. Käytetään puolivuosikatsausta."
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.96,
+      "fund_size": 75062540,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-16",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/quote"
      }
     },
     {
@@ -1130,6 +1360,15 @@
       "source": "puolivuosikatsaus",
       "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
       "note": "MS osake 18,4 % ei huomioi johdannaisia; Nordean luku 52,75 % johdannaiset huomioiden."
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.77,
+      "fund_size": 313934873,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001FCD/quote"
      }
     },
     {
@@ -1187,6 +1426,15 @@
       "source": "puolivuosikatsaus",
       "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
       "note": "MS osake 75,9 % (8/2026) epäuskottava: Nordean omistukset 31.8.2026 viittaavat n. 50/50-jakoon ja Citywire/MS 31.5.2026 näytti 50,4 %. Kuukausikatsausta ei löytynyt; käytetään puolivuosikatsauksen 50,6 %."
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.57,
+      "fund_size": 1570717224,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/quote"
      }
     },
     {
@@ -1243,6 +1491,16 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": null,
+      "fund_size": 28701676,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2025-12-31",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/quote",
+      "note": "Morningstarissa ei juoksevia kuluja; rahastokoko 31.12.2025 (vanha)."
      }
     },
     {
@@ -1302,6 +1560,15 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.32,
+      "fund_size": 95521331,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-08-31",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/quote"
      }
     },
     {
@@ -1363,6 +1630,16 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 0.49,
+      "fund_size": null,
+      "fund_size_currency": null,
+      "fund_size_as_of": null,
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/quote",
+      "note": "Morningstarin FundTNAV 1348 EUR on ilmeisen virheellinen – jätetty tyhjäksi."
      }
     },
     {
@@ -1426,6 +1703,16 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.11,
+      "fund_size": 353569476,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-16",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/quote",
+      "note": "Rahastokoko koko rahasto (B+D)."
      }
     },
     {
@@ -1487,6 +1774,15 @@
       "source": "kuukausikatsaus",
       "source_url": "https://misc.aktia.fi/data-service/documents/investment/Rahastot/Kuukausiraportit/Kuukausiraportti_Aktia_VH50.pdf",
       "note": "Morningstar ei läpivalaise (98 % muut); Aktian kuukausiraportti 30.9.2026: osakkeet 52,2 %, korot 46,1 %, käteinen 1,7 %."
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.15,
+      "fund_size": 242468227,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-09-30",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/quote"
      }
     },
     {
@@ -1550,6 +1846,16 @@
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio",
       "note": "Morningstar net %"
+     },
+     "costs": {
+      "ongoing_cost_pct": 1.11,
+      "fund_size": 353569476,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-16",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/quote",
+      "note": "Rahastokoko koko rahasto (B+D)."
      }
     },
     {
@@ -1606,10 +1912,39 @@
       "source": "kuukausikatsaus",
       "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_6f1c0dade50c2595e123d3e1063208ed92d55b99fb39978cbbfc05ed619edf4ec73c7090a4a1d53a60291468474e0bb9521358e9_iv_6051d90d181211913b349be7",
       "note": "MS osake 4,2 % / korko 91 % virheellinen; OP:n kuukausikatsaus 30.9.2026: osakkeet 70,7 %."
+     },
+     "costs": {
+      "ongoing_cost_pct": 0.89,
+      "fund_size": 5574664,
+      "fund_size_currency": "EUR",
+      "fund_size_as_of": "2026-10-16",
+      "category": "EUR Moderate Allocation - Global",
+      "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/quote"
      }
     }
    ],
    "allocation_change_vs_prev": null
+  }
+ ],
+ "etfs": [
+  {
+   "key": "SPYI",
+   "name": "SPDR MSCI ACWI IMI UCITS ETF",
+   "isin": "IE00B3YLTY66",
+   "url": "https://www.ssga.com/ie/en_gb/intermediary/etfs/state-street-spdr-msci-all-country-world-investable-market-ucits-etf-acc-spyi-gy",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/etfs/0P0000TKW7/quote",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
+  },
+  {
+   "key": "VAGF",
+   "name": "Vanguard Global Aggregate Bond UCITS ETF EUR Hedged Acc",
+   "isin": "IE00BG47KH54",
+   "url": "https://www.vanguard.co.uk/professional/product/etf/bond/9505/global-aggregate-bond-ucits-etf-eur-hedged-accumulating",
+   "ms_url": "https://global.morningstar.com/en-nd/investments/etfs/0P0001HSBO/quote",
+   "link_checked": "2026-10-20",
+   "link_status": "ok (200)"
   }
  ]
 }

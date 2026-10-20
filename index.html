@@ -15,8 +15,8 @@ th.g-ret{background:#dce8fb}th.g-vs{background:#fbe7b5}th.g-al{background:#d3f0d
 .sep{border-left:2px solid #c5cad3}tr.bm td{background:#e9ecf2!important;color:#1d2330;font-style:italic;color:#fff;font-weight:600}tr.bm td small{color:#5a6475}tr.bm:first-child,tr.bm{}tr.bm.mix td{background:#34405a!important;font-weight:800;font-size:1.05em}
 tbody tr:nth-child(even) td{box-shadow:inset 0 0 0 999px rgba(0,0,0,.045)}tbody tr:nth-child(odd) td{background-color:#fff}tr.mixr td{font-weight:800;border-top:2px solid #34405a;border-bottom:2px solid #34405a}tr:hover td{filter:brightness(.96)}.grp th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;position:static}
 .pos{color:#0a7a32}.neg{color:#b42318}.muted{color:#778}small{color:#778}
-</style></head><body>
-<header><h1>Tasapainorahastot vs. 50/50 ETF-salkku (SPYI + VAGF)</h1><small id="upd"></small></header>
+.cat{font-size:13px;color:#4a5568;margin:2px 0 4px}.g-co{background:#f6f0fb}th.g-co{background:#e6d8f3}td a.nm{color:inherit;font-weight:600;text-decoration:none;border-bottom:1px dotted #8894a8}</style></head><body>
+<header><h1>Tasapainorahastot vs. 50/50 ETF-salkku (SPYI + VAGF)</h1><div class="cat">Morningstar Category: <b>EAA Fund EUR Moderate Allocation - Global</b></div><small id="upd"></small></header>
 <main>
 <div class="bar">
  <label>Kuukausi <select id="month"></select></label>
@@ -28,7 +28,7 @@ tbody tr:nth-child(even) td{box-shadow:inset 0 0 0 999px rgba(0,0,0,.045)}tbody 
  <a class="btn" href="https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/history.json" target="_blank">⬇ JSON</a>
 </div>
 <div class="cards" id="cards"></div>
-<table><thead><tr class="grp"><th colspan="2"></th><th colspan="5" class="g-ret sep num">Tuotot %</th><th class="g-vs sep num">Ero</th><th colspan="4" class="g-al sep num">Allokaatio</th><th colspan="3" class="g-tx sep">Kuvaus</th></tr><tr id="hd"></tr></thead><tbody id="tb"></tbody></table>
+<table><thead><tr class="grp"><th colspan="2"></th><th colspan="5" class="g-ret sep num">Tuotot %</th><th class="g-vs sep num">Ero</th><th colspan="4" class="g-al sep num">Allokaatio</th><th colspan="2" class="g-co sep num">Kulut &amp; koko</th><th colspan="3" class="g-tx sep">Kuvaus</th></tr><tr id="hd"></tr></thead><tbody id="tb"></tbody></table>
 <p><small>Lähteet: Morningstar (tuotot, kuun lopun trailing returns, EUR) sekä rahastoyhtiöiden kuukausiraportit ja puolivuotiskatsaukset (allokaatiot). Allokaatioiden päivämäärä voi poiketa tuottopäivästä. 50/50 = SPYI + VAGF kuukausittain tasapainotettuna (Xetra-kurssit); VAGF:n historia ennen 8/2019 korvattu AGGH- ja XBAE-proxyillä, joten 10v luku on suuntaa antava. 3v/5v/10v vuosituottoja (p.a.).</small></p>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
@@ -37,8 +37,8 @@ const f=(v,d=2)=>v==null||isNaN(v)?'–':(+v).toFixed(d).replace('.',',');
 const cls=v=>v==null?'muted':v>=0?'pos':'neg';
 const sg=v=>v==null?'–':(v>0?'+':'')+f(v);
 let H,sortK='vy1',sortD=-1;
-const G={ytd:'g-ret sep num',y1:'g-ret num',y3:'g-ret num',y5:'g-ret num',y10:'g-ret num',vp:'g-vs sep num',eq:'g-al sep num',deq:'g-al num',fi:'g-al num',dfi:'g-al num',feat:'g-tx sep',expl:'g-tx',asof:'g-tx'};
-const cols=[['n','#'],['name','Rahasto'],['ytd','YTD %'],['y1','1v %'],['y3','3v p.a.'],['y5','5v p.a.'],['y10','10v p.a.'],['vp','vs 50/50 (jakso)'],['eq','Osake %'],['deq','Osake Δ'],['fi','Korko %'],['dfi','Korko Δ'],['feat','Erityispiirteet'],['expl','Selitys tuottoerolle'],['asof','Allok. pvm']];
+const G={ytd:'g-ret sep num',y1:'g-ret num',y3:'g-ret num',y5:'g-ret num',y10:'g-ret num',vp:'g-vs sep num',eq:'g-al sep num',deq:'g-al num',fi:'g-al num',dfi:'g-al num',ter:'g-co sep num',size:'g-co num',feat:'g-tx sep',expl:'g-tx',asof:'g-tx'};
+const cols=[['n','#'],['name','Rahasto'],['ytd','YTD %'],['y1','1v %'],['y3','3v p.a.'],['y5','5v p.a.'],['y10','10v p.a.'],['vp','vs 50/50 (jakso)'],['eq','Osake %'],['deq','Osake Δ'],['fi','Korko %'],['dfi','Korko Δ'],['ter','TER %'],['size','Koko (M)'],['feat','Erityispiirteet'],['expl','Selitys tuottoerolle'],['asof','Allok. pvm']];
 async function load(){
  const RAW='https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/history.json';
  try{H=await (await fetch(RAW+'?t='+Date.now(),{cache:'no-store'})).json()}catch(e){H=await (await fetch('history.json?t='+Date.now(),{cache:'no-store'})).json()}
@@ -56,7 +56,7 @@ function render(){
  let rows=s.funds.map(x=>{const a=x.allocation_primary||x.allocation||{},pa=(pv[x.n]||{}).allocation_primary||(pv[x.n]||{}).allocation||{};
   return{n:x.n,name:nm[x.n]||x.isin,isin:x.isin,ytd:x.returns?.ytd,y1:x.returns?.y1,y3:x.returns?.y3,y5:x.returns?.y5,y10:x.returns?.y10,vp:(x.vs_50_50_rebalanced||x.vs_50_50||{})[document.getElementById('per').value],vy1:(x.vs_50_50_rebalanced||x.vs_50_50||{}).y1,eq:a.equity_pct,fi:a.fixed_income_pct,
   deq:p&&a.equity_pct!=null&&pa.equity_pct!=null?a.equity_pct-pa.equity_pct:null,dfi:p&&a.fixed_income_pct!=null&&pa.fixed_income_pct!=null?a.fixed_income_pct-pa.fixed_income_pct:null,
-  feat:x.features,expl:x.explanation,asof:a.as_of,src:a.source_url}});
+  feat:x.features,expl:x.explanation,ter:x.costs?.ongoing_cost_pct,size:x.costs?.fund_size!=null?x.costs.fund_size/1e6:null,cur:x.costs?.fund_size_currency,url:(H.funds.find(z=>z.n==x.n)||{}).company_url,ms:(H.funds.find(z=>z.n==x.n)||{}).ms_url,asof:a.as_of,src:a.source_url}});
  const avg=k=>{const v=rows.map(r=>r[k]).filter(v=>v!=null);return v.length?v.reduce((a,b)=>a+b,0)/v.length:null};
  const b=s.benchmark,per=document.getElementById('per').value,bb=b.etf_50_50_rebalanced||b.etf_50_50;
  document.getElementById('cards').innerHTML=[
@@ -71,12 +71,12 @@ function render(){
  rows.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (x==null)-(y==null)||(x>y?1:x<y?-1:0)*sortD});
  window._rows=rows.filter(r=>!r.mix);
  const sp=b.SPYI_px||b.SPYI,va=b.VAGF_px||b.VAGF;
- const bm=[{cls:'bm',name:'SPDR MSCI ACWI IMI UCITS ETF (SPYI)',isin:'IE00B3YLTY66',r:sp,eq:100,fi:0,feat:'Globaalit osakkeet, ~9 000 yhtiötä (large/mid/small)'},
-  {cls:'bm',name:'Vanguard Global Aggregate Bond UCITS ETF EUR Hedged (VAGF)',isin:'IE00BG47KH54',r:va,eq:0,fi:100,feat:'Globaalit valtion- ja IG-yrityslainat, euroon suojattu'+(va&&va.y10!=null?'; 10v sisältää proxy-jakson':'')}];
- window._xl=rows.concat(bm.map(x=>({n:'',bm:1,name:x.name,isin:x.isin,ytd:x.r?.ytd,y1:x.r?.y1,y3:x.r?.y3,y5:x.r?.y5,y10:x.r?.y10,vp:x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null,eq:x.eq,fi:x.fi,feat:x.feat,asof:s.return_date})));
+ const bm=[{cls:'bm',m:b.SPYI_meta,e:(H.etfs||[]).find(z=>z.key=='SPYI'),name:'SPDR MSCI ACWI IMI UCITS ETF (SPYI)',isin:'IE00B3YLTY66',r:sp,eq:100,fi:0,feat:'Globaalit osakkeet, ~9 000 yhtiötä (large/mid/small)'},
+  {cls:'bm',m:b.VAGF_meta,e:(H.etfs||[]).find(z=>z.key=='VAGF'),name:'Vanguard Global Aggregate Bond UCITS ETF EUR Hedged (VAGF)',isin:'IE00BG47KH54',r:va,eq:0,fi:100,feat:'Globaalit valtion- ja IG-yrityslainat, euroon suojattu'+(va&&va.y10!=null?'; 10v sisältää proxy-jakson':'')}];
+ window._xl=rows.concat(bm.map(x=>({n:'',bm:1,ter:x.m?.ongoing_cost_pct,size:x.m?.fund_size!=null?x.m.fund_size/1e6:null,name:x.name,isin:x.isin,ytd:x.r?.ytd,y1:x.r?.y1,y3:x.r?.y3,y5:x.r?.y5,y10:x.r?.y10,vp:x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null,eq:x.eq,fi:x.fi,feat:x.feat,asof:s.return_date})));
  const td=(k,v)=>`<td class="${G[k]||''}">${v}</td>`;
- const bmh=bm.map(x=>`<tr class="${x.cls}"><td>–</td><td>${x.name}<br><small>${x.isin}</small></td>${['ytd','y1','y3','y5','y10'].map(k=>td(k,f(x.r?.[k]))).join('')}${td('vp',x.cls.includes('mix')?'0,00':sg(x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null))}${td('eq',x.eq)}${td('deq','–')}${td('fi',x.fi)}${td('dfi','–')}${td('feat',x.feat)}${td('expl','')}${td('asof',s.return_date)}</tr>`).join('');
- document.getElementById('tb').innerHTML=rows.map(r=>`<tr class="${r.mix?'mixr':''}"><td>${r.n}</td><td>${r.name}<br><small>${r.isin}</small></td>${td('ytd',f(r.ytd))}${td('y1',f(r.y1))}${td('y3',f(r.y3))}${td('y5',f(r.y5))}${td('y10',f(r.y10))}<td class="${G.vp} ${cls(r.vp)}">${sg(r.vp)}</td>${td('eq',f(r.eq,1))}<td class="${G.deq} ${cls(r.deq)}">${sg(r.deq)}</td>${td('fi',f(r.fi,1))}<td class="${G.dfi} ${cls(r.dfi)}">${sg(r.dfi)}</td>${td('feat',r.feat||'')}${td('expl',r.expl||'')}${td('asof',r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||''))}</tr>`).join('')+bmh;
+ const bmh=bm.map(x=>`<tr class="${x.cls}"><td>–</td><td>${x.e?.url?`<a class="nm" href="${x.e?.url}" target="_blank">${x.name}</a>`:x.name}<br><small>${x.isin}${x.e?.ms_url?` · <a href="${x.e?.ms_url}" target="_blank">Morningstar</a>`:''}</small></td>${['ytd','y1','y3','y5','y10'].map(k=>td(k,f(x.r?.[k]))).join('')}${td('vp',x.cls.includes('mix')?'0,00':sg(x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null))}${td('eq',x.eq)}${td('deq','–')}${td('fi',x.fi)}${td('dfi','–')}${td('ter',f(x.m?.ongoing_cost_pct))}${td('size',x.m?.fund_size!=null?Math.round(x.m.fund_size/1e6).toLocaleString('fi-FI')+' '+(x.m.fund_size_currency=='USD'?'$':'€'):'–')}${td('feat',x.feat)}${td('expl','')}${td('asof',s.return_date)}</tr>`).join('');
+ document.getElementById('tb').innerHTML=rows.map(r=>`<tr class="${r.mix?'mixr':''}"><td>${r.n}</td><td>${r.url?`<a class="nm" href="${r.url}" target="_blank">${r.name}</a>`:r.name}<br><small>${r.isin}${r.ms?` · <a href="${r.ms}" target="_blank">Morningstar</a>`:''}</small></td>${td('ytd',f(r.ytd))}${td('y1',f(r.y1))}${td('y3',f(r.y3))}${td('y5',f(r.y5))}${td('y10',f(r.y10))}<td class="${G.vp} ${cls(r.vp)}">${sg(r.vp)}</td>${td('eq',f(r.eq,1))}<td class="${G.deq} ${cls(r.deq)}">${sg(r.deq)}</td>${td('fi',f(r.fi,1))}<td class="${G.dfi} ${cls(r.dfi)}">${sg(r.dfi)}</td>${td('ter',f(r.ter))}${td('size',r.size!=null?Math.round(r.size).toLocaleString('fi-FI')+' '+(r.cur=='USD'?'$':'€'):'–')}${td('feat',r.feat||'')}${td('expl',r.expl||'')}${td('asof',r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||''))}</tr>`).join('')+bmh;
 }
 document.getElementById('csv').onclick=async()=>{
  const per=document.getElementById('per').value,P=H.snapshots[+document.getElementById('month').value].period;
@@ -84,7 +84,7 @@ document.getElementById('csv').onclick=async()=>{
  const W={n:5,name:44,feat:45,expl:60,asof:14};
  ws.columns=cols.map(c=>({header:c[0]=='vp'?'vs 50/50 ('+per+')':c[1],key:c[0],width:W[c[0]]||11}));
  const GC={ytd:'DCE8FB',y1:'DCE8FB',y3:'DCE8FB',y5:'DCE8FB',y10:'DCE8FB',vp:'FBE7B5',eq:'D3F0DD',deq:'D3F0DD',fi:'D3F0DD',dfi:'D3F0DD',feat:'ECEEF2',expl:'ECEEF2',asof:'ECEEF2'};
- const num=['ytd','y1','y3','y5','y10','vp','eq','deq','fi','dfi'],sepK=['ytd','vp','eq','feat'];
+ const num=['ytd','y1','y3','y5','y10','vp','eq','deq','fi','dfi','ter','size'],sepK=['ytd','vp','eq','ter','feat'];
  const clean=v=>typeof v=='string'?v.replace(/<[^>]+>/g,''):v;
  (window._xl||[]).forEach(r=>{const o={};cols.forEach(c=>o[c[0]]=clean(r[c[0]])??null);o.name=clean(r.name)+(r.isin?' ('+r.isin+')':'');ws.addRow(o)});
  const hr=ws.getRow(1);hr.height=30;
