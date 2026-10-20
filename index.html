@@ -24,13 +24,14 @@ tbody tr:nth-child(even) td{box-shadow:inset 0 0 0 999px rgba(0,0,0,.045)}tbody 
  <input id="q" placeholder="Hae rahastoa…">
  <label><input type="checkbox" id="only"> Vain ylituottajat (jakso)</label>
  <label>Osakepaino ≥ <input id="minEq" type="number" style="width:60px" value="0"></label>
- <button id="csv">⬇ Excel (CSV)</button>
+ <button id="csv">⬇ Excel (.xlsx)</button>
  <a class="btn" href="https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/history.json" target="_blank">⬇ JSON</a>
 </div>
 <div class="cards" id="cards"></div>
 <table><thead><tr class="grp"><th colspan="2"></th><th colspan="5" class="g-ret sep num">Tuotot %</th><th class="g-vs sep num">Ero</th><th colspan="4" class="g-al sep num">Allokaatio</th><th colspan="3" class="g-tx sep">Kuvaus</th></tr><tr id="hd"></tr></thead><tbody id="tb"></tbody></table>
 <p><small>Lähteet: Morningstar (tuotot, kuun lopun trailing returns, EUR) sekä rahastoyhtiöiden kuukausiraportit ja puolivuotiskatsaukset (allokaatiot). Allokaatioiden päivämäärä voi poiketa tuottopäivästä. 50/50 = SPYI + VAGF kuukausittain tasapainotettuna (Xetra-kurssit); VAGF:n historia ennen 8/2019 korvattu AGGH- ja XBAE-proxyillä, joten 10v luku on suuntaa antava. 3v/5v/10v vuosituottoja (p.a.).</small></p>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 <script>
 const f=(v,d=2)=>v==null||isNaN(v)?'–':(+v).toFixed(d).replace('.',',');
 const cls=v=>v==null?'muted':v>=0?'pos':'neg';
@@ -72,10 +73,30 @@ function render(){
  const sp=b.SPYI_px||b.SPYI,va=b.VAGF_px||b.VAGF;
  const bm=[{cls:'bm',name:'SPDR MSCI ACWI IMI UCITS ETF (SPYI)',isin:'IE00B3YLTY66',r:sp,eq:100,fi:0,feat:'Globaalit osakkeet, ~9 000 yhtiötä (large/mid/small)'},
   {cls:'bm',name:'Vanguard Global Aggregate Bond UCITS ETF EUR Hedged (VAGF)',isin:'IE00BG47KH54',r:va,eq:0,fi:100,feat:'Globaalit valtion- ja IG-yrityslainat, euroon suojattu'+(va&&va.y10!=null?'; 10v sisältää proxy-jakson':'')}];
+ window._xl=rows.concat(bm.map(x=>({n:'',bm:1,name:x.name,isin:x.isin,ytd:x.r?.ytd,y1:x.r?.y1,y3:x.r?.y3,y5:x.r?.y5,y10:x.r?.y10,vp:x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null,eq:x.eq,fi:x.fi,feat:x.feat,asof:s.return_date})));
  const td=(k,v)=>`<td class="${G[k]||''}">${v}</td>`;
  const bmh=bm.map(x=>`<tr class="${x.cls}"><td>–</td><td>${x.name}<br><small>${x.isin}</small></td>${['ytd','y1','y3','y5','y10'].map(k=>td(k,f(x.r?.[k]))).join('')}${td('vp',x.cls.includes('mix')?'0,00':sg(x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null))}${td('eq',x.eq)}${td('deq','–')}${td('fi',x.fi)}${td('dfi','–')}${td('feat',x.feat)}${td('expl','')}${td('asof',s.return_date)}</tr>`).join('');
  document.getElementById('tb').innerHTML=rows.map(r=>`<tr class="${r.mix?'mixr':''}"><td>${r.n}</td><td>${r.name}<br><small>${r.isin}</small></td>${td('ytd',f(r.ytd))}${td('y1',f(r.y1))}${td('y3',f(r.y3))}${td('y5',f(r.y5))}${td('y10',f(r.y10))}<td class="${G.vp} ${cls(r.vp)}">${sg(r.vp)}</td>${td('eq',f(r.eq,1))}<td class="${G.deq} ${cls(r.deq)}">${sg(r.deq)}</td>${td('fi',f(r.fi,1))}<td class="${G.dfi} ${cls(r.dfi)}">${sg(r.dfi)}</td>${td('feat',r.feat||'')}${td('expl',r.expl||'')}${td('asof',r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||''))}</tr>`).join('')+bmh;
 }
-document.getElementById('csv').onclick=()=>{const k=cols.map(c=>c[0]),q=v=>v==null?'':typeof v=='number'?String(v).replace('.',','):'"'+String(v).replace(/"/g,'""')+'"';const s='\ufeff'+cols.map(c=>c[1]).join(';')+'\n'+(window._rows||[]).map(r=>k.map(x=>q(r[x])).join(';')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/csv'}));a.download='tasapainovertailu_'+H.snapshots[+document.getElementById('month').value].period+'.csv';a.click()};
+document.getElementById('csv').onclick=async()=>{
+ const per=document.getElementById('per').value,P=H.snapshots[+document.getElementById('month').value].period;
+ const wb=new ExcelJS.Workbook(),ws=wb.addWorksheet('Vertailu '+P,{views:[{state:'frozen',xSplit:2,ySplit:1}]});
+ const W={n:5,name:44,feat:45,expl:60,asof:14};
+ ws.columns=cols.map(c=>({header:c[0]=='vp'?'vs 50/50 ('+per+')':c[1],key:c[0],width:W[c[0]]||11}));
+ const GC={ytd:'DCE8FB',y1:'DCE8FB',y3:'DCE8FB',y5:'DCE8FB',y10:'DCE8FB',vp:'FBE7B5',eq:'D3F0DD',deq:'D3F0DD',fi:'D3F0DD',dfi:'D3F0DD',feat:'ECEEF2',expl:'ECEEF2',asof:'ECEEF2'};
+ const num=['ytd','y1','y3','y5','y10','vp','eq','deq','fi','dfi'],sepK=['ytd','vp','eq','feat'];
+ const clean=v=>typeof v=='string'?v.replace(/<[^>]+>/g,''):v;
+ (window._xl||[]).forEach(r=>{const o={};cols.forEach(c=>o[c[0]]=clean(r[c[0]])??null);o.name=clean(r.name)+(r.isin?' ('+r.isin+')':'');ws.addRow(o)});
+ const hr=ws.getRow(1);hr.height=30;
+ cols.forEach((c,ci)=>{const cell=hr.getCell(ci+1);cell.font={bold:true,color:{argb:'FF1D2330'}};cell.alignment={horizontal:'center',vertical:'middle',wrapText:true};cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FF'+(GC[c[0]]||'EEF0F4')}};cell.border={bottom:{style:'medium',color:{argb:'FF1D2330'}}}});
+ ws.eachRow((row,ri)=>{if(ri==1)return;const r=window._xl[ri-2];row.eachCell({includeEmpty:true},(cell,ci)=>{const k=cols[ci-1][0];
+  if(num.includes(k)){cell.numFmt=(k=='vp'||k=='deq'||k=='dfi')?'+0.00;-0.00;0.00':'0.00';cell.alignment={horizontal:'center',vertical:'top'};
+   if((k=='vp'||k=='deq'||k=='dfi')&&typeof cell.value=='number')cell.font={color:{argb:cell.value>0?'FF1A7F37':cell.value<0?'FFC62828':'FF000000'}}}
+  else cell.alignment={vertical:'top',wrapText:k!='name'||true};
+  cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:r.mix?'FFE3E8F4':r.bm?'FFEEF1F6':(ri%2?'FFF3F4F6':'FFFFFFFF')}};
+  if(r.mix)cell.font={...(cell.font||{}),bold:true};if(r.bm)cell.font={...(cell.font||{}),italic:true};
+  cell.border={left:sepK.includes(k)?{style:'medium',color:{argb:'FFC5CAD3'}}:undefined,top:r.mix?{style:'medium',color:{argb:'FF34405A'}}:undefined,bottom:r.mix?{style:'medium',color:{argb:'FF34405A'}}:{style:'hair',color:{argb:'FFDDDDDD'}}}})});
+ ws.autoFilter={from:{row:1,column:1},to:{row:1,column:cols.length}};
+ const buf=await wb.xlsx.writeBuffer();const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));a.download='tasapainovertailu_'+P+'.xlsx';a.click()};
 load().catch(e=>document.getElementById('tb').innerHTML='<tr><td>history.json ei latautunut: '+e+'</td></tr>');
 </script></body></html>
