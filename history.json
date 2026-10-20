@@ -221,6 +221,530 @@
  ],
  "snapshots": [
   {
+   "period": "2026-08",
+   "return_date": null,
+   "backfill": true,
+   "note": "Edellinen saatavilla oleva allokaatiotieto ennen 30.9.2026 tilannetta; vain allokaatio, ei tuottoja",
+   "benchmark": {
+    "SPYI": {
+     "isin": "IE00B3YLTY66",
+     "ytd": null,
+     "y1": null
+    },
+    "VAGF": {
+     "isin": "IE00BG47KH54",
+     "ytd": null,
+     "y1": null
+    },
+    "etf_50_50": {
+     "ytd": null,
+     "y1": null,
+     "method": "0.5*SPYI+0.5*VAGF"
+    },
+    "etf_50_50_rebalanced": {
+     "ytd": null,
+     "y1": null,
+     "y3": null,
+     "y5": null,
+     "y10": null,
+     "method": "50/50 kk-rebalansointi, Xetra-päätöskurssit (Yahoo)",
+     "proxy_notes": "Korko-osuus: VAGF.DE (IE00BG47KH54) 8/2019 alkaen. 12/2017-7/2019 proxy iShares Core Global Aggregate Bond EUR Hedged Acc (AGGH, IE00BDBRDM35, Xetra EUNA.DE); 10/2016-11/2017 proxy Xtrackers ESG Global Aggregate Bond EUR Hedged (XBAE.DE, ESG-versio). y5 puhdasta VAGF-dataa; y10 sisältää ~33 kk proxya. vagf-kentän y10 on siis ketjutettu sarja."
+    },
+    "SPYI_px": {
+     "ytd": null,
+     "y1": null,
+     "y3": null,
+     "y5": null,
+     "y10": null
+    },
+    "VAGF_px": {
+     "ytd": null,
+     "y1": null,
+     "y3": null,
+     "y5": null,
+     "y10": null
+    },
+    "SPYI_meta": {
+     "ongoing_cost_pct": null,
+     "fund_size": null,
+     "fund_size_currency": "USD",
+     "fund_size_as_of": "2026-10-16",
+     "category": "Global Large-Cap Blend Equity",
+     "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+     "source_url": "https://global.morningstar.com/en-nd/investments/etfs/0P0000TKVG/quote",
+     "note": "Rahastokoko koko ETF, USD (perusvaluutta). Kategoria Global Large-Cap Blend Equity."
+    },
+    "VAGF_meta": {
+     "ongoing_cost_pct": null,
+     "fund_size": null,
+     "fund_size_currency": "EUR",
+     "fund_size_as_of": "2026-10-16",
+     "category": "Global Diversified Bond - EUR Hedged",
+     "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
+     "source_url": "https://global.morningstar.com/en-nd/investments/etfs/0P0001HSBO/quote",
+     "note": "Kategoria Global Diversified Bond - EUR Hedged."
+    }
+   },
+   "funds": [
+    {
+     "n": 1,
+     "isin": "FI0008805635",
+     "allocation_primary": {
+      "equity_pct": 54.9,
+      "fixed_income_pct": 45.1,
+      "other_pct": 0.0,
+      "as_of": "2025-12-31",
+      "source": "vuosikertomus",
+      "source_url": "https://www.seligson.fi/resource/vsk/LT_vuosikertomus.pdf",
+      "note": "LähiTapiola-rahastot vuosikertomus 31.12.2025, Maailma 50: Osakkeet 54,9 %, Korot 45,1 %."
+     },
+     "allocation": {
+      "equity_pct": 54.9,
+      "fixed_income_pct": 45.1,
+      "as_of": "2025-12-31",
+      "source_url": "https://www.seligson.fi/resource/vsk/LT_vuosikertomus.pdf"
+     }
+    },
+    {
+     "n": 2,
+     "isin": "FI4000171178",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "Morningstar 8/2026 sisältää futuurialtistuksen; aiempaa vertailukelpoista (futuurit sis.) lukua ei löytynyt. Nordean 30.6. luku (50,79 %) ilman futuureja ei ole vertailukelpoinen."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 3,
+     "isin": "FI0008806807",
+     "allocation_primary": {
+      "equity_pct": 50.04,
+      "fixed_income_pct": 41.6,
+      "other_pct": 8.36,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 50.04,
+      "fixed_income_pct": 41.6,
+      "as_of": "2026-06-30",
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf"
+     }
+    },
+    {
+     "n": 4,
+     "isin": "FI0008806419",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "Sama salkku kuin n:o 2; ks. sama huomio."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 5,
+     "isin": "FI0008811484",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "UB:n kuukausiraportin URL palauttaa aina uusimman (30.9.); aiempaa raporttia ei löytynyt."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 6,
+     "isin": "FI4000153358",
+     "allocation_primary": {
+      "equity_pct": 53.0,
+      "fixed_income_pct": 41.9,
+      "other_pct": 5.1,
+      "as_of": "2026-06-30",
+      "source": "kuukausikatsaus/fact sheet (A2-sarja, sama salkku)",
+      "source_url": "https://www.obsido.fi/wp-content/uploads/2026/07/Fact-Sheet-OR50-A2-30.6.2026.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 53.0,
+      "fixed_income_pct": 41.9,
+      "as_of": "2026-06-30",
+      "source_url": "https://www.obsido.fi/wp-content/uploads/2026/07/Fact-Sheet-OR50-A2-30.6.2026.pdf"
+     }
+    },
+    {
+     "n": 7,
+     "isin": "FI4000120670",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "Morningstar 30.9.; aiempaa salkkupäivää tai OP:n aiempaa kuukausikatsausta ei löytynyt."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 8,
+     "isin": "FI4000020664",
+     "allocation_primary": {
+      "equity_pct": 64.4,
+      "fixed_income_pct": 33.9,
+      "other_pct": 1.7,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://assets.ctfassets.net/3gh7jphuo2o7/2QcrINv5Qrd3bR4VpmI9vV/b73cdde8e919fed4b6b2e087eef860a3/Rahastoraportti_puolivuosikatsaus_2026_Final.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 64.4,
+      "fixed_income_pct": 33.9,
+      "as_of": "2026-06-30",
+      "source_url": "https://assets.ctfassets.net/3gh7jphuo2o7/2QcrINv5Qrd3bR4VpmI9vV/b73cdde8e919fed4b6b2e087eef860a3/Rahastoraportti_puolivuosikatsaus_2026_Final.pdf"
+     }
+    },
+    {
+     "n": 9,
+     "isin": "FI0008807078",
+     "allocation_primary": {
+      "equity_pct": 52.12,
+      "fixed_income_pct": 42.84,
+      "other_pct": 5.04,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 52.12,
+      "fixed_income_pct": 42.84,
+      "as_of": "2026-06-30",
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf"
+     }
+    },
+    {
+     "n": 10,
+     "isin": "FI0008809934",
+     "allocation_primary": {
+      "equity_pct": 45.09,
+      "fixed_income_pct": 40.99,
+      "other_pct": 13.92,
+      "as_of": "2026-06-30",
+      "source": "halvårsrapport (puolivuosikatsaus)",
+      "source_url": "https://assets.alandsbanken.com/pdf/fund/Halvarsrapport-2026.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 45.09,
+      "fixed_income_pct": 40.99,
+      "as_of": "2026-06-30",
+      "source_url": "https://assets.alandsbanken.com/pdf/fund/Halvarsrapport-2026.pdf"
+     }
+    },
+    {
+     "n": 11,
+     "isin": "FI0008801253",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "Evlin 31.12.2025 vuosikatsausta tai aiempaa kuukausikatsausta ei saatu haettua."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 12,
+     "isin": "FI0008805338",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "Morningstar ja Danske 31.8.; aiempaa tietoa ei löytynyt."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 13,
+     "isin": "FI0008803879",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "S-Pankin vuosikertomus 2025 löytyi, mutta osake/korkojakaumaa ei ilmoiteta valmiina (vaatisi omistusten luokittelua); jätetty tyhjäksi."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 14,
+     "isin": "FI4000036108",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "OP:n kuukausikatsauksen URL palauttaa aina uusimman (30.9.); aiempaa ei löytynyt."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 15,
+     "isin": "FI0008809975",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "SP-Rahastoyhtiön 31.12.2025 vuosikatsausta ei saatu haettua."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    },
+    {
+     "n": 16,
+     "isin": "FI0008810254",
+     "allocation_primary": {
+      "equity_pct": 60.05,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": "2025-12-31",
+      "source": "puolivuosikatsaus (johdettu)",
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "note": "Nordean puolivuosikatsaus: \"osakepainoa laskettiin 7,3 %-yks. katsauskauden aikana\" -> 31.12.2025 osake = 30.6. paino + 7.3. Korkopainoa ei ilmoitettu."
+     },
+     "allocation": {
+      "equity_pct": 60.05,
+      "fixed_income_pct": null,
+      "as_of": "2025-12-31",
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf"
+     }
+    },
+    {
+     "n": 17,
+     "isin": "FI4000400098",
+     "allocation_primary": {
+      "equity_pct": 55.75,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": "2025-12-31",
+      "source": "puolivuosikatsaus (johdettu)",
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "note": "Nordean puolivuosikatsaus: \"osakepainoa laskettiin 5,15 %-yks. katsauskauden aikana\" -> 31.12.2025 osake = 30.6. paino + 5.15. Korkopainoa ei ilmoitettu."
+     },
+     "allocation": {
+      "equity_pct": 55.75,
+      "fixed_income_pct": null,
+      "as_of": "2025-12-31",
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf"
+     }
+    },
+    {
+     "n": 18,
+     "isin": "FI4000548953",
+     "allocation_primary": {
+      "equity_pct": 54.93,
+      "fixed_income_pct": 44.26,
+      "other_pct": 0.81,
+      "as_of": "2026-06-30",
+      "source": "puolivuotiskatsaus",
+      "source_url": "https://finlandiagroup.fi/hubfs/PDF-files/Finlandia%20Rahastot%20Puolivuotiskatsaus%202026-H1.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 54.93,
+      "fixed_income_pct": 44.26,
+      "as_of": "2026-06-30",
+      "source_url": "https://finlandiagroup.fi/hubfs/PDF-files/Finlandia%20Rahastot%20Puolivuotiskatsaus%202026-H1.pdf"
+     }
+    },
+    {
+     "n": 19,
+     "isin": "FI4000452586",
+     "allocation_primary": {
+      "equity_pct": 53.9,
+      "fixed_income_pct": 32.5,
+      "other_pct": 13.6,
+      "as_of": "2026-06-30",
+      "source": "fact sheet / kuukausikatsaus",
+      "source_url": "https://www.obsido.fi/wp-content/uploads/2026/07/Fact-Sheet-OGB-A2-30.6.2026.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 53.9,
+      "fixed_income_pct": 32.5,
+      "as_of": "2026-06-30",
+      "source_url": "https://www.obsido.fi/wp-content/uploads/2026/07/Fact-Sheet-OGB-A2-30.6.2026.pdf"
+     }
+    },
+    {
+     "n": 20,
+     "isin": "SE0017832439",
+     "allocation_primary": {
+      "equity_pct": 60.26,
+      "fixed_income_pct": 36.82,
+      "other_pct": 2.92,
+      "as_of": "2026-06-30",
+      "source": "halvårsredogörelse (puolivuosikatsaus)",
+      "source_url": "https://nordnetab.com/wp-content/uploads/2026/08/Halvarsredogorelse-Nordnet-One-Tasapaino-EUR-2026.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 60.26,
+      "fixed_income_pct": 36.82,
+      "as_of": "2026-06-30",
+      "source_url": "https://nordnetab.com/wp-content/uploads/2026/08/Halvarsredogorelse-Nordnet-One-Tasapaino-EUR-2026.pdf"
+     }
+    },
+    {
+     "n": 21,
+     "isin": "FI4000278676",
+     "allocation_primary": {
+      "equity_pct": 51.54,
+      "fixed_income_pct": 35.35,
+      "other_pct": 13.11,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 51.54,
+      "fixed_income_pct": 35.35,
+      "as_of": "2026-06-30",
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf"
+     }
+    },
+    {
+     "n": 22,
+     "isin": "FI4000297817",
+     "allocation_primary": {
+      "equity_pct": 51.9,
+      "fixed_income_pct": 46.8,
+      "other_pct": 1.3,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://misc.aktia.fi/data-service/documents/investment/Rahastot/Puolivuosikatsaukset/Aktia/Puolivuosikatsaus_Aktia_VH50.pdf",
+      "note": "Aktian puolivuosikatsaus 30.6.2026; elo/heinäkuun kuukausiraportteja ei arkistoitu (URL aina uusin)."
+     },
+     "allocation": {
+      "equity_pct": 51.9,
+      "fixed_income_pct": 46.8,
+      "as_of": "2026-06-30",
+      "source_url": "https://misc.aktia.fi/data-service/documents/investment/Rahastot/Puolivuosikatsaukset/Aktia/Puolivuosikatsaus_Aktia_VH50.pdf"
+     }
+    },
+    {
+     "n": 23,
+     "isin": "FI4000517719",
+     "allocation_primary": {
+      "equity_pct": 51.54,
+      "fixed_income_pct": 35.35,
+      "other_pct": 13.11,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
+      "note": "Morningstarin aiempaa salkkupäivää ei saatavilla; edellinen tieto rahastoyhtiön 30.6.2026 raportista (eri lähde kuin 9/2026 Morningstar-luku, muutos osin menetelmäeroa)."
+     },
+     "allocation": {
+      "equity_pct": 51.54,
+      "fixed_income_pct": 35.35,
+      "as_of": "2026-06-30",
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf"
+     }
+    },
+    {
+     "n": 24,
+     "isin": "FI4000410949",
+     "allocation_primary": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "other_pct": null,
+      "as_of": null,
+      "source": null,
+      "source_url": null,
+      "note": "OP:n kuukausikatsauksen URL palauttaa aina uusimman (30.9.); aiempaa ei löytynyt."
+     },
+     "allocation": {
+      "equity_pct": null,
+      "fixed_income_pct": null,
+      "as_of": null,
+      "source_url": null
+     }
+    }
+   ]
+  },
+  {
    "period": "2026-09",
    "return_date": "2026-09-30",
    "benchmark": {
@@ -353,6 +877,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 7.6,
+      "fixed_income_pp": -7.6,
+      "prev_as_of": "2025-12-31",
+      "cur_as_of": "2026-06-30"
      }
     },
     {
@@ -421,7 +951,8 @@
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/quote",
       "note": "Rahastokoko koko rahasto (kaikki osuussarjat), sama kuin P-sarjalla."
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 3,
@@ -489,6 +1020,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 3.54,
+      "fixed_income_pp": 8.33,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-08-31"
      }
     },
     {
@@ -557,7 +1094,8 @@
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/quote",
       "note": "Rahastokoko koko rahasto (kaikki osuussarjat)."
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 5,
@@ -625,7 +1163,8 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/quote"
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 6,
@@ -693,6 +1232,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 5.5,
+      "fixed_income_pp": -9.7,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -763,7 +1308,8 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/quote"
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 8,
@@ -832,6 +1378,12 @@
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/quote",
       "note": "Morningstarin rahastokoko vanha (31.5.2025); yhtiön sivun mukaan hallinnoitavat varat 276 115 986 € 31.8.2026 ja juoksevat kulut 1,87 % (Morningstar 2,21 %)."
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": -2.56,
+      "fixed_income_pp": -3.28,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -901,6 +1453,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 1.4,
+      "fixed_income_pp": -5.01,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -968,6 +1526,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": -1.07,
+      "fixed_income_pp": -5.03,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -1035,7 +1599,8 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/quote"
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 12,
@@ -1104,7 +1669,8 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/quote"
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 13,
@@ -1172,7 +1738,8 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/quote"
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 14,
@@ -1237,7 +1804,8 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/quote"
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 15,
@@ -1302,7 +1870,8 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/quote"
-     }
+     },
+     "allocation_change_vs_prev": null
     },
     {
      "n": 16,
@@ -1369,6 +1938,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001FCD/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": -7.3,
+      "fixed_income_pp": null,
+      "prev_as_of": "2025-12-31",
+      "cur_as_of": "2026-06-30"
      }
     },
     {
@@ -1435,6 +2010,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": -5.15,
+      "fixed_income_pp": null,
+      "prev_as_of": "2025-12-31",
+      "cur_as_of": "2026-06-30"
      }
     },
     {
@@ -1501,6 +2082,12 @@
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/quote",
       "note": "Morningstarissa ei juoksevia kuluja; rahastokoko 31.12.2025 (vanha)."
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 5.47,
+      "fixed_income_pp": -5.76,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -1569,6 +2156,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 3.21,
+      "fixed_income_pp": -4.15,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -1640,6 +2233,12 @@
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/quote",
       "note": "Morningstarin FundTNAV 1348 EUR on ilmeisen virheellinen – jätetty tyhjäksi."
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 0.01,
+      "fixed_income_pp": 5.29,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -1713,6 +2312,12 @@
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/quote",
       "note": "Rahastokoko koko rahasto (B+D)."
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 3.08,
+      "fixed_income_pp": -6.91,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -1783,6 +2388,12 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/quote"
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 0.3,
+      "fixed_income_pp": -0.7,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -1856,6 +2467,12 @@
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/quote",
       "note": "Rahastokoko koko rahasto (B+D)."
+     },
+     "allocation_change_vs_prev": {
+      "equity_pp": 3.08,
+      "fixed_income_pp": -6.91,
+      "prev_as_of": "2026-06-30",
+      "cur_as_of": "2026-09-30"
      }
     },
     {
@@ -1921,7 +2538,8 @@
       "category": "EUR Moderate Allocation - Global",
       "source": "Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/quote"
-     }
+     },
+     "allocation_change_vs_prev": null
     }
    ],
    "allocation_change_vs_prev": null
