@@ -924,7 +924,7 @@
       "ytd": 1.97,
       "y1": 4.19
      },
-     "features": "Osake 50,8, korko 40,8 (pitkät 34,8, lyhyet 6,0), vaihtoehtoiset 6,1, johdannaiset (futuurialtistus ei osakepainossa)",
+     "features": "Osake 57,9, korko 36,5 (Morningstar, sis. futuurialtistuksen; Nordean oma luku ilman futuureja: osake 50,8, korko 40,8), vaihtoehtoiset 6,1",
      "explanation": "Futuureilla lisätty osakealtistus ja euro- ja yrityskorot globaalia aggregaattia parempia; I-sarjan matalat kulut",
      "vs_50_50_rebalanced": {
       "ytd": 2.51,
@@ -934,13 +934,19 @@
       "y10": 0.65
      },
      "allocation_primary": {
-      "equity_pct": 61.27,
-      "fixed_income_pct": 38.64,
-      "other_pct": 5.96,
+      "equity_pct": 57.9,
+      "fixed_income_pct": 36.5,
+      "other_pct": 5.6,
       "as_of": "2026-08-31",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio",
-      "note": "Morningstar net %; sisältää futuurien osakealtistuksen (Nordean luku 50,8 % ilman futuureja)."
+      "note": "normalisoitu Morningstarin nettoluvuista (nettosumma 105.87 %; johdannaiset/lyhyet positiot)",
+      "raw_net": {
+       "equity": 61.27,
+       "fixed_income": 38.64,
+       "cash": 5.76,
+       "other": 0.2
+      }
      },
      "costs": {
       "ongoing_cost_pct": 0.76,
@@ -994,7 +1000,7 @@
       "ytd": 0.86,
       "y1": 2.57
      },
-     "features": "Osake 50,0, korko 41,6 (pitkät 35,9, lyhyet 5,7), vaihtoehtoiset 5,7",
+     "features": "Osake 49,6, korko 46,2 (pitkät 35,9, lyhyet 5,7), vaihtoehtoiset 5,7 – erittely rahastoyhtiön raportista",
      "explanation": "Korkopuoli (euro, yrityslainat, covered) voitti VAGF:n; korkeammat kulut kuin Premiumissa",
      "vs_50_50_rebalanced": {
       "ytd": 1.4,
@@ -1004,13 +1010,19 @@
       "y10": -0.04
      },
      "allocation_primary": {
-      "equity_pct": 53.58,
-      "fixed_income_pct": 49.93,
-      "other_pct": 4.46,
+      "equity_pct": 49.6,
+      "fixed_income_pct": 46.2,
+      "other_pct": 4.2,
       "as_of": "2026-08-31",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio",
-      "note": "Morningstar net %"
+      "note": "normalisoitu Morningstarin nettoluvuista (nettosumma 107.97 %; johdannaiset/lyhyet positiot)",
+      "raw_net": {
+       "equity": 53.58,
+       "fixed_income": 49.93,
+       "cash": 4.29,
+       "other": 0.17
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.58,
@@ -1022,8 +1034,8 @@
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/quote"
      },
      "allocation_change_vs_prev": {
-      "equity_pp": 3.54,
-      "fixed_income_pp": 8.33,
+      "equity_pp": -0.44,
+      "fixed_income_pp": 4.6,
       "prev_as_of": "2026-06-30",
       "cur_as_of": "2026-08-31"
      }
@@ -1077,13 +1089,19 @@
       "y10": -0.03
      },
      "allocation_primary": {
-      "equity_pct": 61.27,
-      "fixed_income_pct": 38.64,
-      "other_pct": 5.96,
+      "equity_pct": 57.9,
+      "fixed_income_pct": 36.5,
+      "other_pct": 5.6,
       "as_of": "2026-08-31",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio",
-      "note": "Morningstar net %; sisältää futuurien osakealtistuksen (Nordean luku 50,8 % ilman futuureja)."
+      "note": "normalisoitu Morningstarin nettoluvuista (nettosumma 105.87 %; johdannaiset/lyhyet positiot)",
+      "raw_net": {
+       "equity": 61.27,
+       "fixed_income": 38.64,
+       "cash": 5.76,
+       "other": 0.2
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.41,
@@ -1206,7 +1224,7 @@
       "ytd": 0.62,
       "y1": 0.73
      },
-     "features": "Osake 53, korko 41,9 (IG 15,5, lyhyet 8,8, HY 7,9, EM 5,0, valtio 4,7)",
+     "features": "Osake 58,5, korko 32,2 (IG 15,5, lyhyet 8,8, HY 7,9, EM 5,0, valtio 4,7) – erittely rahastoyhtiön raportista",
      "explanation": "HY- ja EM-korot sekä lyhyt duraatio kompensoivat; lähellä vertailusalkkua",
      "vs_50_50_rebalanced": {
       "ytd": 1.16,
@@ -1237,7 +1255,8 @@
       "equity_pp": 5.5,
       "fixed_income_pp": -9.7,
       "prev_as_of": "2026-06-30",
-      "cur_as_of": "2026-09-30"
+      "cur_as_of": "2026-09-30",
+      "note": "osin lähde-ero"
      }
     },
     {
@@ -1282,7 +1301,7 @@
       "ytd": 1.8,
       "y1": 2.42
      },
-     "features": "Osake 57,4, korko 31,0, vaihtoehtoiset 8,0",
+     "features": "Osake 65,5, korko 9,9, vaihtoehtoiset 8,0 – vaihtoehtoisten osuus rahastoyhtiön raportista",
      "explanation": "Osakeylipaino; matalampi korkopaino",
      "vs_50_50_rebalanced": {
       "ytd": 2.34,
@@ -1292,13 +1311,19 @@
       "y10": -0.41
      },
      "allocation_primary": {
-      "equity_pct": 66.56,
-      "fixed_income_pct": 10.08,
-      "other_pct": 24.95,
+      "equity_pct": 65.5,
+      "fixed_income_pct": 9.9,
+      "other_pct": 24.6,
       "as_of": "2026-09-30",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio",
-      "note": "Morningstar net %"
+      "note": "normalisoitu Morningstarin nettoluvuista (nettosumma 101.59 %; johdannaiset/lyhyet positiot)",
+      "raw_net": {
+       "equity": 66.56,
+       "fixed_income": 10.08,
+       "cash": 6.52,
+       "other": 18.43
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.22,
@@ -1351,7 +1376,7 @@
       "ytd": -0.31,
       "y1": 0.03
      },
-     "features": "Osake 64,4, korko 33,9 (valtio 13,0, IG 10,0, rahamarkkina 8,2)",
+     "features": "Osake 61,8, korko 30,6 (valtio 13,0, IG 10,0, rahamarkkina 8,2) – erittely rahastoyhtiön raportista",
      "explanation": "Osakeylipainosta huolimatta osakevalinta heikko (alituotto indeksiin H1)",
      "vs_50_50_rebalanced": {
       "ytd": 0.23,
@@ -1363,7 +1388,7 @@
      "allocation_primary": {
       "equity_pct": 61.84,
       "fixed_income_pct": 30.62,
-      "other_pct": 7.49,
+      "other_pct": 7.54,
       "as_of": "2026-09-30",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio",
@@ -1427,7 +1452,7 @@
       "ytd": -0.55,
       "y1": -0.34
      },
-     "features": "Osake 52,1, korko 42,8 (HY 11,8, EM 10,9, IG), kassa 5,0",
+     "features": "Osake 53,5, korko 37,8 (HY 11,8, EM 10,9, IG), kassa 5,0 – erittely rahastoyhtiön raportista",
      "explanation": "HY- ja EM-painotus tuki, mutta osakepuoli jäi globaalista indeksistä ja kulut korkeat",
      "vs_50_50_rebalanced": {
       "ytd": -0.01,
@@ -1439,7 +1464,7 @@
      "allocation_primary": {
       "equity_pct": 53.52,
       "fixed_income_pct": 37.83,
-      "other_pct": 8.63,
+      "other_pct": 8.65,
       "as_of": "2026-09-30",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
@@ -1458,7 +1483,8 @@
       "equity_pp": 1.4,
       "fixed_income_pp": -5.01,
       "prev_as_of": "2026-06-30",
-      "cur_as_of": "2026-09-30"
+      "cur_as_of": "2026-09-30",
+      "note": "osin lähde-ero"
      }
     },
     {
@@ -1500,7 +1526,7 @@
       "ytd": -2.14,
       "y1": -0.16
      },
-     "features": "Osake 45,1, korko 41,0 (yrityslainat, FRN 12,3), kassa 13,9",
+     "features": "Osake 44,0, korko 36,0 (yrityslainat, FRN 12,3), kassa 19,9 – erittely rahastoyhtiön raportista",
      "explanation": "Alipaino osakkeissa ja suuri kassa; lyhyt duraatio auttoi 1v jaksolla",
      "vs_50_50_rebalanced": {
       "ytd": -1.6,
@@ -1512,7 +1538,7 @@
      "allocation_primary": {
       "equity_pct": 44.02,
       "fixed_income_pct": 35.96,
-      "other_pct": 19.87,
+      "other_pct": 20.02,
       "as_of": "2026-09-30",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio",
@@ -1531,7 +1557,8 @@
       "equity_pp": -1.07,
       "fixed_income_pp": -5.03,
       "prev_as_of": "2026-06-30",
-      "cur_as_of": "2026-09-30"
+      "cur_as_of": "2026-09-30",
+      "note": "osin lähde-ero"
      }
     },
     {
@@ -1643,7 +1670,7 @@
       "ytd": -1.32,
       "y1": -0.3
      },
-     "features": "Osake 50,4, korko 33,9, monivarainrahastot 13,8",
+     "features": "Osake 50,3, korko 43,3, monivarainrahastot 13,8 – monivarainrahastojen osuus rahastoyhtiön raportista",
      "explanation": "Monivarainrahastot ja taktinen allokaatio jäivät jälkeen; kulut 1,4 %",
      "vs_50_50_rebalanced": {
       "ytd": -0.78,
@@ -1655,7 +1682,7 @@
      "allocation_primary": {
       "equity_pct": 50.31,
       "fixed_income_pct": 43.3,
-      "other_pct": 6.26,
+      "other_pct": 6.39,
       "as_of": "2026-08-31",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
@@ -2055,7 +2082,7 @@
       "ytd": -0.05,
       "y1": -0.63
      },
-     "features": "Osake 54,9, korko 44,3 (yhdistelmäkorkorahastot)",
+     "features": "Osake 60,4, korko 38,5 (yhdistelmäkorkorahastot)",
      "explanation": "Lähellä vertailusalkkua; pieni koko ja kulut",
      "vs_50_50_rebalanced": {
       "ytd": 0.49,
@@ -2067,7 +2094,7 @@
      "allocation_primary": {
       "equity_pct": 60.4,
       "fixed_income_pct": 38.5,
-      "other_pct": 1.12,
+      "other_pct": 1.1,
       "as_of": "2026-09-30",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio",
@@ -2087,7 +2114,8 @@
       "equity_pp": 5.47,
       "fixed_income_pp": -5.76,
       "prev_as_of": "2026-06-30",
-      "cur_as_of": "2026-09-30"
+      "cur_as_of": "2026-09-30",
+      "note": "osin lähde-ero"
      }
     },
     {
@@ -2130,7 +2158,7 @@
       "ytd": 1.55,
       "y1": 0.9
      },
-     "features": "Osake 53,9, korko 32,5 (IG 11,9, HY 7,9), muut 13,6 (tonttirahasto 6,3)",
+     "features": "Osake 57,1, korko 28,4 (IG 11,9, HY 7,9), muut 14,5 (tonttirahasto 6,3) – erittely rahastoyhtiön raportista",
      "explanation": "Matala korkopaino ja vaihtoehtoiset, HY tuki",
      "vs_50_50_rebalanced": {
       "ytd": 2.09,
@@ -2206,7 +2234,7 @@
       "ytd": 2.45,
       "y1": 3.87
      },
-     "features": "Osake 60,3, korko 36,8 (IG, valtio, vihreät)",
+     "features": "Osake 58,9, korko 41,1 (IG, valtio, vihreät)",
      "explanation": "Osakeylipaino ja matalat kulut (0,46 %)",
      "vs_50_50_rebalanced": {
       "ytd": 2.99,
@@ -2216,13 +2244,19 @@
       "y10": null
      },
      "allocation_primary": {
-      "equity_pct": 60.27,
-      "fixed_income_pct": 42.11,
-      "other_pct": -2.41,
+      "equity_pct": 58.9,
+      "fixed_income_pct": 41.1,
+      "other_pct": 0.0,
       "as_of": "2026-09-30",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
-      "note": "Morningstar net %"
+      "note": "normalisoitu Morningstarin nettoluvuista (nettosumma 99.97 %, käteinen -2,4 %; johdannaiset/lyhyet positiot)",
+      "raw_net": {
+       "equity": 60.27,
+       "fixed_income": 42.11,
+       "cash": -2.42,
+       "other": 0.01
+      }
      },
      "costs": {
       "ongoing_cost_pct": 0.49,
@@ -2235,8 +2269,8 @@
       "note": "Morningstarin FundTNAV 1348 EUR on ilmeisen virheellinen – jätetty tyhjäksi."
      },
      "allocation_change_vs_prev": {
-      "equity_pp": 0.01,
-      "fixed_income_pp": 5.29,
+      "equity_pp": -1.36,
+      "fixed_income_pp": 4.28,
       "prev_as_of": "2026-06-30",
       "cur_as_of": "2026-09-30"
      }
@@ -2285,7 +2319,7 @@
       "ytd": -0.1,
       "y1": 0.75
      },
-     "features": "Osake 51,5, korko 35,4, kassa 7,0, kiinteistö 2,1, katastrofilainat",
+     "features": "Osake 54,6, korko 28,4, kassa 10,3, kiinteistö 2,1, katastrofilainat – kiinteistöosuus rahastoyhtiön raportista",
      "explanation": "Matala korkopaino; katastrofilainat ja HY tukivat",
      "vs_50_50_rebalanced": {
       "ytd": 0.44,
@@ -2297,7 +2331,7 @@
      "allocation_primary": {
       "equity_pct": 54.62,
       "fixed_income_pct": 28.44,
-      "other_pct": 16.39,
+      "other_pct": 16.94,
       "as_of": "2026-09-30",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio",
@@ -2317,7 +2351,8 @@
       "equity_pp": 3.08,
       "fixed_income_pp": -6.91,
       "prev_as_of": "2026-06-30",
-      "cur_as_of": "2026-09-30"
+      "cur_as_of": "2026-09-30",
+      "note": "osin lähde-ero"
      }
     },
     {
@@ -2362,7 +2397,7 @@
       "ytd": 1.54,
       "y1": 2.91
      },
-     "features": "Osake 51,9, korko 46,8 (IG 13,7, lyhyet 5,2, HY)",
+     "features": "Osake 52,2, korko 46,1 (IG 13,7, lyhyet 5,2, HY)",
      "explanation": "Yrityslaina- ja HY-painotus voittivat globaalin aggregaatin",
      "vs_50_50_rebalanced": {
       "ytd": 2.08,
@@ -2452,7 +2487,7 @@
      "allocation_primary": {
       "equity_pct": 54.62,
       "fixed_income_pct": 28.44,
-      "other_pct": 16.39,
+      "other_pct": 16.94,
       "as_of": "2026-09-30",
       "source": "morningstar",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio",
@@ -2472,7 +2507,8 @@
       "equity_pp": 3.08,
       "fixed_income_pp": -6.91,
       "prev_as_of": "2026-06-30",
-      "cur_as_of": "2026-09-30"
+      "cur_as_of": "2026-09-30",
+      "note": "osin lähde-ero"
      }
     },
     {
