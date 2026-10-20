@@ -243,6 +243,15 @@
       "y3": 1.93,
       "y5": 0.96,
       "y10": 0.59
+     },
+     "allocation_primary": {
+      "equity_pct": 62.5,
+      "fixed_income_pct": 37.5,
+      "other_pct": 0.0,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.seligson.fi/resource/vsk/LT_puolivuosikertomus.pdf",
+      "note": "MS ei läpivalaise (98 % muut); kuukausikatsausta osakepainolla ei löytynyt (LähiTapiola julkaisee vain viikkokatsauksen tuotoista), käytetään puolivuosikatsausta."
      }
     },
     {
@@ -292,6 +301,15 @@
       "y3": 1.03,
       "y5": 0.48,
       "y10": 0.65
+     },
+     "allocation_primary": {
+      "equity_pct": 61.27,
+      "fixed_income_pct": 38.64,
+      "other_pct": 5.96,
+      "as_of": "2026-08-31",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio",
+      "note": "Morningstar net %; sisältää futuurien osakealtistuksen (Nordean luku 50,8 % ilman futuureja)."
      }
     },
     {
@@ -342,6 +360,15 @@
       "y3": -0.13,
       "y5": -0.19,
       "y10": -0.04
+     },
+     "allocation_primary": {
+      "equity_pct": 53.58,
+      "fixed_income_pct": 49.93,
+      "other_pct": 4.46,
+      "as_of": "2026-08-31",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -391,6 +418,15 @@
       "y3": 0.34,
       "y5": -0.19,
       "y10": -0.03
+     },
+     "allocation_primary": {
+      "equity_pct": 61.27,
+      "fixed_income_pct": 38.64,
+      "other_pct": 5.96,
+      "as_of": "2026-08-31",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio",
+      "note": "Morningstar net %; sisältää futuurien osakealtistuksen (Nordean luku 50,8 % ilman futuureja)."
      }
     },
     {
@@ -441,6 +477,15 @@
       "y3": -1.92,
       "y5": -0.08,
       "y10": -0.3
+     },
+     "allocation_primary": {
+      "equity_pct": 33.48,
+      "fixed_income_pct": 32.66,
+      "other_pct": 33.86,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus",
+      "source_url": "https://unitedbankers.fi/api/products/file?id=fb876b21-fb92-ec11-bad2-005056ab348e&lang=fi",
+      "note": "MS osake 19,3 % vs. UB:n kuukausiraportti 33,5 % samalta päivältä (reaaliomaisuus luokittuu MS:ssä eri tavoin); käytetään yhtiön lukua."
      }
     },
     {
@@ -491,6 +536,15 @@
       "y3": -0.21,
       "y5": 0.61,
       "y10": -0.28
+     },
+     "allocation_primary": {
+      "equity_pct": 58.5,
+      "fixed_income_pct": 32.2,
+      "other_pct": 9.3,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -543,6 +597,15 @@
       "y3": 0.26,
       "y5": 0.27,
       "y10": -0.41
+     },
+     "allocation_primary": {
+      "equity_pct": 66.56,
+      "fixed_income_pct": 10.08,
+      "other_pct": 24.95,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -593,6 +656,15 @@
       "y3": -0.37,
       "y5": -2.39,
       "y10": -0.38
+     },
+     "allocation_primary": {
+      "equity_pct": 61.84,
+      "fixed_income_pct": 30.62,
+      "other_pct": 7.49,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -644,6 +716,15 @@
       "y3": -1.2,
       "y5": -1.24,
       "y10": -0.58
+     },
+     "allocation_primary": {
+      "equity_pct": 53.52,
+      "fixed_income_pct": 37.83,
+      "other_pct": 8.63,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -693,6 +774,15 @@
       "y3": -0.69,
       "y5": -0.24,
       "y10": -0.91
+     },
+     "allocation_primary": {
+      "equity_pct": 44.02,
+      "fixed_income_pct": 35.96,
+      "other_pct": 19.87,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -742,6 +832,15 @@
       "y3": -0.73,
       "y5": -0.45,
       "y10": -0.78
+     },
+     "allocation_primary": {
+      "equity_pct": 53.62,
+      "fixed_income_pct": 44.98,
+      "other_pct": 1.4,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.evli.com/artikkelit/evlin-sijoitusrahastojen-puolivuosikatsaus-30-6-2026 (PDF: https://dl.avl-investmentfonds.de/fds/FI0008811997-HALBJAHRBER-EN-20260630.pdf)",
+      "note": "MS osake 78,5 % vs. Evlin katsaus 53,6 %; MS-luku epäuskottava, käytetään yhtiön lukua."
      }
     },
     {
@@ -793,6 +892,15 @@
       "y3": -0.71,
       "y5": -0.92,
       "y10": -0.79
+     },
+     "allocation_primary": {
+      "equity_pct": 50.31,
+      "fixed_income_pct": 43.3,
+      "other_pct": 6.26,
+      "as_of": "2026-08-31",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -843,6 +951,15 @@
       "y3": -0.76,
       "y5": -0.16,
       "y10": -1.0
+     },
+     "allocation_primary": {
+      "equity_pct": 49.74,
+      "fixed_income_pct": 48.95,
+      "other_pct": 1.31,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://dokumentit.s-pankki.fi/tiedostot/rahastojen-puolivuosikatsaus-2026",
+      "note": "MS osake 92,4 % on virheellinen. S-Pankin kuukausikatsaus 30.9.2026 ei ilmoita osakepainoa (vain korkorahastot 30 %, ETF:t 36 %, osakerahastot 32 %, käteinen 1 %), mutta kertoo osakepainoa lisätyn elo- ja syyskuussa yli normaalin. Käytetään puolivuosikatsauksen 49,7 %; todellinen 30.9. paino todennäköisesti hieman yli 50 %. Kuukausikatsaus: https://lrs.altusinvestor.com/render/document/released-snapshot/category/18/reference/PIANO/lang/fi"
      }
     },
     {
@@ -890,6 +1007,15 @@
       "y3": -0.19,
       "y5": -0.37,
       "y10": -1.24
+     },
+     "allocation_primary": {
+      "equity_pct": 57.6,
+      "fixed_income_pct": 41.1,
+      "other_pct": 1.3,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus",
+      "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_51c4501e8d35e3f67fcadbd14004453c3bd74df274324ff94d23a5d9b6ad68de748b3017a3875269d460d8a9087930fe876a49a4_iv_eb4c2e35a6d66b820eedc8eb",
+      "note": "MS osake 69,9 % vs. OP:n kuukausikatsaus 57,6 % samalta päivältä; käytetään kuukausikatsausta."
      }
     },
     {
@@ -937,6 +1063,15 @@
       "y3": -2.11,
       "y5": -2.08,
       "y10": -1.53
+     },
+     "allocation_primary": {
+      "equity_pct": 51.83,
+      "fixed_income_pct": 42.6,
+      "other_pct": 5.57,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf",
+      "note": "MS ei läpivalaise (99,8 % muut); POPin kuukausikatsaus (Morningstar-snapshot) ei ilmoita osakepainoa, vain 'maltillinen osakeylipaino'. Käytetään puolivuosikatsausta."
      }
     },
     {
@@ -986,6 +1121,15 @@
       "y3": -5.04,
       "y5": -2.9,
       "y10": -2.61
+     },
+     "allocation_primary": {
+      "equity_pct": 52.75,
+      "fixed_income_pct": 37.3,
+      "other_pct": 9.95,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "note": "MS osake 18,4 % ei huomioi johdannaisia; Nordean luku 52,75 % johdannaiset huomioiden."
      }
     },
     {
@@ -1034,6 +1178,15 @@
       "y3": -0.01,
       "y5": -0.54,
       "y10": null
+     },
+     "allocation_primary": {
+      "equity_pct": 50.6,
+      "fixed_income_pct": 41.52,
+      "other_pct": 7.88,
+      "as_of": "2026-06-30",
+      "source": "puolivuosikatsaus",
+      "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
+      "note": "MS osake 75,9 % (8/2026) epäuskottava: Nordean omistukset 31.8.2026 viittaavat n. 50/50-jakoon ja Citywire/MS 31.5.2026 näytti 50,4 %. Kuukausikatsausta ei löytynyt; käytetään puolivuosikatsauksen 50,6 %."
      }
     },
     {
@@ -1081,6 +1234,15 @@
       "y3": -1.05,
       "y5": null,
       "y10": null
+     },
+     "allocation_primary": {
+      "equity_pct": 60.4,
+      "fixed_income_pct": 38.5,
+      "other_pct": 1.12,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -1131,6 +1293,15 @@
       "y3": -0.23,
       "y5": 1.32,
       "y10": null
+     },
+     "allocation_primary": {
+      "equity_pct": 57.11,
+      "fixed_income_pct": 28.35,
+      "other_pct": 14.54,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -1183,6 +1354,15 @@
       "y3": 2.53,
       "y5": null,
       "y10": null
+     },
+     "allocation_primary": {
+      "equity_pct": 60.27,
+      "fixed_income_pct": 42.11,
+      "other_pct": -2.41,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -1237,6 +1417,15 @@
       "y3": -1.86,
       "y5": -1.58,
       "y10": null
+     },
+     "allocation_primary": {
+      "equity_pct": 54.62,
+      "fixed_income_pct": 28.44,
+      "other_pct": 16.39,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -1289,6 +1478,15 @@
       "y3": 0.42,
       "y5": -0.05,
       "y10": null
+     },
+     "allocation_primary": {
+      "equity_pct": 52.2,
+      "fixed_income_pct": 46.1,
+      "other_pct": 1.7,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus",
+      "source_url": "https://misc.aktia.fi/data-service/documents/investment/Rahastot/Kuukausiraportit/Kuukausiraportti_Aktia_VH50.pdf",
+      "note": "Morningstar ei läpivalaise (98 % muut); Aktian kuukausiraportti 30.9.2026: osakkeet 52,2 %, korot 46,1 %, käteinen 1,7 %."
      }
     },
     {
@@ -1343,6 +1541,15 @@
       "y3": -1.21,
       "y5": null,
       "y10": null
+     },
+     "allocation_primary": {
+      "equity_pct": 54.62,
+      "fixed_income_pct": 28.44,
+      "other_pct": 16.39,
+      "as_of": "2026-09-30",
+      "source": "morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio",
+      "note": "Morningstar net %"
      }
     },
     {
@@ -1390,6 +1597,15 @@
       "y3": -0.48,
       "y5": 0.61,
       "y10": null
+     },
+     "allocation_primary": {
+      "equity_pct": 70.7,
+      "fixed_income_pct": 27.6,
+      "other_pct": 1.7,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus",
+      "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_6f1c0dade50c2595e123d3e1063208ed92d55b99fb39978cbbfc05ed619edf4ec73c7090a4a1d53a60291468474e0bb9521358e9_iv_6051d90d181211913b349be7",
+      "note": "MS osake 4,2 % / korko 91 % virheellinen; OP:n kuukausikatsaus 30.9.2026: osakkeet 70,7 %."
      }
     }
    ],

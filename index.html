@@ -9,7 +9,11 @@ select,input,button,a.btn{padding:6px 10px;border:1px solid #ccd;border-radius:6
 .cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}.card{background:#fff;border-radius:8px;padding:12px 16px;box-shadow:0 1px 3px #0001;min-width:160px}
 .card b{display:block;font-size:20px}
 table{border-collapse:collapse;width:100%;background:#fff;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}
-th{background:#eef0f4;cursor:pointer;position:sticky;top:0}td.num{text-align:right;white-space:nowrap}
+th{background:#eef0f4;cursor:pointer;position:sticky;top:0}td.num,th.num{text-align:center;white-space:nowrap}
+.g-ret{background:#f1f6ff}.g-vs{background:#fff6e0;font-weight:600}.g-al{background:#eefaf2}.g-tx{background:#fafafa}
+th.g-ret{background:#dce8fb}th.g-vs{background:#fbe7b5}th.g-al{background:#d3f0dd}th.g-tx{background:#eceef2}
+.sep{border-left:2px solid #c5cad3}tr.bm td{background:#1d2330!important;color:#fff;font-weight:600}tr.bm td small{color:#cfd5e0}tr.bm.mix td{background:#34405a!important}
+tr:hover td{filter:brightness(.97)}.grp th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;position:static}
 .pos{color:#0a7a32}.neg{color:#b42318}.muted{color:#778}small{color:#778}
 </style></head><body>
 <header><h1>Tasapainorahastot vs. 50/50 ETF-salkku (SPYI + VAGF)</h1><small id="upd"></small></header>
@@ -24,7 +28,7 @@ th{background:#eef0f4;cursor:pointer;position:sticky;top:0}td.num{text-align:rig
  <a class="btn" href="https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/history.json" target="_blank">⬇ JSON</a>
 </div>
 <div class="cards" id="cards"></div>
-<table><thead><tr id="hd"></tr></thead><tbody id="tb"></tbody></table>
+<table><thead><tr class="grp"><th colspan="2"></th><th colspan="5" class="g-ret sep num">Tuotot %</th><th class="g-vs sep num">Ero</th><th colspan="4" class="g-al sep num">Allokaatio</th><th colspan="3" class="g-tx sep">Kuvaus</th></tr><tr id="hd"></tr></thead><tbody id="tb"></tbody></table>
 <p><small>Lähteet: Morningstar (tuotot, kuun lopun trailing returns, EUR) sekä rahastoyhtiöiden kuukausiraportit ja puolivuotiskatsaukset (allokaatiot). Allokaatioiden päivämäärä voi poiketa tuottopäivästä. 50/50 = SPYI + VAGF kuukausittain tasapainotettuna (Xetra-kurssit); VAGF:n historia ennen 8/2019 korvattu AGGH- ja XBAE-proxyillä, joten 10v luku on suuntaa antava. 3v/5v/10v vuosituottoja (p.a.).</small></p>
 </main>
 <script>
@@ -32,6 +36,7 @@ const f=(v,d=2)=>v==null||isNaN(v)?'–':(+v).toFixed(d).replace('.',',');
 const cls=v=>v==null?'muted':v>=0?'pos':'neg';
 const sg=v=>v==null?'–':(v>0?'+':'')+f(v);
 let H,sortK='vy1',sortD=-1;
+const G={ytd:'g-ret sep num',y1:'g-ret num',y3:'g-ret num',y5:'g-ret num',y10:'g-ret num',vp:'g-vs sep num',eq:'g-al sep num',deq:'g-al num',fi:'g-al num',dfi:'g-al num',feat:'g-tx sep',expl:'g-tx',asof:'g-tx'};
 const cols=[['n','#'],['name','Rahasto'],['ytd','YTD %'],['y1','1v %'],['y3','3v p.a.'],['y5','5v p.a.'],['y10','10v p.a.'],['vp','vs 50/50 (jakso)'],['eq','Osake %'],['deq','Osake Δ'],['fi','Korko %'],['dfi','Korko Δ'],['feat','Erityispiirteet'],['expl','Selitys tuottoerolle'],['asof','Allok. pvm']];
 async function load(){
  const RAW='https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/history.json';
@@ -39,7 +44,7 @@ async function load(){
  const m=document.getElementById('month');
  m.innerHTML=H.snapshots.map((s,i)=>`<option value="${i}">${s.period}</option>`).reverse().join('');
  document.getElementById('upd').textContent='Viimeisin data: '+H.snapshots.at(-1).return_date;
- document.getElementById('hd').innerHTML=cols.map(c=>`<th data-k="${c[0]}">${c[1]}</th>`).join('');
+ document.getElementById('hd').innerHTML=cols.map(c=>`<th class="${G[c[0]]||''}" data-k="${c[0]}">${c[1]}</th>`).join('');
  document.querySelectorAll('th').forEach(t=>t.onclick=()=>{sortD=sortK==t.dataset.k?-sortD:-1;sortK=t.dataset.k;render()});
  ['month','per','q','only','minEq'].forEach(id=>document.getElementById(id).oninput=render);render();
 }
@@ -47,24 +52,28 @@ function render(){
  const i=+document.getElementById('month').value,s=H.snapshots[i],p=H.snapshots[i-1];
  const nm=Object.fromEntries(H.funds.map(x=>[x.n,x.name]));
  const pv=p?Object.fromEntries(p.funds.map(x=>[x.n,x])):{};
- let rows=s.funds.map(x=>{const a=x.allocation||{},pa=(pv[x.n]||{}).allocation||{};
+ let rows=s.funds.map(x=>{const a=x.allocation_primary||x.allocation||{},pa=(pv[x.n]||{}).allocation_primary||(pv[x.n]||{}).allocation||{};
   return{n:x.n,name:nm[x.n]||x.isin,isin:x.isin,ytd:x.returns?.ytd,y1:x.returns?.y1,y3:x.returns?.y3,y5:x.returns?.y5,y10:x.returns?.y10,vp:(x.vs_50_50_rebalanced||x.vs_50_50||{})[document.getElementById('per').value],vy1:(x.vs_50_50_rebalanced||x.vs_50_50||{}).y1,eq:a.equity_pct,fi:a.fixed_income_pct,
   deq:p&&a.equity_pct!=null&&pa.equity_pct!=null?a.equity_pct-pa.equity_pct:null,dfi:p&&a.fixed_income_pct!=null&&pa.fixed_income_pct!=null?a.fixed_income_pct-pa.fixed_income_pct:null,
   feat:x.features,expl:x.explanation,asof:a.as_of,src:a.source_url}});
  const avg=k=>{const v=rows.map(r=>r[k]).filter(v=>v!=null);return v.length?v.reduce((a,b)=>a+b,0)/v.length:null};
  const b=s.benchmark,per=document.getElementById('per').value,bb=b.etf_50_50_rebalanced||b.etf_50_50;
  document.getElementById('cards').innerHTML=[
-  ['50/50 kk-rebal. ('+per+')',f(bb[per])+' %'],['50/50 YTD',f(bb.ytd)+' %'],['SPYI 1v',f(b.SPYI.y1)+' %'],['VAGF 1v',f(b.VAGF.y1)+' %'],
+  ['50/50 kk-rebal. ('+per+')',f(bb[per])+' %'],['50/50 YTD',f(bb.ytd)+' %'],['SPDR ACWI IMI ('+per+')',f((b.SPYI_px||b.SPYI)[per])+' %'],['Vanguard Global Agg EurH ('+per+')',f((b.VAGF_px||b.VAGF)[per])+' %'],
   ['Rahastot ka. ('+per+')',f(avg(per))+' %'],['Ylituottajia ('+per+')',rows.filter(r=>r.vp>0).length+' / '+rows.filter(r=>r.vp!=null).length],
   ['Ka. osakepainon muutos',p?sg(avg('deq'))+' %-yks.':'ei edellistä kk'],['Ka. korkopainon muutos',p?sg(avg('dfi'))+' %-yks.':'ei edellistä kk']
  ].map(c=>`<div class="card"><small>${c[0]}</small><b>${c[1]}</b></div>`).join('');
  const q=document.getElementById('q').value.toLowerCase(),only=document.getElementById('only').checked,mn=+document.getElementById('minEq').value||0;
  rows=rows.filter(r=>(r.name+r.isin).toLowerCase().includes(q)&&(!only||r.vp>0)&&((r.eq??0)>=mn));
  rows.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (x==null)-(y==null)||(x>y?1:x<y?-1:0)*sortD});
- window._rows=rows;document.getElementById('tb').innerHTML=rows.map(r=>`<tr><td>${r.n}</td><td>${r.name}<br><small>${r.isin}</small></td>
- <td class="num">${f(r.ytd)}</td><td class="num">${f(r.y1)}</td><td class="num">${f(r.y3)}</td><td class="num">${f(r.y5)}</td><td class="num">${f(r.y10)}</td><td class="num ${cls(r.vp)}">${sg(r.vp)}</td>
- <td class="num">${f(r.eq,1)}</td><td class="num ${cls(r.deq)}">${sg(r.deq)}</td><td class="num">${f(r.fi,1)}</td><td class="num ${cls(r.dfi)}">${sg(r.dfi)}</td>
- <td>${r.feat||''}</td><td>${r.expl||''}</td><td>${r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||'')}</td></tr>`).join('');
+ window._rows=rows;
+ const sp=b.SPYI_px||b.SPYI,va=b.VAGF_px||b.VAGF;
+ const bm=[{cls:'bm',name:'SPDR MSCI ACWI IMI UCITS ETF (SPYI)',isin:'IE00B3YLTY66',r:sp,eq:100,fi:0,feat:'Globaalit osakkeet, ~9 000 yhtiötä (large/mid/small)'},
+  {cls:'bm',name:'Vanguard Global Aggregate Bond UCITS ETF EUR Hedged (VAGF)',isin:'IE00BG47KH54',r:va,eq:0,fi:100,feat:'Globaalit valtion- ja IG-yrityslainat, euroon suojattu'+(va&&va.y10!=null?'; 10v sisältää proxy-jakson':'')},
+  {cls:'bm mix',name:'Yhdistelmäsalkku 50/50 (kk-rebalansointi)',isin:'50 % SPYI + 50 % VAGF',r:bb,eq:50,fi:50,feat:'Vertailukohta: '+(bb.method||'0,5×SPYI + 0,5×VAGF')}];
+ const td=(k,v)=>`<td class="${G[k]||''}">${v}</td>`;
+ const bmh=bm.map(x=>`<tr class="${x.cls}"><td>–</td><td>${x.name}<br><small>${x.isin}</small></td>${['ytd','y1','y3','y5','y10'].map(k=>td(k,f(x.r?.[k]))).join('')}${td('vp',x.cls.includes('mix')?'0,00':sg(x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null))}${td('eq',x.eq)}${td('deq','–')}${td('fi',x.fi)}${td('dfi','–')}${td('feat',x.feat)}${td('expl','')}${td('asof',s.return_date)}</tr>`).join('');
+ document.getElementById('tb').innerHTML=bmh+rows.map(r=>`<tr><td>${r.n}</td><td>${r.name}<br><small>${r.isin}</small></td>${td('ytd',f(r.ytd))}${td('y1',f(r.y1))}${td('y3',f(r.y3))}${td('y5',f(r.y5))}${td('y10',f(r.y10))}<td class="${G.vp} ${cls(r.vp)}">${sg(r.vp)}</td>${td('eq',f(r.eq,1))}<td class="${G.deq} ${cls(r.deq)}">${sg(r.deq)}</td>${td('fi',f(r.fi,1))}<td class="${G.dfi} ${cls(r.dfi)}">${sg(r.dfi)}</td>${td('feat',r.feat||'')}${td('expl',r.expl||'')}${td('asof',r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||''))}</tr>`).join('');
 }
 document.getElementById('csv').onclick=()=>{const k=cols.map(c=>c[0]),q=v=>v==null?'':typeof v=='number'?String(v).replace('.',','):'"'+String(v).replace(/"/g,'""')+'"';const s='\ufeff'+cols.map(c=>c[1]).join(';')+'\n'+(window._rows||[]).map(r=>k.map(x=>q(r[x])).join(';')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/csv'}));a.download='tasapainovertailu_'+H.snapshots[+document.getElementById('month').value].period+'.csv';a.click()};
 load().catch(e=>document.getElementById('tb').innerHTML='<tr><td>history.json ei latautunut: '+e+'</td></tr>');
