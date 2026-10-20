@@ -12,7 +12,7 @@ table{border-collapse:collapse;width:100%;background:#fff;font-size:13px}th,td{p
 th{background:#eef0f4;cursor:pointer;position:sticky;top:0}td.num,th.num{text-align:center;white-space:nowrap}
 .g-ret{background:#f1f6ff}.g-vs{background:#fff6e0;font-weight:600}.g-al{background:#eefaf2}.g-tx{background:#fafafa}
 th.g-ret{background:#dce8fb}th.g-vs{background:#fbe7b5}th.g-al{background:#d3f0dd}th.g-tx{background:#eceef2}
-.sep{border-left:2px solid #c5cad3}tr.bm td{background:#1d2330!important;color:#fff;font-weight:600}tr.bm td small{color:#cfd5e0}tr.bm.mix td{background:#34405a!important}
+.sep{border-left:2px solid #c5cad3}tr.bm td{background:#1d2330!important;color:#fff;font-weight:600}tr.bm td small{color:#cfd5e0}tr.bm.mix td{background:#34405a!important;font-weight:800;font-size:1.05em}
 tr:hover td{filter:brightness(.97)}.grp th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;position:static}
 .pos{color:#0a7a32}.neg{color:#b42318}.muted{color:#778}small{color:#778}
 </style></head><body>
@@ -70,7 +70,7 @@ function render(){
  const sp=b.SPYI_px||b.SPYI,va=b.VAGF_px||b.VAGF;
  const bm=[{cls:'bm',name:'SPDR MSCI ACWI IMI UCITS ETF (SPYI)',isin:'IE00B3YLTY66',r:sp,eq:100,fi:0,feat:'Globaalit osakkeet, ~9 000 yhtiötä (large/mid/small)'},
   {cls:'bm',name:'Vanguard Global Aggregate Bond UCITS ETF EUR Hedged (VAGF)',isin:'IE00BG47KH54',r:va,eq:0,fi:100,feat:'Globaalit valtion- ja IG-yrityslainat, euroon suojattu'+(va&&va.y10!=null?'; 10v sisältää proxy-jakson':'')},
-  {cls:'bm mix',name:'Yhdistelmäsalkku 50/50 (kk-rebalansointi)',isin:'50 % SPYI + 50 % VAGF',r:bb,eq:50,fi:50,feat:'Vertailukohta: '+(bb.method||'0,5×SPYI + 0,5×VAGF')}];
+  {cls:'bm mix',name:'<b>ETF-salkku (50/50)</b>',isin:'SPYI/VAGF, 50/50, kk-rebalansointi',r:bb,eq:50,fi:50,feat:'Vertailukohta: '+(bb.method||'0,5×SPYI + 0,5×VAGF')}];
  const td=(k,v)=>`<td class="${G[k]||''}">${v}</td>`;
  const bmh=bm.map(x=>`<tr class="${x.cls}"><td>–</td><td>${x.name}<br><small>${x.isin}</small></td>${['ytd','y1','y3','y5','y10'].map(k=>td(k,f(x.r?.[k]))).join('')}${td('vp',x.cls.includes('mix')?'0,00':sg(x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null))}${td('eq',x.eq)}${td('deq','–')}${td('fi',x.fi)}${td('dfi','–')}${td('feat',x.feat)}${td('expl','')}${td('asof',s.return_date)}</tr>`).join('');
  document.getElementById('tb').innerHTML=bmh+rows.map(r=>`<tr><td>${r.n}</td><td>${r.name}<br><small>${r.isin}</small></td>${td('ytd',f(r.ytd))}${td('y1',f(r.y1))}${td('y3',f(r.y3))}${td('y5',f(r.y5))}${td('y10',f(r.y10))}<td class="${G.vp} ${cls(r.vp)}">${sg(r.vp)}</td>${td('eq',f(r.eq,1))}<td class="${G.deq} ${cls(r.deq)}">${sg(r.deq)}</td>${td('fi',f(r.fi,1))}<td class="${G.dfi} ${cls(r.dfi)}">${sg(r.dfi)}</td>${td('feat',r.feat||'')}${td('expl',r.expl||'')}${td('asof',r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||''))}</tr>`).join('');
