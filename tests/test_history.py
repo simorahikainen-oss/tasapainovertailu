@@ -45,11 +45,30 @@ for s in h['snapshots']:
     chk(cc.get('eligible', 0) <= len(s['funds']), f'{P} coverage')
 f16 = fm[16]
 chk(f16.get('status') == 'merged' and f16.get('stitch_successor_returns') is False, 'sulautumismerkintä')
+# arkistot: muuttumattomia ja taaksepäin yhteensopivia (vanhoilta puuttuvat uudet kentät, esim. checked_at, ovat sallittuja)
+import subprocess, hashlib
+for s in h['snapshots']:
+    for i, r in enumerate(s.get('revisions') or [], 1):
+        chk(r['revision'] == i, f"{s['period']} revisiot eivät ole juoksevia")
+        a = json.load(open(ROOT / r['path']))
+        chk(a.get('period') == s['period'] and a.get('revision') == i, f"{r['path']} period/revision")
+        for f in a.get('funds', []):  # legacy-sallivat tarkistukset
+            chk('n' in f and 'isin' in f, f"{r['path']} rahastorivi")
+try:
+    mod = subprocess.run(['git', 'log', '--diff-filter=MD', '--name-only', '--format=', '--', 'revisions/'], cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
+    st = subprocess.run(['git', 'status', '--porcelain', '--', 'revisions/'], cwd=ROOT, capture_output=True, text=True).stdout.split('\n')
+    chk(not mod, f'arkistoa muokattu/poistettu git-historiassa: {sorted(set(mod))}')
+    chk(not [l for l in st if l[:2].strip() in ('M', 'D')], 'arkistotiedostoa muokattu työhakemistossa')
+except Exception as e:
+    print('git-tarkistus ohitettu:', e)
+_e2 = None
 # yksikkötestit arviolle
 import stage_snapshot as SS
 chk(SS.bucket_mid('<0 Yrs') is None and SS.bucket_mid('>20') is None and SS.bucket_mid('Unk') is None and SS.bucket_mid('Not Applicable') is None, 'avoimet/tuntemattomat välit')
 chk(SS.bucket_mid('10-20 %') == 15 and SS.bucket_mid('0-1') == 0.5, 'keskipiste')
 _e = SS.illustrative_estimate({'columns': ['<0', '0-1', '1-3', '>20', 'Unk'], 'values': [[1.0, 10.0, None, 2.0, 3.0], [None, 0.0, 30.0, None, None]]})
+_e2 = SS.illustrative_estimate({'columns': ['0-1', '1-3', 'Unk'], 'rows': ['A', 'B'], 'values': [[10.0, 20.0, 5.0], [None, 50.0, None]], 'subtotal_weight': [35.0, 51.0]})
+chk(_e2['published_total_weight_pct'] == 86.0 and _e2['coverage_pct'] == round(80 / 86 * 100, 1) and _e2['unclassified_vs_100_pct'] == 14.0 and len(_e2['row_sum_anomalies']) == 1, 'julkaistu kokonaispaino ja anomaliat')
 chk(_e['value'] == round((10 * 0.5 + 30 * 2) / 40, 2) and _e['open_weight_pct'] == 3.0 and _e['unknown_weight_pct'] == 3.0 and _e['covered_weight_pct'] == 40.0, 'arvion laskenta')
 for s in h['snapshots']:
     for f in s['funds']:

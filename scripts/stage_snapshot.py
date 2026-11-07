@@ -194,9 +194,23 @@ def illustrative_estimate(t):
             if w: used.append({'column': col, 'midpoint': mid, 'weight_pct': round(w, 2)})
         elif col.strip().startswith(('<', '>')): opn += w
         else: unk += w
-    return {'value': round(acc / cov, 2) if cov else None, 'covered_weight_pct': round(cov, 2), 'open_weight_pct': round(opn, 2),
-            'unknown_weight_pct': round(unk, 2), 'total_weight_pct': round(tot, 2),
-            'coverage_pct': round(cov / tot * 100, 1) if tot else 0.0, 'buckets_used': used}
+    sub = t.get('subtotal_weight')
+    pub = round(sum(x for x in sub if x is not None), 2) if sub else None
+    den = pub if pub else tot
+    anomalies = []
+    if sub:
+        for i, r in enumerate(t['values']):
+            rs = sum(v for v in r if v is not None)
+            if sub[i] is not None and abs(rs - sub[i]) > 0.05:
+                anomalies.append({'row': t['rows'][i], 'cells_sum': round(rs, 2), 'subtotal': sub[i]})
+    out = {'value': round(acc / cov, 2) if cov else None, 'covered_weight_pct': round(cov, 2), 'open_weight_pct': round(opn, 2),
+           'unknown_weight_pct': round(unk, 2), 'total_weight_pct': round(tot, 2), 'published_total_weight_pct': pub,
+           'coverage_pct': round(cov / den * 100, 1) if den else 0.0, 'coverage_basis': 'suljetut / julkaistu Subtotal-summa' if pub else 'suljetut / solujen summa',
+           'buckets_used': used, 'row_sum_anomalies': anomalies}
+    if pub is not None and abs(pub - 100) > 0.5:
+        out['unclassified_vs_100_pct'] = round(100 - pub, 2)
+        out['caveat'] = f'Taulukon painot summautuvat {pub} %:iin, eivät 100 %:iin; {round(100 - pub, 2)} %-yks. luokittelematta (pohja ei tiedossa).'
+    return out
 
 BM_KEYS = {'effective_duration_years': 'Effective Duration', 'yield_to_worst_pct': 'Yield to Worst'}
 
