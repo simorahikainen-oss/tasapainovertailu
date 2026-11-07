@@ -24,6 +24,12 @@ for s in h['snapshots']:
         a = f.get('allocation_primary') or {}
         chk(a.get('as_of') is None or a['as_of'] <= me, f'{P} n{f["n"]} sisältö kuun lopun jälkeen')
         if a.get('equity_pct') is not None: chk(0 <= a['equity_pct'] <= 100, f'{P} n{f["n"]} osake%')
+        bm = f.get('bond_metrics')
+        if bm:
+            chk(bm.get('method') == 'reported' and bm.get('scope') in ('fixed_income_sleeve', 'whole_fund') and bm.get('source_url') and 'components' not in bm, f'{P} n{f["n"]} bond_metrics provenance')
+            for k in ('effective_duration_years', 'yield_to_worst_pct'):
+                m = bm.get(k) or {}
+                chk(m.get('value') is None or (m.get('as_of') and m['as_of'] <= me), f'{P} n{f["n"]} {k} päivä')
         r = f.get('returns')
         if r and s.get('returns_status') == 'published': chk(r.get('as_of') == me, f'{P} n{f["n"]} tuotto ei kuun lopulta ({r.get("as_of")})')
         m = fm[f['n']]

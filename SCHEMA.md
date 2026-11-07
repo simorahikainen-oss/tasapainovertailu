@@ -49,3 +49,11 @@ Ei interpolointia.
 4. `python3 tests/test_history.py` ennen pushia.
 
 Tuottoina EI käytetä screenerin `ReturnM0`/`ReturnM12`-kenttiä: ne päivittyvät päivittäin eivätkä ole kuun lopun lukuja.
+
+## bond_metrics (rahasto snapshotissa, valinnainen)
+`{scope: "fixed_income_sleeve"|"whole_fund", method: "reported", source, source_url, note?,
+  effective_duration_years: {value|null, as_of|null, label: "Effective Duration"},
+  yield_to_worst_pct: {value|null, as_of|null, label: "Yield to Worst"}}`
+- Vain suoraan raportoidut luvut (Morningstarin taulukko / yhtiön raportti). Ei painotettuja laskelmia eikä arvioita.
+- Puuttuva = null (ei 0). YTM, current yield ja modified duration eivät kelpaa (label tarkistetaan). scope ilmoitetaan, ei oleteta.
+- Mittarikohtainen as_of. Syöte `stage_snapshot.py content` -tiedostossa `{"n":..,"bond_metrics":{...}}`, voi olla ilman allokaatiota.
