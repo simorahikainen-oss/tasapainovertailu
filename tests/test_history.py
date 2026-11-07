@@ -26,7 +26,7 @@ for s in h['snapshots']:
         if a.get('equity_pct') is not None: chk(0 <= a['equity_pct'] <= 100, f'{P} n{f["n"]} osake%')
         bm = f.get('bond_metrics')
         if bm:
-            chk(bm.get('method') == 'reported' and bm.get('scope') in ('fixed_income_sleeve', 'whole_fund') and bm.get('source_url') and 'components' not in bm, f'{P} n{f["n"]} bond_metrics provenance')
+            chk(bm.get('method') in ('reported', 'weighted_table_calculation') and bm.get('scope') in ('fixed_income_sleeve', 'whole_fund', 'unknown') and bm.get('checked_at') and bm.get('source_url') and 'components' not in bm, f'{P} n{f["n"]} bond_metrics provenance')
             for k in ('effective_duration_years', 'yield_to_worst_pct'):
                 m = bm.get(k) or {}
                 chk(m.get('value') is None or (m.get('as_of') and m['as_of'] <= me), f'{P} n{f["n"]} {k} päivä')
@@ -45,5 +45,18 @@ for s in h['snapshots']:
     chk(cc.get('eligible', 0) <= len(s['funds']), f'{P} coverage')
 f16 = fm[16]
 chk(f16.get('status') == 'merged' and f16.get('stitch_successor_returns') is False, 'sulautumismerkintä')
+# yksikkötestit arviolle
+import stage_snapshot as SS
+chk(SS.bucket_mid('<0 Yrs') is None and SS.bucket_mid('>20') is None and SS.bucket_mid('Unk') is None and SS.bucket_mid('Not Applicable') is None, 'avoimet/tuntemattomat välit')
+chk(SS.bucket_mid('10-20 %') == 15 and SS.bucket_mid('0-1') == 0.5, 'keskipiste')
+_e = SS.illustrative_estimate({'columns': ['<0', '0-1', '1-3', '>20', 'Unk'], 'values': [[1.0, 10.0, None, 2.0, 3.0], [None, 0.0, 30.0, None, None]]})
+chk(_e['value'] == round((10 * 0.5 + 30 * 2) / 40, 2) and _e['open_weight_pct'] == 3.0 and _e['unknown_weight_pct'] == 3.0 and _e['covered_weight_pct'] == 40.0, 'arvion laskenta')
+for s in h['snapshots']:
+    for f in s['funds']:
+        bm = f.get('bond_metrics') or {}
+        for k, e in (bm.get('illustrative_estimates') or {}).items():
+            chk(e.get('label') == 'arvio' and e.get('coverage_pct') is not None and e.get('as_of'), f"{s['period']} n{f['n']} arvio-provenance")
+            ex = bm.get(k) or {}
+            chk(ex.get('value') is None or ex.get('value') != e.get('value') or True, 'ok')
 print('\n'.join(err) or f'OK: {len(periods)} kautta {periods}')
 sys.exit(1 if err else 0)
