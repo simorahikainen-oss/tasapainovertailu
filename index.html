@@ -15,11 +15,14 @@ th.g-ret{background:#dce8fb}th.g-vs{background:#fbe7b5}th.g-al{background:#d3f0d
 .sep{border-left:2px solid #c5cad3}tr.bm td{background:#e9ecf2!important;color:#1d2330;font-style:italic;color:#fff;font-weight:600}tr.bm td small{color:#5a6475}tr.bm:first-child,tr.bm{}tr.bm.mix td{background:#34405a!important;font-weight:800;font-size:1.05em}
 tbody tr:nth-child(even) td{box-shadow:inset 0 0 0 999px rgba(0,0,0,.045)}tbody tr:nth-child(odd) td{background-color:#fff}tr.mixr td{background:#dbeafe!important;box-shadow:none!important;font-weight:800;border-top:2px solid #34405a;border-bottom:2px solid #34405a}tr:hover td{filter:brightness(.96)}.grp th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;position:static}
 .pos{color:#0a7a32}.neg{color:#b42318}.muted{color:#778}small{color:#778}
+.tag{font-size:10px;padding:1px 5px;border-radius:8px;background:#eef0f4;color:#556;margin-left:4px;white-space:nowrap}.tag.old{background:#fff1d6;color:#8a5a00}.tag.warn{background:#fde2e1;color:#9b1c1c}.tag.mrg{background:#e5e7eb;color:#374151}
+#eqchart{background:#fff;border-radius:8px;padding:12px 16px;box-shadow:0 1px 3px #0001;margin:16px 0}#eqchart svg{width:100%;max-width:900px;height:auto}
 .cat{font-size:13px;color:#4a5568;margin:2px 0 4px}.g-co{background:#f6f0fb}th.g-co{background:#e6d8f3}td a.nm{color:inherit;font-weight:600;text-decoration:none;border-bottom:1px dotted #8894a8}</style></head><body>
-<header><h1>Tasapainorahastot vs. 50/50 ETF-salkku (SPYI + VAGF)</h1><div class="cat">Morningstar Category: <b>EAA Fund EUR Moderate Allocation - Global</b></div><small id="upd"></small></header>
+<header><h1>Tasapainorahastot vs. 50/50 ETF-salkku (SPYI + VAGF)</h1><div class="cat">Morningstar Category: <b>EAA Fund EUR Moderate Allocation - Global</b></div><small id="upd"></small><br><small id="cov"></small></header>
 <main>
 <div class="bar">
  <label>Kuukausi <select id="month"></select></label>
+<label>Versio <select id="rev"></select></label>
  <label>Jakso <select id="per"><option value="y1">1v</option><option value="ytd">YTD</option><option value="y3">3v p.a.</option><option value="y5">5v p.a.</option><option value="y10">10v p.a.</option></select></label>
  <input id="q" placeholder="Hae rahastoa…">
  <label><input type="checkbox" id="only"> Vain ylituottajat (jakso)</label>
@@ -29,34 +32,43 @@ tbody tr:nth-child(even) td{box-shadow:inset 0 0 0 999px rgba(0,0,0,.045)}tbody 
 </div>
 <div class="cards" id="cards"></div>
 <table><thead><tr class="grp"><th colspan="2"></th><th colspan="5" class="g-ret sep num">Tuotot %</th><th class="g-vs sep num">Ero</th><th colspan="4" class="g-al sep num">Allokaatio</th><th colspan="2" class="g-co sep num">Kulut &amp; koko</th><th colspan="3" class="g-tx sep">Kuvaus</th></tr><tr id="hd"></tr></thead><tbody id="tb"></tbody></table>
-<p><small>Lähteet: Morningstar (tuotot, kuun lopun trailing returns, EUR) sekä rahastoyhtiöiden kuukausiraportit ja puolivuotiskatsaukset (allokaatiot). Allokaatioiden päivämäärä voi poiketa tuottopäivästä. 50/50 = SPYI + VAGF kuukausittain tasapainotettuna (Xetra-kurssit); VAGF:n historia ennen 8/2019 korvattu AGGH- ja XBAE-proxyillä, joten 10v luku on suuntaa antava. 3v/5v/10v vuosituottoja (p.a.).</small></p>
+<div id="eqchart"></div>
+<p><small>Lähteet: Morningstar (tuotot, kuun lopun trailing returns, EUR) sekä rahastoyhtiöiden kuukausiraportit ja puolivuotiskatsaukset (allokaatiot). Allokaatioiden päivämäärä voi poiketa tuottopäivästä: tuotot julkaistaan heti kuun päätyttyä, sisältötiedot (allokaatio) päivitetään kun ne ilmestyvät, ja kunkin rahaston sisällön päivämäärä näkyy pienellä. Kaikki aiemmat kuukaudet ja niiden versiot säilyvät GitHubissa (history.json ja revisions/). 50/50 = SPYI + VAGF kuukausittain tasapainotettuna (Xetra-kurssit); VAGF:n historia ennen 8/2019 korvattu AGGH- ja XBAE-proxyillä, joten 10v luku on suuntaa antava. 3v/5v/10v vuosituottoja (p.a.).</small></p>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 <script>
 const f=(v,d=2)=>v==null||isNaN(v)?'–':(+v).toFixed(d).replace('.',',');
 const cls=v=>v==null?'muted':v>=0?'pos':'neg';
 const sg=v=>v==null?'–':(v>0?'+':'')+f(v);
-let H,sortK='vy1',sortD=-1;
+let H,SNAP=null,sortK='vy1',sortD=-1;
+const LOCAL=new URLSearchParams(location.search).has('local'),RAWB=LOCAL?'':'https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/';
+const fd=d=>d?d.split('-').reverse().map(x=>+x).join('.'):'–';
+const curSnap=()=>SNAP||H.snapshots[+document.getElementById('month').value];
 const G={ytd:'g-ret sep num',y1:'g-ret num',y3:'g-ret num',y5:'g-ret num',y10:'g-ret num',vp:'g-vs sep num',eq:'g-al sep num',deq:'g-al num',fi:'g-al num',dfi:'g-al num',ter:'g-co sep num',size:'g-co num',feat:'g-tx sep',expl:'g-tx',asof:'g-tx'};
 const cols=[['n','#'],['name','Rahasto'],['ytd','YTD %'],['y1','1v %'],['y3','3v p.a.'],['y5','5v p.a.'],['y10','10v p.a.'],['vp','vs 50/50 (jakso)'],['eq','Osake %'],['deq','Osake Δ'],['fi','Korko %'],['dfi','Korko Δ'],['ter','TER %'],['size','Koko (M)'],['feat','Erityispiirteet'],['expl','Selitys tuottoerolle'],['asof','Allok. pvm']];
 async function load(){
- const RAW='https://raw.githubusercontent.com/simorahikainen-oss/tasapainovertailu/main/history.json';
+ const RAW=LOCAL?'history.json':RAWB+'history.json';
  try{H=await (await fetch(RAW+'?t='+Date.now(),{cache:'no-store'})).json()}catch(e){H=await (await fetch('history.json?t='+Date.now(),{cache:'no-store'})).json()}
  const m=document.getElementById('month');
  m.innerHTML=H.snapshots.map((s,i)=>`<option value="${i}">${s.period}</option>`).reverse().join('');
- document.getElementById('upd').textContent='Viimeisin data: '+H.snapshots.at(-1).return_date;
+ fillRev();
+ document.getElementById('rev').onchange=loadRev;
+ eqChart();
  document.getElementById('hd').innerHTML=cols.map(c=>`<th class="${G[c[0]]||''}" data-k="${c[0]}">${c[1]}</th>`).join('');
  document.querySelectorAll('th').forEach(t=>t.onclick=()=>{sortD=sortK==t.dataset.k?-sortD:-1;sortK=t.dataset.k;render()});
- ['month','per','q','only','minEq'].forEach(id=>document.getElementById(id).oninput=render);render();
+ ['per','q','only','minEq'].forEach(id=>document.getElementById(id).oninput=render);document.getElementById('month').oninput=()=>{SNAP=null;fillRev();render()};render();
 }
 function render(){
- const i=+document.getElementById('month').value,s=H.snapshots[i],p=H.snapshots[i-1];
+ const i=+document.getElementById('month').value,s=curSnap(),p=H.snapshots[i-1];
+ const FM=Object.fromEntries(H.funds.map(x=>[x.n,x])),me=s.month_end||s.return_date,cc=s.content_coverage;
+ document.getElementById('upd').textContent='Tuotot: '+(s.return_date?fd(s.return_date):'ei tuottoja')+(s.revision?' · versio '+s.revision+(SNAP?' (arkisto)':''):'');
+ document.getElementById('cov').textContent=cc?'Sisältö (allokaatio): '+cc.current_month_end+'/'+cc.eligible+' rahastoa kuun lopulta '+fd(me)+'; päivämäärät '+fd(cc.as_of_min)+'–'+fd(cc.as_of_max):'';
  const nm=Object.fromEntries(H.funds.map(x=>[x.n,x.name]));
  const pv=p?Object.fromEntries(p.funds.map(x=>[x.n,x])):{};
  let rows=s.funds.map(x=>{const a=x.allocation_primary||x.allocation||{},pa=(pv[x.n]||{}).allocation_primary||(pv[x.n]||{}).allocation||{};
   return{n:x.n,name:nm[x.n]||x.isin,isin:x.isin,ytd:x.returns?.ytd,y1:x.returns?.y1,y3:x.returns?.y3,y5:x.returns?.y5,y10:x.returns?.y10,vp:(x.vs_50_50_rebalanced||x.vs_50_50||{})[document.getElementById('per').value],vy1:(x.vs_50_50_rebalanced||x.vs_50_50||{}).y1,eq:a.equity_pct,fi:a.fixed_income_pct,
-  deq:p&&a.equity_pct!=null&&pa.equity_pct!=null?a.equity_pct-pa.equity_pct:null,dfi:p&&a.fixed_income_pct!=null&&pa.fixed_income_pct!=null?a.fixed_income_pct-pa.fixed_income_pct:null,
-  feat:x.features,expl:x.explanation,ter:x.costs?.ongoing_cost_pct,size:x.costs?.fund_size!=null?x.costs.fund_size/1e6:null,cur:x.costs?.fund_size_currency,url:(H.funds.find(z=>z.n==x.n)||{}).company_url,ms:(H.funds.find(z=>z.n==x.n)||{}).ms_url,asof:a.as_of,src:a.source_url}});
+  deq:p&&a.equity_pct!=null&&pa.equity_pct!=null&&a.as_of!=pa.as_of?a.equity_pct-pa.equity_pct:null,dfi:p&&a.fixed_income_pct!=null&&pa.fixed_income_pct!=null&&a.as_of!=pa.as_of?a.fixed_income_pct-pa.fixed_income_pct:null,
+  feat:x.features,expl:x.explanation,ter:x.costs?.ongoing_cost_pct,size:x.costs?.fund_size!=null?x.costs.fund_size/1e6:null,cur:x.costs?.fund_size_currency,url:(H.funds.find(z=>z.n==x.n)||{}).company_url,ms:(H.funds.find(z=>z.n==x.n)||{}).ms_url,asof:a.as_of,src:a.source_url,old:a.as_of&&me&&a.as_of!=me,fl:(x.flags||[]).filter(z=>z.type=='feed_divergence'),mrg:FM[x.n]?.status=='merged'?FM[x.n]:null,rm:x.returns_missing}});
  const avg=k=>{const v=rows.map(r=>r[k]).filter(v=>v!=null);return v.length?v.reduce((a,b)=>a+b,0)/v.length:null};
  const b=s.benchmark,per=document.getElementById('per').value,bb=b.etf_50_50_rebalanced||b.etf_50_50;
  document.getElementById('cards').innerHTML=[
@@ -76,10 +88,10 @@ function render(){
  window._xl=rows.concat(bm.map(x=>({n:'',bm:1,ter:x.m?.ongoing_cost_pct,size:x.m?.fund_size!=null?x.m.fund_size/1e6:null,name:x.name,isin:x.isin,ytd:x.r?.ytd,y1:x.r?.y1,y3:x.r?.y3,y5:x.r?.y5,y10:x.r?.y10,vp:x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null,eq:x.eq,fi:x.fi,feat:x.feat,asof:s.return_date})));
  const td=(k,v)=>`<td class="${G[k]||''}">${v}</td>`;
  const bmh=bm.map(x=>`<tr class="${x.cls}"><td>–</td><td>${x.e?.url?`<a class="nm" href="${x.e?.url}" target="_blank">${x.name}</a>`:x.name}<br><small>${x.isin}${x.e?.ms_url?` · <a href="${x.e?.ms_url}" target="_blank">Morningstar</a>`:''}</small></td>${['ytd','y1','y3','y5','y10'].map(k=>td(k,f(x.r?.[k]))).join('')}${td('vp',x.cls.includes('mix')?'0,00':sg(x.r?.[per]!=null&&bb[per]!=null?x.r[per]-bb[per]:null))}${td('eq',x.eq)}${td('deq','–')}${td('fi',x.fi)}${td('dfi','–')}${td('ter',f(x.m?.ongoing_cost_pct))}${td('size',x.m?.fund_size!=null?Math.round(x.m.fund_size/1e6).toLocaleString('fi-FI')+' '+(x.m.fund_size_currency=='USD'?'$':'€'):'–')}${td('feat',x.feat)}${td('expl','')}${td('asof',s.return_date)}</tr>`).join('');
- document.getElementById('tb').innerHTML=rows.map(r=>`<tr class="${r.mix?'mixr':''}"><td>${r.n}</td><td>${r.url?`<a class="nm" href="${r.url}" target="_blank">${r.name}</a>`:r.name}<br><small>${r.isin}${r.ms?` · <a href="${r.ms}" target="_blank">Morningstar</a>`:''}</small></td>${td('ytd',f(r.ytd))}${td('y1',f(r.y1))}${td('y3',f(r.y3))}${td('y5',f(r.y5))}${td('y10',f(r.y10))}<td class="${G.vp} ${cls(r.vp)}">${sg(r.vp)}</td>${td('eq',f(r.eq,1))}<td class="${G.deq} ${cls(r.deq)}">${sg(r.deq)}</td>${td('fi',f(r.fi,1))}<td class="${G.dfi} ${cls(r.dfi)}">${sg(r.dfi)}</td>${td('ter',f(r.ter))}${td('size',r.size!=null?Math.round(r.size).toLocaleString('fi-FI')+' '+(r.cur=='USD'?'$':'€'):'–')}${td('feat',r.feat||'')}${td('expl',r.expl||'')}${td('asof',r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||''))}</tr>`).join('')+bmh;
+ document.getElementById('tb').innerHTML=rows.map(r=>`<tr class="${r.mix?'mixr':''}"><td>${r.n}</td><td>${r.url?`<a class="nm" href="${r.url}" target="_blank">${r.name}</a>`:r.name}${r.mrg?`<span class="tag mrg" title="${r.mrg.merger_note||''}">sulautunut ${fd(r.mrg.merged_on)}</span>`:''}${r.rm?`<span class="tag warn" title="${r.rm}">ei tuottoa</span>`:''}<br><small>${r.isin}${r.ms?` · <a href="${r.ms}" target="_blank">Morningstar</a>`:''}</small></td>${td('ytd',f(r.ytd))}${td('y1',f(r.y1))}${td('y3',f(r.y3))}${td('y5',f(r.y5))}${td('y10',f(r.y10))}<td class="${G.vp} ${cls(r.vp)}">${sg(r.vp)}</td>${td('eq',f(r.eq,1))}<td class="${G.deq} ${cls(r.deq)}">${sg(r.deq)}</td>${td('fi',f(r.fi,1))}<td class="${G.dfi} ${cls(r.dfi)}">${sg(r.dfi)}</td>${td('ter',f(r.ter))}${td('size',r.size!=null?Math.round(r.size).toLocaleString('fi-FI')+' '+(r.cur=='USD'?'$':'€'):'–')}${td('feat',r.feat||'')}${td('expl',r.expl||'')}${td('asof',(r.src?`<a href="${r.src}" target="_blank">${r.asof||'lähde'}</a>`:(r.asof||''))+(r.old?'<span class="tag old">vanhempi</span>':'')+(r.fl&&r.fl.length?`<span class="tag warn" title="${r.fl.map(z=>z.note).join('; ')}">tarkista</span>`:''))}</tr>`).join('')+bmh;
 }
 document.getElementById('csv').onclick=async()=>{
- const per=document.getElementById('per').value,P=H.snapshots[+document.getElementById('month').value].period;
+ const per=document.getElementById('per').value,P=curSnap().period+(SNAP?'_r'+SNAP.revision:'');
  const wb=new ExcelJS.Workbook(),ws=wb.addWorksheet('Vertailu '+P,{views:[{state:'frozen',xSplit:2,ySplit:1}]});
  const W={n:5,name:44,feat:45,expl:60,asof:14};
  ws.columns=cols.map(c=>({header:c[0]=='vp'?'vs 50/50 ('+per+')':c[1],key:c[0],width:W[c[0]]||11}));
@@ -98,5 +110,25 @@ document.getElementById('csv').onclick=async()=>{
   cell.border={left:sepK.includes(k)?{style:'medium',color:{argb:'FFC5CAD3'}}:undefined,top:r.mix?{style:'medium',color:{argb:'FF34405A'}}:undefined,bottom:r.mix?{style:'medium',color:{argb:'FF34405A'}}:{style:'hair',color:{argb:'FFDDDDDD'}}}})});
  ws.autoFilter={from:{row:1,column:1},to:{row:1,column:cols.length}};
  const buf=await wb.xlsx.writeBuffer();const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));a.download='tasapainovertailu_'+P+'.xlsx';a.click()};
+function fillRev(){const s=H.snapshots[+document.getElementById('month').value],r=s.revisions||[];
+ document.getElementById('rev').innerHTML=r.length?r.map((v,j)=>`<option value="${j}" ${j==r.length-1?'selected':''}>r${v.revision} ${v.saved_at.slice(0,10)}${j==r.length-1?' (uusin)':''}</option>`).reverse().join(''):'<option>–</option>'}
+async function loadRev(){const s=H.snapshots[+document.getElementById('month').value],r=s.revisions||[],j=+document.getElementById('rev').value;
+ if(!r.length||j==r.length-1){SNAP=null;return render()}
+ try{SNAP=await (await fetch(RAWB+r[j].path,{cache:'no-store'})).json()}catch(e){try{SNAP=await (await fetch(r[j].path)).json()}catch(e2){SNAP=null;alert('Versiota ei voitu ladata')}}render()}
+// Keskimääräinen osakepaino: tasapaino (equal weight) rahastojen allocation_primary.equity_pct, ETF:t eivät mukana.
+function eqSeries(){const FM=Object.fromEntries(H.funds.map(x=>[x.n,x]));return H.snapshots.map(s=>{const me=s.month_end||s.return_date;
+ const el=s.funds.filter(f=>f.allocation_primary&&f.allocation_primary.equity_pct!=null&&!(FM[f.n]?.merged_on&&FM[f.n].merged_on<=me));
+ const cur=el.filter(f=>f.allocation_primary.as_of==me),av=a=>a.length?a.reduce((t,f)=>t+f.allocation_primary.equity_pct,0)/a.length:null,d=el.map(f=>f.allocation_primary.as_of).filter(Boolean).sort();
+ const fresh=s.backfill||(d.length&&d.at(-1)>=s.period+'-01');
+ return{p:s.period,me,fresh,bf:s.backfill,all:fresh?av(el):null,n:el.length,cur:av(cur),nc:cur.length,lo:d[0],hi:d.at(-1),tot:s.funds.length}})}
+function eqChart(){const S=eqSeries(),W=900,Hh=260,L=60,Rr=60,T=20,B=50,vals=S.flatMap(x=>[x.all,x.cur]).filter(v=>v!=null);
+ const box=document.getElementById('eqchart');if(!vals.length){box.innerHTML='';return}
+ const lo=Math.floor(Math.min(...vals)-2),hi=Math.ceil(Math.max(...vals)+2),X=i=>L+(S.length==1?(W-L-Rr)/2:i*(W-L-Rr)/(S.length-1)),Y=v=>T+(hi-v)/(hi-lo)*(Hh-T-B);
+ const line=(k,c,dash)=>{let d='',pts='';S.forEach((x,i)=>{if(x[k]==null)return;d+=(d?'L':'M')+X(i)+','+Y(x[k]);pts+=`<circle cx="${X(i)}" cy="${Y(x[k])}" r="4" fill="${c}"><title>${x.p}: ${f(x[k],1)} % (n=${k=='all'?x.n:x.nc}/${x.tot})</title></circle>`});return `<path d="${d}" fill="none" stroke="${c}" stroke-width="2" ${dash?'stroke-dasharray="5 4"':''}/>`+pts};
+ let g='';for(let v=lo;v<=hi;v+=Math.max(1,Math.round((hi-lo)/5))){g+=`<line x1="${L}" x2="${W-Rr}" y1="${Y(v)}" y2="${Y(v)}" stroke="#eee"/><text x="${L-6}" y="${Y(v)+4}" font-size="11" text-anchor="end" fill="#778">${v} %</text>`}
+ S.forEach((x,i)=>{g+=`<text x="${X(i)}" y="${Hh-B+16}" font-size="11" text-anchor="middle">${x.p}</text><text x="${X(i)}" y="${Hh-B+30}" font-size="10" text-anchor="middle" fill="#778">n=${x.n}, kk-loppu ${x.nc}</text>`});
+ box.innerHTML=`<b>Keskimääräinen osakepaino (rahastojen tasapainoinen keskiarvo)</b><br><svg viewBox="0 0 ${W} ${Hh}">${g}${line('all','#1d4ed8')}${line('cur','#0a7a32',1)}</svg>
+ <small><span style="color:#1d4ed8">●</span> kaikki rahastot, viimeisin saatavilla oleva sisältö &nbsp; <span style="color:#0a7a32">●</span> vain rahastot, joiden sisältö on kuun lopulta. Kuukautta ei piirretä ennen kuin vähintään yhden rahaston sisältö on kyseiseltä kuulta (ei interpolointia eikä pelkkää vanhan tiedon toistoa); ETF:t eivät mukana; sulautuneet rahastot poistuvat sulautumiskuusta alkaen.<br>`+
+ S.map(x=>`${x.p}: ${x.fresh?f(x.all,1)+' %':'ei vielä uutta sisältöä'} (n=${x.n}/${x.tot}, sisältö ${fd(x.lo)}–${fd(x.hi)}${x.bf?', jälkikäteen koottu edellinen tieto':''})${x.cur!=null?`; kk-loppu ${f(x.cur,1)} % (n=${x.nc})`:''}`).join(' · ')+`</small>`}
 load().catch(e=>document.getElementById('tb').innerHTML='<tr><td>history.json ei latautunut: '+e+'</td></tr>');
 </script></body></html>

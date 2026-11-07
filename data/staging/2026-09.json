@@ -1,0 +1,755 @@
+{
+ "period": "2026-09",
+ "month_end": "2026-09-30",
+ "fetched_at": "2026-11-07T20:39:48+02:00",
+ "returns_method": "Morningstar timeseries_cumulativereturn (päivä, EUR, kokonaistuotto), arvo kuun viimeisenä päivänä tai sitä edeltävänä noteerauspäivänä; 3v/5v/10v p.a.",
+ "funds": {
+  "1": {
+   "n": 1,
+   "isin": "FI0008805635",
+   "feed": {
+    "SecId": "F0GBR04KJI",
+    "Name": "LähiTapiola Maailma 50 A",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 0.99,
+    "FundTNAV": 219727338,
+    "FundTNAVDate": "2026-08-31",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 61.538
+   },
+   "returns": {
+    "ytd": 12.25,
+    "y1": 15.88,
+    "y3": 12.06,
+    "y5": 5.63,
+    "y10": 6.17
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "2": {
+   "n": 2,
+   "isin": "FI4000171178",
+   "feed": {
+    "SecId": "F000014STD",
+    "Name": "Nordea Varainhoito Tasapaino I K EUR",
+    "PortfolioDate": "2026-08-31",
+    "ClosePriceDate": "2026-11-06",
+    "OngoingCharge": 0.76,
+    "FundTNAV": 2069853160,
+    "FundTNAVDate": "2026-09-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 51.65
+   },
+   "returns": {
+    "ytd": 8.89,
+    "y1": 13.2,
+    "y3": 11.16,
+    "y5": 5.15,
+    "y10": 6.23
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "3": {
+   "n": 3,
+   "isin": "FI0008806807",
+   "feed": {
+    "SecId": "F0GBR04HOD",
+    "Name": "Nordea Savings 50 A Acc EUR",
+    "PortfolioDate": "2026-08-31",
+    "ClosePriceDate": "2026-11-06",
+    "OngoingCharge": 1.58,
+    "FundTNAV": 1450746510,
+    "FundTNAVDate": "2026-09-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 51.223
+   },
+   "returns": {
+    "ytd": 7.78,
+    "y1": 11.58,
+    "y3": 10.0,
+    "y5": 4.48,
+    "y10": 5.54
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "4": {
+   "n": 4,
+   "isin": "FI0008806419",
+   "feed": {
+    "SecId": "F0GBR04LIT",
+    "Name": "Nordea Premium AM Balance P Acc EUR",
+    "PortfolioDate": "2026-08-31",
+    "ClosePriceDate": "2026-11-06",
+    "OngoingCharge": 1.41,
+    "FundTNAV": 2069853160,
+    "FundTNAVDate": "2026-09-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 51.65
+   },
+   "returns": {
+    "ytd": 8.39,
+    "y1": 12.51,
+    "y3": 10.47,
+    "y5": 4.48,
+    "y10": 5.55
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "5": {
+   "n": 5,
+   "isin": "FI0008811484",
+   "feed": {
+    "SecId": "F0000001WL",
+    "Name": "Erikoissijoitusrahasto UB Smart I",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.64,
+    "FundTNAV": 115897492,
+    "FundTNAVDate": "2026-11-05",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 41.687
+   },
+   "returns": {
+    "ytd": 4.44,
+    "y1": 5.83,
+    "y3": 8.21,
+    "y5": 4.59,
+    "y10": 5.28
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "6": {
+   "n": 6,
+   "isin": "FI4000153358",
+   "feed": {
+    "SecId": "F00000WYJ0",
+    "Name": "Obsido Rebalanced 50 A1",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.85,
+    "FundTNAV": 74459771,
+    "FundTNAVDate": "2026-08-31",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 58.499
+   },
+   "returns": {
+    "ytd": 7.55,
+    "y1": 9.74,
+    "y3": 9.92,
+    "y5": 5.28,
+    "y10": 5.3
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "7": {
+   "n": 7,
+   "isin": "FI4000120670",
+   "feed": {
+    "SecId": "F00000WB1Q",
+    "Name": "OP-Private Strategia 50 A",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.22,
+    "FundTNAV": 3590734658,
+    "FundTNAVDate": "2026-11-05",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 51.841
+   },
+   "returns": {
+    "ytd": 8.72,
+    "y1": 11.44,
+    "y3": 10.39,
+    "y5": 4.94,
+    "y10": 5.17
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "8": {
+   "n": 8,
+   "isin": "FI4000020664",
+   "feed": {
+    "SecId": "F00000MBJV",
+    "Name": "Alexandria Tasapainoinen",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-04",
+    "OngoingCharge": 2.21,
+    "FundTNAV": 236190445,
+    "FundTNAVDate": "2025-05-31",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 62.042
+   },
+   "returns": {
+    "ytd": 6.61,
+    "y1": 9.05,
+    "y3": 9.76,
+    "y5": 2.28,
+    "y10": 5.2
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "9": {
+   "n": 9,
+   "isin": "FI0008807078",
+   "feed": {
+    "SecId": "F0GBR04FWH",
+    "Name": "Säästöpankki Ryhti B",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.16,
+    "FundTNAV": 899243356,
+    "FundTNAVDate": "2026-11-05",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 55.202
+   },
+   "returns": {
+    "ytd": 6.38,
+    "y1": 8.67,
+    "y3": 8.93,
+    "y5": 3.43,
+    "y10": 5.0
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "10": {
+   "n": 10,
+   "isin": "FI0008809934",
+   "feed": {
+    "SecId": "F0GBR0632S",
+    "Name": "Ålandsbanken Varainhoito B",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.34,
+    "FundTNAV": 374535638,
+    "FundTNAVDate": "2026-10-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 44.393
+   },
+   "returns": {
+    "ytd": 4.78,
+    "y1": 8.85,
+    "y3": 9.44,
+    "y5": 4.43,
+    "y10": 4.67
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "11": {
+   "n": 11,
+   "isin": "FI0008801253",
+   "feed": {
+    "SecId": "F0GBR04OKQ",
+    "Name": "Evli Varainhoito 50 B",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.89,
+    "FundTNAV": 22745555,
+    "FundTNAVDate": "2026-10-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 56.353
+   },
+   "returns": {
+    "ytd": 7.42,
+    "y1": 9.9,
+    "y3": 9.4,
+    "y5": 4.22,
+    "y10": 4.8
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "12": {
+   "n": 12,
+   "isin": "FI0008805338",
+   "feed": {
+    "SecId": "F0GBR04MT5",
+    "Name": "Danske Invest Kompassi 50 K",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-06",
+    "OngoingCharge": 1.4,
+    "FundTNAV": 1010393939,
+    "FundTNAVDate": "2026-11-06",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 50.91
+   },
+   "returns": {
+    "ytd": 5.6,
+    "y1": 8.71,
+    "y3": 9.42,
+    "y5": 3.74,
+    "y10": 4.79
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "13": {
+   "n": 13,
+   "isin": "FI0008803879",
+   "feed": {
+    "SecId": "F0GBR04OGK",
+    "Name": "S-Pankki Varainhoito 50 A K",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 0.99,
+    "FundTNAV": 214215442,
+    "FundTNAVDate": "2026-10-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 55.977
+   },
+   "returns": {
+    "ytd": 6.06,
+    "y1": 8.78,
+    "y3": 9.38,
+    "y5": 4.51,
+    "y10": 4.58
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "14": {
+   "n": 14,
+   "isin": "FI4000036108",
+   "feed": {
+    "SecId": "F00000NYFS",
+    "Name": "OP-Maltillinen A",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.4,
+    "FundTNAV": 2942950751,
+    "FundTNAVDate": "2026-11-05",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 51.307
+   },
+   "returns": {
+    "ytd": 7.75,
+    "y1": 10.29,
+    "y3": 9.94,
+    "y5": 4.3,
+    "y10": 4.34
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "15": {
+   "n": 15,
+   "isin": "FI0008809975",
+   "feed": {
+    "SecId": "F0GBR06345",
+    "Name": "POP Optimi",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.96,
+    "FundTNAV": 88335879,
+    "FundTNAVDate": "2026-11-05",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 53.147
+   },
+   "returns": {
+    "ytd": 5.71,
+    "y1": 7.78,
+    "y3": 8.02,
+    "y5": 2.59,
+    "y10": 4.05
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   }
+  },
+  "16": {
+   "n": 16,
+   "isin": "FI0008810254"
+  },
+  "17": {
+   "n": 17,
+   "isin": "FI4000400098",
+   "feed": {
+    "SecId": "F000014OCE",
+    "Name": "Nordea Responsible Balanced A Acc EUR",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-06",
+    "OngoingCharge": 1.57,
+    "FundTNAV": 1837052240,
+    "FundTNAVDate": "2026-09-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 50.224
+   },
+   "returns": {
+    "ytd": 6.19,
+    "y1": 8.73,
+    "y3": 10.13,
+    "y5": 4.13,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30"
+   }
+  },
+  "18": {
+   "n": 18,
+   "isin": "FI4000548953",
+   "feed": {
+    "SecId": "F00001F5DJ",
+    "Name": "Finlandia Asset Allocator 50",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": null,
+    "FundTNAV": 32870632,
+    "FundTNAVDate": "2025-12-31",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 54.187
+   },
+   "returns": {
+    "ytd": 6.88,
+    "y1": 8.38,
+    "y3": 9.08,
+    "y5": null,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30"
+   }
+  },
+  "19": {
+   "n": 19,
+   "isin": "FI4000452586",
+   "feed": {
+    "SecId": "F00001647S",
+    "Name": "Obsido Global Balanced Investment A2",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.32,
+    "FundTNAV": 111490982,
+    "FundTNAVDate": "2026-08-31",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 57.105
+   },
+   "returns": {
+    "ytd": 8.48,
+    "y1": 9.91,
+    "y3": 9.9,
+    "y5": 5.99,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30"
+   }
+  },
+  "20": {
+   "n": 20,
+   "isin": "SE0017832439",
+   "feed": {
+    "SecId": "F00001E0XL",
+    "Name": "Nordnet One Tasapaino EUR",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-04",
+    "OngoingCharge": 0.49,
+    "FundTNAV": 1599,
+    "FundTNAVDate": "2026-10-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 60.272
+   },
+   "returns": {
+    "ytd": 9.37,
+    "y1": 12.88,
+    "y3": 12.66,
+    "y5": null,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30"
+   }
+  },
+  "21": {
+   "n": 21,
+   "isin": "FI4000278676",
+   "feed": {
+    "SecId": "F00000ZPLK",
+    "Name": "Säästöpankki Tasapainoinen B",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.11,
+    "FundTNAV": 418444905,
+    "FundTNAVDate": "2026-11-05",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 55.056
+   },
+   "returns": {
+    "ytd": 6.83,
+    "y1": 9.76,
+    "y3": 8.27,
+    "y5": 3.09,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30"
+   }
+  },
+  "22": {
+   "n": 22,
+   "isin": "FI4000297817",
+   "feed": {
+    "SecId": "F0000101EM",
+    "Name": "Aktia Varainhoitosalkku 50 B",
+    "PortfolioDate": "2026-09-30",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.15,
+    "FundTNAV": 286416392,
+    "FundTNAVDate": "2026-10-30",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 51.914
+   },
+   "returns": {
+    "ytd": 8.46,
+    "y1": 11.92,
+    "y3": 10.55,
+    "y5": 4.62,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30"
+   }
+  },
+  "23": {
+   "n": 23,
+   "isin": "FI4000517719",
+   "feed": {
+    "SecId": "F00001DFCS",
+    "Name": "Säästöpankki Tasapainoinen D",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 1.11,
+    "FundTNAV": 418444905,
+    "FundTNAVDate": "2026-11-05",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 55.056
+   },
+   "returns": {
+    "ytd": 7.3,
+    "y1": 10.41,
+    "y3": 8.92,
+    "y5": null,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30"
+   }
+  },
+  "24": {
+   "n": 24,
+   "isin": "FI4000410949",
+   "feed": {
+    "SecId": "F00001590L",
+    "Name": "OP - Tavoite 3A",
+    "PortfolioDate": "2026-10-31",
+    "ClosePriceDate": "2026-11-05",
+    "OngoingCharge": 0.89,
+    "FundTNAV": 6640469,
+    "FundTNAVDate": "2026-11-05",
+    "CategoryName": "Yhdistelmä globaali maltillinen, euro",
+    "AssetAllocEquity": 71.198
+   },
+   "returns": {
+    "ytd": 9.32,
+    "y1": 10.81,
+    "y3": 9.65,
+    "y5": 5.28,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30"
+   }
+  }
+ },
+ "etfs": {
+  "SPYI": {
+   "isin": "IE00B3YLTY66",
+   "secid": "0P0000VWLQ",
+   "returns": {
+    "ytd": 16.99,
+    "y1": 22.18,
+    "y3": 18.46,
+    "y5": 11.74,
+    "y10": 11.86
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30",
+    "y10": "2016-09-30"
+   },
+   "xetra": {
+    "prev": [
+     "2026-08-31",
+     11.491999626159668
+    ],
+    "cur": [
+     "2026-09-30",
+     11.668000221252441
+    ],
+    "month_ret": 0.015315054021768137
+   }
+  },
+  "VAGF": {
+   "isin": "IE00BG47KH54",
+   "secid": "0P0001HSBO",
+   "returns": {
+    "ytd": -3.35,
+    "y1": -3.17,
+    "y3": 2.04,
+    "y5": -2.31,
+    "y10": null
+   },
+   "return_dates": {
+    "end": "2026-09-30",
+    "ytd": "2025-12-31",
+    "y1": "2025-09-30",
+    "y3": "2023-09-30",
+    "y5": "2021-09-30"
+   },
+   "xetra": {
+    "prev": [
+     "2026-08-31",
+     23.447999954223633
+    ],
+    "cur": [
+     "2026-09-30",
+     23.006000518798828
+    ],
+    "month_ret": -0.01885019772636043
+   }
+  }
+ },
+ "missing": [
+  16
+ ]
+}
