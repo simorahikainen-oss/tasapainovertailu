@@ -38,7 +38,11 @@ tbody tr:nth-child(even) td{box-shadow:inset 0 0 0 999px rgba(0,0,0,.045)}tbody 
 <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 <script>
 const f=(v,d=2)=>v==null||isNaN(v)?'–':(+v).toFixed(d).replace('.',',');
-const bmc=(r,k)=>{const m=r.bm?.[k];if(!m||m.value==null)return '';return `${f(m.value)}<br><small title="${(r.bm.scope=='fixed_income_sleeve'?'korko-osuus':'koko rahasto')+' · '+(r.bm.source||'')}">${fd(m.as_of)}</small>`};
+const bmc=(r,k)=>{const b=r.bm,m=b?.[k],e=b?.illustrative_estimates?.[k],u=k=='yield_to_worst_pct'?' %':' v';
+ if(!b)return '<span title="ei tarkistettu"></span>';
+ if(m&&m.value!=null)return `${f(m.value)}<br><small title="raportoitu · ${b.scope=='fixed_income_sleeve'?'korko-osuus':b.scope=='whole_fund'?'koko rahasto':'kattavuus ei tiedossa'} · ${b.source||''}">${fd(m.as_of)}</small>`;
+ if(e&&e.value!=null)return `<i>${f(e.value)}</i> <span class="tag old" title="Arvio Morningstarin jakaumataulukosta: suljettujen välien keskipisteet, keskiarvo vain katetusta painosta ${f(e.covered_weight_pct,1)} % (avoimet ${f(e.open_weight_pct,1)} %, tuntematon ${f(e.unknown_weight_pct,1)} % pois). Pohja: ${e.scope=='unknown'?'ei tiedossa (long-positiot)':e.scope}. Ei raportoitu luku.">arvio</span><br><small>${fd(e.as_of)} · kattavuus ${f(e.coverage_pct,0)} %</small>`;
+ return `<span title="tarkistettu ${fd(b.checked_at)}: lähde ei ilmoita"></span>`};
 const cls=v=>v==null?'muted':v>=0?'pos':'neg';
 const sg=v=>v==null?'–':(v>0?'+':'')+f(v);
 let H,SNAP=null,sortK='vy1',sortD=-1;

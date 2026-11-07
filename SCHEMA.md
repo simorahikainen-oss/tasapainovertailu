@@ -57,3 +57,13 @@ Tuottoina EI käytetä screenerin `ReturnM0`/`ReturnM12`-kenttiä: ne päivittyv
 - Vain suoraan raportoidut luvut (Morningstarin taulukko / yhtiön raportti). Ei painotettuja laskelmia eikä arvioita.
 - Puuttuva = null (ei 0). YTM, current yield ja modified duration eivät kelpaa (label tarkistetaan). scope ilmoitetaan, ei oleteta.
 - Mittarikohtainen as_of. Syöte `stage_snapshot.py content` -tiedostossa `{"n":..,"bond_metrics":{...}}`, voi olla ilman allokaatiota.
+
+### method "weighted_table_calculation" (sallittu 7.11.2026 käyttäjän luvalla)
+`table: {effective_duration_years|yield_to_worst_pct: {as_of, source_url, table_name, unit, weight_basis, rows:[{label, weight_pct, value|null, lower|null, upper|null}], coverage_pct, rows_without_exact_value, calc_note}}`
+- Lasketaan vain, jos kaikilla riveillä on tarkka `value`; välejä/avoimia päitä ei muuteta keskipisteiksi → muuten arvo null ja rivit tallessa.
+- Suoraan raportoitu Effective Duration on ensisijainen.
+
+### Tarkistustila ja raakataulukot
+- `bond_metrics` on vain rahastoilla, joiden lähde on tarkistettu (`checked_at`, `as_of_label`). Puuttuva `bond_metrics` = ei tarkistettu (UI: tyhjä, title "ei tarkistettu"); `value: null` + `checked_at` = tarkistettu, lähde ei ilmoita.
+- `exposure_tables.{effective_duration|yield_to_worst}`: Morningstarin "Fixed Income Exposure Analysis" -taulukko sellaisenaan: `heading, as_of, as_of_label, basis` (esim. long positions), `scope` (näkyvästä otsikosta, muuten "unknown"), `cell_unit, columns, rows, values (null = '–'), subtotal_weight, source_url`.
+- Taulukoista laskettua arviota EI tallenneta tarkkoihin kenttiin. Mahdollinen havainnollistava arvio vain erilliseen `illustrative_estimates`-kenttään käyttäjän hyväksynnällä.

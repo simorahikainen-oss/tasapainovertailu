@@ -153,6 +153,51 @@ def from_morningstar(u):
     if u.get('note'): a['note'] = (a.get('note', '') + ' ' + u['note']).strip()
     return a
 
+def weighted_table(b, month_end, n):
+    """Morningstarin kaavion taulukkonäkymä (chart -> table) per mittari:
+    b['table'][metric] = {"as_of","source_url","table_name","unit","rows":[{"label","weight_pct","value"|null,"lower"|null,"upper"|null}], "weight_basis"}
+    Laskenta vain riveistä, joilla on tarkka numeerinen value. Pelkkä väli (lower/upper) tai avoin pää EI saa
+    keskipistettä: rivi jää kattamattomaksi. Painot normalisoidaan katetuille riveille; coverage = katettu / taulukon kokonaispaino."""
+    tabs = b.get('table') or {}
+    for k, label in BM_KEYS.items():
+        t = tabs.get(k)
+        if not t: continue
+        assert t.get('as_of') and t['as_of'] <= month_end and t.get('source_url') and t.get('rows'), f'n{n}: {k} taulukon provenance'
+        tot = sum(r['weight_pct'] for r in t['rows'] if r.get('weight_pct') is not None)
+        cov = [r for r in t['rows'] if isinstance(r.get('value'), (int, float)) and r.get('weight_pct') is not None]
+        w = sum(r['weight_pct'] for r in cov)
+        t['coverage_pct'] = round(w / tot * 100, 1) if tot else 0.0
+        t['rows_without_exact_value'] = len(t['rows']) - len(cov)
+        val = round(sum(r['weight_pct'] * r['value'] for r in cov) / w, 2) if w and t['rows_without_exact_value'] == 0 else None
+        t['calc_note'] = ('Painotettu keskiarvo taulukon tarkoista arvoista.' if val is not None else
+                          'Ei laskettu: osalla riveistä vain väli/avoin pää (keskipistettä ei käytetä) tai painot puuttuvat.')
+        b[k] = {'value': val, 'as_of': t['as_of'] if val is not None else None, 'label': label}
+    b['table'] = tabs
+
+import re as _re
+EST_KEY = {'effective_duration': ('effective_duration_years', 'v'), 'yield_to_worst': ('yield_to_worst_pct', '%')}
+
+def bucket_mid(col):
+    """Suljettu väli 'a-b' (yksikkö saa olla perässä) -> keskipiste; avoimet (<x, >x), Unk ja Not Applicable -> None."""
+    m = _re.fullmatch(r'\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*(Yrs|%)?\s*', col)
+    return (float(m.group(1)) + float(m.group(2))) / 2 if m else None
+
+def illustrative_estimate(t):
+    """Havainnollistava arvio: suljettujen välien keskipisteillä painotettu keskiarvo, vain katetuista painoista
+    (käyttäjän hyväksymä 7.11.2026). Ei koskaan raportoitu mittari."""
+    tot = cov = acc = opn = unk = 0.0; used = []
+    for j, col in enumerate(t['columns']):
+        w = sum(r[j] for r in t['values'] if r[j] is not None)
+        tot += w; mid = bucket_mid(col)
+        if mid is not None:
+            cov += w; acc += w * mid
+            if w: used.append({'column': col, 'midpoint': mid, 'weight_pct': round(w, 2)})
+        elif col.strip().startswith(('<', '>')): opn += w
+        else: unk += w
+    return {'value': round(acc / cov, 2) if cov else None, 'covered_weight_pct': round(cov, 2), 'open_weight_pct': round(opn, 2),
+            'unknown_weight_pct': round(unk, 2), 'total_weight_pct': round(tot, 2),
+            'coverage_pct': round(cov / tot * 100, 1) if tot else 0.0, 'buckets_used': used}
+
 BM_KEYS = {'effective_duration_years': 'Effective Duration', 'yield_to_worst_pct': 'Yield to Worst'}
 
 def validate_bond_metrics(b, month_end, n):
@@ -162,9 +207,25 @@ def validate_bond_metrics(b, month_end, n):
      "yield_to_worst_pct":{"value":x|null,"as_of":...,"label":"Yield to Worst"}}"""
     b = copy.deepcopy(b)
     b['method'] = b.get('method', 'reported')
-    assert b['method'] == 'reported', f'n{n}: vain method=reported sallittu'
-    assert 'components' not in b, f'n{n}: painotettuja laskelmia ei tallenneta'
-    assert b.get('scope') in ('fixed_income_sleeve', 'whole_fund'), f'n{n}: scope pakollinen eikä sitä oleteta'
+    assert b['method'] in ('reported', 'weighted_table_calculation'), f'n{n}: method'
+    assert 'components' not in b, f'n{n}: käytä table_rows-kenttää'
+    if b['method'] == 'weighted_table_calculation':
+        weighted_table(b, month_end, n)
+    assert b.get('scope') in ('fixed_income_sleeve', 'whole_fund', 'unknown'), f'n{n}: scope pakollinen eikä sitä oleteta'
+    assert b.get('checked_at'), f'n{n}: checked_at (milloin lähde tarkistettiin) pakollinen'
+    for k in ('effective_duration_years', 'yield_to_worst_pct'):
+        assert not (isinstance(b.get(k), dict) and b[k].get('estimate')), f'n{n}: arvioita ei tarkkoihin kenttiin'
+    for tk, t in (b.get('exposure_tables') or {}).items():
+        assert tk in ('effective_duration', 'yield_to_worst'), tk
+        for req in ('as_of', 'as_of_label', 'source_url', 'heading', 'basis', 'scope', 'columns', 'rows', 'values', 'cell_unit'):
+            assert t.get(req) is not None, f'n{n}: exposure_tables.{tk}.{req}'
+        assert t['scope'] in ('fixed_income_sleeve', 'whole_fund', 'unknown') and t['as_of'] <= month_end
+        assert len(t['values']) == len(t['rows']) and all(len(r) == len(t['columns']) for r in t['values'])
+        k, unit = EST_KEY[tk]
+        e = illustrative_estimate(t)
+        e.update(unit=unit, as_of=t['as_of'], scope=t['scope'], label='arvio', source_url=t['source_url'],
+                 method='Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku')
+        b.setdefault('illustrative_estimates', {})[k] = e
     assert b.get('source_url') and b.get('source'), f'n{n}: lähde'
     for bad in ('ytm_pct', 'current_yield_pct', 'modified_duration_years', 'yield_to_maturity_pct'):
         assert bad not in b, f'n{n}: {bad} ei ole hyväksytty korvike'

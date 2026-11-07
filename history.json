@@ -2734,7 +2734,29 @@
       "y5": 0.87,
       "y10": 0.41
      },
-     "flags": []
+     "flags": [],
+     "bond_metrics": {
+      "scope": "fixed_income_sleeve",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab (Fixed Income Measures)",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/portfolio",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "shown": "Effective Duration (Investment) = '–' (category avg 3.13)"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "shown": "no such row in table"
+      },
+      "note": "Tarkistettu: Effective Duration \"–\", ei YTW-riviä. Muita mittareita ei käytetty."
+     }
     },
     {
      "n": 2,
@@ -3233,7 +3255,29 @@
       "y5": 0.13,
       "y10": -0.49
      },
-     "flags": []
+     "flags": [],
+     "bond_metrics": {
+      "scope": "fixed_income_sleeve",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab (Fixed Income Measures)",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "shown": "Effective Duration (Investment) = '–' (category avg 3.13)"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "shown": "no such row in table"
+      },
+      "note": "Tarkistettu: Effective Duration \"–\", ei YTW-riviä. Muita mittareita ei käytetty."
+     }
     },
     {
      "n": 8,
@@ -3344,7 +3388,10 @@
        "as_of": null,
        "label": "Yield to Worst"
       },
-      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa."
+      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa.",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category ... as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures (Investment)"
      }
     },
     {
@@ -3455,7 +3502,397 @@
        "as_of": null,
        "label": "Yield to Worst"
       },
-      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa."
+      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa.",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category ... as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures (Investment)",
+      "exposure_tables": {
+       "effective_duration": {
+        "heading": "Fixed Income Exposure Analysis – Effective Duration",
+        "as_of": "2026-10-31",
+        "as_of_label": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "Taulukon otsikko ei kerro, onko pohjana korko-osuus vai koko salkku; rivien Subtotal Weight summautuu 100,00:aan.",
+        "cell_unit": "% of portfolio weight (taulukon solut); sarakkeet vuosia",
+        "columns": [
+         "<0 Yrs",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 Yrs",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          null,
+          0.15,
+          0.1,
+          1.23,
+          0.34,
+          0.0,
+          0.28,
+          6.05,
+          null
+         ],
+         [
+          0.0,
+          0.01,
+          0.55,
+          0.23,
+          1.07,
+          1.62,
+          1.36,
+          0.25,
+          0.0,
+          null
+         ],
+         [
+          null,
+          0.13,
+          3.03,
+          3.12,
+          3.07,
+          2.6,
+          2.24,
+          null,
+          0.21,
+          null
+         ],
+         [
+          null,
+          0.75,
+          3.9,
+          5.48,
+          5.04,
+          4.03,
+          2.98,
+          null,
+          0.43,
+          null
+         ],
+         [
+          0.01,
+          0.86,
+          7.68,
+          10.03,
+          3.79,
+          1.28,
+          2.25,
+          null,
+          0.16,
+          null
+         ],
+         [
+          0.19,
+          1.47,
+          3.76,
+          3.96,
+          1.0,
+          0.62,
+          0.23,
+          null,
+          0.3,
+          null
+         ],
+         [
+          0.0,
+          0.07,
+          0.68,
+          0.42,
+          0.4,
+          0.03,
+          null,
+          null,
+          0.17,
+          null
+         ],
+         [
+          0.36,
+          2.28,
+          1.41,
+          3.42,
+          0.7,
+          0.18,
+          0.37,
+          null,
+          1.68,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         8.16,
+         5.08,
+         14.41,
+         22.6,
+         26.06,
+         11.52,
+         1.77,
+         10.4
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
+        "read_method": "Portfolio > Bond tab > Fixed Income Exposure Analysis > icon button 'Click To Toggle Chart Data As Table Data' (tooltip 'Show as Chart' once active). Tabs 'Effective Duration' and 'Yield To Worst' each give a 2-page table (Page 1 of 2 / Next button). Cells = % of portfolio weight; '–' = null; page 1 and 2 merged here.",
+        "screenshots": {
+         "chart_view": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/e78e01fe2254c5ff2a0494aadddd9e6c75fde9c14aaf73f37edd3617fcbf48e7.png",
+         "duration_table_p1": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/71c47e076c2cf85cabd955c8fb8130eb1122f162fe1910c5601ff113b97e1717.png",
+         "duration_table_p2": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/a4fa09aa7f047ff2cdb56dbc2283967e7ce94fc7ccce3c79ac608849042cc911.png",
+         "ytw_table_p1": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/190417ee370b7e3265387f18e018963c5cbe5978ff1928e444621b7cfbf67625.png",
+         "ytw_table_p2": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/d1fdd43bdcba067fa429ff6bee36faabff5ea4b2037f9f868b609f9a48acf482.png"
+        }
+       },
+       "yield_to_worst": {
+        "heading": "Fixed Income Exposure Analysis – Yield To Worst",
+        "as_of": "2026-10-31",
+        "as_of_label": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "Taulukon otsikko ei kerro, onko pohjana korko-osuus vai koko salkku; rivien Subtotal Weight summautuu 100,00:aan.",
+        "cell_unit": "% of portfolio weight (taulukon solut); sarakkeet % tuottoa",
+        "columns": [
+         "<0 %",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 %",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          null,
+          null,
+          4.81,
+          null,
+          null,
+          null,
+          null,
+          3.34,
+          null
+         ],
+         [
+          0.0,
+          null,
+          0.01,
+          3.27,
+          1.66,
+          null,
+          null,
+          null,
+          0.13,
+          null
+         ],
+         [
+          null,
+          null,
+          0.0,
+          10.14,
+          3.85,
+          0.0,
+          null,
+          null,
+          0.42,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          11.13,
+          10.67,
+          0.48,
+          null,
+          null,
+          0.32,
+          null
+         ],
+         [
+          0.05,
+          null,
+          0.01,
+          6.05,
+          14.35,
+          5.2,
+          0.24,
+          null,
+          0.17,
+          null
+         ],
+         [
+          0.06,
+          null,
+          0.05,
+          0.47,
+          3.02,
+          4.36,
+          2.74,
+          0.13,
+          0.69,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.01,
+          null,
+          0.48,
+          0.86,
+          0.23,
+          0.18,
+          null
+         ],
+         [
+          null,
+          null,
+          0.24,
+          2.45,
+          3.14,
+          1.51,
+          0.33,
+          0.02,
+          2.72,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         8.16,
+         5.08,
+         14.41,
+         22.6,
+         26.06,
+         11.52,
+         1.77,
+         10.4
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
+        "read_method": "Portfolio > Bond tab > Fixed Income Exposure Analysis > icon button 'Click To Toggle Chart Data As Table Data' (tooltip 'Show as Chart' once active). Tabs 'Effective Duration' and 'Yield To Worst' each give a 2-page table (Page 1 of 2 / Next button). Cells = % of portfolio weight; '–' = null; page 1 and 2 merged here.",
+        "screenshots": {
+         "chart_view": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/e78e01fe2254c5ff2a0494aadddd9e6c75fde9c14aaf73f37edd3617fcbf48e7.png",
+         "duration_table_p1": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/71c47e076c2cf85cabd955c8fb8130eb1122f162fe1910c5601ff113b97e1717.png",
+         "duration_table_p2": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/a4fa09aa7f047ff2cdb56dbc2283967e7ce94fc7ccce3c79ac608849042cc911.png",
+         "ytw_table_p1": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/190417ee370b7e3265387f18e018963c5cbe5978ff1928e444621b7cfbf67625.png",
+         "ytw_table_p2": "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/d1fdd43bdcba067fa429ff6bee36faabff5ea4b2037f9f868b609f9a48acf482.png"
+        }
+       }
+      },
+      "illustrative_estimates": {
+       "effective_duration_years": {
+        "value": 5.36,
+        "covered_weight_pct": 89.92,
+        "open_weight_pct": 1.09,
+        "unknown_weight_pct": 9.0,
+        "total_weight_pct": 100.01,
+        "coverage_pct": 89.9,
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 5.57
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 21.16
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 26.76
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 16.3
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 10.7
+         },
+         {
+          "column": "10-20 Yrs",
+          "midpoint": 15.0,
+          "weight_pct": 9.43
+         }
+        ],
+        "unit": "v",
+        "as_of": "2026-10-31",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       },
+       "yield_to_worst_pct": {
+        "value": 5.89,
+        "covered_weight_pct": 91.53,
+        "open_weight_pct": 0.49,
+        "unknown_weight_pct": 7.97,
+        "total_weight_pct": 99.99,
+        "coverage_pct": 91.5,
+        "buckets_used": [
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 0.31
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 38.33
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 36.69
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 12.03
+         },
+         {
+          "column": "10-20 %",
+          "midpoint": 15.0,
+          "weight_pct": 4.17
+         }
+        ],
+        "unit": "%",
+        "as_of": "2026-10-31",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       }
+      }
      }
     },
     {
@@ -3563,7 +4000,10 @@
        "as_of": null,
        "label": "Yield to Worst"
       },
-      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa."
+      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa.",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category ... as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures (Investment)"
      }
     },
     {
@@ -3797,7 +4237,29 @@
        "type": "source_anomaly",
        "note": "Morningstar 31.10.2026: osake 92,11 / korko 7,30 ristiriidassa yhtiön (49,74/48,95, 30.6.2026) ja screener-feedin (55,98) kanssa. S-Pankin kk-katsaus 30.9.2026 antaa vain rahastotyyppijaon (ETF 36 % luokittelematon) – ei käytetty."
       }
-     ]
+     ],
+     "bond_metrics": {
+      "scope": "fixed_income_sleeve",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab (Fixed Income Measures)",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/portfolio",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "shown": "Effective Duration (Investment) = '–' (category avg 3.13)"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "shown": "no such row in table"
+      },
+      "note": "Tarkistettu: Effective Duration \"–\", ei YTW-riviä. Muita mittareita ei käytetty."
+     }
     },
     {
      "n": 14,
@@ -3880,7 +4342,29 @@
        "type": "source_anomaly",
        "note": "Morningstar 31.10.2026: osake 69,14 / korko 13,65 (omistukset 30.9.) poikkeaa OP:n virallisesta 57,6/41,1 (30.9.2026) >10 %-yks.; käytetään OP:n katsausta."
       }
-     ]
+     ],
+     "bond_metrics": {
+      "scope": "fixed_income_sleeve",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab (Fixed Income Measures)",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/portfolio",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "shown": "Effective Duration (Investment) = '–' (category avg 3.13)"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "shown": "no such row in table"
+      },
+      "note": "Tarkistettu: Effective Duration \"–\", ei YTW-riviä. Muita mittareita ei käytetty."
+     }
     },
     {
      "n": 15,
@@ -4171,7 +4655,29 @@
       "y5": null,
       "y10": null
      },
-     "flags": []
+     "flags": [],
+     "bond_metrics": {
+      "scope": "fixed_income_sleeve",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab (Fixed Income Measures)",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "shown": "Effective Duration (Investment) = '–' (category avg 3.13)"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "shown": "no such row in table"
+      },
+      "note": "Tarkistettu: Effective Duration \"–\", ei YTW-riviä. Muita mittareita ei käytetty."
+     }
     },
     {
      "n": 19,
@@ -4439,7 +4945,10 @@
        "as_of": null,
        "label": "Yield to Worst"
       },
-      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa."
+      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa.",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category ... as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures (Investment)"
      }
     },
     {
@@ -4626,7 +5135,10 @@
        "as_of": null,
        "label": "Yield to Worst"
       },
-      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa."
+      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa.",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category ... as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures (Investment)"
      }
     },
     {
@@ -4722,7 +5234,10 @@
        "as_of": null,
        "label": "Yield to Worst"
       },
-      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa. Lähdepoikkeama: saman sivun allokaatio (osake 10,28 / korko 85,36) on ristiriidassa OP:n virallisen 70,7/27,6 kanssa ja omistuksissa 140 osake-/0 korkopositiota – duraatio koskee Morningstarin korkoluokittelemaa osuutta."
+      "note": "Morningstar Bond-välilehti: 'Investment as of Oct 31, 2026'. Yield to Worst ei numeerisena taulukkoarvona (vain kaavio) → null. YTM/modified duration eivät korvaa. Lähdepoikkeama: saman sivun allokaatio (osake 10,28 / korko 85,36) on ristiriidassa OP:n virallisen 70,7/27,6 kanssa ja omistuksissa 140 osake-/0 korkopositiota – duraatio koskee Morningstarin korkoluokittelemaa osuutta.",
+      "checked_at": "2026-11-07",
+      "as_of_label": "Investment as of Oct 31, 2026 | Category ... as of Sep 30, 2026 | Source: Manager-reported and holdings-based calculations.",
+      "source_label": "Morningstar Portfolio > Bond tab > Fixed Income Measures (Investment)"
      }
     }
    ],
@@ -4845,9 +5360,15 @@
      "saved_at": "2026-11-07T22:30:30+02:00",
      "path": "revisions/2026-10/r002.json",
      "summary": "Sisältö päivitetty rahastoille [1, 7, 18, 8, 9, 10, 21, 23, 24, 14, 13]; kuun lopulta 8/24"
+    },
+    {
+     "revision": 3,
+     "saved_at": "2026-11-07T22:35:45+02:00",
+     "path": "revisions/2026-10/r003.json",
+     "summary": "Sisältö päivitetty rahastoille [8, 9, 10, 21, 23, 24, 1, 7, 18, 14, 13]; kuun lopulta 8/24"
     }
    ],
-   "revision": 2
+   "revision": 3
   }
  ],
  "etfs": [
