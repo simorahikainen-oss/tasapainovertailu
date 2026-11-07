@@ -131,13 +131,70 @@ def returns_stage(period):
     json.dump(h, open(HIST, 'w'), ensure_ascii=False, indent=1)
     print(snap['revisions'][-1]['summary'], 'liput:', flags)
 
+def src_type(a):
+    return 'morningstar' if (a or {}).get('source') == 'morningstar' else 'company'
+
+def from_morningstar(u):
+    """Morningstarin portfolio-sivun Asset Allocation (net %): u = {n, as_of, source_url, morningstar_raw:{stocks,bonds,cash,other}, long?:{...}}.
+    Sama normalisointi kuin 9/2026 auditissa: jos nettosumma > 101 tai kassa/muu < 0 -> osake ja korko suhteutetaan positiivisten summaan."""
+    m = u['morningstar_raw']; e, fi = m['stocks'], m['bonds']; cash = m.get('cash') or 0
+    # preferred/convertible kuuluvat 'muu'-luokkaan (ei osake eikä korko), kuten 9/2026 säännössä
+    oth = (m.get('other') or 0) + (m.get('preferred') or 0) + (m.get('convertible') or 0)
+    assert e is not None and fi is not None, f"n{u['n']}: Morningstar ei läpivalaise osake/korko-jakoa – käytä yhtiöraporttia"
+    a = {'equity_pct': e, 'fixed_income_pct': fi, 'other_pct': round(100 - e - fi, 2), 'as_of': u['as_of'], 'source': 'morningstar',
+         'source_url': u['source_url'], 'raw_net': {('equity' if k == 'stocks' else 'fixed_income' if k == 'bonds' else k): v for k, v in m.items()}}
+    if u.get('long'): a['raw_long'] = u['long']
+    tot = e + fi + cash + oth
+    if tot > 101 or cash < 0 or oth < 0:
+        pos = sum(v for v in (e, fi, cash, oth) if v > 0)
+        a['equity_pct'], a['fixed_income_pct'] = round(e / pos * 100, 1), round(fi / pos * 100, 1)
+        a['other_pct'] = round(100 - a['equity_pct'] - a['fixed_income_pct'], 1)
+        a['note'] = f"normalisoitu Morningstarin nettoluvuista (nettosumma {tot:.2f} %; johdannaiset/lyhyet positiot)"
+    if u.get('note'): a['note'] = (a.get('note', '') + ' ' + u['note']).strip()
+    return a
+
+BM_KEYS = {'effective_duration_years': 'Effective Duration', 'yield_to_worst_pct': 'Yield to Worst'}
+
+def validate_bond_metrics(b, month_end, n):
+    """Vain suoraan raportoidut luvut (Morningstarin taulukko tai yhtiön raportti). Ei painotettuja laskelmia, ei arvioita, ei korvikkeita.
+    {"scope":"fixed_income_sleeve"|"whole_fund", "source":..., "source_url":...,
+     "effective_duration_years":{"value":x|null,"as_of":"YYYY-MM-DD"|null,"label":"Effective Duration"},
+     "yield_to_worst_pct":{"value":x|null,"as_of":...,"label":"Yield to Worst"}}"""
+    b = copy.deepcopy(b)
+    b['method'] = b.get('method', 'reported')
+    assert b['method'] == 'reported', f'n{n}: vain method=reported sallittu'
+    assert 'components' not in b, f'n{n}: painotettuja laskelmia ei tallenneta'
+    assert b.get('scope') in ('fixed_income_sleeve', 'whole_fund'), f'n{n}: scope pakollinen eikä sitä oleteta'
+    assert b.get('source_url') and b.get('source'), f'n{n}: lähde'
+    for bad in ('ytm_pct', 'current_yield_pct', 'modified_duration_years', 'yield_to_maturity_pct'):
+        assert bad not in b, f'n{n}: {bad} ei ole hyväksytty korvike'
+    for k, label in BM_KEYS.items():
+        m = b.get(k)
+        if not isinstance(m, dict): m = {'value': None, 'as_of': None, 'label': label}
+        m.setdefault('value', None); m.setdefault('as_of', None); m.setdefault('label', label)
+        assert m['label'] == label, f"n{n}: {k} label '{m['label']}' != '{label}' – ei korviketta"
+        if m['value'] is not None:
+            assert isinstance(m['value'], (int, float)) and m['as_of'] and m['as_of'] <= month_end, f'n{n}: {k} arvo vaatii as_of <= kuun loppu'
+        b[k] = m
+    return b
+
 def content_stage(period, upd_path):
     """updates.json: [{"n":7,"allocation_primary":{equity_pct, fixed_income_pct, other_pct, as_of, source, source_url, note}, "features":..}]"""
     h = json.load(open(HIST)); snap = next(s for s in h['snapshots'] if s['period'] == period)
     ups = json.load(open(upd_path)); byn = {f['n']: f for f in snap['funds']}
     changed = []
     for u in ups:
-        f = byn[u['n']]; a = u['allocation_primary']
+        f = byn[u['n']]
+        for fl in u.get('flags', []):
+            assert fl.get('type') and fl.get('note'), u['n']
+            f.setdefault('flags', []); f['flags'] = [z for z in f['flags'] if z.get('type') != fl['type']] + [fl]
+        if 'bond_metrics' in u:
+            f['bond_metrics'] = validate_bond_metrics(u['bond_metrics'], snap['month_end'], u['n'])
+            if 'allocation_primary' not in u and 'morningstar_raw' not in u:
+                changed.append(u['n']); continue
+        if 'allocation_primary' not in u and 'morningstar_raw' not in u:
+            changed.append(u['n']); continue
+        a = u.get('allocation_primary') or from_morningstar(u)
         assert a.get('as_of') and a.get('source_url') and a.get('equity_pct') is not None, u
         assert a['as_of'] <= snap['month_end'], 'sisältö ei voi olla kuun lopun jälkeiseltä päivältä'
         pp, prev = latest_alloc(h, u['n'], period)
@@ -148,7 +205,18 @@ def content_stage(period, upd_path):
         if prev and prev.get('as_of') != a['as_of']:
             f['allocation_change_vs_prev'] = {'equity_pp': round(a['equity_pct'] - prev['equity_pct'], 2),
                 'fixed_income_pp': round(a['fixed_income_pct'] - prev['fixed_income_pct'], 2) if a.get('fixed_income_pct') is not None and prev.get('fixed_income_pct') is not None else None,
-                'prev_as_of': prev['as_of'], 'cur_as_of': a['as_of']}
+                'prev_as_of': prev['as_of'], 'cur_as_of': a['as_of'], 'prev_period': pp,
+                'prev_source': prev.get('source'), 'cur_source': a.get('source')}
+            ch = f['allocation_change_vs_prev']
+            ch['interval_note'] = f"Muutos aikavälillä {prev['as_of']} – {a['as_of']}" + ('' if prev['as_of'][:7] != a['as_of'][:7] and int(a['as_of'][5:7]) - int(prev['as_of'][5:7]) in (1, -11) else ' (ei yhden kuukauden muutos)')
+            if prev.get('source') != a.get('source') and src_type(prev) == src_type(a):
+                ch['source_changed'] = True
+                ch['note'] = f"Eri lähdedokumentti ({prev.get('source')} → {a.get('source')}); muutos osin lähde-/pyöristyseroa"
+            if src_type(prev) != src_type(a):
+                f['allocation_change_vs_prev']['source_changed'] = True
+                f['allocation_change_vs_prev']['note'] = f"Lähde vaihtui ({prev.get('source')} {prev['as_of']} → {a.get('source')} {a['as_of']}); muutos osin menetelmäeroa, ei puhdas kuukausimuutos"
+        else:
+            f['allocation_change_vs_prev'] = None
         f['flags'] = [z for z in f.get('flags', []) if z.get('type') not in ('allocation_stale', 'feed_divergence')]
         if a['as_of'] != snap['month_end']: f['flags'].append({'type': 'allocation_stale', 'note': f"Sisältö {a['as_of']} (ei {snap['month_end']})"})
         changed.append(u['n'])
