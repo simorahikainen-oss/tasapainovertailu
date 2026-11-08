@@ -259,6 +259,10 @@ def content_stage(period, upd_path):
     ups = json.load(open(upd_path)); byn = {f['n']: f for f in snap['funds']}
     changed = []
     for u in ups:
+        if u['n'] in ('VAGF', 'SPYI'):  # vertailu-ETF: korkomittarit benchmark-osioon
+            assert set(u) <= {'n', 'bond_metrics'}, 'ETF:lle vain bond_metrics'
+            snap['benchmark'][f"{u['n']}_bond_metrics"] = validate_bond_metrics(u['bond_metrics'], snap['month_end'], u['n'])
+            changed.append(u['n']); continue
         f = byn[u['n']]
         for fl in u.get('flags', []):
             assert fl.get('type') and fl.get('note'), u['n']

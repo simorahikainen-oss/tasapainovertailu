@@ -67,3 +67,8 @@ Tuottoina EI käytetä screenerin `ReturnM0`/`ReturnM12`-kenttiä: ne päivittyv
 - `bond_metrics` on vain rahastoilla, joiden lähde on tarkistettu (`checked_at`, `as_of_label`). Puuttuva `bond_metrics` = ei tarkistettu (UI: tyhjä, title "ei tarkistettu"); `value: null` + `checked_at` = tarkistettu, lähde ei ilmoita.
 - `exposure_tables.{effective_duration|yield_to_worst}`: Morningstarin "Fixed Income Exposure Analysis" -taulukko sellaisenaan: `heading, as_of, as_of_label, basis` (esim. long positions), `scope` (näkyvästä otsikosta, muuten "unknown"), `cell_unit, columns, rows, values (null = '–'), subtotal_weight, source_url`.
 - Taulukoista laskettua arviota EI tallenneta tarkkoihin kenttiin. Mahdollinen havainnollistava arvio vain erilliseen `illustrative_estimates`-kenttään käyttäjän hyväksynnällä.
+
+### Vertailu-ETF:n korkomittarit
+`benchmark.VAGF_bond_metrics` (ja mahdollinen `SPYI_bond_metrics`): sama rakenne kuin rahaston `bond_metrics`. Syöte `{"n":"VAGF","bond_metrics":{...}}`.
+### Selaimen taulukkobatchin tuonti
+`python3 scripts/import_bond_tables.py <bond_tables_batchN.json> <updates.json>` → `stage_snapshot.py content`. Raportoidut luvut `direct_measures`-kentästä (`effective_duration`, `yield_to_worst`, `as_of_label` "Investment as of Mon DD, YYYY", `scope`); muuten null. Taulukon päivä footnotesta.
