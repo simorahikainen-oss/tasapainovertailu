@@ -44,11 +44,13 @@ def main(src, out):
         dm.pop('scope', None) if dm.get('scope') is None else None
         # vain Effective Duration ja Yield to Worst; YTM/modified duration/coupon eivät ole korvikkeita
         extra = {k: dm[k] for k in ('yield_to_maturity', 'modified_duration', 'weighted_coupon', 'weighted_price') if k in dm}
+        captured = bool(dm)  # null/puuttuva direct_measures = EI KAAPATTU, ei todettu puuttuvaksi
         def rep(k, label):
             v = dm.get(k)
-            return {'value': v, 'as_of': date_from(dm.get('as_of_label')) if v is not None else None, 'label': label}
+            st = 'reported' if v is not None else ('checked_absent' if captured else 'not_checked')
+            return {'value': v, 'as_of': date_from(dm.get('as_of_label')) if v is not None else None, 'label': label, 'check_status': st}
         bm = {'scope': dm.get('scope', 'unknown'), 'method': 'reported', 'source': 'Morningstar portfolio, Bond tab',
-              'source_url': x['url'], 'checked_at': d['read_at'], 'as_of_label': dm.get('as_of_label') or x.get('table_footnote'),
+              'source_url': x['url'], 'checked_at': d['read_at'], 'direct_measures_captured': captured, 'as_of_label': dm.get('as_of_label') or x.get('table_footnote'),
               'effective_duration_years': rep('effective_duration', 'Effective Duration'),
               'yield_to_worst_pct': rep('yield_to_worst', 'Yield to Worst'),
               'note': ' '.join(z for z in ((x.get('note') or '').strip(), (x.get('anomaly') or '').strip()) if z) or None}
