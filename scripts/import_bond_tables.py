@@ -37,7 +37,8 @@ def main(src, out):
     for x in d['funds']:
         n = x['n'] if x['n'] in ('VAGF', 'SPYI') else int(str(x['n']).lstrip('n'))
         exp = VAGF_URL if n == 'VAGF' else F[n]['ms_url']
-        assert x['url'] == exp, (n, x['url'], exp)
+        # VAGF: Morningstar ohjaa saman id:n sekä /etfs/- että /funds/-polkuun
+        assert x['url'] == exp or (n == 'VAGF' and x['url'] == exp.replace('/etfs/', '/funds/')), (n, x['url'], exp)
         if n != 'VAGF': assert x.get('isin') in (None, F[n]['isin']), (n, x.get('isin'))
         dm = dict(x.get('direct_measures') or x.get('direct_measures_Investment_column') or {})
         if dm.get('label') and not dm.get('as_of_label'): dm['as_of_label'] = dm['label']
