@@ -72,3 +72,6 @@ Tuottoina EI käytetä screenerin `ReturnM0`/`ReturnM12`-kenttiä: ne päivittyv
 `benchmark.VAGF_bond_metrics` (ja mahdollinen `SPYI_bond_metrics`): sama rakenne kuin rahaston `bond_metrics`. Syöte `{"n":"VAGF","bond_metrics":{...}}`.
 ### Selaimen taulukkobatchin tuonti
 `python3 scripts/import_bond_tables.py <bond_tables_batchN.json> <updates.json>` → `stage_snapshot.py content`. Raportoidut luvut `direct_measures`-kentästä (`effective_duration`, `yield_to_worst`, `as_of_label` "Investment as of Mon DD, YYYY", `scope`); muuten null. Taulukon päivä footnotesta.
+
+### 50/50 ETF-salkun korkomittarit
+Ei omaa kenttää: käyttöliittymä näyttää 50/50-rivillä `benchmark.VAGF_bond_metrics`-arvot sellaisenaan korko-osuuden (VAGF) mittareina, ei kerrottuna 0,5:llä eikä koko salkun riskimittareina. Revisioissa ilman VAGF_bond_metrics-kenttää solut jäävät tyhjiksi.

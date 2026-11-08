@@ -43,6 +43,22 @@ for col, v in (('Eff. duraatio (v)', 4.47), ('Eff. duraatio pvm', '2026-10-31'),
     if ry.get(col) != v: err.append(f'Ryhti {col}: {ry.get(col)!r} != {v!r}')
 for col, v in (('Duraatioarvion kattavuus %', 79.1), ('YTW-arvion kattavuus %', 98.0), ('Duraatioarvio pvm', '2026-08-31')):
     if np.get(col) != v: err.append(f'Nordea Premium I {col}: {np.get(col)!r} != {v!r}')
+# 50/50-rivi = VAGF:n korko-osuuden mittarit sellaisenaan (ei *0,5)
+vb = s['benchmark'].get('VAGF_bond_metrics') or {}; ve = vb.get('illustrative_estimates') or {}
+mix = next(v for k, v in X.items() if 'ETF-salkku (50/50)' in k); vg = row('IE00BG47KH54')
+mexp = {'Eff. duraatio (v)': vb['effective_duration_years']['value'], 'Eff. duraatio pvm': vb['effective_duration_years']['as_of'],
+        'YTW %': None, 'YTW pvm': None, 'Duraatio ARVIO (v)': ve['effective_duration_years']['value'], 'Duraatioarvion kattavuus %': ve['effective_duration_years']['coverage_pct'],
+        'Duraatioarvio pvm': ve['effective_duration_years']['as_of'], 'YTW ARVIO %': ve['yield_to_worst_pct']['value'], 'YTW-arvion kattavuus %': ve['yield_to_worst_pct']['coverage_pct'], 'YTW-arvio pvm': ve['yield_to_worst_pct']['as_of']}
+pinned = {'Eff. duraatio (v)': 5.99, 'Eff. duraatio pvm': '2026-09-30', 'YTW %': None, 'Duraatio ARVIO (v)': 6.23, 'Duraatioarvion kattavuus %': 97.3,
+          'Duraatioarvio pvm': '2026-09-30', 'YTW ARVIO %': 4.92, 'YTW-arvion kattavuus %': 97.7, 'YTW-arvio pvm': '2026-09-30'}
+for nm, r in (('50/50', mix), ('VAGF', vg)):
+    for col, v in mexp.items():
+        if r.get(col) != v: err.append(f'{nm} {col}: {r.get(col)!r} != data {v!r}')
+    if h['snapshots'][-1].get('revision', 0) >= 7:
+        for col, v in pinned.items():
+            if r.get(col) != v: err.append(f'{nm} {col}: {r.get(col)!r} != kiinnitetty {v!r}')
+if 'korko-osuus' not in str(mix.get('Korkotaulukon pohja (scope)')): err.append('50/50 scope-selite puuttuu')
+print('50/50:', {k: mix.get(k) for k in pinned})
 print('\n'.join(err) or f'OK: Excel-vienti {len(X)} riviä, sarakkeet täsmäävät dataan')
 print('Ryhti:', {k: ry.get(k) for k in ('Eff. duraatio (v)', 'Eff. duraatio pvm', 'Duraatio ARVIO (v)', 'Duraatioarvion kattavuus %', 'Duraatioarvio pvm', 'YTW ARVIO %', 'YTW-arvion kattavuus %', 'YTW-arvio pvm')})
 print('Nordea Premium I:', {k: np.get(k) for k in ('Duraatio ARVIO (v)', 'Duraatioarvion kattavuus %', 'YTW ARVIO %', 'YTW-arvion kattavuus %', 'Duraatioarvio pvm', 'YTW-arvio pvm')})
