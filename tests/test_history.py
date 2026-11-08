@@ -41,6 +41,9 @@ for s in h['snapshots']:
             for k in ('ytd', 'y1', 'y3', 'y5', 'y10'):
                 chk(abs(hz['etf_50_50_rebalanced'][k] - s['benchmark']['etf_50_50_rebalanced'][k]) < 0.015, f'{P} benchmark {k}')
         except SystemExit as e: err.append(str(e))
+    for k in ('VAGF', 'SPYI'):
+        vb = (s.get('benchmark') or {}).get(f'{k}_bond_metrics')
+        if vb: chk(vb.get('checked_at') and vb.get('source_url') and vb.get('method') == 'reported', f'{P} {k}_bond_metrics provenance')
     cc = s.get('content_coverage') or {}
     chk(cc.get('eligible', 0) <= len(s['funds']), f'{P} coverage')
 f16 = fm[16]
