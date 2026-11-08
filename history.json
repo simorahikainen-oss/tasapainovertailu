@@ -8228,19 +8228,19 @@
       "source": "Morningstar portfolio, Bond tab",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
       "checked_at": "2026-11-08",
-      "direct_measures_captured": false,
-      "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+      "direct_measures_captured": true,
+      "as_of_label": "As of Sep 30, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.",
       "effective_duration_years": {
        "value": null,
        "as_of": null,
        "label": "Effective Duration",
-       "check_status": "not_checked"
+       "check_status": "checked_absent"
       },
       "yield_to_worst_pct": {
        "value": null,
        "as_of": null,
        "label": "Yield to Worst",
-       "check_status": "not_checked"
+       "check_status": "checked_absent"
       },
       "note": null,
       "exposure_tables": {
@@ -8532,6 +8532,14 @@
          "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/a94ef0658d8ad047e1c46a27ddbceef71487b4ea77e362dea401371080985d44.png"
         ]
        }
+      },
+      "direct_measures_screenshot": "/workspace/balanced/audit/shots/n12.webp",
+      "direct_measures_read_method": "Computer GUI, Bond tab, Fixed Income Measures only; null = '–' shown",
+      "other_measures_not_used": {
+       "yield_to_maturity": null,
+       "modified_duration": null,
+       "weighted_coupon": 3.58,
+       "weighted_price": 94.32
       },
       "illustrative_estimates": {
        "effective_duration_years": {
@@ -9718,19 +9726,19 @@
       "source": "Morningstar portfolio, Bond tab",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio",
       "checked_at": "2026-11-08",
-      "direct_measures_captured": false,
-      "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+      "direct_measures_captured": true,
+      "as_of_label": "As of Sep 30, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.",
       "effective_duration_years": {
-       "value": null,
-       "as_of": null,
+       "value": 4.65,
+       "as_of": "2026-09-30",
        "label": "Effective Duration",
-       "check_status": "not_checked"
+       "check_status": "reported"
       },
       "yield_to_worst_pct": {
        "value": null,
        "as_of": null,
        "label": "Yield to Worst",
-       "check_status": "not_checked"
+       "check_status": "checked_absent"
       },
       "note": "Fund-of-one: holds Säästöpankki Ryhti B 99.43% (market value 88,397,125 EUR) + cash 0.57%. Tables are Morningstar look-through of that holding as of Sep 30, 2026 (Ryhti B's own page showed Oct 31, 2026).",
       "exposure_tables": {
@@ -10023,6 +10031,14 @@
         ]
        }
       },
+      "direct_measures_screenshot": "/workspace/balanced/audit/shots/n15.webp",
+      "direct_measures_read_method": "Computer GUI, Bond tab, Fixed Income Measures only; null = '–' shown",
+      "other_measures_not_used": {
+       "yield_to_maturity": 3.7,
+       "modified_duration": 4.99,
+       "weighted_coupon": 4.54,
+       "weighted_price": 93.87
+      },
       "illustrative_estimates": {
        "effective_duration_years": {
         "value": 5.45,
@@ -10255,19 +10271,19 @@
       "source": "Morningstar portfolio, Bond tab",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio",
       "checked_at": "2026-11-08",
-      "direct_measures_captured": false,
-      "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+      "direct_measures_captured": true,
+      "as_of_label": "As of Sep 30, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.",
       "effective_duration_years": {
-       "value": null,
-       "as_of": null,
+       "value": 2.67,
+       "as_of": "2026-09-30",
        "label": "Effective Duration",
-       "check_status": "not_checked"
+       "check_status": "reported"
       },
       "yield_to_worst_pct": {
        "value": null,
        "as_of": null,
        "label": "Yield to Worst",
-       "check_status": "not_checked"
+       "check_status": "checked_absent"
       },
       "note": null,
       "exposure_tables": {
@@ -10559,6 +10575,14 @@
          "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/226c2798282b8a72d2cd041d7fd98b688d42a84d1de1726982da494773478281.png"
         ]
        }
+      },
+      "direct_measures_screenshot": "/workspace/balanced/audit/shots/n17.webp",
+      "direct_measures_read_method": "Computer GUI, Bond tab, Fixed Income Measures only; null = '–' shown",
+      "other_measures_not_used": {
+       "yield_to_maturity": 5.32,
+       "modified_duration": 2.52,
+       "weighted_coupon": 3.65,
+       "weighted_price": 95.18
       },
       "illustrative_estimates": {
        "effective_duration_years": {
@@ -14810,9 +14834,15 @@
      "saved_at": "2026-11-08T18:36:39+02:00",
      "path": "revisions/2026-10/r007.json",
      "summary": "Sisältö päivitetty rahastoille [10, 21, 23, 24, 'VAGF']; kuun lopulta 8/24"
+    },
+    {
+     "revision": 8,
+     "saved_at": "2026-11-08T18:39:07+02:00",
+     "path": "revisions/2026-10/r008.json",
+     "summary": "Sisältö päivitetty rahastoille [12, 15, 17]; kuun lopulta 8/24"
     }
    ],
-   "revision": 7
+   "revision": 8
   }
  ],
  "etfs": [
