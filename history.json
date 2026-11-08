@@ -7825,7 +7825,418 @@
        "type": "allocation_stale",
        "note": "Sisältö 2026-08-31 (ei 2026-10-31)"
       }
-     ]
+     ],
+     "bond_metrics": {
+      "scope": "unknown",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
+      "checked_at": "2026-11-08",
+      "direct_measures_captured": false,
+      "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "check_status": "not_checked"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "check_status": "not_checked"
+      },
+      "note": null,
+      "exposure_tables": {
+       "effective_duration": {
+        "heading": "Fixed Income Exposure Analysis – Effective Duration",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "Footnote: data based on long position of holdings. Rating x bucket weights not normalised to 100 (see subtotal sum); percentage base (whole portfolio vs bond sleeve) not stated -> unknown/long_holdings. Direct Effective Duration/YTW summary: none (Fixed Income Measures table absent).",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 Yrs",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 Yrs",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          2.49,
+          3.99,
+          5.2,
+          0.76,
+          1.59,
+          0.84,
+          0.13,
+          8.22,
+          null
+         ],
+         [
+          null,
+          3.47,
+          4.41,
+          3.41,
+          2.22,
+          1.19,
+          1.28,
+          0.11,
+          2.88,
+          null
+         ],
+         [
+          null,
+          0.78,
+          3.63,
+          5.17,
+          3.93,
+          1.56,
+          1.17,
+          0.01,
+          0.27,
+          null
+         ],
+         [
+          null,
+          0.77,
+          4.23,
+          6.21,
+          4.0,
+          1.8,
+          1.04,
+          0.01,
+          0.25,
+          null
+         ],
+         [
+          null,
+          0.36,
+          2.41,
+          3.87,
+          1.34,
+          0.56,
+          0.49,
+          null,
+          0.11,
+          null
+         ],
+         [
+          null,
+          0.12,
+          1.33,
+          1.71,
+          0.4,
+          0.22,
+          0.07,
+          null,
+          0.1,
+          null
+         ],
+         [
+          null,
+          0.05,
+          0.42,
+          0.29,
+          0.17,
+          0.04,
+          null,
+          null,
+          0.33,
+          null
+         ],
+         [
+          0.1,
+          1.08,
+          1.26,
+          2.16,
+          0.55,
+          0.08,
+          0.02,
+          null,
+          1.58,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         23.22,
+         18.97,
+         16.51,
+         18.3,
+         9.14,
+         3.94,
+         1.31,
+         6.83
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/a94ef0658d8ad047e1c46a27ddbceef71487b4ea77e362dea401371080985d44.png"
+        ]
+       },
+       "yield_to_worst": {
+        "heading": "Fixed Income Exposure Analysis – Yield To Worst",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "Footnote: data based on long position of holdings. Rating x bucket weights not normalised to 100 (see subtotal sum); percentage base (whole portfolio vs bond sleeve) not stated -> unknown/long_holdings. Direct Effective Duration/YTW summary: none (Fixed Income Measures table absent).",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 %",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 %",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          null,
+          2.31,
+          18.69,
+          0.05,
+          null,
+          null,
+          null,
+          2.17,
+          null
+         ],
+         [
+          null,
+          null,
+          3.32,
+          10.1,
+          4.85,
+          0.06,
+          null,
+          null,
+          0.65,
+          null
+         ],
+         [
+          0.01,
+          null,
+          0.53,
+          13.7,
+          0.98,
+          0.06,
+          null,
+          null,
+          1.23,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          13.56,
+          3.11,
+          0.71,
+          0.05,
+          0.01,
+          0.87,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.96,
+          5.01,
+          3.01,
+          0.14,
+          null,
+          0.02,
+          null
+         ],
+         [
+          0.02,
+          null,
+          null,
+          0.05,
+          0.61,
+          2.54,
+          0.61,
+          0.0,
+          0.1,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          null,
+          0.17,
+          0.22,
+          0.5,
+          0.08,
+          0.34,
+          null
+         ],
+         [
+          0.07,
+          null,
+          0.16,
+          2.82,
+          1.24,
+          0.6,
+          0.13,
+          0.04,
+          1.77,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         23.22,
+         18.97,
+         16.51,
+         18.3,
+         9.14,
+         3.94,
+         1.31,
+         6.83
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/a94ef0658d8ad047e1c46a27ddbceef71487b4ea77e362dea401371080985d44.png"
+        ]
+       }
+      },
+      "illustrative_estimates": {
+       "effective_duration_years": {
+        "value": 4.44,
+        "covered_weight_pct": 84.14,
+        "open_weight_pct": 0.36,
+        "unknown_weight_pct": 13.74,
+        "total_weight_pct": 98.24,
+        "published_total_weight_pct": 98.22,
+        "coverage_pct": 85.7,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 9.12
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 21.68
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 28.02
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 13.37
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 7.04
+         },
+         {
+          "column": "10-20 Yrs",
+          "midpoint": 15.0,
+          "weight_pct": 4.91
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unclassified_vs_100_pct": 1.78,
+        "caveat": "Taulukon painot summautuvat 98.22 %:iin, eivät 100 %:iin; 1.78 %-yks. luokittelematta (pohja ei tiedossa).",
+        "unit": "v",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       },
+       "yield_to_worst_pct": {
+        "value": 4.74,
+        "covered_weight_pct": 90.85,
+        "open_weight_pct": 0.23,
+        "unknown_weight_pct": 7.15,
+        "total_weight_pct": 98.23,
+        "published_total_weight_pct": 98.22,
+        "coverage_pct": 92.5,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 6.32
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 59.88
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 16.02
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 7.2
+         },
+         {
+          "column": "10-20 %",
+          "midpoint": 15.0,
+          "weight_pct": 1.43
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unclassified_vs_100_pct": 1.78,
+        "caveat": "Taulukon painot summautuvat 98.22 %:iin, eivät 100 %:iin; 1.78 %-yks. luokittelematta (pohja ei tiedossa).",
+        "unit": "%",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       }
+      }
+     }
     },
     {
      "n": 13,
@@ -8904,7 +9315,419 @@
        "type": "allocation_stale",
        "note": "Sisältö 2026-06-30 (ei 2026-10-31)"
       }
-     ]
+     ],
+     "bond_metrics": {
+      "scope": "unknown",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio",
+      "checked_at": "2026-11-08",
+      "direct_measures_captured": false,
+      "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "check_status": "not_checked"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "check_status": "not_checked"
+      },
+      "note": "Fund-of-one: holds Säästöpankki Ryhti B 99.43% (market value 88,397,125 EUR) + cash 0.57%. Tables are Morningstar look-through of that holding as of Sep 30, 2026 (Ryhti B's own page showed Oct 31, 2026).",
+      "exposure_tables": {
+       "effective_duration": {
+        "heading": "Fixed Income Exposure Analysis – Effective Duration",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "Footnote: data based on long position of holdings. Rating x bucket weights not normalised to 100 (see subtotal sum); percentage base (whole portfolio vs bond sleeve) not stated -> unknown/long_holdings. Direct Effective Duration/YTW summary: none (Fixed Income Measures table absent).",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 Yrs",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 Yrs",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          0.01,
+          0.51,
+          0.37,
+          1.28,
+          0.45,
+          0.25,
+          0.36,
+          5.77,
+          null
+         ],
+         [
+          0.0,
+          0.05,
+          1.05,
+          0.64,
+          1.21,
+          1.69,
+          1.84,
+          0.25,
+          0.0,
+          null
+         ],
+         [
+          null,
+          0.14,
+          3.27,
+          3.47,
+          3.11,
+          2.74,
+          2.43,
+          0.01,
+          0.2,
+          null
+         ],
+         [
+          null,
+          0.64,
+          3.66,
+          4.81,
+          5.48,
+          3.72,
+          2.96,
+          0.0,
+          0.41,
+          null
+         ],
+         [
+          0.01,
+          0.88,
+          7.1,
+          9.43,
+          3.82,
+          1.26,
+          2.03,
+          null,
+          0.15,
+          null
+         ],
+         [
+          0.12,
+          1.65,
+          3.27,
+          4.23,
+          0.9,
+          0.65,
+          0.18,
+          null,
+          0.17,
+          null
+         ],
+         [
+          0.0,
+          0.07,
+          0.61,
+          0.37,
+          0.4,
+          0.02,
+          null,
+          null,
+          0.19,
+          null
+         ],
+         [
+          0.27,
+          2.39,
+          0.77,
+          3.48,
+          0.68,
+          0.17,
+          0.35,
+          null,
+          1.6,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         9.0,
+         6.72,
+         15.37,
+         21.68,
+         24.66,
+         11.18,
+         1.67,
+         9.71
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/27a2e7212e418191403727f69ec36624e43014f90d8075bc6a1f2e2f1cc1f5c6.png"
+        ]
+       },
+       "yield_to_worst": {
+        "heading": "Fixed Income Exposure Analysis – Yield To Worst",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "Footnote: data based on long position of holdings. Rating x bucket weights not normalised to 100 (see subtotal sum); percentage base (whole portfolio vs bond sleeve) not stated -> unknown/long_holdings. Direct Effective Duration/YTW summary: none (Fixed Income Measures table absent).",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 %",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 %",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          null,
+          0.01,
+          5.77,
+          null,
+          null,
+          null,
+          null,
+          3.22,
+          null
+         ],
+         [
+          0.0,
+          null,
+          0.0,
+          5.99,
+          0.6,
+          null,
+          null,
+          null,
+          0.13,
+          null
+         ],
+         [
+          null,
+          null,
+          0.0,
+          11.15,
+          3.82,
+          0.01,
+          null,
+          null,
+          0.39,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          11.02,
+          9.67,
+          0.68,
+          null,
+          null,
+          0.31,
+          null
+         ],
+         [
+          null,
+          0.04,
+          0.03,
+          6.15,
+          12.45,
+          5.67,
+          0.15,
+          null,
+          0.16,
+          null
+         ],
+         [
+          0.01,
+          0.01,
+          0.13,
+          0.71,
+          2.81,
+          4.71,
+          2.03,
+          0.21,
+          0.55,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.01,
+          0.1,
+          0.47,
+          0.67,
+          0.21,
+          0.2,
+          null
+         ],
+         [
+          null,
+          null,
+          0.13,
+          2.11,
+          3.92,
+          0.68,
+          0.47,
+          0.01,
+          2.4,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         9.0,
+         6.72,
+         15.37,
+         21.68,
+         24.66,
+         11.18,
+         1.67,
+         9.71
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/27a2e7212e418191403727f69ec36624e43014f90d8075bc6a1f2e2f1cc1f5c6.png"
+        ]
+       }
+      },
+      "illustrative_estimates": {
+       "effective_duration_years": {
+        "value": 5.45,
+        "covered_weight_pct": 90.49,
+        "open_weight_pct": 1.02,
+        "unknown_weight_pct": 8.49,
+        "total_weight_pct": 100.0,
+        "published_total_weight_pct": 99.99,
+        "coverage_pct": 90.5,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 5.83
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 20.24
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 26.8
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 16.88
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 10.7
+         },
+         {
+          "column": "10-20 Yrs",
+          "midpoint": 15.0,
+          "weight_pct": 10.04
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unit": "v",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       },
+       "yield_to_worst_pct": {
+        "value": 5.71,
+        "covered_weight_pct": 92.17,
+        "open_weight_pct": 0.44,
+        "unknown_weight_pct": 7.36,
+        "total_weight_pct": 99.97,
+        "published_total_weight_pct": 99.99,
+        "coverage_pct": 92.2,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 0.05
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 0.3
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 42.91
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 33.37
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 12.22
+         },
+         {
+          "column": "10-20 %",
+          "midpoint": 15.0,
+          "weight_pct": 3.32
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unit": "%",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       }
+      }
+     }
     },
     {
      "n": 16,
@@ -9029,7 +9852,423 @@
        "type": "allocation_stale",
        "note": "Sisältö 2026-06-30 (ei 2026-10-31)"
       }
-     ]
+     ],
+     "bond_metrics": {
+      "scope": "unknown",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio",
+      "checked_at": "2026-11-08",
+      "direct_measures_captured": false,
+      "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "check_status": "not_checked"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "check_status": "not_checked"
+      },
+      "note": null,
+      "exposure_tables": {
+       "effective_duration": {
+        "heading": "Fixed Income Exposure Analysis – Effective Duration",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "Footnote: data based on long position of holdings. Rating x bucket weights not normalised to 100 (see subtotal sum); percentage base (whole portfolio vs bond sleeve) not stated -> unknown/long_holdings. Direct Effective Duration/YTW summary: none (Fixed Income Measures table absent).",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 Yrs",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 Yrs",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          0.33,
+          4.75,
+          1.15,
+          0.52,
+          0.67,
+          0.49,
+          0.07,
+          8.89,
+          null
+         ],
+         [
+          null,
+          0.76,
+          5.89,
+          1.74,
+          0.86,
+          0.95,
+          2.2,
+          0.19,
+          6.56,
+          null
+         ],
+         [
+          0.09,
+          1.77,
+          7.32,
+          2.91,
+          4.74,
+          2.7,
+          2.98,
+          0.13,
+          0.16,
+          null
+         ],
+         [
+          0.05,
+          1.89,
+          5.84,
+          6.25,
+          4.47,
+          2.48,
+          1.41,
+          0.03,
+          0.06,
+          null
+         ],
+         [
+          null,
+          0.17,
+          2.82,
+          3.35,
+          0.92,
+          0.06,
+          0.02,
+          null,
+          0.1,
+          null
+         ],
+         [
+          0.03,
+          0.14,
+          1.32,
+          1.93,
+          0.13,
+          null,
+          null,
+          null,
+          null,
+          null
+         ],
+         [
+          null,
+          0.05,
+          0.5,
+          0.26,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+         ],
+         [
+          0.01,
+          0.5,
+          0.81,
+          1.07,
+          0.32,
+          0.06,
+          0.01,
+          null,
+          0.66,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         16.89,
+         19.15,
+         22.81,
+         22.47,
+         7.43,
+         3.55,
+         0.81,
+         3.43
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/226c2798282b8a72d2cd041d7fd98b688d42a84d1de1726982da494773478281.png"
+        ]
+       },
+       "yield_to_worst": {
+        "heading": "Fixed Income Exposure Analysis – Yield To Worst",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "Footnote: data based on long position of holdings. Rating x bucket weights not normalised to 100 (see subtotal sum); percentage base (whole portfolio vs bond sleeve) not stated -> unknown/long_holdings. Direct Effective Duration/YTW summary: none (Fixed Income Measures table absent).",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 %",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 %",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          0.08,
+          0.11,
+          16.69,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+         ],
+         [
+          null,
+          null,
+          0.74,
+          9.41,
+          8.97,
+          0.02,
+          null,
+          null,
+          null,
+          null
+         ],
+         [
+          null,
+          null,
+          1.17,
+          16.36,
+          4.73,
+          0.03,
+          null,
+          null,
+          0.52,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          13.1,
+          8.2,
+          0.76,
+          null,
+          null,
+          0.42,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.42,
+          4.31,
+          2.51,
+          0.07,
+          null,
+          0.12,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.02,
+          1.25,
+          1.62,
+          0.55,
+          0.06,
+          0.04,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          null,
+          0.12,
+          0.34,
+          0.22,
+          0.12,
+          0.0,
+          null
+         ],
+         [
+          null,
+          null,
+          0.24,
+          2.04,
+          0.35,
+          0.08,
+          0.07,
+          null,
+          0.66,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         16.89,
+         19.15,
+         22.81,
+         22.47,
+         7.43,
+         3.55,
+         0.81,
+         3.43
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/cursor/stores/user/grok-bot/agents/eca8cdc2-e6e9-49e9-aab6-12e107ecd81f/assets/226c2798282b8a72d2cd041d7fd98b688d42a84d1de1726982da494773478281.png"
+        ]
+       }
+      },
+      "illustrative_estimates": {
+       "effective_duration_years": {
+        "value": 4.69,
+        "covered_weight_pct": 79.51,
+        "open_weight_pct": 0.6,
+        "unknown_weight_pct": 16.43,
+        "total_weight_pct": 96.54,
+        "published_total_weight_pct": 96.54,
+        "coverage_pct": 82.4,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 5.61
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 29.25
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 18.66
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 11.96
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 6.92
+         },
+         {
+          "column": "10-20 Yrs",
+          "midpoint": 15.0,
+          "weight_pct": 7.11
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unclassified_vs_100_pct": 3.46,
+        "caveat": "Taulukon painot summautuvat 96.54 %:iin, eivät 100 %:iin; 3.46 %-yks. luokittelematta (pohja ei tiedossa).",
+        "unit": "v",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       },
+       "yield_to_worst_pct": {
+        "value": 4.9,
+        "covered_weight_pct": 94.58,
+        "open_weight_pct": 0.18,
+        "unknown_weight_pct": 1.76,
+        "total_weight_pct": 96.52,
+        "published_total_weight_pct": 96.54,
+        "coverage_pct": 98.0,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 0.08
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 2.26
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 58.04
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 27.93
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 5.36
+         },
+         {
+          "column": "10-20 %",
+          "midpoint": 15.0,
+          "weight_pct": 0.91
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unclassified_vs_100_pct": 3.46,
+        "caveat": "Taulukon painot summautuvat 96.54 %:iin, eivät 100 %:iin; 3.46 %-yks. luokittelematta (pohja ei tiedossa).",
+        "unit": "%",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       }
+      }
+     }
     },
     {
      "n": 18,
@@ -9612,7 +10851,433 @@
        "type": "allocation_stale",
        "note": "Sisältö 2026-09-30 (ei 2026-10-31)"
       }
-     ]
+     ],
+     "bond_metrics": {
+      "scope": "unknown",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
+      "checked_at": "2026-11-08",
+      "direct_measures_captured": true,
+      "as_of_label": "Fixed Income Measures, Investment column; 'As of Sep 30, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+      "effective_duration_years": {
+       "value": 4.26,
+       "as_of": "2026-09-30",
+       "label": "Effective Duration",
+       "check_status": "reported"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "check_status": "checked_absent"
+      },
+      "note": "Screenshots: duration p1,p2, ytw p1,p2, measures/allocation view. Exposure Analysis and Measures both dated Sep 30, 2026 (not Oct).",
+      "other_measures_not_used": {
+       "yield_to_maturity": 5.39,
+       "modified_duration": 4.18,
+       "weighted_coupon": 4.2,
+       "weighted_price": 94.84
+      },
+      "exposure_tables": {
+       "effective_duration": {
+        "heading": "Fixed Income Exposure Analysis – Effective Duration",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "long positions of holdings; percentage base (whole portfolio vs bond sleeve) not stated -> unknown. '–' = null (kept as null), 0.00 = reported zero.",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 Yrs",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 Yrs",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          0.0,
+          1.02,
+          0.85,
+          0.74,
+          0.99,
+          0.75,
+          0.11,
+          null,
+          null
+         ],
+         [
+          null,
+          0.29,
+          3.07,
+          3.7,
+          2.0,
+          1.48,
+          1.67,
+          0.1,
+          null,
+          null
+         ],
+         [
+          null,
+          1.39,
+          10.11,
+          8.06,
+          5.03,
+          3.34,
+          1.75,
+          0.36,
+          0.03,
+          null
+         ],
+         [
+          null,
+          0.93,
+          5.05,
+          5.56,
+          3.05,
+          1.73,
+          0.58,
+          0.01,
+          0.09,
+          null
+         ],
+         [
+          null,
+          0.79,
+          8.32,
+          7.68,
+          1.65,
+          0.38,
+          0.02,
+          null,
+          0.23,
+          null
+         ],
+         [
+          null,
+          0.57,
+          3.56,
+          3.21,
+          0.13,
+          null,
+          null,
+          null,
+          0.02,
+          null
+         ],
+         [
+          null,
+          0.1,
+          0.92,
+          0.34,
+          0.01,
+          null,
+          null,
+          null,
+          0.05,
+          null
+         ],
+         [
+          null,
+          0.03,
+          1.01,
+          1.01,
+          0.37,
+          0.31,
+          0.4,
+          null,
+          5.07,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         4.46,
+         12.3,
+         30.07,
+         17.0,
+         19.06,
+         7.48,
+         1.42,
+         8.2
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/workspace/balanced/b6/shots/n19_3202e361.webp",
+         "/workspace/balanced/b6/shots/n19_c54bc065.webp",
+         "/workspace/balanced/b6/shots/n19_8fe8524a.webp",
+         "/workspace/balanced/b6/shots/n19_0952bde5.webp",
+         "/workspace/balanced/b6/shots/n19_25be9b7d.webp"
+        ]
+       },
+       "yield_to_worst": {
+        "heading": "Fixed Income Exposure Analysis – Yield To Worst",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "long positions of holdings; percentage base (whole portfolio vs bond sleeve) not stated -> unknown. '–' = null (kept as null), 0.00 = reported zero.",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 %",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 %",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          null,
+          0.55,
+          3.38,
+          0.53,
+          null,
+          null,
+          null,
+          null,
+          null
+         ],
+         [
+          null,
+          null,
+          0.14,
+          7.56,
+          4.53,
+          0.02,
+          null,
+          null,
+          0.05,
+          null
+         ],
+         [
+          null,
+          0.04,
+          2.79,
+          20.46,
+          5.16,
+          null,
+          null,
+          null,
+          1.63,
+          null
+         ],
+         [
+          null,
+          null,
+          0.24,
+          8.31,
+          5.34,
+          2.71,
+          0.17,
+          null,
+          0.24,
+          null
+         ],
+         [
+          0.09,
+          0.03,
+          null,
+          4.43,
+          9.65,
+          3.43,
+          1.17,
+          0.18,
+          0.09,
+          null
+         ],
+         [
+          0.06,
+          0.01,
+          0.02,
+          0.45,
+          2.94,
+          2.85,
+          1.03,
+          0.12,
+          0.01,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.02,
+          0.21,
+          0.38,
+          0.46,
+          0.27,
+          0.08,
+          null
+         ],
+         [
+          null,
+          null,
+          0.39,
+          1.25,
+          0.67,
+          0.54,
+          0.03,
+          0.25,
+          5.06,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         4.46,
+         12.3,
+         30.07,
+         17.0,
+         19.06,
+         7.48,
+         1.42,
+         8.2
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/workspace/balanced/b6/shots/n19_3202e361.webp",
+         "/workspace/balanced/b6/shots/n19_c54bc065.webp",
+         "/workspace/balanced/b6/shots/n19_8fe8524a.webp",
+         "/workspace/balanced/b6/shots/n19_0952bde5.webp",
+         "/workspace/balanced/b6/shots/n19_25be9b7d.webp"
+        ]
+       }
+      },
+      "illustrative_estimates": {
+       "effective_duration_years": {
+        "value": 4.42,
+        "covered_weight_pct": 93.95,
+        "open_weight_pct": 0.58,
+        "unknown_weight_pct": 5.49,
+        "total_weight_pct": 100.02,
+        "published_total_weight_pct": 99.99,
+        "coverage_pct": 94.0,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 4.1
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 33.06
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 30.41
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 12.98
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 8.23
+         },
+         {
+          "column": "10-20 Yrs",
+          "midpoint": 15.0,
+          "weight_pct": 5.17
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unit": "v",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       },
+       "yield_to_worst_pct": {
+        "value": 5.37,
+        "covered_weight_pct": 91.89,
+        "open_weight_pct": 0.97,
+        "unknown_weight_pct": 7.16,
+        "total_weight_pct": 100.02,
+        "published_total_weight_pct": 99.99,
+        "coverage_pct": 91.9,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 0.08
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 4.13
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 45.86
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 29.03
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 9.93
+         },
+         {
+          "column": "10-20 %",
+          "midpoint": 15.0,
+          "weight_pct": 2.86
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unit": "%",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       }
+      }
+     }
     },
     {
      "n": 20,
@@ -9694,7 +11359,433 @@
        "type": "allocation_stale",
        "note": "Sisältö 2026-09-30 (ei 2026-10-31)"
       }
-     ]
+     ],
+     "bond_metrics": {
+      "scope": "unknown",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
+      "checked_at": "2026-11-08",
+      "direct_measures_captured": true,
+      "as_of_label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' Duration/YTM '–'; no YTW row.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "check_status": "checked_absent"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "check_status": "checked_absent"
+      },
+      "note": "Screenshots: duration p1,p2, ytw p1,p2, measures/allocation. Dates Sep 30, 2026 (not Oct). Cash net negative (-2.42) as reported.",
+      "other_measures_not_used": {
+       "yield_to_maturity": null,
+       "modified_duration": null,
+       "weighted_coupon": 3.53,
+       "weighted_price": 97.21
+      },
+      "exposure_tables": {
+       "effective_duration": {
+        "heading": "Fixed Income Exposure Analysis – Effective Duration",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "long positions of holdings; percentage base (whole portfolio vs bond sleeve) not stated -> unknown. '–' = null (kept as null), 0.00 = reported zero.",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 Yrs",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 Yrs",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          0.4,
+          1.78,
+          5.5,
+          1.87,
+          1.3,
+          1.02,
+          0.52,
+          null,
+          null
+         ],
+         [
+          null,
+          1.83,
+          4.05,
+          1.44,
+          2.56,
+          1.05,
+          1.24,
+          null,
+          null,
+          null
+         ],
+         [
+          null,
+          5.28,
+          9.28,
+          6.96,
+          4.99,
+          1.68,
+          0.78,
+          null,
+          null,
+          null
+         ],
+         [
+          0.04,
+          3.62,
+          6.02,
+          5.12,
+          4.3,
+          2.81,
+          0.85,
+          null,
+          0.48,
+          null
+         ],
+         [
+          0.0,
+          0.26,
+          0.73,
+          1.07,
+          0.22,
+          0.03,
+          null,
+          null,
+          0.0,
+          null
+         ],
+         [
+          0.02,
+          0.13,
+          0.12,
+          0.22,
+          0.01,
+          null,
+          null,
+          null,
+          null,
+          null
+         ],
+         [
+          null,
+          0.02,
+          0.13,
+          0.0,
+          null,
+          null,
+          null,
+          null,
+          0.03,
+          null
+         ],
+         [
+          0.62,
+          8.97,
+          6.09,
+          3.23,
+          0.59,
+          0.04,
+          null,
+          null,
+          0.67,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         12.41,
+         12.17,
+         28.97,
+         23.24,
+         2.31,
+         0.51,
+         0.19,
+         20.21
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/workspace/balanced/b6/shots/n20_cefd5dc7.webp",
+         "/workspace/balanced/b6/shots/n20_815bd28d.webp",
+         "/workspace/balanced/b6/shots/n20_ea16a8bb.webp",
+         "/workspace/balanced/b6/shots/n20_ea553d38.webp",
+         "/workspace/balanced/b6/shots/n20_42d633e7.webp"
+        ]
+       },
+       "yield_to_worst": {
+        "heading": "Fixed Income Exposure Analysis – Yield To Worst",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "long positions of holdings; percentage base (whole portfolio vs bond sleeve) not stated -> unknown. '–' = null (kept as null), 0.00 = reported zero.",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 %",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 %",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          null,
+          0.28,
+          12.12,
+          0.01,
+          null,
+          null,
+          null,
+          null,
+          null
+         ],
+         [
+          null,
+          null,
+          1.47,
+          9.68,
+          0.62,
+          null,
+          null,
+          null,
+          0.4,
+          null
+         ],
+         [
+          0.06,
+          null,
+          2.28,
+          25.22,
+          0.13,
+          null,
+          null,
+          null,
+          1.27,
+          null
+         ],
+         [
+          null,
+          null,
+          1.52,
+          17.0,
+          3.28,
+          0.55,
+          null,
+          null,
+          0.9,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.19,
+          1.61,
+          0.5,
+          0.01,
+          null,
+          0.0,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.03,
+          0.2,
+          0.16,
+          0.02,
+          null,
+          0.1,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.14,
+          0.02,
+          null,
+          0.03,
+          null
+         ],
+         [
+          0.07,
+          0.14,
+          4.34,
+          11.33,
+          1.69,
+          0.16,
+          0.1,
+          0.06,
+          2.31,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         12.41,
+         12.17,
+         28.97,
+         23.24,
+         2.31,
+         0.51,
+         0.19,
+         20.21
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/workspace/balanced/b6/shots/n20_cefd5dc7.webp",
+         "/workspace/balanced/b6/shots/n20_815bd28d.webp",
+         "/workspace/balanced/b6/shots/n20_ea16a8bb.webp",
+         "/workspace/balanced/b6/shots/n20_ea553d38.webp",
+         "/workspace/balanced/b6/shots/n20_42d633e7.webp"
+        ]
+       }
+      },
+      "illustrative_estimates": {
+       "effective_duration_years": {
+        "value": 3.74,
+        "covered_weight_pct": 97.59,
+        "open_weight_pct": 1.2,
+        "unknown_weight_pct": 1.18,
+        "total_weight_pct": 99.97,
+        "published_total_weight_pct": 100.01,
+        "coverage_pct": 97.6,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 20.51
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 28.2
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 23.54
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 14.54
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 6.91
+         },
+         {
+          "column": "10-20 Yrs",
+          "midpoint": 15.0,
+          "weight_pct": 3.89
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unit": "v",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       },
+       "yield_to_worst_pct": {
+        "value": 4.03,
+        "covered_weight_pct": 94.8,
+        "open_weight_pct": 0.19,
+        "unknown_weight_pct": 5.01,
+        "total_weight_pct": 100.0,
+        "published_total_weight_pct": 100.01,
+        "coverage_pct": 94.8,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 0.14
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 9.89
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 75.57
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 7.54
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 1.51
+         },
+         {
+          "column": "10-20 %",
+          "midpoint": 15.0,
+          "weight_pct": 0.15
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unit": "%",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       }
+      }
+     }
     },
     {
      "n": 21,
@@ -9884,7 +11975,433 @@
        "type": "allocation_stale",
        "note": "Sisältö 2026-09-30 (ei 2026-10-31)"
       }
-     ]
+     ],
+     "bond_metrics": {
+      "scope": "unknown",
+      "method": "reported",
+      "source": "Morningstar portfolio, Bond tab",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio",
+      "checked_at": "2026-11-08",
+      "direct_measures_captured": true,
+      "as_of_label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' Duration/YTM '–'; no YTW row.",
+      "effective_duration_years": {
+       "value": null,
+       "as_of": null,
+       "label": "Effective Duration",
+       "check_status": "checked_absent"
+      },
+      "yield_to_worst_pct": {
+       "value": null,
+       "as_of": null,
+       "label": "Yield to Worst",
+       "check_status": "checked_absent"
+      },
+      "note": "Screenshots: duration p1,p2, ytw p1,p2, measures/allocation. Dates Sep 30, 2026 (not Oct). Wrapper-style allocation (98.10% Other) not usable.",
+      "other_measures_not_used": {
+       "yield_to_maturity": null,
+       "modified_duration": null,
+       "weighted_coupon": 4.74,
+       "weighted_price": 96.5
+      },
+      "exposure_tables": {
+       "effective_duration": {
+        "heading": "Fixed Income Exposure Analysis – Effective Duration",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "long positions of holdings; percentage base (whole portfolio vs bond sleeve) not stated -> unknown. '–' = null (kept as null), 0.00 = reported zero.",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 Yrs",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 Yrs",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          0.59,
+          0.78,
+          0.21,
+          0.22,
+          0.01,
+          0.09,
+          0.0,
+          0.54,
+          null
+         ],
+         [
+          0.0,
+          0.99,
+          0.51,
+          0.39,
+          0.43,
+          0.23,
+          0.49,
+          null,
+          2.34,
+          null
+         ],
+         [
+          0.03,
+          3.95,
+          2.02,
+          4.69,
+          3.35,
+          2.0,
+          0.67,
+          null,
+          0.11,
+          null
+         ],
+         [
+          null,
+          3.6,
+          4.1,
+          6.2,
+          7.39,
+          2.81,
+          0.75,
+          null,
+          0.83,
+          null
+         ],
+         [
+          0.02,
+          1.77,
+          4.01,
+          8.01,
+          2.53,
+          1.18,
+          0.66,
+          null,
+          0.58,
+          null
+         ],
+         [
+          0.12,
+          2.08,
+          2.66,
+          4.11,
+          0.8,
+          0.08,
+          0.03,
+          null,
+          0.03,
+          null
+         ],
+         [
+          0.0,
+          0.06,
+          0.47,
+          0.2,
+          null,
+          null,
+          null,
+          null,
+          0.09,
+          null
+         ],
+         [
+          0.46,
+          5.45,
+          2.48,
+          3.16,
+          0.82,
+          0.16,
+          null,
+          null,
+          7.55,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         2.44,
+         5.39,
+         16.82,
+         25.69,
+         18.75,
+         9.91,
+         0.82,
+         20.07
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/workspace/balanced/b6/shots/n22_ad179a8a.webp",
+         "/workspace/balanced/b6/shots/n22_29bb407c.webp",
+         "/workspace/balanced/b6/shots/n22_7dd4392f.webp",
+         "/workspace/balanced/b6/shots/n22_b034f0ad.webp",
+         "/workspace/balanced/b6/shots/n22_2a0af44f.webp"
+        ]
+       },
+       "yield_to_worst": {
+        "heading": "Fixed Income Exposure Analysis – Yield To Worst",
+        "as_of": "2026-09-30",
+        "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+        "basis": "long positions of holdings (holdings-based calculations)",
+        "scope": "unknown",
+        "scope_note": "long positions of holdings; percentage base (whole portfolio vs bond sleeve) not stated -> unknown. '–' = null (kept as null), 0.00 = reported zero.",
+        "cell_unit": "% (taulukon solut; pohja ei ilmoitettu)",
+        "columns": [
+         "<0 %",
+         "0-1",
+         "1-3",
+         "3-5",
+         "5-7",
+         "7-10",
+         "10-20 %",
+         ">20",
+         "Unk",
+         "Not Applicable"
+        ],
+        "rows": [
+         "AAA",
+         "AA",
+         "A",
+         "BBB",
+         "BB",
+         "B",
+         "Below B",
+         "Not Rated"
+        ],
+        "values": [
+         [
+          null,
+          null,
+          0.26,
+          0.49,
+          0.5,
+          0.56,
+          null,
+          0.13,
+          0.51,
+          null
+         ],
+         [
+          null,
+          null,
+          0.7,
+          1.63,
+          2.92,
+          0.0,
+          null,
+          null,
+          0.13,
+          null
+         ],
+         [
+          0.06,
+          0.02,
+          1.26,
+          12.66,
+          1.65,
+          0.03,
+          null,
+          null,
+          1.14,
+          null
+         ],
+         [
+          null,
+          null,
+          0.29,
+          15.1,
+          5.93,
+          3.21,
+          0.19,
+          null,
+          0.97,
+          null
+         ],
+         [
+          0.21,
+          null,
+          0.06,
+          4.14,
+          9.2,
+          3.46,
+          1.3,
+          null,
+          0.37,
+          null
+         ],
+         [
+          null,
+          null,
+          0.31,
+          0.61,
+          4.48,
+          2.22,
+          1.26,
+          0.2,
+          0.82,
+          null
+         ],
+         [
+          null,
+          null,
+          null,
+          0.03,
+          0.14,
+          0.29,
+          0.22,
+          0.04,
+          0.09,
+          null
+         ],
+         [
+          0.06,
+          0.0,
+          0.5,
+          3.96,
+          2.66,
+          2.24,
+          1.34,
+          0.19,
+          9.1,
+          null
+         ]
+        ],
+        "subtotal_weight": [
+         2.44,
+         5.39,
+         16.82,
+         25.69,
+         18.75,
+         9.91,
+         0.82,
+         20.07
+        ],
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio",
+        "read_method": "n19,n20,n22 read via Computer GUI actions only (screenshots); values transcribed visually. n12,n15,n17 reused from earlier b5 captures",
+        "screenshots": [
+         "/workspace/balanced/b6/shots/n22_ad179a8a.webp",
+         "/workspace/balanced/b6/shots/n22_29bb407c.webp",
+         "/workspace/balanced/b6/shots/n22_7dd4392f.webp",
+         "/workspace/balanced/b6/shots/n22_b034f0ad.webp",
+         "/workspace/balanced/b6/shots/n22_2a0af44f.webp"
+        ]
+       }
+      },
+      "illustrative_estimates": {
+       "effective_duration_years": {
+        "value": 3.9,
+        "covered_weight_pct": 87.19,
+        "open_weight_pct": 0.63,
+        "unknown_weight_pct": 12.07,
+        "total_weight_pct": 99.89,
+        "published_total_weight_pct": 99.89,
+        "coverage_pct": 87.3,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 18.49
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 17.03
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 26.97
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 15.54
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 6.47
+         },
+         {
+          "column": "10-20 Yrs",
+          "midpoint": 15.0,
+          "weight_pct": 2.69
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unit": "v",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       },
+       "yield_to_worst_pct": {
+        "value": 5.74,
+        "covered_weight_pct": 85.82,
+        "open_weight_pct": 0.89,
+        "unknown_weight_pct": 13.13,
+        "total_weight_pct": 99.84,
+        "published_total_weight_pct": 99.89,
+        "coverage_pct": 85.9,
+        "coverage_basis": "suljetut / julkaistu Subtotal-summa",
+        "buckets_used": [
+         {
+          "column": "0-1",
+          "midpoint": 0.5,
+          "weight_pct": 0.02
+         },
+         {
+          "column": "1-3",
+          "midpoint": 2.0,
+          "weight_pct": 3.38
+         },
+         {
+          "column": "3-5",
+          "midpoint": 4.0,
+          "weight_pct": 38.62
+         },
+         {
+          "column": "5-7",
+          "midpoint": 6.0,
+          "weight_pct": 27.48
+         },
+         {
+          "column": "7-10",
+          "midpoint": 8.5,
+          "weight_pct": 12.01
+         },
+         {
+          "column": "10-20 %",
+          "midpoint": 15.0,
+          "weight_pct": 4.31
+         }
+        ],
+        "row_sum_anomalies": [],
+        "unit": "%",
+        "as_of": "2026-09-30",
+        "scope": "unknown",
+        "label": "arvio",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio",
+        "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
+       }
+      }
+     }
     },
     {
      "n": 23,
@@ -10238,9 +12755,15 @@
      "saved_at": "2026-11-08T18:26:06+02:00",
      "path": "revisions/2026-10/r005.json",
      "summary": "Sisältö päivitetty rahastoille [1, 7, 18, 14, 13, 8]; kuun lopulta 8/24"
+    },
+    {
+     "revision": 6,
+     "saved_at": "2026-11-08T18:30:19+02:00",
+     "path": "revisions/2026-10/r006.json",
+     "summary": "Sisältö päivitetty rahastoille [12, 15, 17, 19, 20, 22]; kuun lopulta 8/24"
     }
    ],
-   "revision": 5
+   "revision": 6
   }
  ],
  "etfs": [

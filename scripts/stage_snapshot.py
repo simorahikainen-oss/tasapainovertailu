@@ -250,6 +250,9 @@ def validate_bond_metrics(b, month_end, n):
         assert m['label'] == label, f"n{n}: {k} label '{m['label']}' != '{label}' – ei korviketta"
         if m['value'] is not None:
             assert isinstance(m['value'], (int, float)) and m['as_of'] and m['as_of'] <= month_end, f'n{n}: {k} arvo vaatii as_of <= kuun loppu'
+        if 'check_status' in m:
+            assert m['check_status'] in ('reported', 'checked_absent', 'not_checked'), f'n{n}: {k} check_status'
+            assert (m['check_status'] == 'reported') == (m['value'] is not None), f'n{n}: {k} check_status vs value'
         b[k] = m
     return b
 
