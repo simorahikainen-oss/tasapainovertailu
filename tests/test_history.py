@@ -80,5 +80,39 @@ for s in h['snapshots']:
             chk(e.get('label') == 'arvio' and e.get('coverage_pct') is not None and e.get('as_of'), f"{s['period']} n{f['n']} arvio-provenance")
             ex = bm.get(k) or {}
             chk(ex.get('value') is None or ex.get('value') != e.get('value') or True, 'ok')
+# markkinavaikutus (market_drift): käsin tarkistettu esimerkki ja tyhjän käsittely
+import market_drift as MD
+_d = MD.drift(60, 40, 0.10, 0.0)  # 66/(66+40)=62,264 %
+chk(abs(_d[0] - 6600 / 106) < 1e-9 and abs(_d[2] - (6600 / 106 - 60)) < 1e-9 and abs(_d[3] + _d[2]) < 1e-9, 'drift: 60/40, +10 %/0 %')
+_d = MD.drift(50, 40, -0.10, 0.05)  # muu 10 % tuotolla 0: 45/(45+42+10)=46,392 %, 42/97=43,299 %
+chk(abs(_d[0] - 4500 / 97) < 1e-9 and abs(_d[1] - 4200 / 97) < 1e-9 and round(_d[2], 2) == -3.61 and round(_d[3], 2) == 3.30, 'drift: muu-paino 0 % tuotolla')
+_rows = [{'month': '2026-09', 'month_end_date': '2026-09-30', 'spyi_ret': '0.01', 'bond_ret': '0.0', 'bond_source': 'VAGF.DE'},
+         {'month': '2026-10', 'month_end_date': '2026-10-30', 'spyi_ret': '0.10', 'bond_ret': '0.0', 'bond_source': 'VAGF.DE'}]
+_m = MD.market_drift({'equity_pp': 3.0, 'fixed_income_pp': -3.0, 'prev_as_of': '2026-09-30', 'cur_as_of': '2026-10-31'}, {'equity_pct': 60, 'fixed_income_pct': 40, 'as_of': '2026-09-30'}, _rows)
+chk(_m['status'] == 'computed' and _m['equity_pp'] == 2.26 and _m['fixed_income_pp'] == -2.26 and _m['residual_equity_pp'] == 0.74 and _m['residual_fixed_income_pp'] == -0.74 and _m['etf_returns']['equity']['months'] == ['2026-10'] and _m['etf_returns']['equity']['to_close'] == '2026-10-30', 'market_drift laskettu')
+for _ch, _pv in (({'equity_pp': 1, 'fixed_income_pp': 1, 'prev_as_of': '2026-09-15', 'cur_as_of': '2026-10-31'}, {'equity_pct': 60, 'fixed_income_pct': 40}),   # ei kk-loppu
+                 ({'equity_pp': 1, 'fixed_income_pp': 1, 'prev_as_of': '2026-09-30', 'cur_as_of': '2026-11-30'}, {'equity_pct': 60, 'fixed_income_pct': 40}),   # tuotto puuttuu
+                 ({'equity_pp': 1, 'fixed_income_pp': None, 'prev_as_of': '2026-09-30', 'cur_as_of': '2026-10-31'}, {'equity_pct': 60, 'fixed_income_pct': None})):  # paino puuttuu
+    _m = MD.market_drift(_ch, _pv, _rows)
+    chk(_m['status'] == 'unavailable' and _m['reason'] and _m['equity_pp'] is None and _m['fixed_income_pp'] is None and _m['residual_equity_pp'] is None, f'market_drift tyhjä: {_ch}')
+for s in h['snapshots']:
+    for f in s['funds']:
+        ch = f.get('allocation_change_vs_prev') or {}
+        m = ch.get('market_drift')
+        if not m: continue
+        if m['status'] == 'computed':
+            w = m['prev_weights']; e = m['etf_returns']
+            d = MD.drift(w['equity_pct'], w['fixed_income_pct'], e['equity']['return_pct'] / 100, e['bond']['return_pct'] / 100)
+            chk(abs(d[2] - m['equity_pp']) < 0.006 and abs(d[3] - m['fixed_income_pp']) < 0.006, f"{s['period']} n{f['n']} market_drift kaava")
+            chk(e['equity']['etf'] == 'SPYI' and e['bond']['etf'] == 'VAGF' and e['equity']['source'] and w['as_of'] == ch['prev_as_of'], f"{s['period']} n{f['n']} market_drift lähteet")
+            if ch.get('equity_pp') is not None: chk(abs(ch['equity_pp'] - m['equity_pp'] - m['residual_equity_pp']) < 0.011, f"{s['period']} n{f['n']} residuaali osake")
+            if ch.get('fixed_income_pp') is not None: chk(abs(ch['fixed_income_pp'] - m['fixed_income_pp'] - m['residual_fixed_income_pp']) < 0.011, f"{s['period']} n{f['n']} residuaali korko")
+        else:
+            chk(m.get('reason') and m['equity_pp'] is None and m['fixed_income_pp'] is None, f"{s['period']} n{f['n']} market_drift tyhjä ilman syytä")
+# kiinnitetty: OP-Maltillinen 10/2026 (57,6/41,1/1,3; SPYI -0,3085 %, VAGF +1,4518 %)
+_s10 = next(s for s in h['snapshots'] if s['period'] == '2026-10')
+if _s10['revision'] >= 10:
+    _op = next(f for f in _s10['funds'] if f['n'] == 14)['allocation_change_vs_prev']['market_drift']
+    chk((_op['equity_pp'], _op['fixed_income_pp'], _op['residual_equity_pp'], _op['residual_fixed_income_pp']) == (-0.42, 0.42, 0.42, -0.12), 'OP-Maltillinen markkinavaikutus')
 print('\n'.join(err) or f'OK: {len(periods)} kautta {periods}')
 sys.exit(1 if err else 0)
