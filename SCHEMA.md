@@ -33,6 +33,9 @@ Kaikki muutokset ovat lisääviä: schema 1 -kentät säilyvät, joten vanha kä
 - `allocation_change_vs_prev` – vain kun sisällön `as_of` muuttui; muuten null.
 - `flags[]`: `{type, note}`; tyypit `allocation_stale` (sisältö ei kuun lopulta), `feed_divergence` (feedin uudempi osakepaino poikkeaa > 5 %-yks.).
 - `costs`, `features`, `explanation`, `text_from_period` (miltä kuulta kuvausteksti on).
+- `costs`: `ongoing_cost_pct`, `fund_size` (valuutan yksiköissä, ei miljoonissa), `fund_size_currency`, `fund_size_as_of`, `source`, `source_url`, `fetched_at`, `note?`.
+  `fund_size_type`: `"fund"` (Morningstar Fund Size, koko rahasto) tai `"share_class"` (vain osuussarjan koko / Share class size). Puuttuva tyyppi = aiempi FundTNAV, joka on rahastotasoinen. Ensisijainen on rahastokoko; osuussarjan koko vain jos rahastokokoa ei ole, ja se merkitään tyypillä sekä UI:ssa ("osuussarja") että Excelin Koko-tyyppi-sarakkeessa. Puuttuva koko = null (ei 0). Taulukko näyttää `round(fund_size/1e6)`; alle 0,5 M jätetään tyhjäksi, jotta virheellinen pieni FundTNAV ei näy nollana.
+
 
 ## Keskimääräinen osakepaino (kaavio)
 Kullekin snapshotille: tasapainoinen (equal weight) keskiarvo `allocation_primary.equity_pct`-arvoista niiltä rahastoilta, joilla arvo on ja jotka

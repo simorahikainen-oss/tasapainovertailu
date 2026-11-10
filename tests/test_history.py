@@ -114,5 +114,21 @@ _s10 = next(s for s in h['snapshots'] if s['period'] == '2026-10')
 if _s10['revision'] >= 10:
     _op = next(f for f in _s10['funds'] if f['n'] == 14)['allocation_change_vs_prev']['market_drift']
     chk((_op['equity_pp'], _op['fixed_income_pp'], _op['residual_equity_pp'], _op['residual_fixed_income_pp']) == (-0.42, 0.42, 0.42, -0.12), 'OP-Maltillinen markkinavaikutus')
+# r011: Nordnet One rahastokoko (Morningstar Global Fund Size); r010 arkisto ennallaan
+_r010 = json.load(open(ROOT / 'revisions/2026-10/r010.json'))
+_nn10 = next(f for f in _r010['funds'] if f['n'] == 20)['costs']
+chk(_nn10.get('fund_size') == 1599 and _nn10.get('fund_size_currency') is None, 'r010 Nordnet koko ennallaan')
+if _s10['revision'] >= 11:
+    _nn = next(f for f in _s10['funds'] if f['n'] == 20)['costs']
+    chk(_nn['fund_size'] == 55146100 and _nn['fund_size_currency'] == 'EUR' and _nn['fund_size_as_of'] == '2026-11-05' and _nn['fund_size_type'] == 'fund', 'Nordnet One rahastokoko r011')
+    chk(round(_nn['fund_size'] / 1e6) == 55, 'Nordnet koko ei pyöristy nollaan')
+    chk('osuussarja' in (_nn.get('note') or '').lower() or 'share class' in (_nn.get('note') or '').lower(), 'Nordnet notessa osuussarja')
+for s in h['snapshots']:
+    for f in s['funds']:
+        typ = (f.get('costs') or {}).get('fund_size_type')
+        chk(typ in (None, 'fund', 'share_class'), f"{s['period']} n{f['n']} fund_size_type")
+        sz = (f.get('costs') or {}).get('fund_size')
+        if typ: chk(sz and (f.get('costs') or {}).get('fund_size_currency') in ('EUR', 'USD') and (f.get('costs') or {}).get('fund_size_as_of'), f"{s['period']} n{f['n']} koko puutteellinen tyypin kanssa")
+
 print('\n'.join(err) or f'OK: {len(periods)} kautta {periods}')
 sys.exit(1 if err else 0)
