@@ -1,0 +1,15 @@
+[
+ {
+  "n": 20,
+  "costs": {
+   "fund_size": 55146100,
+   "fund_size_currency": "EUR",
+   "fund_size_as_of": "2026-11-05",
+   "fund_size_type": "fund",
+   "source": "Morningstar Global quote: Fund Size (juoksevat kulut ennallaan, screener OngoingCharge)",
+   "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/quote",
+   "fetched_at": "2026-11-10",
+   "note": "Rahastokoko (Fund Size) 55 146 100 EUR 5.11.2026; osuussarjan koko (Share class size) sama, vain yksi osuussarja. Morningstarin surveyed FundTNAV / Fund Size -kyselyarvo 1 599 EUR (30.10.) on virheellinen eikä sitä käytetä."
+  }
+ }
+]

@@ -72,6 +72,13 @@ if s.get('revision', 0) >= 10:
     for col, v in (('Osake Δ markkina (%-yks.)', -0.42), ('Korko Δ markkina (%-yks.)', 0.42), ('Osake Δ aktiivinen/muu (%-yks.)', 0.42), ('Korko Δ aktiivinen/muu (%-yks.)', -0.12)):
         if op.get(col) != v: err.append(f'OP-Maltillinen {col}: {op.get(col)!r} != {v!r}')
     print('OP-Maltillinen:', {k: op.get(k) for k in ('Osake Δ', 'Osake Δ markkina (%-yks.)', 'Osake Δ aktiivinen/muu (%-yks.)', 'Korko Δ', 'Korko Δ markkina (%-yks.)', 'Korko Δ aktiivinen/muu (%-yks.)')})
+# r011: Nordnet koko ja tyyppi
+if s.get('revision', 0) >= 11:
+    nn = next(v for k, v in X.items() if 'SE0017832439' in k or 'Nordnet One' in k)
+    if nn.get('Koko (M)') != 55.1461: err.append(f"Nordnet Koko (M): {nn.get('Koko (M)')!r} != 55.1461")
+    if nn.get('Koko-tyyppi') != 'rahasto': err.append(f"Nordnet Koko-tyyppi: {nn.get('Koko-tyyppi')!r} != 'rahasto'")
+    print('Nordnet:', {k: nn.get(k) for k in ('Koko (M)', 'Koko-tyyppi')})
+
 print('50/50:', {k: mix.get(k) for k in pinned})
 print('\n'.join(err) or f'OK: Excel-vienti {len(X)} riviä, sarakkeet täsmäävät dataan')
 print('Ryhti:', {k: ry.get(k) for k in ('Eff. duraatio (v)', 'Eff. duraatio pvm', 'Duraatio ARVIO (v)', 'Duraatioarvion kattavuus %', 'Duraatioarvio pvm', 'YTW ARVIO %', 'YTW-arvion kattavuus %', 'YTW-arvio pvm')})

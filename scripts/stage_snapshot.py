@@ -2,7 +2,7 @@
 """Luo tai päivittää kuukausisnapshotin vaiheittain (ks. SCHEMA.md).
 
   python3 scripts/stage_snapshot.py returns 2026-10   # tuotot + vertailu heti kuun lopun jälkeen
-  python3 scripts/stage_snapshot.py content 2026-10 updates.json   # sisältö (allokaatio) kun saatavilla
+  python3 scripts/stage_snapshot.py content 2026-10 updates.json   # sisältö (allokaatio, korkomittarit tai costs/koko) kun saatavilla
   python3 scripts/stage_snapshot.py drift 2026-10   # painomuutosten markkinavaikutus (SPYI/VAGF) uutena revisiona
 
 Jokainen tallennus kirjoittaa koko snapshotin kopion revisions/<kausi>/rNNN.json
@@ -258,6 +258,29 @@ def validate_bond_metrics(b, month_end, n):
         b[k] = m
     return b
 
+
+COST_KEYS = ('ongoing_cost_pct', 'fund_size', 'fund_size_currency', 'fund_size_as_of', 'fund_size_type',
+             'category', 'category_fi', 'source', 'source_url', 'note', 'fetched_at')
+
+def apply_costs(f, patch, n):
+    """Yhdistää costs-kentät olemassa oleviin; ei tyhjennä muita (esim. juoksevia kuluja)."""
+    assert isinstance(patch, dict) and patch, f'n{n}: costs'
+    unknown = set(patch) - set(COST_KEYS)
+    assert not unknown, f'n{n}: tuntematon costs-kenttä {sorted(unknown)}'
+    if 'fund_size_type' in patch:
+        assert patch['fund_size_type'] in ('fund', 'share_class'), f'n{n}: fund_size_type'
+    if 'fund_size' in patch and patch['fund_size'] is not None:
+        assert isinstance(patch['fund_size'], (int, float)) and patch['fund_size'] > 0, f'n{n}: fund_size'
+        typ = patch.get('fund_size_type') or (f.get('costs') or {}).get('fund_size_type')
+        cur = patch.get('fund_size_currency') or (f.get('costs') or {}).get('fund_size_currency')
+        asof = patch.get('fund_size_as_of') or (f.get('costs') or {}).get('fund_size_as_of')
+        assert typ in ('fund', 'share_class'), f'n{n}: fund_size vaatii typen fund|share_class'
+        assert cur in ('EUR', 'USD'), f'n{n}: fund_size_currency'
+        assert asof, f'n{n}: fund_size_as_of'
+    c = f.setdefault('costs', {})
+    for k, v in patch.items():
+        c[k] = v
+
 def content_stage(period, upd_path):
     """updates.json: [{"n":7,"allocation_primary":{equity_pct, fixed_income_pct, other_pct, as_of, source, source_url, note}, "features":..}]"""
     h = json.load(open(HIST)); snap = next(s for s in h['snapshots'] if s['period'] == period)
@@ -272,6 +295,8 @@ def content_stage(period, upd_path):
         for fl in u.get('flags', []):
             assert fl.get('type') and fl.get('note'), u['n']
             f.setdefault('flags', []); f['flags'] = [z for z in f['flags'] if z.get('type') != fl['type']] + [fl]
+        if 'costs' in u:
+            apply_costs(f, u['costs'], u['n'])
         if 'bond_metrics' in u:
             f['bond_metrics'] = validate_bond_metrics(u['bond_metrics'], snap['month_end'], u['n'])
             if 'allocation_primary' not in u and 'morningstar_raw' not in u:
@@ -306,7 +331,15 @@ def content_stage(period, upd_path):
         if a['as_of'] != snap['month_end']: f['flags'].append({'type': 'allocation_stale', 'note': f"Sisältö {a['as_of']} (ei {snap['month_end']})"})
         changed.append(u['n'])
     coverage(h, snap)
-    save_revision(h, snap, f"Sisältö päivitetty rahastoille {changed}; kuun lopulta {snap['content_coverage']['current_month_end']}/{snap['content_coverage']['eligible']}")
+    if ups and all(set(u) <= {'n', 'costs'} for u in ups):
+        bits = []
+        for u in ups:
+            c = u['costs']; typ = {'fund': 'rahasto', 'share_class': 'osuussarja'}.get(c.get('fund_size_type'), c.get('fund_size_type'))
+            bits.append(f"n{u['n']} {c.get('fund_size')} {c.get('fund_size_currency')} {c.get('fund_size_as_of')} ({typ})")
+        summary = f"Rahastokoot päivitetty: {', '.join(bits)}; muut arvot ennallaan"
+    else:
+        summary = f"Sisältö päivitetty rahastoille {changed}; kuun lopulta {snap['content_coverage']['current_month_end']}/{snap['content_coverage']['eligible']}"
+    save_revision(h, snap, summary)
     json.dump(h, open(HIST, 'w'), ensure_ascii=False, indent=1)
     print(snap['revisions'][-1]['summary'])
 
