@@ -130,5 +130,25 @@ for s in h['snapshots']:
         sz = (f.get('costs') or {}).get('fund_size')
         if typ: chk(sz and (f.get('costs') or {}).get('fund_size_currency') in ('EUR', 'USD') and (f.get('costs') or {}).get('fund_size_as_of'), f"{s['period']} n{f['n']} koko puutteellinen tyypin kanssa")
 
+# r012: kuvaustekstit ilman vanhentuneita painolukuja; vain tekstikentät muuttuivat; r011 arkisto ennallaan
+import re as _re
+_r011 = json.load(open(ROOT / 'revisions/2026-10/r011.json'))
+chk(next(f for f in _r011['funds'] if f['n'] == 20)['features'].startswith('Osake 58,9'), 'r011 Nordnet kuvaus ennallaan')
+if _s10['revision'] >= 12:
+    _r012 = json.load(open(ROOT / 'revisions/2026-10/r012.json'))
+    for _x, _y in zip(_r011['funds'], _r012['funds']):
+        _d = {k for k in set(_x) | set(_y) if _x.get(k) != _y.get(k)}
+        chk(_d <= {'features', 'explanation', 'text_from_period', 'text_note'}, f"r012 n{_x['n']} muuttui muutakin kuin teksti: {_d}")
+    chk({k for k in set(_r011) | set(_r012) if k != 'funds' and _r011.get(k) != _r012.get(k)} == {'revision'}, 'r012 snapshot-tason muutos')
+    for f in _s10['funds']:
+        t = (f.get('features') or '') + ' ' + (f.get('explanation') or '')
+        chk(not _re.search(r'\b(osake|korko)\s+\d', t, _re.I), f"n{f['n']} kuvauksessa paino­luku: {t}")
+        chk(not _re.search(r'\d+,\d\s*%?', t), f"n{f['n']} kuvauksessa desimaaliluku: {t}")
+        chk(f.get('text_from_period') == '2026-10' and len(f.get('features') or '') <= 160, f"n{f['n']} kuvaus 2026-10 / pituus")
+    chk('58,9' not in next(f for f in _s10['funds'] if f['n'] == 20)['features'], 'Nordnet kuvaus päivitetty')
+    _t23 = next(f for f in _s10['funds'] if f['n'] == 23); _t21 = next(f for f in _s10['funds'] if f['n'] == 21)
+    if _t23['costs']['ongoing_cost_pct'] == _t21['costs']['ongoing_cost_pct']:
+        chk('matalammat kulut' not in _t23['explanation'], 'n23 selitys ristiriidassa kulujen kanssa')
+
 print('\n'.join(err) or f'OK: {len(periods)} kautta {periods}')
 sys.exit(1 if err else 0)

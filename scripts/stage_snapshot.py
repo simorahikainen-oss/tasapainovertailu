@@ -4,6 +4,7 @@
   python3 scripts/stage_snapshot.py returns 2026-10   # tuotot + vertailu heti kuun lopun jälkeen
   python3 scripts/stage_snapshot.py content 2026-10 updates.json   # sisältö (allokaatio, korkomittarit tai costs/koko) kun saatavilla
   python3 scripts/stage_snapshot.py drift 2026-10   # painomuutosten markkinavaikutus (SPYI/VAGF) uutena revisiona
+  python3 scripts/stage_snapshot.py texts 2026-10 texts.json   # vain kuvaustekstit (features/explanation) uutena revisiona
 
 Jokainen tallennus kirjoittaa koko snapshotin kopion revisions/<kausi>/rNNN.json
 eikä koskaan poista vanhoja revisioita tai muita kuukausia.
@@ -359,5 +360,29 @@ def drift_stage(period):
     json.dump(h, open(HIST, 'w'), ensure_ascii=False, indent=1)
     print(snap['revisions'][-1]['summary'])
 
+TEXT_KEYS = {'n', 'features', 'explanation', 'text_note'}
+
+def texts_stage(period, upd_path):
+    """texts.json: [{"n":20,"features":"...","explanation":"...","text_note":"miksi/mistä"}] – muuttaa vain kuvaustekstit
+    (features, explanation, text_from_period, text_note); kaikki muut kentät ennallaan."""
+    h = json.load(open(HIST)); snap = next(s for s in h['snapshots'] if s['period'] == period)
+    ups = json.load(open(upd_path)); byn = {f['n']: f for f in snap['funds']}
+    changed = []
+    for u in ups:
+        assert set(u) <= TEXT_KEYS and ('features' in u or 'explanation' in u), u
+        f = byn[u['n']]; did = False
+        for k in ('features', 'explanation'):
+            if k in u:
+                assert isinstance(u[k], str) and u[k].strip() and len(u[k]) <= 160, (u['n'], k)
+                if f.get(k) != u[k]: f[k] = u[k]; did = True
+        if did or f.get('text_from_period') != period:
+            f['text_from_period'] = period
+            if u.get('text_note'): f['text_note'] = u['text_note']
+            changed.append(u['n'])
+    assert changed, 'ei muutoksia'
+    save_revision(h, snap, f"Kuvaustekstit (erityispiirteet/selitys) päivitetty rahastoille {changed}; muut arvot ennallaan")
+    json.dump(h, open(HIST, 'w'), ensure_ascii=False, indent=1)
+    print(snap['revisions'][-1]['summary'])
+
 if __name__ == '__main__':
-    {'returns': lambda: returns_stage(sys.argv[2]), 'content': lambda: content_stage(sys.argv[2], sys.argv[3]), 'drift': lambda: drift_stage(sys.argv[2])}[sys.argv[1]]()
+    {'returns': lambda: returns_stage(sys.argv[2]), 'content': lambda: content_stage(sys.argv[2], sys.argv[3]), 'drift': lambda: drift_stage(sys.argv[2]), 'texts': lambda: texts_stage(sys.argv[2], sys.argv[3])}[sys.argv[1]]()
