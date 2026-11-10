@@ -58,6 +58,20 @@ for nm, r in (('50/50', mix), ('VAGF', vg)):
         for col, v in pinned.items():
             if r.get(col) != v: err.append(f'{nm} {col}: {r.get(col)!r} != kiinnitetty {v!r}')
 if 'korko-osuus' not in str(mix.get('Korkotaulukon pohja (scope)')): err.append('50/50 scope-selite puuttuu')
+# markkinavaikutus-sarakkeet otsikon mukaan
+for f in s['funds']:
+    m = (f.get('allocation_change_vs_prev') or {}).get('market_drift') or {}
+    ok = m.get('status') == 'computed'
+    r = row(f['isin'])
+    for col, v in (('Osake Δ markkina (%-yks.)', m.get('equity_pp') if ok else None), ('Korko Δ markkina (%-yks.)', m.get('fixed_income_pp') if ok else None),
+                   ('Osake Δ aktiivinen/muu (%-yks.)', m.get('residual_equity_pp') if ok else None), ('Korko Δ aktiivinen/muu (%-yks.)', m.get('residual_fixed_income_pp') if ok else None)):
+        if r.get(col) != v: err.append(f"n{f['n']} {col}: vienti {r.get(col)!r} != data {v!r}")
+    if ok and 'SPYI' not in str(r.get('Markkinavaikutuksen perusteet')): err.append(f"n{f['n']} perusteet puuttuu")
+if s.get('revision', 0) >= 10:
+    op = next(v for k, v in X.items() if 'FI0008803812' in k or 'OP-Maltillinen' in k)
+    for col, v in (('Osake Δ markkina (%-yks.)', -0.42), ('Korko Δ markkina (%-yks.)', 0.42), ('Osake Δ aktiivinen/muu (%-yks.)', 0.42), ('Korko Δ aktiivinen/muu (%-yks.)', -0.12)):
+        if op.get(col) != v: err.append(f'OP-Maltillinen {col}: {op.get(col)!r} != {v!r}')
+    print('OP-Maltillinen:', {k: op.get(k) for k in ('Osake Δ', 'Osake Δ markkina (%-yks.)', 'Osake Δ aktiivinen/muu (%-yks.)', 'Korko Δ', 'Korko Δ markkina (%-yks.)', 'Korko Δ aktiivinen/muu (%-yks.)')})
 print('50/50:', {k: mix.get(k) for k in pinned})
 print('\n'.join(err) or f'OK: Excel-vienti {len(X)} riviä, sarakkeet täsmäävät dataan')
 print('Ryhti:', {k: ry.get(k) for k in ('Eff. duraatio (v)', 'Eff. duraatio pvm', 'Duraatio ARVIO (v)', 'Duraatioarvion kattavuus %', 'Duraatioarvio pvm', 'YTW ARVIO %', 'YTW-arvion kattavuus %', 'YTW-arvio pvm')})

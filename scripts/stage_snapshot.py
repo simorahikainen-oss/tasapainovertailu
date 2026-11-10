@@ -3,6 +3,7 @@
 
   python3 scripts/stage_snapshot.py returns 2026-10   # tuotot + vertailu heti kuun lopun jälkeen
   python3 scripts/stage_snapshot.py content 2026-10 updates.json   # sisältö (allokaatio) kun saatavilla
+  python3 scripts/stage_snapshot.py drift 2026-10   # painomuutosten markkinavaikutus (SPYI/VAGF) uutena revisiona
 
 Jokainen tallennus kirjoittaa koko snapshotin kopion revisions/<kausi>/rNNN.json
 eikä koskaan poista vanhoja revisioita tai muita kuukausia.
@@ -10,6 +11,7 @@ eikä koskaan poista vanhoja revisioita tai muita kuukausia.
 import json, sys, copy, datetime as dt, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import benchmark
+import market_drift as MD
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 HIST = ROOT / 'history.json'
 SUSPECT_PP = 5.0
@@ -297,6 +299,7 @@ def content_stage(period, upd_path):
             if src_type(prev) != src_type(a):
                 f['allocation_change_vs_prev']['source_changed'] = True
                 f['allocation_change_vs_prev']['note'] = f"Lähde vaihtui ({prev.get('source')} {prev['as_of']} → {a.get('source')} {a['as_of']}); muutos osin menetelmäeroa, ei puhdas kuukausimuutos"
+            ch['market_drift'] = MD.market_drift(ch, prev)
         else:
             f['allocation_change_vs_prev'] = None
         f['flags'] = [z for z in f.get('flags', []) if z.get('type') not in ('allocation_stale', 'feed_divergence')]
@@ -307,5 +310,21 @@ def content_stage(period, upd_path):
     json.dump(h, open(HIST, 'w'), ensure_ascii=False, indent=1)
     print(snap['revisions'][-1]['summary'])
 
+def drift_stage(period):
+    """Laskee markkinavaikutuksen (market_drift) kauden kaikille allocation_change_vs_prev-muutoksille; muut arvot ennallaan."""
+    h = json.load(open(HIST)); snap = next(s for s in h['snapshots'] if s['period'] == period)
+    done, blank = [], []
+    for f in snap['funds']:
+        ch = f.get('allocation_change_vs_prev')
+        if not ch: continue
+        pp, prev = latest_alloc(h, f['n'], period)
+        assert prev and prev.get('as_of') == ch['prev_as_of'], (f['n'], prev and prev.get('as_of'), ch['prev_as_of'])
+        assert abs(round(f['allocation_primary']['equity_pct'] - prev['equity_pct'], 2) - ch['equity_pp']) < 0.006, f['n']
+        ch['market_drift'] = MD.market_drift(ch, prev)
+        (done if ch['market_drift']['status'] == 'computed' else blank).append(f['n'])
+    save_revision(h, snap, f"Markkinavaikutus (SPYI/VAGF-ajelehtiminen) lisätty painomuutoksiin: laskettu {done}" + (f", tyhjä {blank}" if blank else '') + "; muut arvot ennallaan")
+    json.dump(h, open(HIST, 'w'), ensure_ascii=False, indent=1)
+    print(snap['revisions'][-1]['summary'])
+
 if __name__ == '__main__':
-    {'returns': lambda: returns_stage(sys.argv[2]), 'content': lambda: content_stage(sys.argv[2], sys.argv[3])}[sys.argv[1]]()
+    {'returns': lambda: returns_stage(sys.argv[2]), 'content': lambda: content_stage(sys.argv[2], sys.argv[3]), 'drift': lambda: drift_stage(sys.argv[2])}[sys.argv[1]]()

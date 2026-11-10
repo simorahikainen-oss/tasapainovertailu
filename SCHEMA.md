@@ -75,3 +75,12 @@ Tuottoina EI käytetä screenerin `ReturnM0`/`ReturnM12`-kenttiä: ne päivittyv
 
 ### 50/50 ETF-salkun korkomittarit
 Ei omaa kenttää: käyttöliittymä näyttää 50/50-rivillä `benchmark.VAGF_bond_metrics`-arvot sellaisenaan korko-osuuden (VAGF) mittareina, ei kerrottuna 0,5:llä eikä koko salkun riskimittareina. Revisioissa ilman VAGF_bond_metrics-kenttää solut jäävät tyhjiksi.
+
+## allocation_change_vs_prev.market_drift (r010:stä, 10.11.2026)
+Painomuutoksen markkinavaikutus (passiivinen ajelehtiminen), `scripts/market_drift.py`; `stage_snapshot.py content` laskee sen automaattisesti uusille muutoksille, `stage_snapshot.py drift YYYY-MM` jälkikäteen uutena revisiona.
+- Edellisen havainnon painot `prev_weights {equity_pct, fixed_income_pct, other_pct_assumed = 100 - e - b, as_of, source, source_url}`; muu-osuuden tuotto 0 %.
+- `etf_returns.{equity,bond}`: SPYI / VAGF, EUR, Xetra kuukauden päätöskurssit (`data/benchmark_monthly.csv`, sama sarja kuin `SPYI_px`/`VAGF_px`): `return_pct`, `from_close`, `to_close`, `months[]`, `monthly_returns{}`, `source`.
+- Ajelehtinut osake = w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o), korko vastaavasti → `drifted_equity_pct`, `drifted_fixed_income_pct`.
+- `equity_pp`, `fixed_income_pp` = ajelehtinut − edellinen (%-yks.); `residual_equity_pp`, `residual_fixed_income_pp` = toteutunut muutos − markkinavaikutus (aktiivinen/muu).
+- `status`: `computed` | `unavailable` (+ `reason`; arvot null). Tyhjä, jos havaintopäivä ei ole kuun loppu, ETF-kuukausituotto puuttuu, korko-ETF:n tuotto on proxy tai edellinen paino puuttuu. Ei arvioituja tuottoja.
+- UI: muutossolun alle pienellä ja haalealla "markkina ±x,xx"; menetelmä, ETF-tuotot, päivät ja aktiivinen/muu tooltipissä. Excel: "Osake Δ markkina (%-yks.)", "Osake Δ aktiivinen/muu (%-yks.)", "Korko Δ markkina (%-yks.)", "Korko Δ aktiivinen/muu (%-yks.)", "Markkinavaikutuksen perusteet".

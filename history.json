@@ -2694,7 +2694,72 @@
       "cur_source": "rahastoyhtiön rahastosivu",
       "interval_note": "Muutos aikavälillä 2026-06-30 – 2026-10-31 (ei yhden kuukauden muutos)",
       "source_changed": true,
-      "note": "Eri lähdedokumentti (puolivuosikatsaus → rahastoyhtiön rahastosivu); muutos osin lähde-/pyöristyseroa"
+      "note": "Eri lähdedokumentti (puolivuosikatsaus → rahastoyhtiön rahastosivu); muutos osin lähde-/pyöristyseroa",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 62.5,
+        "fixed_income_pct": 37.5,
+        "other_pct_assumed": 0.0,
+        "as_of": "2026-06-30",
+        "source": "puolivuosikatsaus",
+        "source_url": "https://www.seligson.fi/resource/vsk/LT_puolivuosikertomus.pdf"
+       },
+       "status": "computed",
+       "equity_pp": 0.96,
+       "fixed_income_pp": -0.96,
+       "residual_equity_pp": -0.46,
+       "residual_fixed_income_pp": 0.46,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": 1.9814,
+         "from_close": "2026-06-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-07",
+          "2026-08",
+          "2026-09",
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-07": -0.014028,
+          "2026-08": 0.021874,
+          "2026-09": 0.015315,
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": -2.1302,
+         "from_close": "2026-06-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-07",
+          "2026-08",
+          "2026-09",
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-07": -0.016186,
+          "2026-08": -0.000597,
+          "2026-09": -0.01885,
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 63.46,
+       "drifted_fixed_income_pct": 36.54
+      }
      },
      "costs": {
       "ongoing_cost_pct": 0.99,
@@ -5675,7 +5740,60 @@
       "prev_period": "2026-09",
       "prev_source": "morningstar",
       "cur_source": "morningstar",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 65.5,
+        "fixed_income_pct": 9.9,
+        "other_pct_assumed": 24.6,
+        "as_of": "2026-09-30",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.16,
+       "fixed_income_pp": 0.15,
+       "residual_equity_pp": 0.55,
+       "residual_fixed_income_pp": -0.27,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 65.34,
+       "drifted_fixed_income_pct": 10.05
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.22,
@@ -6190,7 +6308,60 @@
       "prev_period": "2026-09",
       "prev_source": "morningstar",
       "cur_source": "morningstar",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 61.84,
+        "fixed_income_pct": 30.62,
+        "other_pct_assumed": 7.54,
+        "as_of": "2026-09-30",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.35,
+       "fixed_income_pp": 0.37,
+       "residual_equity_pp": 0.55,
+       "residual_fixed_income_pp": 0.39,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 61.49,
+       "drifted_fixed_income_pct": 30.99
+      }
      },
      "costs": {
       "ongoing_cost_pct": 2.21,
@@ -6702,7 +6873,60 @@
       "prev_period": "2026-09",
       "prev_source": "morningstar",
       "cur_source": "morningstar",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 53.52,
+        "fixed_income_pct": 37.83,
+        "other_pct_assumed": 8.65,
+        "as_of": "2026-09-30",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.37,
+       "fixed_income_pp": 0.4,
+       "residual_equity_pp": 2.05,
+       "residual_fixed_income_pp": -2.59,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 53.15,
+       "drifted_fixed_income_pct": 38.23
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.16,
@@ -7206,7 +7430,60 @@
       "prev_period": "2026-09",
       "prev_source": "morningstar",
       "cur_source": "morningstar",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 44.02,
+        "fixed_income_pct": 35.96,
+        "other_pct_assumed": 20.02,
+        "as_of": "2026-09-30",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.3,
+       "fixed_income_pp": 0.38,
+       "residual_equity_pp": 0.5,
+       "residual_fixed_income_pp": 0.52,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 43.72,
+       "drifted_fixed_income_pct": 36.34
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.34,
@@ -9178,7 +9455,60 @@
       "prev_period": "2026-09",
       "prev_source": "kuukausikatsaus",
       "cur_source": "kuukausikatsaus",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 57.6,
+        "fixed_income_pct": 41.1,
+        "other_pct_assumed": 1.3,
+        "as_of": "2026-09-30",
+        "source": "kuukausikatsaus",
+        "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_51c4501e8d35e3f67fcadbd14004453c3bd74df274324ff94d23a5d9b6ad68de748b3017a3875269d460d8a9087930fe876a49a4_iv_eb4c2e35a6d66b820eedc8eb"
+       },
+       "status": "computed",
+       "equity_pp": -0.42,
+       "fixed_income_pp": 0.42,
+       "residual_equity_pp": 0.42,
+       "residual_fixed_income_pp": -0.12,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 57.18,
+       "drifted_fixed_income_pct": 41.52
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.4,
@@ -10738,7 +11068,60 @@
       "prev_period": "2026-09",
       "prev_source": "morningstar",
       "cur_source": "morningstar",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 60.4,
+        "fixed_income_pct": 38.5,
+        "other_pct_assumed": 1.1,
+        "as_of": "2026-09-30",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.41,
+       "fixed_income_pp": 0.41,
+       "residual_equity_pp": -1.99,
+       "residual_fixed_income_pp": 2.08,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 59.99,
+       "drifted_fixed_income_pct": 38.91
+      }
      },
      "costs": {
       "ongoing_cost_pct": null,
@@ -11751,7 +12134,60 @@
       "prev_period": "2026-09",
       "prev_source": "morningstar",
       "cur_source": "morningstar",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 58.9,
+        "fixed_income_pct": 41.1,
+        "other_pct_assumed": 0.0,
+        "as_of": "2026-09-30",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.42,
+       "fixed_income_pp": 0.42,
+       "residual_equity_pp": -0.78,
+       "residual_fixed_income_pp": 0.78,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 58.48,
+       "drifted_fixed_income_pct": 41.52
+      }
      },
      "costs": {
       "ongoing_cost_pct": 0.49,
@@ -12260,7 +12696,60 @@
       "prev_period": "2026-09",
       "prev_source": "morningstar",
       "cur_source": "morningstar",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 54.62,
+        "fixed_income_pct": 28.44,
+        "other_pct_assumed": 16.94,
+        "as_of": "2026-09-30",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.3,
+       "fixed_income_pp": 0.34,
+       "residual_equity_pp": 0.74,
+       "residual_fixed_income_pp": 0.47,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 54.32,
+       "drifted_fixed_income_pct": 28.78
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.11,
@@ -13286,7 +13775,60 @@
       "prev_period": "2026-09",
       "prev_source": "morningstar",
       "cur_source": "morningstar",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 54.62,
+        "fixed_income_pct": 28.44,
+        "other_pct_assumed": 16.94,
+        "as_of": "2026-09-30",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.3,
+       "fixed_income_pp": 0.34,
+       "residual_equity_pp": 0.74,
+       "residual_fixed_income_pp": 0.47,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 54.32,
+       "drifted_fixed_income_pct": 28.78
+      }
      },
      "costs": {
       "ongoing_cost_pct": 1.11,
@@ -13795,7 +14337,60 @@
       "prev_period": "2026-09",
       "prev_source": "kuukausikatsaus",
       "cur_source": "kuukausikatsaus",
-      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31"
+      "interval_note": "Muutos aikavälillä 2026-09-30 – 2026-10-31",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen: edellisen havainnon osake-, korko- ja muu-painot (muu tuotto 0 %) kasvatetaan SPYI (osake) ja VAGF (korko) EUR-tuotoilla edellisestä nykyiseen havaintopäivään; markkinavaikutus = ajelehtinut paino - edellinen paino; aktiivinen/muu = toteutunut muutos - markkinavaikutus (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "prev_weights": {
+        "equity_pct": 70.7,
+        "fixed_income_pct": 27.6,
+        "other_pct_assumed": 1.7,
+        "as_of": "2026-09-30",
+        "source": "kuukausikatsaus",
+        "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_6f1c0dade50c2595e123d3e1063208ed92d55b99fb39978cbbfc05ed619edf4ec73c7090a4a1d53a60291468474e0bb9521358e9_iv_6051d90d181211913b349be7"
+       },
+       "status": "computed",
+       "equity_pp": -0.35,
+       "fixed_income_pp": 0.35,
+       "residual_equity_pp": 0.85,
+       "residual_fixed_income_pp": -0.65,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 70.35,
+       "drifted_fixed_income_pct": 27.95
+      }
      },
      "costs": {
       "ongoing_cost_pct": 0.89,
@@ -14851,9 +15446,15 @@
      "saved_at": "2026-11-10T09:13:44+02:00",
      "path": "revisions/2026-10/r009.json",
      "summary": "Sisältö päivitetty rahastoille [14, 24, 20]; kuun lopulta 11/24"
+    },
+    {
+     "revision": 10,
+     "saved_at": "2026-11-10T09:28:42+02:00",
+     "path": "revisions/2026-10/r010.json",
+     "summary": "Markkinavaikutus (SPYI/VAGF-ajelehtiminen) lisätty painomuutoksiin: laskettu [1, 7, 8, 9, 10, 14, 18, 20, 21, 23, 24]; muut arvot ennallaan"
     }
    ],
-   "revision": 9
+   "revision": 10
   }
  ],
  "etfs": [
