@@ -1,0 +1,126 @@
+[
+ {
+  "n": 1,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Vaihtovelkakirjat, HY- ja IG-korot"
+ },
+ {
+  "n": 2,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Osakepaino sis. ostetut osakefutuurit (long-altistus; fyysinen osakepaino pienempi); vaihtoehtoiset sijoitukset"
+ },
+ {
+  "n": 3,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korot pääosin pitkiä, osin lyhyitä; vaihtoehtoiset sijoitukset (rahastoyhtiön raportti)"
+ },
+ {
+  "n": 4,
+  "features": "Sama salkku kuin rahastolla 2 (P-sarja)",
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
+ },
+ {
+  "n": 5,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Suuri reaaliomaisuusosuus; korkopuolella HY ja lyhyet korot"
+ },
+ {
+  "n": 6,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korot hajautettu: IG, lyhyet, HY, EM ja valtionlainat (rahastoyhtiön raportti)"
+ },
+ {
+  "n": 7,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Merkittävä vaihtoehtoisten sijoitusten osuus ja matala korkopaino (rahastoyhtiön raportti)"
+ },
+ {
+  "n": 8,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korot: valtionlainat, IG ja rahamarkkina (rahastoyhtiön raportti)"
+ },
+ {
+  "n": 9,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korkopuolella HY- ja EM-painotus sekä IG; kassa (rahastoyhtiön raportti)"
+ },
+ {
+  "n": 10,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Yrityslainat ja vaihtuvakorkoiset (FRN); suuri kassa (rahastoyhtiön raportti)"
+ },
+ {
+  "n": 11,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korot: IG, HY ja EM",
+  "explanation": "Vahva HY- ja EM-painotus; korkeat kulut syövät osan"
+ },
+ {
+  "n": 12,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Merkittävä osuus monivarainrahastoja (rahastoyhtiön raportti)",
+  "explanation": "Monivarainrahastot ja taktinen allokaatio jäivät jälkeen"
+ },
+ {
+  "n": 13,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korkopuolella valtionlainoja ja IG"
+ },
+ {
+  "n": 14,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Valtionlainat suurimpia korko-omistuksia"
+ },
+ {
+  "n": 15,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Syöttörahasto: sijoittaa lähes kokonaan Ryhti B:hen",
+  "explanation": "Kuten Ryhti, mutta korkeammat kulut"
+ },
+ {
+  "n": 16,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Matalan volatiliteetin strategia; osakepaino johdannaiset huomioiden; yhdistelmärahastoja. Sulautui 6.11.2026 Nordea 1 – Stable Return Fundiin"
+ },
+ {
+  "n": 17,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Vastuullisuusrajaukset; osa varoista luokittelematonta"
+ },
+ {
+  "n": 18,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korot yhdistelmäkorkorahastojen kautta"
+ },
+ {
+  "n": 19,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korot: IG ja HY; vaihtoehtoiset, mm. tonttirahasto (rahastoyhtiön raportti)"
+ },
+ {
+  "n": 20,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korot: IG, valtionlainat ja vihreät joukkolainat",
+  "explanation": "Osakeylipaino ja matalat kulut"
+ },
+ {
+  "n": 21,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Kassa, kiinteistöt ja katastrofilainat (kiinteistöosuus rahastoyhtiön raportista)"
+ },
+ {
+  "n": 22,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "Korot: IG, lyhyet ja HY"
+ },
+ {
+  "n": 23,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "explanation": "Kuten rahasto 21, eri osuussarja"
+ },
+ {
+  "n": 24,
+  "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09).",
+  "features": "HY suurin korko-omistus; salkunhoitajan mukaan allokaatiota ei muutettu lokakuussa"
+ }
+]

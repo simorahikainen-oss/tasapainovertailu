@@ -2674,7 +2674,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://lt.altusinvestor.com/render/document/released-html/category/72/reference/TWORL50/lang/fi"
      },
-     "features": "Osake 62,5 %, korko 37,5 % (vaihtovelkakirjat 6,4, HY 5,7, IG)",
+     "features": "Vaihtovelkakirjat, HY- ja IG-korot",
      "explanation": "Osakeylipaino ja vaihtovelkakirjat, ei negatiivista globaalia valtionlainaa",
      "allocation_morningstar": {
       "stocks": null,
@@ -2683,7 +2683,7 @@
       "other": 98.16,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 0.5,
       "fixed_income_pp": -0.5,
@@ -3220,7 +3220,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 2,
@@ -3254,7 +3255,7 @@
       "as_of": "2026-08-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio"
      },
-     "features": "Osake 57,9, korko 36,5 (Morningstar, sis. ostetut osakefutuurit eli long-altistus; Nordean fyysinen osakepaino ilman futuureja 50,8, korko 40,8), vaihtoehtoiset 6,1",
+     "features": "Osakepaino sis. ostetut osakefutuurit (long-altistus; fyysinen osakepaino pienempi); vaihtoehtoiset sijoitukset",
      "explanation": "Futuureilla lisätty osakealtistus ja euro- ja yrityskorot globaalia aggregaattia parempia; I-sarjan matalat kulut",
      "allocation_morningstar": {
       "stocks": 61.27,
@@ -3263,7 +3264,7 @@
       "other": 0.2,
       "as_of": "2026-08-31"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 0.76,
@@ -3724,7 +3725,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 3,
@@ -3751,7 +3753,7 @@
       "as_of": "2026-08-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio"
      },
-     "features": "Osake 49,6, korko 46,2 (pitkät 35,9, lyhyet 5,7), vaihtoehtoiset 5,7 – erittely rahastoyhtiön raportista",
+     "features": "Korot pääosin pitkiä, osin lyhyitä; vaihtoehtoiset sijoitukset (rahastoyhtiön raportti)",
      "explanation": "Korkopuoli (euro, yrityslainat, covered) voitti VAGF:n; korkeammat kulut kuin Premiumissa",
      "allocation_morningstar": {
       "stocks": 53.58,
@@ -3760,7 +3762,7 @@
       "other": 0.17,
       "as_of": "2026-08-31"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.58,
@@ -4218,7 +4220,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 4,
@@ -4261,7 +4264,7 @@
       "other": 0.2,
       "as_of": "2026-08-31"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.41,
@@ -4722,7 +4725,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 5,
@@ -4743,7 +4747,7 @@
       "as_of": "2026-09-30",
       "source_url": "https://unitedbankers.fi/api/products/file?id=fb876b21-fb92-ec11-bad2-005056ab348e&lang=fi"
      },
-     "features": "Osake 33,5, korko 32,7 (HY 8,1, lyhyet 5,9), reaaliomaisuus 31,3",
+     "features": "Suuri reaaliomaisuusosuus; korkopuolella HY ja lyhyet korot",
      "explanation": "Matala osakepaino; reaaliomaisuus (metsä, uusiutuva energia) tuotti heikosti",
      "allocation_morningstar": {
       "stocks": 19.34,
@@ -4752,7 +4756,7 @@
       "other": 2.02,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.64,
@@ -5206,7 +5210,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 6,
@@ -5227,7 +5232,7 @@
       "as_of": "2026-09-30",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/portfolio"
      },
-     "features": "Osake 58,5, korko 32,2 (IG 15,5, lyhyet 8,8, HY 7,9, EM 5,0, valtio 4,7) – erittely rahastoyhtiön raportista",
+     "features": "Korot hajautettu: IG, lyhyet, HY, EM ja valtionlainat (rahastoyhtiön raportti)",
      "explanation": "HY- ja EM-korot sekä lyhyt duraatio kompensoivat; lähellä vertailusalkkua",
      "allocation_morningstar": {
       "stocks": 58.5,
@@ -5236,7 +5241,7 @@
       "other": 0.09,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.85,
@@ -5690,7 +5695,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 7,
@@ -5722,7 +5728,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio"
      },
-     "features": "Osake 65,5, korko 9,9, vaihtoehtoiset 8,0 – vaihtoehtoisten osuus rahastoyhtiön raportista",
+     "features": "Merkittävä vaihtoehtoisten sijoitusten osuus ja matala korkopaino (rahastoyhtiön raportti)",
      "explanation": "Osakeylipaino; matalampi korkopaino",
      "allocation_morningstar": {
       "stocks": 66.56,
@@ -5731,7 +5737,7 @@
       "other": 18.43,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 0.39,
       "fixed_income_pp": -0.12,
@@ -6254,7 +6260,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 8,
@@ -6290,7 +6297,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio"
      },
-     "features": "Osake 61,8, korko 30,6 (valtio 13,0, IG 10,0, rahamarkkina 8,2) – erittely rahastoyhtiön raportista",
+     "features": "Korot: valtionlainat, IG ja rahamarkkina (rahastoyhtiön raportti)",
      "explanation": "Osakeylipainosta huolimatta osakevalinta heikko (alituotto indeksiin H1)",
      "allocation_morningstar": {
       "stocks": 61.84,
@@ -6299,7 +6306,7 @@
       "other": 2.12,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 0.2,
       "fixed_income_pp": 0.76,
@@ -6819,7 +6826,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 9,
@@ -6855,7 +6863,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio"
      },
-     "features": "Osake 53,5, korko 37,8 (HY 11,8, EM 10,9, IG), kassa 5,0 – erittely rahastoyhtiön raportista",
+     "features": "Korkopuolella HY- ja EM-painotus sekä IG; kassa (rahastoyhtiön raportti)",
      "explanation": "HY- ja EM-painotus tuki, mutta osakepuoli jäi globaalista indeksistä ja kulut korkeat",
      "allocation_morningstar": {
       "stocks": 53.52,
@@ -6864,7 +6872,7 @@
       "other": 3.67,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 1.68,
       "fixed_income_pp": -2.19,
@@ -7379,7 +7387,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 10,
@@ -7412,7 +7421,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio"
      },
-     "features": "Osake 44,0, korko 36,0 (yrityslainat, FRN 12,3), kassa 19,9 – erittely rahastoyhtiön raportista",
+     "features": "Yrityslainat ja vaihtuvakorkoiset (FRN); suuri kassa (rahastoyhtiön raportti)",
      "explanation": "Alipaino osakkeissa ja suuri kassa; lyhyt duraatio auttoi 1v jaksolla",
      "allocation_morningstar": {
       "stocks": 44.02,
@@ -7421,7 +7430,7 @@
       "other": null,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 0.2,
       "fixed_income_pp": 0.9,
@@ -7939,7 +7948,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 11,
@@ -7960,8 +7970,8 @@
       "as_of": "2026-06-30",
       "source_url": "https://www.evli.com/artikkelit/evlin-sijoitusrahastojen-puolivuosikatsaus-30-6-2026 (PDF: https://dl.avl-investmentfonds.de/fds/FI0008811997-HALBJAHRBER-EN-20260630.pdf)"
      },
-     "features": "Osake 53,6, korko 45,0 (IG 20,0, HY 15,8, EM 9,2)",
-     "explanation": "Vahva HY- ja EM-painotus; TER 1,89 % syö osan",
+     "features": "Korot: IG, HY ja EM",
+     "explanation": "Vahva HY- ja EM-painotus; korkeat kulut syövät osan",
      "allocation_morningstar": {
       "stocks": 78.49,
       "bonds": 20.5,
@@ -7969,7 +7979,7 @@
       "other": 0.08,
       "as_of": "2026-08-31"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.89,
@@ -8423,7 +8433,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 12,
@@ -8444,8 +8455,8 @@
       "as_of": "2026-08-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio"
      },
-     "features": "Osake 50,3, korko 43,3, monivarainrahastot 13,8 – monivarainrahastojen osuus rahastoyhtiön raportista",
-     "explanation": "Monivarainrahastot ja taktinen allokaatio jäivät jälkeen; kulut 1,4 %",
+     "features": "Merkittävä osuus monivarainrahastoja (rahastoyhtiön raportti)",
+     "explanation": "Monivarainrahastot ja taktinen allokaatio jäivät jälkeen",
      "allocation_morningstar": {
       "stocks": 50.31,
       "bonds": 43.3,
@@ -8453,7 +8464,7 @@
       "other": 0.42,
       "as_of": "2026-08-31"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.4,
@@ -8917,7 +8928,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 13,
@@ -8938,7 +8950,7 @@
       "as_of": "2026-06-30",
       "source_url": "https://dokumentit.s-pankki.fi/tiedostot/rahastojen-puolivuosikatsaus-2026"
      },
-     "features": "Osake 49,7, korko 49,0 (valtionlainoja 14,9, IG)",
+     "features": "Korkopuolella valtionlainoja ja IG",
      "explanation": "Suuri korkopaino ja valtionlainat, osakepaino alle 50 %",
      "allocation_morningstar": {
       "stocks": 92.35,
@@ -8947,7 +8959,7 @@
       "other": 0.04,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 0.99,
@@ -9417,7 +9429,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 14,
@@ -9437,7 +9450,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_51c4501e8d35e3f67fcadbd14004453c3bd74df274324ff94d23a5d9b6ad68de748b3017a3875269d460d8a9087930fe876a49a4_iv_eb4c2e35a6d66b820eedc8eb"
      },
-     "features": "Osake 57,6, korko 41,1 (valtionlainat suurimpia)",
+     "features": "Valtionlainat suurimpia korko-omistuksia",
      "explanation": "Osakeylipaino",
      "allocation_morningstar": {
       "stocks": 69.93,
@@ -9446,7 +9459,7 @@
       "other": 11.85,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 0.0,
       "fixed_income_pp": 0.3,
@@ -9974,7 +9987,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 15,
@@ -9995,8 +10009,8 @@
       "as_of": "2026-06-30",
       "source_url": "https://www.saastopankki.fi/-/media/sp-ryhma/sp-rahastoyhtio/liitteet/rahastojen-taloudellinen-informaatio/2026/sp-rahastoyhtio_rahastojen_puolivuotiskatsaus_2026.pdf"
      },
-     "features": "Syöttörahasto: 99,4 % Ryhti B",
-     "explanation": "Kuten Ryhti, mutta korkeammat kulut (1,96 %)",
+     "features": "Syöttörahasto: sijoittaa lähes kokonaan Ryhti B:hen",
+     "explanation": "Kuten Ryhti, mutta korkeammat kulut",
      "allocation_morningstar": {
       "stocks": null,
       "bonds": null,
@@ -10004,7 +10018,7 @@
       "other": 99.82,
       "as_of": "2026-08-31"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.96,
@@ -10469,7 +10483,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 16,
@@ -10490,7 +10505,7 @@
       "as_of": "2026-06-30",
       "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf"
      },
-     "features": "Osake 52,8 (johdannaisilla laskettu), korko 37,3, yhdistelmärahastot 8,0; matalan volatiliteetin strategia",
+     "features": "Matalan volatiliteetin strategia; osakepaino johdannaiset huomioiden; yhdistelmärahastoja. Sulautui 6.11.2026 Nordea 1 – Stable Return Fundiin",
      "explanation": "Puolustava osakevalinta ja suojaukset jäivät nousumarkkinassa selvästi jälkeen",
      "allocation_morningstar": {
       "stocks": 18.44,
@@ -10499,7 +10514,7 @@
       "other": 0.2,
       "as_of": "2026-06-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.77,
@@ -10519,7 +10534,8 @@
        "type": "allocation_stale",
        "note": "Sisältö 2026-06-30 (ei 2026-10-31)"
       }
-     ]
+     ],
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 17,
@@ -10540,7 +10556,7 @@
       "as_of": "2026-06-30",
       "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf"
      },
-     "features": "Osake 50,6, korko 41,5, luokittelematon 5,9; vastuullisuusrajaukset",
+     "features": "Vastuullisuusrajaukset; osa varoista luokittelematonta",
      "explanation": "Vastuullisuusrajaukset (esim. energia ja puolustus pois) heikensivät osakepuolta",
      "allocation_morningstar": {
       "stocks": 75.85,
@@ -10549,7 +10565,7 @@
       "other": 0.01,
       "as_of": "2026-08-31"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.57,
@@ -11018,7 +11034,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 18,
@@ -11050,7 +11067,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio"
      },
-     "features": "Osake 60,4, korko 38,5 (yhdistelmäkorkorahastot)",
+     "features": "Korot yhdistelmäkorkorahastojen kautta",
      "explanation": "Lähellä vertailusalkkua; pieni koko ja kulut",
      "allocation_morningstar": {
       "stocks": 60.4,
@@ -11059,7 +11076,7 @@
       "other": 0.01,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": -2.4,
       "fixed_income_pp": 2.49,
@@ -11579,7 +11596,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 19,
@@ -11600,7 +11618,7 @@
       "as_of": "2026-09-30",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio"
      },
-     "features": "Osake 57,1, korko 28,4 (IG 11,9, HY 7,9), muut 14,5 (tonttirahasto 6,3) – erittely rahastoyhtiön raportista",
+     "features": "Korot: IG ja HY; vaihtoehtoiset, mm. tonttirahasto (rahastoyhtiön raportti)",
      "explanation": "Matala korkopaino ja vaihtoehtoiset, HY tuki",
      "allocation_morningstar": {
       "stocks": 57.11,
@@ -11609,7 +11627,7 @@
       "other": 10.12,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.32,
@@ -12080,7 +12098,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 20,
@@ -12116,8 +12135,8 @@
       "as_of": "2026-10-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio"
      },
-     "features": "Osake 58,9, korko 41,1 (IG, valtio, vihreät)",
-     "explanation": "Osakeylipaino ja matalat kulut (0,49 %)",
+     "features": "Korot: IG, valtionlainat ja vihreät joukkolainat",
+     "explanation": "Osakeylipaino ja matalat kulut",
      "allocation_morningstar": {
       "stocks": 60.27,
       "bonds": 42.11,
@@ -12125,7 +12144,7 @@
       "other": 0.01,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": -1.2,
       "fixed_income_pp": 1.2,
@@ -12643,7 +12662,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 21,
@@ -12679,7 +12699,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio"
      },
-     "features": "Osake 54,6, korko 28,4, kassa 10,3, kiinteistö 2,1, katastrofilainat – kiinteistöosuus rahastoyhtiön raportista",
+     "features": "Kassa, kiinteistöt ja katastrofilainat (kiinteistöosuus rahastoyhtiön raportista)",
      "explanation": "Matala korkopaino; katastrofilainat ja HY tukivat",
      "allocation_morningstar": {
       "stocks": 54.62,
@@ -12688,7 +12708,7 @@
       "other": 6.04,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 0.44,
       "fixed_income_pp": 0.81,
@@ -13221,7 +13241,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 22,
@@ -13242,7 +13263,7 @@
       "as_of": "2026-09-30",
       "source_url": "https://misc.aktia.fi/data-service/documents/investment/Rahastot/Kuukausiraportit/Kuukausiraportti_Aktia_VH50.pdf"
      },
-     "features": "Osake 52,2, korko 46,1 (IG 13,7, lyhyet 5,2, HY)",
+     "features": "Korot: IG, lyhyet ja HY",
      "explanation": "Yrityslaina- ja HY-painotus voittivat globaalin aggregaatin",
      "allocation_morningstar": {
       "stocks": 0.0,
@@ -13251,7 +13272,7 @@
       "other": 98.1,
       "as_of": "2026-08-31"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": null,
      "costs": {
       "ongoing_cost_pct": 1.15,
@@ -13722,7 +13743,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 23,
@@ -13759,7 +13781,7 @@
       "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio"
      },
      "features": "Sama salkku kuin rahastolla 21 (D-sarja)",
-     "explanation": "Kuten rahasto 21, matalammat kulut",
+     "explanation": "Kuten rahasto 21, eri osuussarja",
      "allocation_morningstar": {
       "stocks": 54.62,
       "bonds": 28.44,
@@ -13767,7 +13789,7 @@
       "other": 6.04,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 0.44,
       "fixed_income_pp": 0.81,
@@ -14300,7 +14322,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     },
     {
      "n": 24,
@@ -14320,7 +14343,7 @@
       "as_of": "2026-10-31",
       "source_url": "https://tuoteasiakirjat.op.fi/pds?link=ecb_6f1c0dade50c2595e123d3e1063208ed92d55b99fb39978cbbfc05ed619edf4ec73c7090a4a1d53a60291468474e0bb9521358e9_iv_6051d90d181211913b349be7"
      },
-     "features": "Osake 70,7, korko 27,6 (HY suurin korko-omistus)",
+     "features": "HY suurin korko-omistus; salkunhoitajan mukaan allokaatiota ei muutettu lokakuussa",
      "explanation": "Selvä osakeylipaino ja HY",
      "allocation_morningstar": {
       "stocks": 4.17,
@@ -14329,7 +14352,7 @@
       "other": 0.02,
       "as_of": "2026-09-30"
      },
-     "text_from_period": "2026-09",
+     "text_from_period": "2026-10",
      "allocation_change_vs_prev": {
       "equity_pp": 0.5,
       "fixed_income_pp": -0.3,
@@ -14857,7 +14880,8 @@
         "method": "Suljettujen välien keskipisteillä painotettu keskiarvo katetuista painoista; avoimet välit (<, >) ja Unk/Not Applicable pois; ei Morningstarin raportoima luku"
        }
       }
-     }
+     },
+     "text_note": "r012: tarkistettu 2026-10 r011 -dataa vasten; osake-/korkopainot, kulut ja koko poistettu tekstistä, koska ne näkyvät omissa sarakkeissaan. Laadulliset piirteet aiemmista lähteistä (rahastoyhtiön raportit / Morningstar, kuvaus 2026-09)."
     }
    ],
    "benchmark": {
@@ -15459,9 +15483,15 @@
      "saved_at": "2026-11-10T10:49:43+02:00",
      "path": "revisions/2026-10/r011.json",
      "summary": "Rahastokoot päivitetty: n20 55146100 EUR 2026-11-05 (rahasto); muut arvot ennallaan"
+    },
+    {
+     "revision": 12,
+     "saved_at": "2026-11-10T14:26:30+02:00",
+     "path": "revisions/2026-10/r012.json",
+     "summary": "Kuvaustekstit (erityispiirteet/selitys) päivitetty rahastoille [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]; muut arvot ennallaan"
     }
    ],
-   "revision": 11
+   "revision": 12
   }
  ],
  "etfs": [
