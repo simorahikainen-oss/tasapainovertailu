@@ -325,7 +325,7 @@ def content_stage(period, upd_path):
             if src_type(prev) != src_type(a):
                 f['allocation_change_vs_prev']['source_changed'] = True
                 f['allocation_change_vs_prev']['note'] = f"Lähde vaihtui ({prev.get('source')} {prev['as_of']} → {a.get('source')} {a['as_of']}); muutos osin menetelmäeroa, ei puhdas kuukausimuutos"
-            ch['market_drift'] = MD.market_drift(ch, prev)
+            ch['market_drift'] = MD.market_drift(ch, prev, month_end=snap['month_end'])
         else:
             f['allocation_change_vs_prev'] = None
         f['flags'] = [z for z in f.get('flags', []) if z.get('type') not in ('allocation_stale', 'feed_divergence')]
@@ -345,18 +345,25 @@ def content_stage(period, upd_path):
     print(snap['revisions'][-1]['summary'])
 
 def drift_stage(period):
-    """Laskee markkinavaikutuksen (market_drift) kauden kaikille allocation_change_vs_prev-muutoksille; muut arvot ennallaan."""
+    """Laskee markkinavaikutuksen (market_drift) kauden kaikille allocation_change_vs_prev-muutoksille; muut arvot ennallaan.
+    ETF-ikkuna on aina edellinen kalenterikuukausi (kuun loppu → kuun loppu), ei rahaston oma havaintoväli."""
     h = json.load(open(HIST)); snap = next(s for s in h['snapshots'] if s['period'] == period)
-    done, blank = [], []
+    done, blank, no_res = [], [], []
     for f in snap['funds']:
         ch = f.get('allocation_change_vs_prev')
         if not ch: continue
         pp, prev = latest_alloc(h, f['n'], period)
         assert prev and prev.get('as_of') == ch['prev_as_of'], (f['n'], prev and prev.get('as_of'), ch['prev_as_of'])
         assert abs(round(f['allocation_primary']['equity_pct'] - prev['equity_pct'], 2) - ch['equity_pp']) < 0.006, f['n']
-        ch['market_drift'] = MD.market_drift(ch, prev)
-        (done if ch['market_drift']['status'] == 'computed' else blank).append(f['n'])
-    save_revision(h, snap, f"Markkinavaikutus (SPYI/VAGF-ajelehtiminen) lisätty painomuutoksiin: laskettu {done}" + (f", tyhjä {blank}" if blank else '') + "; muut arvot ennallaan")
+        ch['market_drift'] = MD.market_drift(ch, prev, month_end=snap['month_end'])
+        m = ch['market_drift']
+        (done if m['status'] == 'computed' else blank).append(f['n'])
+        if m['status'] == 'computed' and m.get('residual_equity_pp') is None and m.get('residual_fixed_income_pp') is None and m.get('change_period_months') != 1:
+            no_res.append(f['n'])
+    summary = (f"Markkinavaikutus (SPYI/VAGF, aina edellinen kalenterikuukausi {MD.prev_month_end(snap['month_end'])}–{snap['month_end']}) "
+               f"päivitetty painomuutoksiin: laskettu {done}" + (f", tyhjä {blank}" if blank else '')
+               + (f", aktiivinen/muu tyhjä koska muutos ≠ 1 kk: {no_res}" if no_res else '') + "; muut arvot ennallaan")
+    save_revision(h, snap, summary)
     json.dump(h, open(HIST, 'w'), ensure_ascii=False, indent=1)
     print(snap['revisions'][-1]['summary'])
 

@@ -72,6 +72,14 @@ if s.get('revision', 0) >= 10:
     for col, v in (('Osake Δ markkina (%-yks.)', -0.42), ('Korko Δ markkina (%-yks.)', 0.42), ('Osake Δ aktiivinen/muu (%-yks.)', 0.42), ('Korko Δ aktiivinen/muu (%-yks.)', -0.12)):
         if op.get(col) != v: err.append(f'OP-Maltillinen {col}: {op.get(col)!r} != {v!r}')
     print('OP-Maltillinen:', {k: op.get(k) for k in ('Osake Δ', 'Osake Δ markkina (%-yks.)', 'Osake Δ aktiivinen/muu (%-yks.)', 'Korko Δ', 'Korko Δ markkina (%-yks.)', 'Korko Δ aktiivinen/muu (%-yks.)')})
+if s.get('revision', 0) >= 13:
+    lt = next(v for k, v in X.items() if 'LocalTapiola World 50' in k or 'LähiTapiola' in k)
+    for col, v in (('Osake Δ markkina (%-yks.)', -0.41), ('Korko Δ markkina (%-yks.)', 0.41), ('Osake Δ aktiivinen/muu (%-yks.)', None), ('Korko Δ aktiivinen/muu (%-yks.)', None)):
+        if lt.get(col) != v: err.append(f'LähiTapiola {col}: {lt.get(col)!r} != {v!r}')
+    basis = str(lt.get('Markkinavaikutuksen perusteet') or '')
+    if '30.9.2026' not in basis or '30.10.2026' not in basis: err.append(f'LähiTapiola perusteet jakso väärä: {basis!r}')
+    if '30.6.2026' not in basis: err.append(f'LähiTapiola perusteet lähtöpäivä puuttuu: {basis!r}')
+    print('LähiTapiola:', {k: lt.get(k) for k in ('Osake Δ', 'Osake Δ markkina (%-yks.)', 'Osake Δ aktiivinen/muu (%-yks.)', 'Korko Δ', 'Korko Δ markkina (%-yks.)', 'Korko Δ aktiivinen/muu (%-yks.)')})
 # r011: Nordnet koko ja tyyppi
 if s.get('revision', 0) >= 11:
     nn = next(v for k, v in X.items() if 'SE0017832439' in k or 'Nordnet One' in k)
