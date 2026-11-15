@@ -1,0 +1,55 @@
+ok                           1 LocalTapiola World 50 (A) [company_url] https://www.lahitapiola.fi/henkilo/saastaminen-ja-sijoittaminen/sijoitusratkaisut/rahastot-ja-sijoitussalkut/maailma-50/
+unverifiable (bot-blocked)   1 LocalTapiola World 50 (A) [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/portfolio
+ok                           2 Nordea Premium AM Balanced I Acc EUR [company_url] https://www.nordeafunds.com/fi/rahastot/nordea-premium-tasapaino
+unverifiable (bot-blocked)   2 Nordea Premium AM Balanced I Acc EUR [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio
+ok                           3 Nordea Savings 50 Fund A Acc EUR [company_url] https://www.nordeafunds.com/fi/rahastot/nordea-saasto-50
+unverifiable (bot-blocked)   3 Nordea Savings 50 Fund A Acc EUR [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio
+ok                           4 Nordea Premium AM Balanced Fund P Acc EUR [company_url] https://www.nordeafunds.com/fi/rahastot/nordea-premium-tasapaino
+unverifiable (bot-blocked)   4 Nordea Premium AM Balanced Fund P Acc EUR [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio
+ok                           5 UB Smart I (non-UCITS) [company_url] https://unitedbankers.fi/fi/palvelut-ja-tuotteet/rahastot/ub-smart/
+unverifiable (bot-blocked)   5 UB Smart I (non-UCITS) [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/portfolio
+ok                           6 Obsido Rebalanced 50 Fund A1 [company_url] https://www.obsido.fi/rahastoyhtio/rahastot/
+unverifiable (bot-blocked)   6 Obsido Rebalanced 50 Fund A1 [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/portfolio
+ok                           7 OP-Private Strategia 50 A [company_url] https://www.op.fi/henkiloasiakkaat/saastot-ja-sijoitukset/rahastot/kaikki-rahastot/op-private-strategia-50
+unverifiable (bot-blocked)   7 OP-Private Strategia 50 A [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio
+ok                           8 Alexandria Tasapainoinen [company_url] https://www.alexandria.fi/rahastot/alexandria-tasapainoinen/
+unverifiable (bot-blocked)   8 Alexandria Tasapainoinen [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio
+ok                           9 Säästöpankki Ryhti B [company_url] https://www.saastopankki.fi/fi-fi/saastaminen-ja-sijoittaminen/rahastot/rahasto-osuuksien-arvot-ja-tuotot/saastopankki-ryhti-b
+unverifiable (bot-blocked)   9 Säästöpankki Ryhti B [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio
+ok                           10 Ålandsbanken Kapitalförvaltning B [company_url] https://www.alandsbanken.fi/pankkipalvelut/sijoita-saasta/rahastot/varainhoito
+unverifiable (bot-blocked)   10 Ålandsbanken Kapitalförvaltning B [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio
+ok                           11 Evli Global Multi Manager 50 Fund B [company_url] https://www.evli.com/tuotteet-ja-palvelut/rahastot/sijoitusrahastot/gmm75
+unverifiable (bot-blocked)   11 Evli Global Multi Manager 50 Fund B [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/portfolio
+ok                           12 Danske Invest Kompassi 50 K [company_url] https://www.danskeinvest.fi/w/show_funds.product?p_nFund=2310&p_nFundgroup=59&p_nId=59
+unverifiable (bot-blocked)   12 Danske Invest Kompassi 50 K [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio
+ok                           13 S-Bank Asset Management 50 A Growth [company_url] https://www.s-pankki.fi/fi/saastaminen-ja-sijoittaminen/rahastot/s-pankki-varainhoito-50-a/
+unverifiable (bot-blocked)   13 S-Bank Asset Management 50 A Growth [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/portfolio
+ok                           14 OP-Maltillinen A [company_url] https://www.op.fi/henkiloasiakkaat/saastot-ja-sijoitukset/rahastot/kaikki-rahastot/op-maltillinen
+unverifiable (bot-blocked)   14 OP-Maltillinen A [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/portfolio
+ok                           15 POP Optimal [company_url] https://www.poppankki.fi/palvelut/saastot-ja-sijoitukset/rahastot/pop-optimi
+unverifiable (bot-blocked)   15 POP Optimal [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio
+http 404                     16 Nordea Stable Return Fund A Acc EUR [company_url] https://www.nordeafunds.com/fi/rahastot/vakaa-tuotto-a
+unverifiable (bot-blocked)   16 Nordea Stable Return Fund A Acc EUR [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P00001FCD/portfolio
+ok                           17 Nordea Responsible Balanced Fund A Acc EUR [company_url] https://www.nordeafunds.com/fi/rahastot/nordea-vastuullinen-global-tasapaino
+unverifiable (bot-blocked)   17 Nordea Responsible Balanced Fund A Acc EUR [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio
+ok                           18 Finlandia Asset Allocator 50 [company_url] https://finlandiagroup.fi/finlandia-asset-allocator-50-erikoissijoitusrahasto
+unverifiable (bot-blocked)   18 Finlandia Asset Allocator 50 [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio
+ok                           19 Obsido Global Balanced Investment Fund A2 [company_url] https://www.obsido.fi/rahastoyhtio/rahastot/
+unverifiable (bot-blocked)   19 Obsido Global Balanced Investment Fund A2 [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio
+ok                           20 Nordnet One Tasapaino EUR [company_url] https://www.nordnet.fi/rahastot/lista/nordnet-one-tasapaino-eur-48aa294d
+unverifiable (bot-blocked)   20 Nordnet One Tasapaino EUR [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio
+ok                           21 Säästöpankki Tasapainoinen B [company_url] https://www.saastopankki.fi/fi-fi/saastaminen-ja-sijoittaminen/rahastot/rahasto-osuuksien-arvot-ja-tuotot/saastopankki-tasapainoinen-b
+unverifiable (bot-blocked)   21 Säästöpankki Tasapainoinen B [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio
+ok                           22 Aktia Wealth Allocation 50 B [company_url] https://www.aktia.fi/fi/sijoitustuotteet/aktia-varainhoitosalkku-50
+unverifiable (bot-blocked)   22 Aktia Wealth Allocation 50 B [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio
+ok                           23 Säästöpankki Tasapainoinen D [company_url] https://www.saastopankki.fi/fi-fi/saastaminen-ja-sijoittaminen/rahastot/rahasto-osuuksien-arvot-ja-tuotot/saastopankki-tasapainoinen-d
+unverifiable (bot-blocked)   23 Säästöpankki Tasapainoinen D [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio
+ok                           24 OP - Tavoite 3A [company_url] https://www.op.fi/henkiloasiakkaat/saastot-ja-sijoitukset/rahastot/kaikki-rahastot/op-tavoite-3
+unverifiable (bot-blocked)   24 OP - Tavoite 3A [ms_url] https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/portfolio
+ok                           SPYI [url] https://www.ssga.com/ie/en_gb/intermediary/etfs/state-street-spdr-msci-all-country-world-investable-market-ucits-etf-acc-spyi-gy
+unverifiable (bot-blocked)   SPYI [ms_url] https://global.morningstar.com/en-nd/investments/etfs/0P0000TKW7/quote
+ok                           VAGF [url] https://www.vanguard.co.uk/professional/product/etf/bond/9505/global-aggregate-bond-ucits-etf-eur-hedged-accumulating
+unverifiable (bot-blocked)   VAGF [ms_url] https://global.morningstar.com/en-nd/investments/etfs/0P0001HSBO/quote
+
+BROKEN: 1
+  {'label': '16 Nordea Stable Return Fund A Acc EUR', 'field': 'company_url', 'url': 'https://www.nordeafunds.com/fi/rahastot/vakaa-tuotto-a', 'status': 'http 404', 'final': 'https://www.nordeafunds.com/fi/rahastot/vakaa-tuotto-a'}
