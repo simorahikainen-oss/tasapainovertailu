@@ -1,0 +1,40 @@
+[
+  {
+    "n": 2,
+    "allocation_primary": {
+      "equity_pct": 54.18,
+      "fixed_income_pct": 40.24,
+      "other_pct": 5.58,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus (factsheet)",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI4000171178",
+      "note": "Nordean factsheet (haettu 15.11.2026, \"Perustuu rahaston sijoituksiin 30.09.2026\"): Osakkeet 54,18 %, Korkosijoitukset 40,24 %, Vaihtoehtoiset 5,58 %, Muut 0,00 %. Uusin saatavilla oleva allokaatiotieto (uudempi kuin Morningstar 31.8.2026). Edellinen näyttöluku oli Morningstarin futuureilla korjattu, normalisoitu paino 57,9/36,5 (31.8.) – factsheet on fyysinen jakauma ilman futuurikorjausta, joten muutos on osin menetelmäeroa. Morningstarin portfolio-sivu tarkistettiin 15.11.2026 klo 9.15 (Europe/Helsinki): Investment/Holdings as of Aug 31, 2026, ei uudempaa kuin 30.9., ei käytetty."
+    },
+    "features": "Painot rahastoyhtiön factsheetistä (fyysinen jakauma, ei futuurikorjausta); vaihtoehtoiset sijoitukset",
+    "explanation": "Euro- ja yrityskorot globaalia aggregaattia parempia; I-sarjan matalat kulut"
+  },
+  {
+    "n": 4,
+    "allocation_primary": {
+      "equity_pct": 54.18,
+      "fixed_income_pct": 40.24,
+      "other_pct": 5.58,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus (factsheet)",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI0008806419",
+      "note": "Nordean factsheet (haettu 15.11.2026, \"Perustuu rahaston sijoituksiin 30.09.2026\"): Osakkeet 54,18 %, Korkosijoitukset 40,24 %, Vaihtoehtoiset 5,58 %, Muut 0,00 %. Uusin saatavilla oleva allokaatiotieto (uudempi kuin Morningstar 31.8.2026). Edellinen näyttöluku oli Morningstarin futuureilla korjattu, normalisoitu paino 57,9/36,5 (31.8.) – factsheet on fyysinen jakauma ilman futuurikorjausta, joten muutos on osin menetelmäeroa. Morningstarin portfolio-sivu tarkistettiin 15.11.2026 klo 9.15 (Europe/Helsinki): Investment/Holdings as of Aug 31, 2026, ei uudempaa kuin 30.9., ei käytetty. Sama salkku kuin I-sarjalla (n:o 2)."
+    }
+  },
+  {
+    "n": 3,
+    "allocation_primary": {
+      "equity_pct": 53.15,
+      "fixed_income_pct": 41.66,
+      "other_pct": 5.19,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus (factsheet)",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI0008806807",
+      "note": "Nordean factsheet (haettu 15.11.2026, \"Perustuu rahaston sijoituksiin 30.09.2026\"): Osakkeet 53,15 %, Korkosijoitukset 41,66 %, Vaihtoehtoiset 5,19 %, Muut −0,00 %. Uusin saatavilla oleva allokaatiotieto (uudempi kuin Morningstar 31.8.2026). Edellinen näyttöluku oli Morningstarin futuureilla korjattu/normalisoitu paino 49,6/46,2 (31.8.) – factsheet on fyysinen jakauma ilman futuurikorjausta, joten muutos on osin menetelmäeroa. Morningstarin portfolio-sivu tarkistettiin 15.11.2026 klo 9.16 (Europe/Helsinki): Investment/Holdings as of Aug 31, 2026, ei uudempaa kuin 30.9., ei käytetty."
+    }
+  }
+]

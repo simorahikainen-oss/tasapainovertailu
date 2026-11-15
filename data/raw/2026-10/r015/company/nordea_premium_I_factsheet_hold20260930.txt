@@ -1,0 +1,348 @@
+Nordea Funds Ltd
+Nordea Instituutio Tasapaino
+
+
+  Rahasto lyhyesti
+
+  Instituutio Varainhoito Tasapaino tarjoaa vaivattoman ja kattavan Nordeassa aktiivisesti hoidetun varainhoitoratkaisun, jossa salkunhoitaja seuraa
+  ja arvioi markkinoiden tarjoamia mahdollisuuksia ja tekee sijoituspäätökset puolestasi. Rahasto sijoittaa tasapainoisesti sekä korko- että
+  osakemarkkinoille
+
+
+
+
+  Tuotto
+
+
+                                                 Nordea Instituutio Tasapaino                      Vertailuindeksi
+     112                                                                                                                                                            112
+     110                                                                                                                                                            110
+     108                                                                                                                                                            108
+     106                                                                                                                                                            106
+     104                                                                                                                                                            104
+     102                                                                                                                                                            102
+     100                                                                                                                                                            100
+      98                                                                                                                                                            98
+                                                                                                                                                                    96
+                         Tammi '26                 Maalis '26                Touko '26              Heinä '26                 Syys '26                Marras '26
+
+   Salkunhoitajan kommentti
+ 
+
+
+
+
+  Lokakuu toi markkinoille uusien jännitteiden yhdistelmän: tekoälyyn kohdistuvat epäilyt, Ranskan valtion velkakriisi ja energian hintojen jatkuva nousu
+  haastoivat sijoittajia samanaikaisesti. Pinnan alla osakemarkkinoilla nähtiin kuitenkin enemmän sektorirotaatiota kuin laajaa myyntiä. Kuukauden hallitsevin
+  teema oli tekoälyinvestointien kannattavuuteen kohdistuvien epäilyjen lisääntyminen.
+
+
+  Lokakuu oli Premium Varainhoitorahastolle miinusmerkkinen. Positiivisesti rahaston kehitykseen vaikuttivat sijoitukset korkeamman luottoluokituksen
+  yrityslainoihin sekä valtionlainoihin. Osakesijoituksissa positiivisesti kehittyivät globaalit lääketeollisuusyhtiöt ja markkina-arvoltaan pienet yhtiöt.
+  Valtionlainamarkkinoilla nähtiin selvä käänne. Korot nousivat kuukauden alussa monivuotisiin huippuihin, mutta laskivat voimakkaasti teknologiamyynnin ja
+  riskinottohalukkuuden heikkenemisen myötä. Terveydenhuoltosektorin vahvan kehityksen taustalla olivat sijoittajien siirtyminen pois teknologiaosakkeista ja
+  odotuksia paremmat kolmannen vuosineljänneksen tulokset. Negatiivisiesti rahaston kehitykseen vaikuttivat sijoitukset kehittyville osakemarkkinoille ja Alpha -
+  hedgerahastoon. Kehittyviä osakemarkkinoita painoivat sekä globaalit että alueelliset tekijät.
+
+
+  Merkittävin muutos salkussa oli globaalien pienyhtiöiden painon pienentäminen ja Global TE2 130-30 -strategian painon kasvattaminen. 130-30-strategian
+  kasvattaminen jatkaa linjaustamme, jossa kasvatamme systemaattisten strategioiden osuutta. Ne ovat historiallisesti olleet osakesalkkumme tärkein lisätuoton
+  lähde. Korkojen voimakas nousu on rasittanut enemmän pienyhtiöitä ja tuloskasvu on jäänyt jälkeen markkina-arvoltaan suuremmista yhtiöistä. Taktisissa
+  omaisuuslajipainotuksissa emme tehneet merkittäviä muutoksia lokakuun aikana. Osakkeet olivat 3,0 prosenttiyksikön ylipainossa marraskuun alkaessa.
+                                                                                                                                                         PVM: 13.11.2026
+
+  Kumulatiivinen tuotto (%)           Vuoden        1 kk        1v     3v      10 v      Tuotto
+                                       alusta
+                                                                                         neljännes                Q1           Q2            Q3           Q4              V
+  Rahasto                               8,03% −1,71%       8,38% 36,64% 83,14%
+                                                                                         (%)
+  Vertailuindeksi                       8,30% −0,65%       8,17% 37,65%           -
+                                                                                          2026               −2,10%        11,56%       −0,30%
+                                                                                          2025               −2,58%         3,17%        4,23%         3,96%        8,91%
+  Vuotuinen tuotto (%)                      1v       2v       3v       5v      10 v       2024                3,86%         1,33%        3,06%          1,19%       9,77%
+  Rahasto                               8,38%      8,19% 10,97%      4,30%    6,24%       2023                2,81%         2,29%       −0,76%         5,52%       10,13%
+                                                                                          2022               −4,76%       −10,14%        −2,11%        2,53%       −14,11%
+  Vertailuindeksi                        8,17%    8,34% 11,24%           -        -
+                                                                                          2021                5,90%         3,89%        1,00%         4,39%       16,01%
+                                                                                          2020              −12,28%         9,32%        3,03%         6,59%        5,32%
+  Riskitunnusluvut                        1v        2v       5v        7v      10 v       2019                8,37%         2,05%        3,22%         3,20%        17,81%
+  Sharpen mittari                        0,99      0,97    0,20       0,41     0,53       2018               −1,35%         1,70%         1,82%       −7,13%       −5,13%
+  Standardipoikkeama                     5,84      7,76     9,24     10,79     9,56       2017                2,89%        −0,51%         1,22%        2,20%        5,89%
+  Tracking error                         2,09      1,83         -        -        -
+Sijoitukset
+
+Perustuu rahaston sijoituksiin 30.09.2026
+
+Salkku (Arvopaperilaji)                                                               Salkku (Alue)
+
+
+                                                                  54.18%               Pohjois-Amerikka                                            49.64%
+                                                                                                                                                   49.64%
+         Osakkeet                                                 54.18%
+                                                                                              Eurooppa                                         32.18%
+                                                                                                                                               32.18%
+                                                                                       Aasia (pl. Japani)            6.37%
+                                                                                                                     6.37%
+ Korkosijoitukset                                             40.24%
+                                                              40.24%                            Maailma             5.61%
+                                                                                                                    5.61%
+                                                                                                   Japani         3.30%
+                                                                                                                  3.30%
+   Vaihtoehtoiset          5.58%
+                           5.58%                                                         Etelä-Amerikka          1.68%
+                                                                                                                 1.68%
+                                                                                                Australia       0.52%
+                                                                                                                0.52%
+              Muut      0.00%
+                        0.00%                                                                     Afrikka       0.44%
+                                                                                                                0.44%
+                                                                                                    Muut        0.27%
+                                                                                                                0.27%
+
+                                       20                 40                 60                                                 20                40                 60
+
+Osakkeet (Alue)                                                                       Joukkolainat (Alue)
+
+ Pohjois-Amerikka                                                 53.09%
+                                                                  53.09%               Pohjois-Amerikka                                                51.88%
+                                                                                                                                                       51.88%
+        Eurooppa                                    28.57%
+                                                    28.57%                                     Eurooppa                                                   41.51%
+                                                                                                                                                          41.51%
+ Aasia (pl. Japani)              10.78%
+                                 10.78%                                                  Etelä-Amerikka                         2.57%
+                                                                                                                                2.57%
+             Japani          5.27%
+                             5.27%                                                     Aasia (pl. Japani)                      1.32%
+                                                                                                                               1.32%
+   Etelä-Amerikka         1.19%
+                          1.19%                                                                    Japani                      1.09%
+                                                                                                                               1.09%
+          Australia      0.76%
+                         0.76%                                                             Ylikansalliset                      0.86%
+                                                                                                                               0.86%
+            Afrikka      0.29%
+                         0.29%                                                                    Afrikka                      0.69%
+                                                                                                                               0.69%
+          Maailma        0.05%
+                         0.05%                                                                  Australia                      0.28%
+                                                                                                                               0.28%
+              Muut       0.00%
+                         0.00%                                                                      Muut          -0.19%
+                                                                                                                  -0.19%
+
+                                       20                    40              60                                            0              20           40            60
+
+Salkku (Maa)                                                                          Osakkeet (Maa)
+
+             USA                                                        44.32%
+                                                                        44.32%                   USA                                                  51.60%
+                                                                                                                                                      51.60%
+           Saksa                             8.35%
+                                             8.35%                                             Suomi                  12.21%
+                                                                                                                      12.21%
+           Suomi                            7.12%
+                                            7.12%                                             Japani             5.27%
+                                                                                                                 5.27%
+          Maailma                          5.61%
+                                           5.61%                                              Taiwan           3.25%
+                                                                                                               3.25%
+          Ranska                           5.46%
+                                           5.46%                                       Korean Tasav.           3.25%
+                                                                                                               3.25%
+            Italia                        4.73%
+                                          4.73%                                         Iso-Britannia          3.19%
+                                                                                                               3.19%
+ Pohjois-Amerikka                         4.04%
+                                          4.04%                                                 Kiina         2.41%
+                                                                                                              2.41%
+        Eurooppa                -10.41%
+                                -10.41%                                                       Sveitsi         2.09%
+                                                                                                              2.09%
+            Muut                                             30.78%
+                                                             30.78%                             Muut                      16.72%
+                                                                                                                          16.72%
+
+                                   0               20             40         60                                   10       20            30      40          50      60
+
+Joukkolainat (Maa)                                                                    Salkku (Toimiala)
+
+              USA                                                       40.67%
+                                                                        40.67%                           IT                  16.24%
+                                                                                                                             16.24%
+            Saksa                                         18.08%
+                                                          18.08%                       Teollisuustuottee…               8.75%
+                                                                                                                        8.75%
+          Ranska                                       11.65%
+                                                       11.65%                                     Rahoitus             8.05%
+                                                                                                                       8.05%
+              Italia                                  11.01%
+                                                      11.01%                             Terveydenhuolto             5.33%
+                                                                                                                     5.33%
+ Pohjois-Amerikka                                     10.05%
+                                                      10.05%                           Kulutustavarat ja…          3.01%
+                                                                                                                   3.01%
+     Iso-Britannia                                 5.17%
+                                                   5.17%                                 Viestintäpalvelut         2.72%
+                                                                                                                   2.72%
+          Espanja                                  4.22%
+                                                   4.22%                                  Perusteollisuus          2.67%
+                                                                                                                   2.67%
+        Eurooppa                -27.36%
+                                -27.36%                                                   Päivittäistavarat       1.46%
+                                                                                                                  1.46%
+             Muut                                              26.51%
+                                                               26.51%                                 Muut                                            51.77%
+                                                                                                                                                      51.77%
+
+                                -20            0        20          40       60                                                 20                40                 60
+
+Salkku (Valuutta)                                                                     Joukkolainat (Maturiteetti)
+
+ Yhdysvaltain Dol…                                            49.91%
+                                                              49.91%                   > 7 vuotta                                                     30.84%
+                                                                                                                                                      30.84%
+                Euro                                         36.13%
+                                                             36.13%
+        Japanin Jeni        2.86%
+                            2.86%                                                      5-7 vuotta                                                     30.84%
+                                                                                                                                                      30.84%
+     Taiwanin Dollari      1.76%
+                           1.76%
+                                                                                       1-3 vuotta                                                            25.55%
+                                                                                                                                                             25.55%
+ Etelä-Korean Won          1.76%
+                           1.76%
+  Iso-Britannian P…        1.58%
+                           1.58%                                                        < 1 vuosi                                                           23.31%
+                                                                                                                                                            23.31%
+      Sveitsin Frangi      1.13%
+                           1.13%                                                       3-5 vuotta                                                          20.66%
+                                                                                                                                                           20.66%
+ Hongkongin Dollari        1.06%
+                           1.06%
+                Muut         3.81%
+                             3.81%                                                          Muut              -31.20%
+                                                                                                              -31.20%
+
+
+                                          20                 40              60                                   -20                0                20             40
+
+
+Tunnusluvut*                                                           30.04.2026
+
+Efektiivinen tuotto                                                               -
+Tunnusluvut*                                       30.04.2026
+
+Modifioitu duraatio                                           -
+Keskimääräinen luottoluokitus                                 -
+Keskimääräinen juoksuaika                                     -
+
+
+
+
+Salkun 10 suurinta sijoitusta 30.09.2026           Maa / Valuutta                   Toimiala / Maturiteetti   Osuus (%)
+
+Nordea World Fund I Acc EUR                        Maailma                                                        10,60
+Nordea Euro Bond Fund A Acc EUR                    Euro                                                            10,01
+Nordea Corporate Bond Fund I Acc EUR               Euro                                                             7,78
+Nordea Global Enhanced Fund I Acc EUR              Maailma                                                          7,74
+Nordea Emerging Market Equities Fund A Acc EUR     Kehittyville osakemarkkinoille                                  6,53
+Nordea 2 - BetaPlus Enhanced US Corp Bd HY-EUR     Euro                                                            6,23
+Nordea Moderate Yield Fund A Acc EUR               Euro                                                             6,21
+Nordea Global High Yield Fund A Acc EUR            Euro                                                            5,78
+Nordea 1 - Alpha 10 MA Fund Y -EUR                                                                                 4,44
+Nordea 2 - BetaPlus Enh Gl Small Cap Eq Fd Y-EUR   Maailma                                                          2,25
+Palkkiot                                                                                                       Esitteet ja katsaukset
+Hallinnolliset kulut p.a. (hallinnointipalkkio ja muut hallinto- tai toimintakulut)                0,76%
+                                                                                                               Avaintietoasiakirja
+Hallinnointipalkkio p.a. (osa hallinnollisia kuluja)                                               0,75%
+                                                                                                               Säännöt
+Transaktiokulut p.a.                                                                               0,15%
+                                                                                                               Virallinen rahastoesite
+Tuottosidonnainen palkkio                                                                                 Ei   Vuosikertomus
+                                                                                                               Puolivuotiskatsaus
+                                                                                                               Rahastoraportti
+
+
+
+
+Palkkiot, minimimerkinnät ja juoksevat kulut
+
+Hallinnolliset kulut kuvaavat rahaston juoksevia ja odotettuja kokonaiskuluja, eikä niissä huomioida transaktiokustannuksia tai mahdollisia
+tuottosidonnaisia palkkioita. Hallinnolliset kulut koostuvat nykyisestä hallinnointipalkkiosta sekä edellisen kalenterivuoden kustannusten perustella
+arvioiduista muista toimintakuluista.
+
+
+Rahastoyhtiö veloittaa rahastolta vuosittain hallinnointipalkkion, joka sisältyy hallinnollisiin kuluihin ja sisältää kulut rahaston ja sen sijoitusten
+hoidosta. Pohjoismaihin rekisteröidyissä rahastoissa siihen yleensä sisältyvät lähes kaikki hallinnolliset kulut. Luxemburgiin rekisteröidyt rahastot
+voivat lisäksi veloittaa esimerkiksi säilytys-, tilintarkastus-, verotus-, sääntely- tai jakelukuluja.
+
+
+Transaktiokulut ovat edellisen vuoden kaupankäyntiin perustuva arvio rahaston sijoitusten ostamisesta ja myymisestä aiheutuvista kuluista.
+Uusien rahastojen osalta kyse on vain arviosta.
+
+
+Joissain rahastoissa voidaan periä tuottosidonnaista palkkiota.
+
+
+Lisätietoa rahaston kuluista saat KID-asiakirjasta, rahastoesitteestä ja vuosikertomuksista. Jakelijat voivat periä erillisiä palkkioita, kuten merkintä-
+ja lunastuspalkkioita.
+
+
+
+
+Perustiedot                                                                                                    Riski
+Rahaston nimi                                          Nordea Instituutio Varainhoito Tasapaino I kasvu
+Morningstar 31.10.2026
+                                                                                                                 1       2     3     4      5    6        7
+SFDR-kategoria
+                                                        6
+                                                                                                               Pienempi riski               Suurempi riski
+Perusvaluutta                                          EUR
+Rahaston arvo (Perusvaluutta)                          2 055milj.                                              Tyypillisesti                  Tyypillisesti
+                                                                                                               pienemmät tuotot          suuremmat tuotot
+Aloituspäivä                                           02.11.2015
+
+ISIN                                                   FI4000171178
+
+Vertailuindeksi                                        Bloomberg US Credit Bond, EUR hedged 7.50%; 3-             Lue lisää rahaston riskeistä ja
+                                                       month Euribor 7.50%; HFRX Global Hedge Fund
+                                                                                                                  riskiluokan laskemisesta rahaston
+                                                       EUR 7.00%; ICE BofA Euro Corporate 7.50%; ICE
+                                                       BofA Global High Yield Constrained, EUR hedged             avaintietoasiakirjasta.
+                                                       7.50%; JP Morgan EMU Government Bond 13.00%;
+                                                       MSCI Emerging Markets NTR 6.50%; MSCI World
+                                                       NTR 36.00%; OMX Helsinki Cap GTR 7.50%. (1.5.24)
+Rahastokategoria                                       Yhdistelmärahasto
+Salkunhoitaja                                          Kaj Forsström & Tuomo Mattila
+Rahastoyhtiö                                           Nordea Funds Oy
+Jakaa tuottoa                                          Ei
+Kertamerkinnän minimisumma, EUR                        1000000
+  Kestävyyteen liittyvien tietojen antaminen
+
+  Rahasto ei edistä ympäristöön tai yhteiskuntaan liittyviä ominaisuuksia eikä sen tavoitteena ole kestävien sijoitusten tekeminen.
+  Rahasto noudattaaNordean vastuullisen sijoittamisen periaatteita ja kestävyysriskit otetaan huomioon sijoituspäätöksissä, mutta
+  rahastolla ei ole muita kestävyyskriteereitä.
+
+
+
+
+Tämän materiaalin tarkoitus on antaa vastaanottajalle yleistä tuotetietoa. Näillä sivuilla esitetyt tiedot eivät ole sijoitusneuvontaa, eikä niiden perusteella
+tule tehdä sijoituspäätöstä. Tiedot ovat yksinomaan tuotetietoja, eikä niitä tule pitää sijoitussuosituksena. Nordea suosittelee, että sijoittaja aina ensin
+tutustuu kyseisen rahaston esitteisiin sekä muihin rahastojulkaisuihin ja ottaa sitten yhteyttä sijoitusneuvojaan ennen rahastomerkinnän tekemistä. Näillä
+sivuilla olevat arviot, luvut tai tiedot eivät ole täydellisiä, ja niitä voidaan muuttaa ilman erillistä ilmoitusta. Ilmoitettu rahasto-osuuden arvo perustuu
+tuoreimpiin saatavilla oleviin tietoihin. FundConnect A/S on koonnut ja toimittanut kaikki näillä sivuilla esitettävät tiedot. FundConnect A/S ja Nordea
+eivät ota vastuuta eikä niiden voida katsoa olevan vastuussa näillä sivuilla esitetyistä tiedoista. FundConnect A/S:n tai Nordean ei myöskään voida katsoa
+olevan millään tavalla vastuussa näillä sivuilla olevien tietojen käytöstä aiheutuneista seurauksista. Palvelussa esitetty rating on Morningstarin tuottama,
+ja se päivitetään kuukausittain. Historiallisen kehityksen perusteella ei voida ennakoida rahastosijoituksen tuottotasoa tulevaisuudessa. Rahasto-
+osuuden arvo voi nousta tai laskea markkinoiden kurssivaihtelun ja rahaston riskitason, sekä merkintä-, lunastus- ja hallinnointipalkkioiden jne.
+seurauksena, ja sijoittaja voi menettää koko sijoittamansa summan. Silloin kun suomalainen sijoittaja sijoittaa rahastoon, jonka perusvaluutta on muu
+kuin euro ja/tai rahastoon, joka voi sijoittaa muihin kuin euromääräisiin arvopapereihin, rahastosijoituksen kehitykseen vaikuttavat myös valuuttakurssien
+vaihtelut. Rahastojen säännöt, Avaintietoesitteet ja muut rahastojulkaisut ovat saatavilla osoitteesta www.nordea.fi/rahasto tai Nordean konttoreista.
+
+
+ 15.11.2026 klo 7.19
+
+                                                                               4/4
+
