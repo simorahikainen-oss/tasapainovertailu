@@ -3228,36 +3228,22 @@
      "n": 2,
      "isin": "FI4000171178",
      "allocation_primary": {
-      "equity_pct": 57.9,
-      "fixed_income_pct": 36.5,
-      "other_pct": 5.6,
-      "as_of": "2026-08-31",
-      "source": "morningstar",
-      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio",
-      "note": "normalisoitu Morningstarin nettoluvuista (nettosumma 105.87 %; johdannaiset/lyhyet positiot) | Päätös: futuurit ovat long-positioita (Nordea puolivuosikatsaus 30.6.2026, s. ~218: Ostetut osakefutuurit 63 533,1 t€, Myydyt osakefutuurit -, n. 3,1 % rahaston 2 063,5 M€ varoista; DAX, FTSE 100, S&P500 E-mini), joten ne nostavat aidosti osakealtistusta -> Morningstarin luku pidetään. Nordean fyysinen osakepaino 50,8 % ei sisällä futuureja. https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
-      "raw_net": {
-       "equity": 61.27,
-       "fixed_income": 38.64,
-       "cash": 5.76,
-       "other": 0.2
-      },
-      "derivatives_evidence": {
-       "equity_futures_bought_keur": 63533.1,
-       "equity_futures_sold_keur": 0,
-       "pct_of_nav_approx": 3.08,
-       "as_of": "2026-06-30",
-       "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf"
-      },
-      "carried_from_period": "2026-09"
+      "equity_pct": 54.18,
+      "fixed_income_pct": 40.24,
+      "other_pct": 5.58,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus (factsheet)",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI4000171178",
+      "note": "Nordean factsheet (haettu 15.11.2026, \"Perustuu rahaston sijoituksiin 30.09.2026\"): Osakkeet 54,18 %, Korkosijoitukset 40,24 %, Vaihtoehtoiset 5,58 %, Muut 0,00 %. Uusin saatavilla oleva allokaatiotieto (uudempi kuin Morningstar 31.8.2026). Edellinen näyttöluku oli Morningstarin futuureilla korjattu, normalisoitu paino 57,9/36,5 (31.8.) – factsheet on fyysinen jakauma ilman futuurikorjausta, joten muutos on osin menetelmäeroa. Morningstarin portfolio-sivu tarkistettiin 15.11.2026 klo 9.15 (Europe/Helsinki): Investment/Holdings as of Aug 31, 2026, ei uudempaa kuin 30.9., ei käytetty."
      },
      "allocation": {
-      "equity_pct": 57.9,
-      "fixed_income_pct": 36.5,
-      "as_of": "2026-08-31",
-      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio"
+      "equity_pct": 54.18,
+      "fixed_income_pct": 40.24,
+      "as_of": "2026-09-30",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI4000171178"
      },
-     "features": "Osakepaino sis. ostetut osakefutuurit (long-altistus; fyysinen osakepaino pienempi); vaihtoehtoiset sijoitukset",
-     "explanation": "Futuureilla lisätty osakealtistus ja euro- ja yrityskorot globaalia aggregaattia parempia; I-sarjan matalat kulut",
+     "features": "Painot rahastoyhtiön factsheetistä (fyysinen jakauma, ei futuurikorjausta); vaihtoehtoiset sijoitukset",
+     "explanation": "Euro- ja yrityskorot globaalia aggregaattia parempia; I-sarjan matalat kulut",
      "allocation_morningstar": {
       "stocks": 61.27,
       "bonds": 38.64,
@@ -3266,7 +3252,78 @@
       "as_of": "2026-08-31"
      },
      "text_from_period": "2026-10",
-     "allocation_change_vs_prev": null,
+     "allocation_change_vs_prev": {
+      "equity_pp": -3.72,
+      "fixed_income_pp": 3.74,
+      "prev_as_of": "2026-08-31",
+      "cur_as_of": "2026-09-30",
+      "prev_period": "2026-09",
+      "prev_source": "morningstar",
+      "cur_source": "kuukausikatsaus (factsheet)",
+      "interval_note": "Muutos aikavälillä 2026-08-31 – 2026-09-30",
+      "source_changed": true,
+      "note": "Lähde vaihtui (morningstar 2026-08-31 → kuukausikatsaus (factsheet) 2026-09-30); muutos osin menetelmäeroa, ei puhdas kuukausimuutos",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen yhdeltä kalenterikuukaudelta (edellinen kuun loppu → snapshotin kuun loppu), samoilla SPYI- (osake) ja VAGF- (korko) EUR-tuotoilla kaikille rahastoille. Lähtöpainoina edellisen kuun lopun osake-, korko- ja muu-painot, tai jos niitä ei ole, viimeisimmät tunnetut aiemmat painot (base_date; muu tuotto 0 %). Markkinavaikutus = ajelehtinut paino - lähtöpaino. Aktiivinen/muu = toteutunut muutos - markkinavaikutus vain, kun toteutunut muutos on yhden kuukauden mittainen; muuten tyhjä (change_period_months), koska jaksot eivät ole vertailukelpoisia (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "base_date": "2026-08-31",
+       "drift_window": {
+        "from": "2026-09-30",
+        "to": "2026-10-31"
+       },
+       "change_period_months": 1,
+       "prev_weights": {
+        "equity_pct": 57.9,
+        "fixed_income_pct": 36.5,
+        "other_pct_assumed": 5.6,
+        "as_of": "2026-08-31",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.38,
+       "fixed_income_pp": 0.4,
+       "residual_equity_pp": null,
+       "residual_fixed_income_pp": null,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 57.52,
+       "drifted_fixed_income_pct": 36.9,
+       "residual_blank_reason": "Toteutunut muutos (2026-08-31–2026-09-30) ei osu markkinavaikutuksen ikkunaan (2026-09-30–2026-10-31); aktiivinen/muu ei ole vertailukelpoinen."
+      }
+     },
      "costs": {
       "ongoing_cost_pct": 0.76,
       "fund_size": 2055230110,
@@ -3310,7 +3367,7 @@
      "flags": [
       {
        "type": "allocation_stale",
-       "note": "Sisältö 2026-08-31 (ei 2026-10-31)"
+       "note": "Sisältö 2026-09-30 (ei 2026-10-31)"
       }
      ],
      "bond_metrics": {
@@ -3745,26 +3802,19 @@
      "n": 3,
      "isin": "FI0008806807",
      "allocation_primary": {
-      "equity_pct": 49.6,
-      "fixed_income_pct": 46.2,
-      "other_pct": 4.2,
-      "as_of": "2026-08-31",
-      "source": "morningstar",
-      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio",
-      "note": "normalisoitu Morningstarin nettoluvuista (nettosumma 107.97 %; johdannaiset/lyhyet positiot)",
-      "raw_net": {
-       "equity": 53.58,
-       "fixed_income": 49.93,
-       "cash": 4.29,
-       "other": 0.17
-      },
-      "carried_from_period": "2026-09"
+      "equity_pct": 53.15,
+      "fixed_income_pct": 41.66,
+      "other_pct": 5.19,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus (factsheet)",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI0008806807",
+      "note": "Nordean factsheet (haettu 15.11.2026, \"Perustuu rahaston sijoituksiin 30.09.2026\"): Osakkeet 53,15 %, Korkosijoitukset 41,66 %, Vaihtoehtoiset 5,19 %, Muut −0,00 %. Uusin saatavilla oleva allokaatiotieto (uudempi kuin Morningstar 31.8.2026). Edellinen näyttöluku oli Morningstarin futuureilla korjattu/normalisoitu paino 49,6/46,2 (31.8.) – factsheet on fyysinen jakauma ilman futuurikorjausta, joten muutos on osin menetelmäeroa. Morningstarin portfolio-sivu tarkistettiin 15.11.2026 klo 9.16 (Europe/Helsinki): Investment/Holdings as of Aug 31, 2026, ei uudempaa kuin 30.9., ei käytetty."
      },
      "allocation": {
-      "equity_pct": 49.6,
-      "fixed_income_pct": 46.2,
-      "as_of": "2026-08-31",
-      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio"
+      "equity_pct": 53.15,
+      "fixed_income_pct": 41.66,
+      "as_of": "2026-09-30",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI0008806807"
      },
      "features": "Korot pääosin pitkiä, osin lyhyitä; vaihtoehtoiset sijoitukset (rahastoyhtiön raportti)",
      "explanation": "Korkopuoli (euro, yrityslainat, covered) voitti VAGF:n; korkeammat kulut kuin Premiumissa",
@@ -3776,7 +3826,78 @@
       "as_of": "2026-08-31"
      },
      "text_from_period": "2026-10",
-     "allocation_change_vs_prev": null,
+     "allocation_change_vs_prev": {
+      "equity_pp": 3.55,
+      "fixed_income_pp": -4.54,
+      "prev_as_of": "2026-08-31",
+      "cur_as_of": "2026-09-30",
+      "prev_period": "2026-09",
+      "prev_source": "morningstar",
+      "cur_source": "kuukausikatsaus (factsheet)",
+      "interval_note": "Muutos aikavälillä 2026-08-31 – 2026-09-30",
+      "source_changed": true,
+      "note": "Lähde vaihtui (morningstar 2026-08-31 → kuukausikatsaus (factsheet) 2026-09-30); muutos osin menetelmäeroa, ei puhdas kuukausimuutos",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen yhdeltä kalenterikuukaudelta (edellinen kuun loppu → snapshotin kuun loppu), samoilla SPYI- (osake) ja VAGF- (korko) EUR-tuotoilla kaikille rahastoille. Lähtöpainoina edellisen kuun lopun osake-, korko- ja muu-painot, tai jos niitä ei ole, viimeisimmät tunnetut aiemmat painot (base_date; muu tuotto 0 %). Markkinavaikutus = ajelehtinut paino - lähtöpaino. Aktiivinen/muu = toteutunut muutos - markkinavaikutus vain, kun toteutunut muutos on yhden kuukauden mittainen; muuten tyhjä (change_period_months), koska jaksot eivät ole vertailukelpoisia (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "base_date": "2026-08-31",
+       "drift_window": {
+        "from": "2026-09-30",
+        "to": "2026-10-31"
+       },
+       "change_period_months": 1,
+       "prev_weights": {
+        "equity_pct": 49.6,
+        "fixed_income_pct": 46.2,
+        "other_pct_assumed": 4.2,
+        "as_of": "2026-08-31",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.41,
+       "fixed_income_pp": 0.43,
+       "residual_equity_pp": null,
+       "residual_fixed_income_pp": null,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 49.19,
+       "drifted_fixed_income_pct": 46.63,
+       "residual_blank_reason": "Toteutunut muutos (2026-08-31–2026-09-30) ei osu markkinavaikutuksen ikkunaan (2026-09-30–2026-10-31); aktiivinen/muu ei ole vertailukelpoinen."
+      }
+     },
      "costs": {
       "ongoing_cost_pct": 1.58,
       "fund_size": 1437679370,
@@ -3819,7 +3940,7 @@
      "flags": [
       {
        "type": "allocation_stale",
-       "note": "Sisältö 2026-08-31 (ei 2026-10-31)"
+       "note": "Sisältö 2026-09-30 (ei 2026-10-31)"
       }
      ],
      "bond_metrics": {
@@ -4252,33 +4373,19 @@
      "n": 4,
      "isin": "FI0008806419",
      "allocation_primary": {
-      "equity_pct": 57.9,
-      "fixed_income_pct": 36.5,
-      "other_pct": 5.6,
-      "as_of": "2026-08-31",
-      "source": "morningstar",
-      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio",
-      "note": "normalisoitu Morningstarin nettoluvuista (nettosumma 105.87 %; johdannaiset/lyhyet positiot) | Päätös: futuurit ovat long-positioita (Nordea puolivuosikatsaus 30.6.2026, s. ~218: Ostetut osakefutuurit 63 533,1 t€, Myydyt osakefutuurit -, n. 3,1 % rahaston 2 063,5 M€ varoista; DAX, FTSE 100, S&P500 E-mini), joten ne nostavat aidosti osakealtistusta -> Morningstarin luku pidetään. Nordean fyysinen osakepaino 50,8 % ei sisällä futuureja. https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf",
-      "raw_net": {
-       "equity": 61.27,
-       "fixed_income": 38.64,
-       "cash": 5.76,
-       "other": 0.2
-      },
-      "derivatives_evidence": {
-       "equity_futures_bought_keur": 63533.1,
-       "equity_futures_sold_keur": 0,
-       "pct_of_nav_approx": 3.08,
-       "as_of": "2026-06-30",
-       "source_url": "https://www.nordeafunds.com/sites/default/files/documents_library/sar2026_fin_final.pdf"
-      },
-      "carried_from_period": "2026-09"
+      "equity_pct": 54.18,
+      "fixed_income_pct": 40.24,
+      "other_pct": 5.58,
+      "as_of": "2026-09-30",
+      "source": "kuukausikatsaus (factsheet)",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI0008806419",
+      "note": "Nordean factsheet (haettu 15.11.2026, \"Perustuu rahaston sijoituksiin 30.09.2026\"): Osakkeet 54,18 %, Korkosijoitukset 40,24 %, Vaihtoehtoiset 5,58 %, Muut 0,00 %. Uusin saatavilla oleva allokaatiotieto (uudempi kuin Morningstar 31.8.2026). Edellinen näyttöluku oli Morningstarin futuureilla korjattu, normalisoitu paino 57,9/36,5 (31.8.) – factsheet on fyysinen jakauma ilman futuurikorjausta, joten muutos on osin menetelmäeroa. Morningstarin portfolio-sivu tarkistettiin 15.11.2026 klo 9.15 (Europe/Helsinki): Investment/Holdings as of Aug 31, 2026, ei uudempaa kuin 30.9., ei käytetty. Sama salkku kuin I-sarjalla (n:o 2)."
      },
      "allocation": {
-      "equity_pct": 57.9,
-      "fixed_income_pct": 36.5,
-      "as_of": "2026-08-31",
-      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio"
+      "equity_pct": 54.18,
+      "fixed_income_pct": 40.24,
+      "as_of": "2026-09-30",
+      "source_url": "https://fundsnow.os.fundconnect.com/api/v1/public/printer/solutions/default/dynamic-factsheet?&language=fi-FI&currency=EUR&clientID=FIIF&shelves=FIIF&isin=FI0008806419"
      },
      "features": "Sama salkku kuin rahastolla 2 (P-sarja)",
      "explanation": "Kuten rahasto 2, ero I-sarjaan on kuluissa",
@@ -4290,7 +4397,78 @@
       "as_of": "2026-08-31"
      },
      "text_from_period": "2026-10",
-     "allocation_change_vs_prev": null,
+     "allocation_change_vs_prev": {
+      "equity_pp": -3.72,
+      "fixed_income_pp": 3.74,
+      "prev_as_of": "2026-08-31",
+      "cur_as_of": "2026-09-30",
+      "prev_period": "2026-09",
+      "prev_source": "morningstar",
+      "cur_source": "kuukausikatsaus (factsheet)",
+      "interval_note": "Muutos aikavälillä 2026-08-31 – 2026-09-30",
+      "source_changed": true,
+      "note": "Lähde vaihtui (morningstar 2026-08-31 → kuukausikatsaus (factsheet) 2026-09-30); muutos osin menetelmäeroa, ei puhdas kuukausimuutos",
+      "market_drift": {
+       "method": "Passiivinen ajelehtiminen yhdeltä kalenterikuukaudelta (edellinen kuun loppu → snapshotin kuun loppu), samoilla SPYI- (osake) ja VAGF- (korko) EUR-tuotoilla kaikille rahastoille. Lähtöpainoina edellisen kuun lopun osake-, korko- ja muu-painot, tai jos niitä ei ole, viimeisimmät tunnetut aiemmat painot (base_date; muu tuotto 0 %). Markkinavaikutus = ajelehtinut paino - lähtöpaino. Aktiivinen/muu = toteutunut muutos - markkinavaikutus vain, kun toteutunut muutos on yhden kuukauden mittainen; muuten tyhjä (change_period_months), koska jaksot eivät ole vertailukelpoisia (sis. kaupat, lähde-/pyöristyserot, rahaston omien sijoitusten ero ETF:istä).",
+       "formula": "w_e(1+r_e) / (w_e(1+r_e) + w_b(1+r_b) + w_o); w_o = 100 - w_e - w_b, r_o = 0",
+       "base_date": "2026-08-31",
+       "drift_window": {
+        "from": "2026-09-30",
+        "to": "2026-10-31"
+       },
+       "change_period_months": 1,
+       "prev_weights": {
+        "equity_pct": 57.9,
+        "fixed_income_pct": 36.5,
+        "other_pct_assumed": 5.6,
+        "as_of": "2026-08-31",
+        "source": "morningstar",
+        "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio"
+       },
+       "status": "computed",
+       "equity_pp": -0.38,
+       "fixed_income_pp": 0.4,
+       "residual_equity_pp": null,
+       "residual_fixed_income_pp": null,
+       "etf_returns": {
+        "equity": {
+         "etf": "SPYI",
+         "isin": "IE00B3YLTY66",
+         "ticker": "SPYI.DE",
+         "currency": "EUR",
+         "return_pct": -0.3085,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": -0.003085
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        },
+        "bond": {
+         "etf": "VAGF",
+         "isin": "IE00BG47KH54",
+         "ticker": "VAGF.DE",
+         "currency": "EUR",
+         "return_pct": 1.4518,
+         "from_close": "2026-09-30",
+         "to_close": "2026-10-30",
+         "months": [
+          "2026-10"
+         ],
+         "monthly_returns": {
+          "2026-10": 0.014518
+         },
+         "source": "data/benchmark_monthly.csv: Xetra-päätöskurssien kuukausituotot (Yahoo Finance SPYI.DE / VAGF.DE, EUR); tarkistettu 10.11.2026 Yahoo päivädataa vasten, ei osinkoja (kertyvät osuuslajit)"
+        }
+       },
+       "drifted_equity_pct": 57.52,
+       "drifted_fixed_income_pct": 36.9,
+       "residual_blank_reason": "Toteutunut muutos (2026-08-31–2026-09-30) ei osu markkinavaikutuksen ikkunaan (2026-09-30–2026-10-31); aktiivinen/muu ei ole vertailukelpoinen."
+      }
+     },
      "costs": {
       "ongoing_cost_pct": 1.41,
       "fund_size": 2055230110,
@@ -4334,7 +4512,7 @@
      "flags": [
       {
        "type": "allocation_stale",
-       "note": "Sisältö 2026-08-31 (ei 2026-10-31)"
+       "note": "Sisältö 2026-09-30 (ei 2026-10-31)"
       }
      ],
      "bond_metrics": {
@@ -15967,8 +16145,7 @@
     "as_of_max": "2026-10-31",
     "by_as_of": {
      "2026-06-30": 4,
-     "2026-08-31": 3,
-     "2026-09-30": 3,
+     "2026-09-30": 6,
      "2026-10-31": 14
     }
    },
@@ -16057,9 +16234,15 @@
      "saved_at": "2026-11-15T09:36:13+02:00",
      "path": "revisions/2026-10/r014.json",
      "summary": "Täysi kuukausiajo 15.11.2026: allokaatio UB Smart (UB 31.10.), Obsido Rebalanced 50 (MS 31.10.), Aktia VH50 (Aktia 31.10.), Danske Kompassi 50 (MS 30.9., ennen 31.8.), Nordea Vastuullinen Tasapaino (Nordea factsheet 30.9., ennen puolivuosi 30.6.); raportoitu Effective Duration Obsido Rebalanced 50 3,77 (31.10.) ja Evli GMM 50 2,71 (30.9.); UB Smart ja Obsido R50 korkotaulukot 31.10.; kaikkien 23 rahaston + VAGF:n korkomittarit tarkistettu 15.11. (muut ennallaan); rahastokoot 15 rahastolle, Finlandia juoksevat kulut; kuun lopulta 14/24"
+    },
+    {
+     "revision": 15,
+     "saved_at": "2026-11-15T12:09:41+02:00",
+     "path": "revisions/2026-10/r015.json",
+     "summary": "Nordea Premium I/P ja Säästö 50: allokaatio vaihdettu uudempaan lähteeseen, Nordean factsheet 30.9.2026 (fyysinen: Premium I/P 54,18/40,24, Säästö 50 53,15/41,66); aiemmin Morningstarin futuurikorjattu 31.8. (MS edelleen 31.8. 15.11. tarkistuksessa). Lähteen vaihto merkitty; markkinavaikutus 30.9.–31.10., lähtöpaino 31.8.; aktiivinen/muu tyhjä (muutos ei pääty 31.10.). n2:n kuvaustekstit päivitetty (ei enää futuuripainoa). Kuun lopulta 14/24."
     }
    ],
-   "revision": 14
+   "revision": 15
   }
  ],
  "etfs": [
