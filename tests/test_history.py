@@ -96,6 +96,9 @@ chk(_m['status'] == 'computed' and _m['etf_returns']['equity']['months'] == ['20
 # lähtöpaino voi olla muu kuin kuun loppu; ETF-tuotot silti kuun lopusta
 _m = MD.market_drift({'equity_pp': 1, 'fixed_income_pp': 1, 'prev_as_of': '2026-09-15', 'cur_as_of': '2026-10-31'}, {'equity_pct': 60, 'fixed_income_pct': 40, 'as_of': '2026-09-15'}, _rows, month_end='2026-10-31')
 chk(_m['status'] == 'computed' and _m['base_date'] == '2026-09-15' and _m['etf_returns']['equity']['months'] == ['2026-10'] and _m['change_period_months'] == 1, 'market_drift: vanhempi lähtöpäivä, 1 kk ikkuna')
+# r014: 1 kk muutos, joka ei pääty snapshotin kuun loppuun (esim. 31.8.→30.9. lokakuun snapshotissa) -> residuaali tyhjä
+_m = MD.market_drift({'equity_pp': 0.6, 'fixed_income_pp': 0.0, 'prev_as_of': '2026-08-31', 'cur_as_of': '2026-09-30'}, {'equity_pct': 50, 'fixed_income_pct': 43, 'as_of': '2026-08-31'}, _rows, month_end='2026-10-31')
+chk(_m['status'] == 'computed' and _m['change_period_months'] == 1 and _m['etf_returns']['equity']['months'] == ['2026-10'] and _m['residual_equity_pp'] is None and _m['residual_fixed_income_pp'] is None and 'ikkunaan' in _m.get('residual_blank_reason', ''), 'market_drift: 1 kk muutos eri ikkunassa, residuaali tyhjä')
 for _ch, _pv, _me in (({'equity_pp': 1, 'fixed_income_pp': 1, 'prev_as_of': '2026-09-30', 'cur_as_of': '2026-11-30'}, {'equity_pct': 60, 'fixed_income_pct': 40}, '2026-11-30'),   # tuotto puuttuu
                  ({'equity_pp': 1, 'fixed_income_pp': None, 'prev_as_of': '2026-09-30', 'cur_as_of': '2026-10-31'}, {'equity_pct': 60, 'fixed_income_pct': None}, '2026-10-31')):  # paino puuttuu
     _m = MD.market_drift(_ch, _pv, _rows, month_end=_me)
@@ -114,7 +117,7 @@ for s in h['snapshots']:
                 chk(m['change_period_months'] == MD.month_steps(ch['prev_as_of'], ch['cur_as_of']) and m.get('base_date') == ch['prev_as_of'], f"{s['period']} n{f['n']} change_period_months/base_date")
                 chk(m.get('drift_window') == {'from': MD.prev_month_end(s['month_end']), 'to': s['month_end']}, f"{s['period']} n{f['n']} drift_window")
                 chk(e['equity']['months'] == [s['period']], f"{s['period']} n{f['n']} ETF-ikkuna = 1 kk")
-                if m['change_period_months'] == 1:
+                if m['change_period_months'] == 1 and ch['cur_as_of'] == s['month_end']:
                     if ch.get('equity_pp') is not None: chk(abs(ch['equity_pp'] - m['equity_pp'] - m['residual_equity_pp']) < 0.011, f"{s['period']} n{f['n']} residuaali osake")
                     if ch.get('fixed_income_pp') is not None: chk(abs(ch['fixed_income_pp'] - m['fixed_income_pp'] - m['residual_fixed_income_pp']) < 0.011, f"{s['period']} n{f['n']} residuaali korko")
                 else:

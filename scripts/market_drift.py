@@ -116,8 +116,13 @@ def market_drift(ch, prev, rows=None, *, month_end):
     de, db, me, mb = drift(w_e, w_b, rets['equity']['return_pct'] / 100, rets['bond']['return_pct'] / 100)
     md.update({'status': 'computed', 'drifted_equity_pct': round(de, 2), 'drifted_fixed_income_pct': round(db, 2),
                'equity_pp': round(me, 2), 'fixed_income_pp': round(mb, 2)})
-    comparable = period_m == 1
-    if not comparable:
+    # r014: residuaali vain, kun toteutunut 1 kk muutos osuu samaan ikkunaan (päättyy snapshotin kuun loppuun)
+    aligned = ch.get('cur_as_of') == month_end
+    comparable = period_m == 1 and aligned
+    if not comparable and period_m == 1:
+        md['residual_blank_reason'] = (f'Toteutunut muutos ({ch.get("prev_as_of")}–{ch.get("cur_as_of")}) ei osu markkinavaikutuksen '
+                                       f'ikkunaan ({win_from}–{win_to}); aktiivinen/muu ei ole vertailukelpoinen.')
+    elif not comparable:
         md['residual_blank_reason'] = (f'Toteutunut muutos on {period_m} kk ({ch.get("prev_as_of")}–{ch.get("cur_as_of")}), '
                                        f'markkinavaikutus lasketaan aina yhdeltä kuukaudelta ({win_from}–{win_to}); '
                                        f'aktiivinen/muu ei ole vertailukelpoinen.')
