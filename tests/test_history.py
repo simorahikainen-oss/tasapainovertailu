@@ -185,11 +185,11 @@ chk(_c16[3].get('ongoing_cost_pct') == 1.58 and _c16[5].get('ongoing_cost_pct') 
 chk(_c16[21].get('ongoing_cost_pct') == 1.11 and _c16[23].get('ongoing_cost_pct') == 1.11, 'r016 Tasapainoinen B/D kulut ennallaan')
 chk(_c16[16].get('ongoing_cost_pct') == 1.77, 'r016 sulautuneen n16 kulu ennallaan')
 if _s10['revision'] >= 17:
-    chk(_s10['revision'] == 17, '2026-10 revisio on 17')
+    _r017 = json.load(open(ROOT / 'revisions/2026-10/r017.json'))
     _exp = {1: 0.95, 2: 0.76, 3: 1.39, 4: 1.37, 5: 4.32, 6: 1.86, 7: 1.3, 8: 1.9, 9: 1.38,
             10: 1.2, 11: 1.6, 12: 1.4, 13: 1.1, 14: 1.49, 15: 1.93, 17: 1.38, 18: 1.61,
             19: 1.3, 20: 0.48, 21: 1.55, 22: 1.21, 23: 0.95, 24: 0.91}
-    _c17 = {f['n']: (f.get('costs') or {}) for f in _s10['funds']}
+    _c17 = {f['n']: (f.get('costs') or {}) for f in _r017['funds']}
     for _n, _v in _exp.items():
         chk(_c17[_n].get('ongoing_cost_pct') == _v, f'r017 n{_n} kulu {_c17[_n].get("ongoing_cost_pct")!r} != {_v}')
         chk(_c17[_n].get('source') == 'Morningstar', f'r017 n{_n} source')
@@ -200,19 +200,37 @@ if _s10['revision'] >= 17:
     chk(_c17[21]['ongoing_cost_pct'] != _c17[23]['ongoing_cost_pct'], 'n21 ja n23 eri osuussarjat, eri kulu')
     chk('FI4000278676' in (_c17[21].get('note') or '') and 'FI4000517719' in (_c17[23].get('note') or ''), 'n21/n23 ISIN notessa')
     chk('4,32' in (_c17[5].get('note') or '') and 'Performance Fee' in (_c17[5].get('note') or ''), 'n5 Ongoing Cost -huomautus')
-    # vain costs-kenttä muuttui rahastoilla; n16 ja muu snapshot ennallaan
-    for _x, _y in zip(_r016['funds'], _s10['funds']):
+    # r017: vain costs-kenttä muuttui rahastoilla; n16 ja muu snapshot ennallaan
+    for _x, _y in zip(_r016['funds'], _r017['funds']):
         _d = {k for k in set(_x) | set(_y) if _x.get(k) != _y.get(k)}
         if _x['n'] == 16:
             chk(not _d, f'r017 n16 muuttui: {_d}')
         else:
             chk(_d <= {'costs'}, f'r017 n{_x["n"]} muuttui muutakin kuin costs: {_d}')
-            # rahastokoko ennallaan
             chk((_x.get('costs') or {}).get('fund_size') == (_y.get('costs') or {}).get('fund_size'), f'r017 n{_x["n"]} fund_size muuttui')
-    _top = {k for k in set(_r016) | set(_s10) if k not in ('funds', 'revisions', 'revision') and _r016.get(k) != _s10.get(k)}
+    _top = {k for k in set(_r016) | set(_r017) if k not in ('funds', 'revisions', 'revision') and _r016.get(k) != _r017.get(k)}
     chk(not _top, f'r017 snapshot-tason muutos: {_top}')
     chk(_s10['benchmark']['SPYI_meta']['ongoing_cost_pct'] == 0.17 and _s10['benchmark']['VAGF_meta']['ongoing_cost_pct'] == 0.08, 'SPYI/VAGF kulut ennallaan')
     chk(_s10['benchmark']['SPYI_meta'] == _r016['benchmark']['SPYI_meta'] and _s10['benchmark']['VAGF_meta'] == _r016['benchmark']['VAGF_meta'], 'SPYI/VAGF meta ennallaan')
+
+# r018: UB Smart I juoksevat kulut UB:n avaintietoasiakirjasta; r017 arkisto ennallaan
+_ub17 = next(f for f in _r017['funds'] if f['n'] == 5)['costs']
+chk(_ub17.get('ongoing_cost_pct') == 4.32 and _ub17.get('source') == 'Morningstar', 'r017 UB Smart kulu ennallaan')
+if _s10['revision'] >= 18:
+    _ub = next(f for f in _s10['funds'] if f['n'] == 5)['costs']
+    chk(_ub['ongoing_cost_pct'] == 1.91 and _ub['source'] == 'UB KID', 'r018 UB Smart kulu 1,91 UB KID')
+    chk(_ub.get('fetched_at') == '2026-11-20' and 'unitedbankers.fi' in (_ub.get('source_url') or ''), 'r018 UB lähde-url')
+    chk('4,32' in (_ub.get('note') or '') and 'virheelliseltä' in (_ub.get('note') or ''), 'r018 UB note: aiempi MS-arvo')
+    chk('16.4.2026' in (_ub.get('note') or '') or '2026-04-16' in (_ub.get('note') or ''), 'r018 UB as_of notessa')
+    chk(_ub.get('fund_size') == _ub17.get('fund_size'), 'r018 UB fund_size ennallaan')
+    for _x, _y in zip(_r017['funds'], _s10['funds']):
+        _d = {k for k in set(_x) | set(_y) if _x.get(k) != _y.get(k)}
+        if _x['n'] == 5:
+            chk(_d <= {'costs'}, f'r018 n5 muuttui muutakin kuin costs: {_d}')
+        else:
+            chk(not _d, f'r018 n{_x["n"]} muuttui: {_d}')
+    _top = {k for k in set(_r017) | set(_s10) if k not in ('funds', 'revisions', 'revision') and _r017.get(k) != _s10.get(k)}
+    chk(not _top, f'r018 snapshot-tason muutos: {_top}')
 
 print('\n'.join(err) or f'OK: {len(periods)} kautta {periods}')
 sys.exit(1 if err else 0)

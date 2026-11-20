@@ -1,0 +1,12 @@
+[
+  {
+    "n": 5,
+    "costs": {
+      "ongoing_cost_pct": 1.91,
+      "source": "UB KID",
+      "source_url": "https://unitedbankers.fi/api/products/file?id=f6876b21-fb92-ec11-bad2-005056ab348e&lang=fi",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut 1,91 % UB:n avaintietoasiakirjasta (laadittu 16.4.2026, as of 2026-04-16), I-sarja FI0008811484, kenttä \"Hallinnolliset maksut ja muut hallinto- tai toimintakulut\". Kaupankäyntikulut 0,17 % ovat erillinen erä eivätkä sisälly tähän lukuun. Tuottosidonnaista palkkiota ei peritä I-sarjasta (vain A- ja POP-sarjoista). Aiempi arvo 4,32 %, lähde: Morningstar quote Ongoing Cost (as of 2026-03-09, tarkistettu 20.11.2026). Morningstarin 4,32 % vaikuttaa virheelliseltä; vaihdettu käyttäjän päätöksellä 20.11.2026 UB:n avaintietoasiakirjaan. Rahastokoko ennallaan Morningstarista."
+    }
+  }
+]

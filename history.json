@@ -5027,16 +5027,16 @@
       }
      },
      "costs": {
-      "ongoing_cost_pct": 4.32,
+      "ongoing_cost_pct": 1.91,
       "fund_size": 115897492,
       "fund_size_currency": "EUR",
       "fund_size_as_of": "2026-11-05",
       "category": "EUR Moderate Allocation - Global",
-      "source": "Morningstar",
-      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/quote",
+      "source": "UB KID",
+      "source_url": "https://unitedbankers.fi/api/products/file?id=f6876b21-fb92-ec11-bad2-005056ab348e&lang=fi",
       "category_fi": "Yhdistelmä globaali maltillinen, euro",
       "fetched_at": "2026-11-20",
-      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 4,32 % (as of 2026-03-09, tarkistettu 20.11.2026). Aiempi arvo 1,64 %, lähde: Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate). Arvo on sivun Ongoing Costs -kenttä, ei tuottosidonnainen palkkio: Related Investments -taulukossa Performance Fee % on I-sarjalla '–' ja A-sarjalla 0,00; molempien osuussarjojen Ongoing Cost on 4,32. Aiempi screener-arvo 1,64 poikkesi tästä selvästi."
+      "note": "Juoksevat kulut 1,91 % UB:n avaintietoasiakirjasta (laadittu 16.4.2026, as of 2026-04-16), I-sarja FI0008811484, kenttä \"Hallinnolliset maksut ja muut hallinto- tai toimintakulut\". Kaupankäyntikulut 0,17 % ovat erillinen erä eivätkä sisälly tähän lukuun. Tuottosidonnaista palkkiota ei peritä I-sarjasta (vain A- ja POP-sarjoista). Aiempi arvo 4,32 %, lähde: Morningstar quote Ongoing Cost (as of 2026-03-09, tarkistettu 20.11.2026). Morningstarin 4,32 % vaikuttaa virheelliseltä; vaihdettu käyttäjän päätöksellä 20.11.2026 UB:n avaintietoasiakirjaan. Rahastokoko ennallaan Morningstarista."
      },
      "allocation_morningstar_feed": {
       "equity_net_pct": 41.687,
@@ -16535,9 +16535,15 @@
      "saved_at": "2026-11-20T09:32:26+02:00",
      "path": "revisions/2026-10/r017.json",
      "summary": "Juoksevat kulut vaihdettu Morningstarin quote-sivun Ongoing Cost -kenttään (käyttäjän päätös 20.11.2026): muuttui 20 rahastolla (mm. Säästö 50 1,58→1,39, Ryhti 1,16→1,38, UB Smart I 1,64→4,32, Alexandria 2,21→1,90, Säästöpankki Tasapainoinen B 1,11→1,55 ja D 1,11→0,95); ennallaan n2 0,76, n12 1,40 ja n18 1,61; sulautunutta n16 ei päivitetty; SPYI 0,17 ja VAGF 0,08 tarkistettu, ennallaan. Lähde=Morningstar, as_of=onGoingChargeDate (muuten tarkistuspäivä). UB 4,32 on sivun Ongoing Costs (Related Investments: Performance Fee % I-sarjalla '–', A-sarjalla 0,00). B- ja D-sarjat luettu omilta osuussarjasivuiltaan. Muut arvot ennallaan."
+    },
+    {
+     "revision": 18,
+     "saved_at": "2026-11-20T13:48:08+02:00",
+     "path": "revisions/2026-10/r018.json",
+     "summary": "UB Smart I (n5) juoksevat kulut vaihdettu Morningstarin 4,32 %:sta UB:n avaintietoasiakirjan 1,91 %:iin (laadittu 16.4.2026, I-sarja FI0008811484, hallinnolliset maksut ja muut hallinto- tai toimintakulut). Kaupankäyntikulut 0,17 % erillinen; tuottosidonnaista palkkiota ei peritä I-sarjasta. Morningstarin 4,32 % (as of 2026-03-09) vaikuttaa virheelliseltä; vaihdettu käyttäjän päätöksellä 20.11.2026. Muut arvot ennallaan."
     }
    ],
-   "revision": 17
+   "revision": 18
   }
  ],
  "etfs": [
