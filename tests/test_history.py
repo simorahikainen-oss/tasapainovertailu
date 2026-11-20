@@ -178,5 +178,41 @@ if _s10['revision'] >= 12:
     if _t23['costs']['ongoing_cost_pct'] == _t21['costs']['ongoing_cost_pct']:
         chk('matalammat kulut' not in _t23['explanation'], 'n23 selitys ristiriidassa kulujen kanssa')
 
+# r017: juoksevat kulut Morningstar quote-sivun Ongoing Cost -kentästä; r016 arkisto ennallaan
+_r016 = json.load(open(ROOT / 'revisions/2026-10/r016.json'))
+_c16 = {f['n']: (f.get('costs') or {}) for f in _r016['funds']}
+chk(_c16[3].get('ongoing_cost_pct') == 1.58 and _c16[5].get('ongoing_cost_pct') == 1.64, 'r016 Säästö 50 / UB Smart kulut ennallaan')
+chk(_c16[21].get('ongoing_cost_pct') == 1.11 and _c16[23].get('ongoing_cost_pct') == 1.11, 'r016 Tasapainoinen B/D kulut ennallaan')
+chk(_c16[16].get('ongoing_cost_pct') == 1.77, 'r016 sulautuneen n16 kulu ennallaan')
+if _s10['revision'] >= 17:
+    chk(_s10['revision'] == 17, '2026-10 revisio on 17')
+    _exp = {1: 0.95, 2: 0.76, 3: 1.39, 4: 1.37, 5: 4.32, 6: 1.86, 7: 1.3, 8: 1.9, 9: 1.38,
+            10: 1.2, 11: 1.6, 12: 1.4, 13: 1.1, 14: 1.49, 15: 1.93, 17: 1.38, 18: 1.61,
+            19: 1.3, 20: 0.48, 21: 1.55, 22: 1.21, 23: 0.95, 24: 0.91}
+    _c17 = {f['n']: (f.get('costs') or {}) for f in _s10['funds']}
+    for _n, _v in _exp.items():
+        chk(_c17[_n].get('ongoing_cost_pct') == _v, f'r017 n{_n} kulu {_c17[_n].get("ongoing_cost_pct")!r} != {_v}')
+        chk(_c17[_n].get('source') == 'Morningstar', f'r017 n{_n} source')
+        chk(_c17[_n].get('fetched_at') == '2026-11-20', f'r017 n{_n} fetched_at')
+        chk(_c17[_n].get('source_url'), f'r017 n{_n} source_url')
+        chk(f'Aiempi arvo' in (_c17[_n].get('note') or ''), f'r017 n{_n} aiempi arvo notessa')
+    chk(_c17[16].get('ongoing_cost_pct') == 1.77 and _c17[16].get('source') == _c16[16].get('source'), 'n16 kulu ennallaan')
+    chk(_c17[21]['ongoing_cost_pct'] != _c17[23]['ongoing_cost_pct'], 'n21 ja n23 eri osuussarjat, eri kulu')
+    chk('FI4000278676' in (_c17[21].get('note') or '') and 'FI4000517719' in (_c17[23].get('note') or ''), 'n21/n23 ISIN notessa')
+    chk('4,32' in (_c17[5].get('note') or '') and 'Performance Fee' in (_c17[5].get('note') or ''), 'n5 Ongoing Cost -huomautus')
+    # vain costs-kenttä muuttui rahastoilla; n16 ja muu snapshot ennallaan
+    for _x, _y in zip(_r016['funds'], _s10['funds']):
+        _d = {k for k in set(_x) | set(_y) if _x.get(k) != _y.get(k)}
+        if _x['n'] == 16:
+            chk(not _d, f'r017 n16 muuttui: {_d}')
+        else:
+            chk(_d <= {'costs'}, f'r017 n{_x["n"]} muuttui muutakin kuin costs: {_d}')
+            # rahastokoko ennallaan
+            chk((_x.get('costs') or {}).get('fund_size') == (_y.get('costs') or {}).get('fund_size'), f'r017 n{_x["n"]} fund_size muuttui')
+    _top = {k for k in set(_r016) | set(_s10) if k not in ('funds', 'revisions', 'revision') and _r016.get(k) != _s10.get(k)}
+    chk(not _top, f'r017 snapshot-tason muutos: {_top}')
+    chk(_s10['benchmark']['SPYI_meta']['ongoing_cost_pct'] == 0.17 and _s10['benchmark']['VAGF_meta']['ongoing_cost_pct'] == 0.08, 'SPYI/VAGF kulut ennallaan')
+    chk(_s10['benchmark']['SPYI_meta'] == _r016['benchmark']['SPYI_meta'] and _s10['benchmark']['VAGF_meta'] == _r016['benchmark']['VAGF_meta'], 'SPYI/VAGF meta ennallaan')
+
 print('\n'.join(err) or f'OK: {len(periods)} kautta {periods}')
 sys.exit(1 if err else 0)

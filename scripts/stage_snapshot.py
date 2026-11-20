@@ -333,11 +333,16 @@ def content_stage(period, upd_path):
         changed.append(u['n'])
     coverage(h, snap)
     if ups and all(set(u) <= {'n', 'costs'} for u in ups):
-        bits = []
-        for u in ups:
-            c = u['costs']; typ = {'fund': 'rahasto', 'share_class': 'osuussarja'}.get(c.get('fund_size_type'), c.get('fund_size_type'))
-            bits.append(f"n{u['n']} {c.get('fund_size')} {c.get('fund_size_currency')} {c.get('fund_size_as_of')} ({typ})")
-        summary = f"Rahastokoot päivitetty: {', '.join(bits)}; muut arvot ennallaan"
+        only_oc = all('ongoing_cost_pct' in u['costs'] and 'fund_size' not in u['costs'] for u in ups)
+        if only_oc:
+            bits = [f"n{u['n']} {u['costs']['ongoing_cost_pct']}" for u in ups]
+            summary = f"Juoksevat kulut päivitetty Morningstar-lähteeseen: {', '.join(bits)}; muut arvot ennallaan"
+        else:
+            bits = []
+            for u in ups:
+                c = u['costs']; typ = {'fund': 'rahasto', 'share_class': 'osuussarja'}.get(c.get('fund_size_type'), c.get('fund_size_type'))
+                bits.append(f"n{u['n']} {c.get('fund_size')} {c.get('fund_size_currency')} {c.get('fund_size_as_of')} ({typ})")
+            summary = f"Rahastokoot päivitetty: {', '.join(bits)}; muut arvot ennallaan"
     else:
         summary = f"Sisältö päivitetty rahastoille {changed}; kuun lopulta {snap['content_coverage']['current_month_end']}/{snap['content_coverage']['eligible']}"
     save_revision(h, snap, summary)
