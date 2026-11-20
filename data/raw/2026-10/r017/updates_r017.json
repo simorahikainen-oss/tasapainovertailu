@@ -1,0 +1,232 @@
+[
+  {
+    "n": 1,
+    "costs": {
+      "ongoing_cost_pct": 0.95,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 0,95 % (as of 2026-06-15, tarkistettu 20.11.2026). Aiempi arvo 0,99 %, lähde: Morningstar Global quote 15.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 2,
+    "costs": {
+      "ongoing_cost_pct": 0.76,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 0,76 % (as of 2026-09-04, tarkistettu 20.11.2026). Aiempi arvo 0,76 %, lähde: Morningstar Global quote 15.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin). Rahastokoko koko rahasto (kaikki osuussarjat), sama kuin P-sarjalla."
+    }
+  },
+  {
+    "n": 3,
+    "costs": {
+      "ongoing_cost_pct": 1.39,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,39 % (as of 2026-05-27, tarkistettu 20.11.2026). Aiempi arvo 1,58 %, lähde: Morningstar Global quote 15.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 4,
+    "costs": {
+      "ongoing_cost_pct": 1.37,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,37 % (as of 2026-04-16, tarkistettu 20.11.2026). Aiempi arvo 1,41 %, lähde: Morningstar Global quote 15.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin). Rahastokoko koko rahasto (kaikki osuussarjat)."
+    }
+  },
+  {
+    "n": 5,
+    "costs": {
+      "ongoing_cost_pct": 4.32,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 4,32 % (as of 2026-03-09, tarkistettu 20.11.2026). Aiempi arvo 1,64 %, lähde: Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate). Arvo on sivun Ongoing Costs -kenttä, ei tuottosidonnainen palkkio: Related Investments -taulukossa Performance Fee % on I-sarjalla '–' ja A-sarjalla 0,00; molempien osuussarjojen Ongoing Cost on 4,32. Aiempi screener-arvo 1,64 poikkesi tästä selvästi."
+    }
+  },
+  {
+    "n": 6,
+    "costs": {
+      "ongoing_cost_pct": 1.86,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,86 % (as of 2026-04-16, tarkistettu 20.11.2026). Aiempi arvo 1,85 %, lähde: Morningstar Global quote 15.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 7,
+    "costs": {
+      "ongoing_cost_pct": 1.3,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,30 % (as of 2026-08-26, tarkistettu 20.11.2026). Aiempi arvo 1,22 %, lähde: Morningstar Global quote 20.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 8,
+    "costs": {
+      "ongoing_cost_pct": 1.9,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,90 % (as of 2026-09-14, tarkistettu 20.11.2026). Aiempi arvo 2,21 %, lähde: Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate). Morningstarin rahastokoko vanha (31.5.2025); yhtiön sivun mukaan hallinnoitavat varat 276 115 986 € 31.8.2026 ja juoksevat kulut 1,87 %."
+    }
+  },
+  {
+    "n": 9,
+    "costs": {
+      "ongoing_cost_pct": 1.38,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,38 % (as of 2026-10-30, tarkistettu 20.11.2026). Aiempi arvo 1,16 %, lähde: Morningstar Global quote 20.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 10,
+    "costs": {
+      "ongoing_cost_pct": 1.2,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,20 % (as of 2026-03-01, tarkistettu 20.11.2026). Aiempi arvo 1,34 %, lähde: Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)."
+    }
+  },
+  {
+    "n": 11,
+    "costs": {
+      "ongoing_cost_pct": 1.6,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,60 % (as of 2026-10-09, tarkistettu 20.11.2026). Aiempi arvo 1,89 %, lähde: Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)."
+    }
+  },
+  {
+    "n": 12,
+    "costs": {
+      "ongoing_cost_pct": 1.4,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,40 % (as of 2026-10-19, tarkistettu 20.11.2026). Aiempi arvo 1,40 %, lähde: Morningstar Global quote 20.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 13,
+    "costs": {
+      "ongoing_cost_pct": 1.1,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,10 % (as of 2026-09-01, tarkistettu 20.11.2026). Aiempi arvo 0,99 %, lähde: Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)."
+    }
+  },
+  {
+    "n": 14,
+    "costs": {
+      "ongoing_cost_pct": 1.49,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,49 % (as of 2026-08-26, tarkistettu 20.11.2026). Aiempi arvo 1,40 %, lähde: Morningstar Global quote 20.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 15,
+    "costs": {
+      "ongoing_cost_pct": 1.93,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,93 % (as of 2026-10-30, tarkistettu 20.11.2026). Aiempi arvo 1,96 %, lähde: Morningstar Global quote 20.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 17,
+    "costs": {
+      "ongoing_cost_pct": 1.38,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,38 % (as of 2026-05-27, tarkistettu 20.11.2026). Aiempi arvo 1,57 %, lähde: Morningstar Global quote 15.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 18,
+    "costs": {
+      "ongoing_cost_pct": 1.61,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,61 % (as of 2026-07-01, tarkistettu 20.11.2026). Aiempi arvo 1,61 %, lähde: Morningstar Global quote 15.11.2026: Fund Size (fundSize/fundSizeDate) ja Ongoing Costs (onGoingCharge, pvm 2026-07-01); screener OngoingCharge puuttui. Rahastokoko päivitetty aiemmin (aiempi koko 31.12.2025)."
+    }
+  },
+  {
+    "n": 19,
+    "costs": {
+      "ongoing_cost_pct": 1.3,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,30 % (as of 2026-04-16, tarkistettu 20.11.2026). Aiempi arvo 1,32 %, lähde: Morningstar Global quote 15.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  },
+  {
+    "n": 20,
+    "costs": {
+      "ongoing_cost_pct": 0.48,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 0,48 % (as of 2026-08-24, tarkistettu 20.11.2026). Aiempi arvo 0,49 %, lähde: Morningstar Global quote: Fund Size (juoksevat kulut ennallaan, screener OngoingCharge). Rahastokoko (Fund Size) 55 146 100 EUR 5.11.2026; osuussarjan koko (Share class size) sama, vain yksi osuussarja. Morningstarin surveyed FundTNAV / Fund Size -kyselyarvo 1 599 EUR (30.10.) on virheellinen eikä sitä käytetä."
+    }
+  },
+  {
+    "n": 21,
+    "costs": {
+      "ongoing_cost_pct": 1.55,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,55 % (as of 2026-10-30, tarkistettu 20.11.2026). Aiempi arvo 1,11 %, lähde: Morningstar Global quote 20.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin). B-sarja (n21, FI4000278676) ja D-sarja (n23, FI4000517719) luettu omilta quote-sivuiltaan; arvot eivät ole samat. Rahastokoko koko rahasto (B+D)."
+    }
+  },
+  {
+    "n": 22,
+    "costs": {
+      "ongoing_cost_pct": 1.21,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 1,21 % (as of 2026-04-16, tarkistettu 20.11.2026). Aiempi arvo 1,15 %, lähde: Morningstar (lt.morningstar.com screener API: OngoingCharge, FundTNAV, FundTNAVDate)."
+    }
+  },
+  {
+    "n": 23,
+    "costs": {
+      "ongoing_cost_pct": 0.95,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 0,95 % (as of 2026-10-30, tarkistettu 20.11.2026). Aiempi arvo 1,11 %, lähde: Morningstar Global quote 20.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin). B-sarja (n21, FI4000278676) ja D-sarja (n23, FI4000517719) luettu omilta quote-sivuiltaan; arvot eivät ole samat. Rahastokoko koko rahasto (B+D)."
+    }
+  },
+  {
+    "n": 24,
+    "costs": {
+      "ongoing_cost_pct": 0.91,
+      "source": "Morningstar",
+      "source_url": "https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/quote",
+      "fetched_at": "2026-11-20",
+      "note": "Juoksevat kulut Morningstar quote-sivun Ongoing Cost 0,91 % (as of 2026-08-26, tarkistettu 20.11.2026). Aiempi arvo 0,89 %, lähde: Morningstar Global quote 20.11.2026: Fund Size (fundSize/fundSizeDate); juoksevat kulut ennallaan (screener OngoingCharge, haettu aiemmin)."
+    }
+  }
+]
