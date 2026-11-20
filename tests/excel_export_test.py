@@ -41,7 +41,7 @@ ry = row('FI0008807078'); np = row('FI4000171178')
 for col, v in (('Eff. duraatio (v)', 4.47), ('Eff. duraatio pvm', '2026-10-31'), ('Duraatio ARVIO (v)', 5.36), ('Duraatioarvion kattavuus %', 89.9),
                ('Duraatioarvio pvm', '2026-10-31'), ('YTW ARVIO %', 5.89), ('YTW-arvion kattavuus %', 91.5), ('YTW-arvio pvm', '2026-10-31')):
     if ry.get(col) != v: err.append(f'Ryhti {col}: {ry.get(col)!r} != {v!r}')
-for col, v in (('Duraatioarvion kattavuus %', 79.1), ('YTW-arvion kattavuus %', 98.0), ('Duraatioarvio pvm', '2026-08-31')):
+for col, v in (('Duraatioarvion kattavuus %', 81.2), ('YTW-arvion kattavuus %', 97.4), ('Duraatioarvio pvm', '2026-09-30')):
     if np.get(col) != v: err.append(f'Nordea Premium I {col}: {np.get(col)!r} != {v!r}')
 # 50/50-rivi = VAGF:n korko-osuuden mittarit sellaisenaan (ei *0,5)
 vb = s['benchmark'].get('VAGF_bond_metrics') or {}; ve = vb.get('illustrative_estimates') or {}
