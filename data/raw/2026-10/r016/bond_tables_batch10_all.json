@@ -1,0 +1,9025 @@
+{
+ "read_at": "2026-11-20",
+ "method": "read via headless Chrome (public Morningstar Global en-nd portfolio page, Bond tab, Fixed Income Exposure Analysis table view toggle, all pages via Next); values from DOM text, no transcription",
+ "batch": "r016 20th-of-month check 20.11.2026",
+ "funds": [
+  {
+   "n": "VAGF",
+   "isin": null,
+   "url": "https://global.morningstar.com/en-nd/investments/etfs/0P0001HSBO/portfolio",
+   "title_verified": true,
+   "page_title": "Vanguard Global Aggregate Bond UCITS ETF EUR Hedged Accumulation | VAGF | ETF | IE00BG47KH54 | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": 5.99,
+    "yield_to_worst": null,
+    "modified_duration": 5.99,
+    "yield_to_maturity": 4.84,
+    "weighted_coupon": 3.47,
+    "weighted_price": 90.46,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.18",
+      "3.84",
+      "2.97",
+      "1.88",
+      "1.91"
+     ],
+     [
+      "AA",
+      "–",
+      "0.64",
+      "12.47",
+      "9.34",
+      "7.08",
+      "4.56"
+     ],
+     [
+      "A",
+      "–",
+      "0.12",
+      "5.91",
+      "4.44",
+      "3.45",
+      "3.25"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.05",
+      "2.81",
+      "3.10",
+      "2.50",
+      "1.48"
+     ],
+     [
+      "BB",
+      "–",
+      "0.01",
+      "0.06",
+      "0.11",
+      "0.09",
+      "0.02"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.03",
+      "1.30",
+      "3.14",
+      "2.62",
+      "1.50"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "1.69",
+      "0.15",
+      "0.14",
+      "–",
+      "12.76"
+     ],
+     [
+      "AA",
+      "7.53",
+      "0.25",
+      "0.04",
+      "–",
+      "41.90"
+     ],
+     [
+      "A",
+      "4.38",
+      "0.56",
+      "0.05",
+      "–",
+      "22.17"
+     ],
+     [
+      "BBB",
+      "1.92",
+      "0.06",
+      "0.05",
+      "–",
+      "11.97"
+     ],
+     [
+      "BB",
+      "0.04",
+      "–",
+      "–",
+      "–",
+      "0.34"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.00",
+      "–",
+      "0.00"
+     ],
+     [
+      "Not Rated",
+      "0.87",
+      "0.04",
+      "1.35",
+      "–",
+      "10.86"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.25",
+      "0.50",
+      "10.35",
+      "1.63",
+      "0.02"
+     ],
+     [
+      "AA",
+      "–",
+      "0.01",
+      "0.03",
+      "17.84",
+      "23.88",
+      "0.06"
+     ],
+     [
+      "A",
+      "–",
+      "0.05",
+      "3.28",
+      "10.68",
+      "7.47",
+      "0.08"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.09",
+      "3.07",
+      "7.24",
+      "1.19"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.00",
+      "0.18",
+      "0.15"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.07",
+      "0.93",
+      "2.90",
+      "5.27",
+      "0.32"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.00",
+      "–",
+      "0.01",
+      "–",
+      "12.76"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.08",
+      "–",
+      "41.90"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.61",
+      "–",
+      "22.17"
+     ],
+     [
+      "BBB",
+      "0.13",
+      "–",
+      "0.26",
+      "–",
+      "11.97"
+     ],
+     [
+      "BB",
+      "–",
+      "0.00",
+      "0.00",
+      "–",
+      "0.34"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.00",
+      "–",
+      "0.00"
+     ],
+     [
+      "Not Rated",
+      "0.01",
+      "–",
+      "1.36",
+      "–",
+      "10.86"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Fixed Income": [
+     99.99,
+     0.05,
+     100.03
+    ],
+    "Preferred": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Convertible": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Cash": [
+     0.01,
+     0.0,
+     0.01
+    ],
+    "Other": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n1",
+   "isin": "FI0008805635",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00000K9V/portfolio",
+   "title_verified": true,
+   "page_title": "LocalTapiola World 50 (A) | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.8,
+    "weighted_price": 96.1,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.29",
+      "0.93",
+      "0.63",
+      "0.51",
+      "0.25"
+     ],
+     [
+      "AA",
+      "0.00",
+      "2.00",
+      "2.58",
+      "1.65",
+      "2.35",
+      "1.39"
+     ],
+     [
+      "A",
+      "–",
+      "3.56",
+      "1.73",
+      "1.38",
+      "2.24",
+      "0.99"
+     ],
+     [
+      "BBB",
+      "0.04",
+      "1.39",
+      "2.86",
+      "3.96",
+      "2.77",
+      "1.20"
+     ],
+     [
+      "BB",
+      "0.00",
+      "0.72",
+      "4.32",
+      "5.81",
+      "2.19",
+      "0.65"
+     ],
+     [
+      "B",
+      "0.06",
+      "0.64",
+      "3.21",
+      "2.75",
+      "0.41",
+      "0.23"
+     ],
+     [
+      "Below B",
+      "0.02",
+      "0.18",
+      "0.64",
+      "0.44",
+      "0.14",
+      "0.09"
+     ],
+     [
+      "Not Rated",
+      "0.91",
+      "6.63",
+      "6.82",
+      "5.43",
+      "1.44",
+      "0.39"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.66",
+      "0.07",
+      "0.58",
+      "–",
+      "3.91"
+     ],
+     [
+      "AA",
+      "4.88",
+      "0.32",
+      "1.07",
+      "–",
+      "16.25"
+     ],
+     [
+      "A",
+      "1.09",
+      "0.00",
+      "0.75",
+      "–",
+      "11.74"
+     ],
+     [
+      "BBB",
+      "0.42",
+      "–",
+      "1.07",
+      "–",
+      "13.71"
+     ],
+     [
+      "BB",
+      "0.29",
+      "–",
+      "0.22",
+      "–",
+      "14.19"
+     ],
+     [
+      "B",
+      "0.04",
+      "–",
+      "0.63",
+      "–",
+      "7.96"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "–",
+      "0.18",
+      "–",
+      "1.67"
+     ],
+     [
+      "Not Rated",
+      "0.09",
+      "0.01",
+      "8.05",
+      "–",
+      "29.78"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.01",
+      "0.57",
+      "2.09",
+      "0.09",
+      "0.41"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.60",
+      "8.33",
+      "6.74",
+      "0.00"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.79",
+      "6.75",
+      "1.79",
+      "0.08"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "–",
+      "0.40",
+      "6.07",
+      "3.20",
+      "2.54"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.55",
+      "6.44",
+      "4.89"
+     ],
+     [
+      "B",
+      "0.20",
+      "–",
+      "0.04",
+      "0.04",
+      "2.41",
+      "3.08"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.00",
+      "–",
+      "0.00",
+      "0.07",
+      "0.33"
+     ],
+     [
+      "Not Rated",
+      "1.45",
+      "1.19",
+      "2.77",
+      "4.89",
+      "3.84",
+      "3.43"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.08",
+      "0.11",
+      "0.54",
+      "–",
+      "3.91"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.58",
+      "–",
+      "16.25"
+     ],
+     [
+      "A",
+      "–",
+      "0.02",
+      "1.31",
+      "–",
+      "11.74"
+     ],
+     [
+      "BBB",
+      "0.13",
+      "0.00",
+      "1.36",
+      "–",
+      "13.71"
+     ],
+     [
+      "BB",
+      "2.03",
+      "0.05",
+      "0.22",
+      "–",
+      "14.19"
+     ],
+     [
+      "B",
+      "1.45",
+      "0.14",
+      "0.60",
+      "–",
+      "7.96"
+     ],
+     [
+      "Below B",
+      "0.80",
+      "0.29",
+      "0.19",
+      "–",
+      "1.67"
+     ],
+     [
+      "Not Rated",
+      "1.94",
+      "0.29",
+      "9.98",
+      "–",
+      "29.78"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     null,
+     null,
+     null
+    ],
+    "Fixed Income": [
+     null,
+     null,
+     null
+    ],
+    "Cash": [
+     1.84,
+     -0.32,
+     1.84
+    ],
+    "Other": [
+     98.16,
+     null,
+     98.16
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n10",
+   "isin": "FI0008809934",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CPE/portfolio",
+   "title_verified": true,
+   "page_title": "Ålandsbanken Kapitalförvaltning B | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 3.58,
+    "weighted_price": 99.05,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.63",
+      "–"
+     ],
+     [
+      "AA",
+      "–",
+      "5.50",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "A",
+      "0.65",
+      "17.78",
+      "4.96",
+      "3.13",
+      "–",
+      "–"
+     ],
+     [
+      "BBB",
+      "–",
+      "12.82",
+      "10.31",
+      "5.81",
+      "–",
+      "0.63"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "0.84",
+      "2.51",
+      "–",
+      "–"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "0.42",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "1.34",
+      "10.59",
+      "4.97",
+      "7.11",
+      "–",
+      "–"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.63"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "5.50"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "–",
+      "–",
+      "26.52"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "–",
+      "–",
+      "29.57"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "–",
+      "3.35"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.42"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "10.00",
+      "–",
+      "34.01"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "0.63",
+      "–",
+      "–"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "2.91",
+      "1.94",
+      "–",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "4.53",
+      "19.31",
+      "–",
+      "–"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.65",
+      "26.39",
+      "1.89",
+      "–"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.84",
+      "2.51",
+      "–"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.65",
+      "14.42",
+      "8.56",
+      "1.30"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.63"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.65",
+      "–",
+      "5.50"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "2.68",
+      "–",
+      "26.52"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.65",
+      "–",
+      "29.57"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "–",
+      "3.35"
+     ],
+     [
+      "B",
+      "0.42",
+      "–",
+      "–",
+      "–",
+      "0.42"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "9.08",
+      "–",
+      "34.01"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     44.22,
+     null,
+     44.22
+    ],
+    "Fixed Income": [
+     36.86,
+     null,
+     36.86
+    ],
+    "Cash": [
+     18.74,
+     null,
+     18.74
+    ],
+    "Other": [
+     null,
+     null,
+     null
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n11",
+   "isin": "FI0008801253",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NWK/portfolio",
+   "title_verified": true,
+   "page_title": "Evli Global Multi Manager 50 Fund B | Fund | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": 2.71,
+    "yield_to_worst": null,
+    "modified_duration": 2.75,
+    "yield_to_maturity": 5.39,
+    "weighted_coupon": 5.59,
+    "weighted_price": 96.82,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "AA",
+      "0.02",
+      "0.14",
+      "0.05",
+      "0.08",
+      "0.06",
+      "0.17"
+     ],
+     [
+      "A",
+      "–",
+      "0.15",
+      "1.49",
+      "2.54",
+      "1.73",
+      "0.83"
+     ],
+     [
+      "BBB",
+      "0.07",
+      "0.54",
+      "2.80",
+      "5.67",
+      "5.63",
+      "1.07"
+     ],
+     [
+      "BB",
+      "–",
+      "1.59",
+      "4.11",
+      "10.32",
+      "1.83",
+      "0.24"
+     ],
+     [
+      "B",
+      "0.10",
+      "2.07",
+      "4.30",
+      "4.93",
+      "0.79",
+      "0.03"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.06",
+      "0.74",
+      "0.36",
+      "0.30",
+      "0.02"
+     ],
+     [
+      "Not Rated",
+      "1.79",
+      "21.63",
+      "4.65",
+      "8.48",
+      "0.96",
+      "0.07"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.04",
+      "–",
+      "0.04"
+     ],
+     [
+      "AA",
+      "0.13",
+      "–",
+      "1.83",
+      "–",
+      "2.50"
+     ],
+     [
+      "A",
+      "0.30",
+      "–",
+      "0.10",
+      "–",
+      "7.16"
+     ],
+     [
+      "BBB",
+      "0.29",
+      "–",
+      "1.04",
+      "–",
+      "17.12"
+     ],
+     [
+      "BB",
+      "0.02",
+      "–",
+      "0.47",
+      "–",
+      "18.57"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "0.20",
+      "–",
+      "12.42"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.71",
+      "–",
+      "2.19"
+     ],
+     [
+      "Not Rated",
+      "0.15",
+      "–",
+      "2.27",
+      "–",
+      "40.01"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.01",
+      "0.30",
+      "0.39",
+      "0.17"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.01",
+      "4.85",
+      "1.91",
+      "0.09"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.06",
+      "10.79",
+      "4.04",
+      "1.03"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "0.08",
+      "3.47",
+      "10.67",
+      "2.63"
+     ],
+     [
+      "B",
+      "0.04",
+      "–",
+      "0.23",
+      "0.39",
+      "3.44",
+      "3.97"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.02",
+      "0.23",
+      "0.69"
+     ],
+     [
+      "Not Rated",
+      "0.26",
+      "0.26",
+      "2.68",
+      "9.18",
+      "9.51",
+      "6.66"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.04",
+      "–",
+      "0.04"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "1.62",
+      "–",
+      "2.50"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.31",
+      "–",
+      "7.16"
+     ],
+     [
+      "BBB",
+      "0.17",
+      "–",
+      "1.02",
+      "–",
+      "17.12"
+     ],
+     [
+      "BB",
+      "1.21",
+      "–",
+      "0.53",
+      "–",
+      "18.57"
+     ],
+     [
+      "B",
+      "2.34",
+      "0.70",
+      "1.31",
+      "–",
+      "12.42"
+     ],
+     [
+      "Below B",
+      "0.48",
+      "0.02",
+      "0.75",
+      "–",
+      "2.19"
+     ],
+     [
+      "Not Rated",
+      "2.79",
+      "0.66",
+      "8.01",
+      "–",
+      "40.01"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     78.79,
+     0.0,
+     78.79
+    ],
+    "Fixed Income": [
+     19.99,
+     -0.0,
+     20.0
+    ],
+    "Cash": [
+     1.1,
+     -0.3,
+     1.4
+    ],
+    "Other": [
+     0.08,
+     null,
+     0.08
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n12",
+   "isin": "FI0008805338",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00000M98/portfolio",
+   "title_verified": true,
+   "page_title": "Danske Invest Kompassi 50 K | Fund | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 3.58,
+    "weighted_price": 94.32,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "2.49",
+      "3.99",
+      "5.20",
+      "0.76",
+      "1.59"
+     ],
+     [
+      "AA",
+      "–",
+      "3.47",
+      "4.41",
+      "3.41",
+      "2.22",
+      "1.19"
+     ],
+     [
+      "A",
+      "–",
+      "0.78",
+      "3.63",
+      "5.17",
+      "3.93",
+      "1.56"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.77",
+      "4.23",
+      "6.21",
+      "4.00",
+      "1.80"
+     ],
+     [
+      "BB",
+      "–",
+      "0.36",
+      "2.41",
+      "3.87",
+      "1.34",
+      "0.56"
+     ],
+     [
+      "B",
+      "–",
+      "0.12",
+      "1.33",
+      "1.71",
+      "0.40",
+      "0.22"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.05",
+      "0.42",
+      "0.29",
+      "0.17",
+      "0.04"
+     ],
+     [
+      "Not Rated",
+      "0.10",
+      "1.08",
+      "1.26",
+      "2.16",
+      "0.55",
+      "0.08"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.84",
+      "0.13",
+      "8.22",
+      "–",
+      "23.22"
+     ],
+     [
+      "AA",
+      "1.28",
+      "0.11",
+      "2.88",
+      "–",
+      "18.97"
+     ],
+     [
+      "A",
+      "1.17",
+      "0.01",
+      "0.27",
+      "–",
+      "16.51"
+     ],
+     [
+      "BBB",
+      "1.04",
+      "0.01",
+      "0.25",
+      "–",
+      "18.30"
+     ],
+     [
+      "BB",
+      "0.49",
+      "–",
+      "0.11",
+      "–",
+      "9.14"
+     ],
+     [
+      "B",
+      "0.07",
+      "–",
+      "0.10",
+      "–",
+      "3.94"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.33",
+      "–",
+      "1.31"
+     ],
+     [
+      "Not Rated",
+      "0.02",
+      "–",
+      "1.58",
+      "–",
+      "6.83"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "2.31",
+      "18.69",
+      "0.05",
+      "–"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "3.32",
+      "10.10",
+      "4.85",
+      "0.06"
+     ],
+     [
+      "A",
+      "0.01",
+      "–",
+      "0.53",
+      "13.70",
+      "0.98",
+      "0.06"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "–",
+      "13.56",
+      "3.11",
+      "0.71"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.96",
+      "5.01",
+      "3.01"
+     ],
+     [
+      "B",
+      "0.02",
+      "–",
+      "–",
+      "0.05",
+      "0.61",
+      "2.54"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.17",
+      "0.22"
+     ],
+     [
+      "Not Rated",
+      "0.07",
+      "–",
+      "0.16",
+      "2.82",
+      "1.24",
+      "0.60"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "2.17",
+      "–",
+      "23.22"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.65",
+      "–",
+      "18.97"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.23",
+      "–",
+      "16.51"
+     ],
+     [
+      "BBB",
+      "0.05",
+      "0.01",
+      "0.87",
+      "–",
+      "18.30"
+     ],
+     [
+      "BB",
+      "0.14",
+      "–",
+      "0.02",
+      "–",
+      "9.14"
+     ],
+     [
+      "B",
+      "0.61",
+      "0.00",
+      "0.10",
+      "–",
+      "3.94"
+     ],
+     [
+      "Below B",
+      "0.50",
+      "0.08",
+      "0.34",
+      "–",
+      "1.31"
+     ],
+     [
+      "Not Rated",
+      "0.13",
+      "0.04",
+      "1.77",
+      "–",
+      "6.83"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     50.91,
+     0.52,
+     51.43
+    ],
+    "Fixed Income": [
+     43.28,
+     1.14,
+     44.42
+    ],
+    "Preferred": [
+     0.09,
+     0.0,
+     0.09
+    ],
+    "Convertible": [
+     0.02,
+     0.0,
+     0.02
+    ],
+    "Cash": [
+     5.29,
+     11.77,
+     17.05
+    ],
+    "Other": [
+     0.42,
+     0.0,
+     0.43
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n13",
+   "isin": "FI0008803879",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00000NSN/portfolio",
+   "title_verified": true,
+   "page_title": "S-Bank Asset Management 50 A Growth | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.6,
+    "weighted_price": 94.03,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.50",
+      "1.05",
+      "1.82",
+      "1.18",
+      "0.90"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.01",
+      "1.20",
+      "1.16",
+      "1.33",
+      "1.36"
+     ],
+     [
+      "A",
+      "–",
+      "0.18",
+      "4.18",
+      "6.18",
+      "4.74",
+      "2.17"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.31",
+      "5.09",
+      "7.53",
+      "5.33",
+      "3.03"
+     ],
+     [
+      "BB",
+      "0.00",
+      "0.47",
+      "2.61",
+      "5.18",
+      "1.96",
+      "1.22"
+     ],
+     [
+      "B",
+      "0.40",
+      "1.62",
+      "1.65",
+      "2.03",
+      "0.56",
+      "0.14"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.01",
+      "0.29",
+      "0.16",
+      "0.07",
+      "0.02"
+     ],
+     [
+      "Not Rated",
+      "0.68",
+      "3.48",
+      "3.00",
+      "3.93",
+      "0.86",
+      "0.70"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.23",
+      "0.09",
+      "8.14",
+      "–",
+      "13.91"
+     ],
+     [
+      "AA",
+      "2.53",
+      "0.06",
+      "0.98",
+      "–",
+      "8.65"
+     ],
+     [
+      "A",
+      "3.08",
+      "0.14",
+      "0.02",
+      "–",
+      "20.68"
+     ],
+     [
+      "BBB",
+      "1.45",
+      "0.02",
+      "0.12",
+      "–",
+      "22.89"
+     ],
+     [
+      "BB",
+      "0.56",
+      "–",
+      "0.03",
+      "–",
+      "12.04"
+     ],
+     [
+      "B",
+      "0.10",
+      "–",
+      "0.05",
+      "–",
+      "6.54"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.05",
+      "–",
+      "0.61"
+     ],
+     [
+      "Not Rated",
+      "0.59",
+      "0.02",
+      "1.44",
+      "–",
+      "14.70"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.31",
+      "12.30",
+      "0.05",
+      "0.30"
+     ],
+     [
+      "AA",
+      "0.00",
+      "–",
+      "0.00",
+      "5.39",
+      "2.89",
+      "0.15"
+     ],
+     [
+      "A",
+      "–",
+      "0.02",
+      "0.50",
+      "17.21",
+      "2.36",
+      "–"
+     ],
+     [
+      "BBB",
+      "0.00",
+      "0.00",
+      "0.50",
+      "14.24",
+      "5.01",
+      "2.70"
+     ],
+     [
+      "BB",
+      "0.01",
+      "–",
+      "0.00",
+      "1.20",
+      "6.67",
+      "3.37"
+     ],
+     [
+      "B",
+      "0.12",
+      "–",
+      "0.07",
+      "0.27",
+      "1.31",
+      "2.65"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "–",
+      "0.08"
+     ],
+     [
+      "Not Rated",
+      "0.07",
+      "0.00",
+      "0.44",
+      "4.68",
+      "2.17",
+      "2.58"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.67",
+      "–",
+      "0.28",
+      "–",
+      "13.91"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.21",
+      "–",
+      "8.65"
+     ],
+     [
+      "A",
+      "0.04",
+      "–",
+      "0.55",
+      "–",
+      "20.68"
+     ],
+     [
+      "BBB",
+      "0.05",
+      "–",
+      "0.39",
+      "–",
+      "22.89"
+     ],
+     [
+      "BB",
+      "0.68",
+      "0.03",
+      "0.08",
+      "–",
+      "12.04"
+     ],
+     [
+      "B",
+      "1.45",
+      "0.21",
+      "0.46",
+      "–",
+      "6.54"
+     ],
+     [
+      "Below B",
+      "0.31",
+      "0.15",
+      "0.06",
+      "–",
+      "0.61"
+     ],
+     [
+      "Not Rated",
+      "1.46",
+      "0.59",
+      "2.72",
+      "–",
+      "14.70"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     92.11,
+     -0.0,
+     92.11
+    ],
+    "Fixed Income": [
+     7.3,
+     -0.0,
+     7.3
+    ],
+    "Cash": [
+     0.54,
+     -0.03,
+     0.57
+    ],
+    "Other": [
+     0.04,
+     null,
+     0.04
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n14",
+   "isin": "FI4000036108",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0000VOK6/portfolio",
+   "title_verified": true,
+   "page_title": "OP-Maltillinen A | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.6,
+    "weighted_price": 94.58,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.42",
+      "0.28",
+      "0.58",
+      "0.16",
+      "0.49"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.24",
+      "2.12",
+      "1.30",
+      "1.29",
+      "1.06"
+     ],
+     [
+      "A",
+      "0.01",
+      "0.66",
+      "4.05",
+      "5.81",
+      "5.47",
+      "3.45"
+     ],
+     [
+      "BBB",
+      "0.00",
+      "1.23",
+      "4.07",
+      "5.67",
+      "4.19",
+      "2.54"
+     ],
+     [
+      "BB",
+      "0.03",
+      "0.66",
+      "3.35",
+      "6.40",
+      "1.40",
+      "0.34"
+     ],
+     [
+      "B",
+      "0.04",
+      "0.91",
+      "2.40",
+      "4.33",
+      "0.50",
+      "0.20"
+     ],
+     [
+      "Below B",
+      "0.01",
+      "0.12",
+      "0.48",
+      "0.45",
+      "0.32",
+      "0.17"
+     ],
+     [
+      "Not Rated",
+      "0.11",
+      "0.86",
+      "1.33",
+      "2.27",
+      "0.60",
+      "0.01"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.98",
+      "0.14",
+      "4.16",
+      "–",
+      "7.21"
+     ],
+     [
+      "AA",
+      "1.85",
+      "0.17",
+      "0.20",
+      "–",
+      "8.25"
+     ],
+     [
+      "A",
+      "1.55",
+      "0.08",
+      "0.12",
+      "–",
+      "21.21"
+     ],
+     [
+      "BBB",
+      "0.70",
+      "0.04",
+      "0.26",
+      "–",
+      "18.71"
+     ],
+     [
+      "BB",
+      "0.48",
+      "–",
+      "0.17",
+      "–",
+      "12.83"
+     ],
+     [
+      "B",
+      "0.04",
+      "–",
+      "0.16",
+      "–",
+      "8.59"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.25",
+      "–",
+      "1.80"
+     ],
+     [
+      "Not Rated",
+      "0.01",
+      "–",
+      "2.22",
+      "–",
+      "7.41"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.41",
+      "4.99",
+      "0.08",
+      "0.00"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.00",
+      "0.13",
+      "6.16",
+      "1.83",
+      "0.00"
+     ],
+     [
+      "A",
+      "0.00",
+      "0.01",
+      "0.10",
+      "18.44",
+      "1.38",
+      "0.09"
+     ],
+     [
+      "BBB",
+      "0.00",
+      "0.00",
+      "0.03",
+      "14.30",
+      "3.33",
+      "0.57"
+     ],
+     [
+      "BB",
+      "0.01",
+      "0.00",
+      "0.05",
+      "1.71",
+      "7.90",
+      "2.70"
+     ],
+     [
+      "B",
+      "0.07",
+      "–",
+      "0.00",
+      "0.11",
+      "2.22",
+      "3.33"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "0.00",
+      "0.61"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.03",
+      "0.32",
+      "0.83",
+      "1.67",
+      "1.31"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.00",
+      "–",
+      "1.72",
+      "–",
+      "7.21"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.13",
+      "–",
+      "8.25"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.19",
+      "–",
+      "21.21"
+     ],
+     [
+      "BBB",
+      "0.02",
+      "–",
+      "0.45",
+      "–",
+      "18.71"
+     ],
+     [
+      "BB",
+      "0.27",
+      "–",
+      "0.18",
+      "–",
+      "12.83"
+     ],
+     [
+      "B",
+      "2.35",
+      "0.16",
+      "0.33",
+      "–",
+      "8.59"
+     ],
+     [
+      "Below B",
+      "0.81",
+      "0.09",
+      "0.27",
+      "–",
+      "1.80"
+     ],
+     [
+      "Not Rated",
+      "0.97",
+      "0.08",
+      "2.21",
+      "–",
+      "7.41"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     69.14,
+     -0.96,
+     70.1
+    ],
+    "Fixed Income": [
+     13.65,
+     -2.67,
+     16.32
+    ],
+    "Cash": [
+     5.79,
+     -0.44,
+     6.24
+    ],
+    "Other": [
+     11.75,
+     -0.03,
+     11.77
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n15",
+   "isin": "FI0008809975",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00001CQR/portfolio",
+   "title_verified": true,
+   "page_title": "POP Optimal | Fund | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": 4.65,
+    "yield_to_worst": null,
+    "modified_duration": 4.99,
+    "yield_to_maturity": 3.7,
+    "weighted_coupon": 4.54,
+    "weighted_price": 93.87,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.01",
+      "0.51",
+      "0.37",
+      "1.28",
+      "0.45"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.05",
+      "1.05",
+      "0.64",
+      "1.21",
+      "1.69"
+     ],
+     [
+      "A",
+      "–",
+      "0.14",
+      "3.27",
+      "3.47",
+      "3.11",
+      "2.74"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.64",
+      "3.66",
+      "4.81",
+      "5.48",
+      "3.72"
+     ],
+     [
+      "BB",
+      "0.01",
+      "0.88",
+      "7.10",
+      "9.43",
+      "3.82",
+      "1.26"
+     ],
+     [
+      "B",
+      "0.12",
+      "1.65",
+      "3.27",
+      "4.23",
+      "0.90",
+      "0.65"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.07",
+      "0.61",
+      "0.37",
+      "0.40",
+      "0.02"
+     ],
+     [
+      "Not Rated",
+      "0.27",
+      "2.39",
+      "0.77",
+      "3.48",
+      "0.68",
+      "0.17"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.25",
+      "0.36",
+      "5.77",
+      "–",
+      "9.00"
+     ],
+     [
+      "AA",
+      "1.84",
+      "0.25",
+      "0.00",
+      "–",
+      "6.72"
+     ],
+     [
+      "A",
+      "2.43",
+      "0.01",
+      "0.20",
+      "–",
+      "15.37"
+     ],
+     [
+      "BBB",
+      "2.96",
+      "0.00",
+      "0.41",
+      "–",
+      "21.68"
+     ],
+     [
+      "BB",
+      "2.03",
+      "–",
+      "0.15",
+      "–",
+      "24.66"
+     ],
+     [
+      "B",
+      "0.18",
+      "–",
+      "0.17",
+      "–",
+      "11.18"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.19",
+      "–",
+      "1.67"
+     ],
+     [
+      "Not Rated",
+      "0.35",
+      "–",
+      "1.60",
+      "–",
+      "9.71"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.01",
+      "5.77",
+      "–",
+      "–"
+     ],
+     [
+      "AA",
+      "0.00",
+      "–",
+      "0.00",
+      "5.99",
+      "0.60",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.00",
+      "11.15",
+      "3.82",
+      "0.01"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "–",
+      "11.02",
+      "9.67",
+      "0.68"
+     ],
+     [
+      "BB",
+      "–",
+      "0.04",
+      "0.03",
+      "6.15",
+      "12.45",
+      "5.67"
+     ],
+     [
+      "B",
+      "0.01",
+      "0.01",
+      "0.13",
+      "0.71",
+      "2.81",
+      "4.71"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "0.10",
+      "0.47"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.13",
+      "2.11",
+      "3.92",
+      "0.68"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "3.22",
+      "–",
+      "9.00"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.13",
+      "–",
+      "6.72"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.39",
+      "–",
+      "15.37"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.31",
+      "–",
+      "21.68"
+     ],
+     [
+      "BB",
+      "0.15",
+      "–",
+      "0.16",
+      "–",
+      "24.66"
+     ],
+     [
+      "B",
+      "2.03",
+      "0.21",
+      "0.55",
+      "–",
+      "11.18"
+     ],
+     [
+      "Below B",
+      "0.67",
+      "0.21",
+      "0.20",
+      "–",
+      "1.67"
+     ],
+     [
+      "Not Rated",
+      "0.47",
+      "0.01",
+      "2.40",
+      "–",
+      "9.71"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     null,
+     null,
+     null
+    ],
+    "Fixed Income": [
+     null,
+     null,
+     null
+    ],
+    "Cash": [
+     0.18,
+     null,
+     0.18
+    ],
+    "Other": [
+     99.82,
+     null,
+     99.82
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n17",
+   "isin": "FI4000400098",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J285/portfolio",
+   "title_verified": true,
+   "page_title": "Nordea Responsible Balanced Fund A Acc EUR | Fund | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": 2.67,
+    "yield_to_worst": null,
+    "modified_duration": 2.52,
+    "yield_to_maturity": 5.32,
+    "weighted_coupon": 3.65,
+    "weighted_price": 95.18,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.33",
+      "4.75",
+      "1.15",
+      "0.52",
+      "0.67"
+     ],
+     [
+      "AA",
+      "–",
+      "0.76",
+      "5.89",
+      "1.74",
+      "0.86",
+      "0.95"
+     ],
+     [
+      "A",
+      "0.09",
+      "1.77",
+      "7.32",
+      "2.91",
+      "4.74",
+      "2.70"
+     ],
+     [
+      "BBB",
+      "0.05",
+      "1.89",
+      "5.84",
+      "6.25",
+      "4.47",
+      "2.48"
+     ],
+     [
+      "BB",
+      "–",
+      "0.17",
+      "2.82",
+      "3.35",
+      "0.92",
+      "0.06"
+     ],
+     [
+      "B",
+      "0.03",
+      "0.14",
+      "1.32",
+      "1.93",
+      "0.13",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.05",
+      "0.50",
+      "0.26",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "0.01",
+      "0.50",
+      "0.81",
+      "1.07",
+      "0.32",
+      "0.06"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.49",
+      "0.07",
+      "8.89",
+      "–",
+      "16.89"
+     ],
+     [
+      "AA",
+      "2.20",
+      "0.19",
+      "6.56",
+      "–",
+      "19.15"
+     ],
+     [
+      "A",
+      "2.98",
+      "0.13",
+      "0.16",
+      "–",
+      "22.81"
+     ],
+     [
+      "BBB",
+      "1.41",
+      "0.03",
+      "0.06",
+      "–",
+      "22.47"
+     ],
+     [
+      "BB",
+      "0.02",
+      "–",
+      "0.10",
+      "–",
+      "7.43"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "3.55"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.81"
+     ],
+     [
+      "Not Rated",
+      "0.01",
+      "–",
+      "0.66",
+      "–",
+      "3.43"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.08",
+      "0.11",
+      "16.69",
+      "–",
+      "–"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.74",
+      "9.41",
+      "8.97",
+      "0.02"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.17",
+      "16.36",
+      "4.73",
+      "0.03"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "–",
+      "13.10",
+      "8.20",
+      "0.76"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.42",
+      "4.31",
+      "2.51"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "0.02",
+      "1.25",
+      "1.62"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.12",
+      "0.34"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.24",
+      "2.04",
+      "0.35",
+      "0.08"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "16.89"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "19.15"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.52",
+      "–",
+      "22.81"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.42",
+      "–",
+      "22.47"
+     ],
+     [
+      "BB",
+      "0.07",
+      "–",
+      "0.12",
+      "–",
+      "7.43"
+     ],
+     [
+      "B",
+      "0.55",
+      "0.06",
+      "0.04",
+      "–",
+      "3.55"
+     ],
+     [
+      "Below B",
+      "0.22",
+      "0.12",
+      "0.00",
+      "–",
+      "0.81"
+     ],
+     [
+      "Not Rated",
+      "0.07",
+      "–",
+      "0.66",
+      "–",
+      "3.43"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     76.14,
+     null,
+     76.14
+    ],
+    "Fixed Income": [
+     26.32,
+     -0.99,
+     27.31
+    ],
+    "Cash": [
+     1.45,
+     0.0,
+     1.45
+    ],
+    "Other": [
+     0.01,
+     null,
+     0.01
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n18",
+   "isin": "FI4000548953",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001QJA8/portfolio",
+   "title_verified": true,
+   "page_title": "Finlandia Asset Allocator 50 | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.69,
+    "weighted_price": 96.22,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.29",
+      "2.72",
+      "1.87",
+      "1.69",
+      "0.73"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.28",
+      "2.66",
+      "2.42",
+      "1.68",
+      "0.52"
+     ],
+     [
+      "A",
+      "–",
+      "0.79",
+      "4.39",
+      "2.60",
+      "2.63",
+      "1.58"
+     ],
+     [
+      "BBB",
+      "–",
+      "1.13",
+      "5.91",
+      "5.11",
+      "4.96",
+      "2.11"
+     ],
+     [
+      "BB",
+      "0.00",
+      "0.82",
+      "6.58",
+      "4.75",
+      "0.66",
+      "0.19"
+     ],
+     [
+      "B",
+      "0.19",
+      "2.71",
+      "3.62",
+      "1.22",
+      "0.09",
+      "0.04"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.05",
+      "0.16",
+      "0.03",
+      "0.02",
+      "0.01"
+     ],
+     [
+      "Not Rated",
+      "2.63",
+      "13.17",
+      "4.57",
+      "4.81",
+      "0.48",
+      "0.19"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.68",
+      "0.16",
+      "0.01",
+      "–",
+      "8.15"
+     ],
+     [
+      "AA",
+      "0.85",
+      "0.24",
+      "0.03",
+      "–",
+      "8.67"
+     ],
+     [
+      "A",
+      "0.35",
+      "0.02",
+      "0.01",
+      "–",
+      "12.37"
+     ],
+     [
+      "BBB",
+      "0.31",
+      "–",
+      "0.08",
+      "–",
+      "19.62"
+     ],
+     [
+      "BB",
+      "0.14",
+      "–",
+      "0.17",
+      "–",
+      "13.32"
+     ],
+     [
+      "B",
+      "0.01",
+      "–",
+      "0.04",
+      "–",
+      "7.93"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.01",
+      "–",
+      "0.28"
+     ],
+     [
+      "Not Rated",
+      "0.09",
+      "–",
+      "3.73",
+      "–",
+      "29.67"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.01",
+      "1.68",
+      "6.40",
+      "0.05",
+      "0.01"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.00",
+      "0.08",
+      "6.91",
+      "1.63",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.43",
+      "10.97",
+      "0.72",
+      "–"
+     ],
+     [
+      "BBB",
+      "0.00",
+      "–",
+      "0.11",
+      "13.25",
+      "5.36",
+      "0.72"
+     ],
+     [
+      "BB",
+      "0.01",
+      "0.00",
+      "0.00",
+      "2.91",
+      "7.83",
+      "1.92"
+     ],
+     [
+      "B",
+      "0.01",
+      "–",
+      "0.01",
+      "0.72",
+      "1.19",
+      "3.29"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.00",
+      "–",
+      "0.05"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.01",
+      "0.87",
+      "6.18",
+      "5.01",
+      "4.21"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.00",
+      "–",
+      "8.15"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.04",
+      "–",
+      "8.67"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.25",
+      "–",
+      "12.37"
+     ],
+     [
+      "BBB",
+      "0.04",
+      "–",
+      "0.14",
+      "–",
+      "19.62"
+     ],
+     [
+      "BB",
+      "0.46",
+      "0.02",
+      "0.16",
+      "–",
+      "13.32"
+     ],
+     [
+      "B",
+      "1.43",
+      "0.03",
+      "1.27",
+      "–",
+      "7.93"
+     ],
+     [
+      "Below B",
+      "0.06",
+      "0.15",
+      "0.01",
+      "–",
+      "0.28"
+     ],
+     [
+      "Not Rated",
+      "2.77",
+      "0.17",
+      "10.46",
+      "–",
+      "29.67"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     58.0,
+     null,
+     58.0
+    ],
+    "Fixed Income": [
+     40.99,
+     -0.0,
+     41.0
+    ],
+    "Cash": [
+     1.02,
+     -0.19,
+     1.22
+    ],
+    "Other": [
+     0.01,
+     null,
+     0.01
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n19",
+   "isin": "FI4000452586",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001L82L/portfolio",
+   "title_verified": true,
+   "page_title": "Obsido Global Balanced Investment Fund A2 | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": 4.4,
+    "yield_to_worst": null,
+    "modified_duration": 4.4,
+    "yield_to_maturity": 5.48,
+    "weighted_coupon": 4.21,
+    "weighted_price": 95.01,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.03",
+      "1.05",
+      "0.92",
+      "0.79",
+      "0.94"
+     ],
+     [
+      "AA",
+      "–",
+      "0.23",
+      "2.94",
+      "3.89",
+      "2.00",
+      "1.54"
+     ],
+     [
+      "A",
+      "–",
+      "1.14",
+      "9.97",
+      "8.38",
+      "4.91",
+      "3.46"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.77",
+      "5.18",
+      "5.63",
+      "2.82",
+      "1.84"
+     ],
+     [
+      "BB",
+      "–",
+      "0.89",
+      "8.48",
+      "7.63",
+      "1.61",
+      "0.34"
+     ],
+     [
+      "B",
+      "–",
+      "0.57",
+      "3.65",
+      "2.95",
+      "0.16",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.10",
+      "0.86",
+      "0.29",
+      "0.01",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.02",
+      "1.00",
+      "1.15",
+      "0.32",
+      "0.34"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.76",
+      "0.12",
+      "–",
+      "–",
+      "4.61"
+     ],
+     [
+      "AA",
+      "1.71",
+      "0.10",
+      "–",
+      "–",
+      "12.42"
+     ],
+     [
+      "A",
+      "1.83",
+      "0.36",
+      "0.03",
+      "–",
+      "30.08"
+     ],
+     [
+      "BBB",
+      "0.58",
+      "0.00",
+      "0.09",
+      "–",
+      "16.91"
+     ],
+     [
+      "BB",
+      "0.02",
+      "–",
+      "0.17",
+      "–",
+      "19.13"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "0.07",
+      "–",
+      "7.41"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.03",
+      "–",
+      "1.30"
+     ],
+     [
+      "Not Rated",
+      "0.40",
+      "0.01",
+      "4.90",
+      "–",
+      "8.15"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.91",
+      "3.31",
+      "0.39",
+      "–"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.21",
+      "9.60",
+      "2.56",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "0.07",
+      "2.88",
+      "20.82",
+      "4.48",
+      "0.04"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.24",
+      "8.39",
+      "5.04",
+      "2.96"
+     ],
+     [
+      "BB",
+      "0.03",
+      "0.01",
+      "0.01",
+      "4.00",
+      "10.52",
+      "2.96"
+     ],
+     [
+      "B",
+      "0.05",
+      "–",
+      "–",
+      "0.31",
+      "2.83",
+      "2.89"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.02",
+      "0.04",
+      "0.44"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.02",
+      "0.48",
+      "1.15",
+      "0.62",
+      "0.73"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "4.61"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.05",
+      "–",
+      "12.42"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.80",
+      "–",
+      "30.08"
+     ],
+     [
+      "BBB",
+      "0.09",
+      "–",
+      "0.19",
+      "–",
+      "16.91"
+     ],
+     [
+      "BB",
+      "1.33",
+      "0.20",
+      "0.08",
+      "–",
+      "19.13"
+     ],
+     [
+      "B",
+      "1.17",
+      "0.17",
+      "–",
+      "–",
+      "7.41"
+     ],
+     [
+      "Below B",
+      "0.48",
+      "0.25",
+      "0.05",
+      "–",
+      "1.30"
+     ],
+     [
+      "Not Rated",
+      "0.01",
+      "0.26",
+      "4.90",
+      "–",
+      "8.15"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     56.94,
+     0.0,
+     56.94
+    ],
+    "Fixed Income": [
+     28.51,
+     0.0,
+     28.51
+    ],
+    "Preferred": [
+     0.01,
+     0.0,
+     0.01
+    ],
+    "Convertible": [
+     0.01,
+     0.0,
+     0.01
+    ],
+    "Cash": [
+     4.5,
+     16.61,
+     21.11
+    ],
+    "Other": [
+     10.04,
+     0.0,
+     10.04
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": false,
+    "ytw": false,
+    "dm": false
+   }
+  },
+  {
+   "n": "n2",
+   "isin": "FI4000171178",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001J8KP/portfolio",
+   "title_verified": true,
+   "page_title": "Nordea Premium Asset Management Balanced Fund I Acc EUR | Fund | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.16,
+    "weighted_price": 94.82,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "1.50",
+      "2.69",
+      "0.74",
+      "0.32",
+      "0.51"
+     ],
+     [
+      "AA",
+      "–",
+      "3.35",
+      "0.91",
+      "1.34",
+      "0.80",
+      "2.06"
+     ],
+     [
+      "A",
+      "0.06",
+      "5.82",
+      "5.05",
+      "2.69",
+      "4.76",
+      "1.29"
+     ],
+     [
+      "BBB",
+      "0.13",
+      "2.67",
+      "3.78",
+      "5.79",
+      "5.56",
+      "2.66"
+     ],
+     [
+      "BB",
+      "0.01",
+      "0.24",
+      "2.15",
+      "3.69",
+      "0.99",
+      "0.24"
+     ],
+     [
+      "B",
+      "0.00",
+      "0.24",
+      "1.90",
+      "2.39",
+      "0.42",
+      "0.04"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.02",
+      "0.51",
+      "0.23",
+      "0.06",
+      "0.01"
+     ],
+     [
+      "Not Rated",
+      "0.05",
+      "0.44",
+      "0.95",
+      "1.06",
+      "0.39",
+      "0.05"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.64",
+      "0.02",
+      "7.67",
+      "–",
+      "14.08"
+     ],
+     [
+      "AA",
+      "1.90",
+      "0.21",
+      "8.51",
+      "–",
+      "19.09"
+     ],
+     [
+      "A",
+      "3.42",
+      "0.15",
+      "0.37",
+      "–",
+      "23.61"
+     ],
+     [
+      "BBB",
+      "1.66",
+      "0.04",
+      "0.07",
+      "–",
+      "22.36"
+     ],
+     [
+      "BB",
+      "0.23",
+      "–",
+      "0.40",
+      "–",
+      "7.94"
+     ],
+     [
+      "B",
+      "0.02",
+      "–",
+      "0.07",
+      "–",
+      "5.09"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.10",
+      "–",
+      "0.93"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.20",
+      "–",
+      "3.15"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "1.50",
+      "12.44",
+      "0.13",
+      "0.01"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "1.76",
+      "6.50",
+      "10.75",
+      "0.04"
+     ],
+     [
+      "A",
+      "–",
+      "0.02",
+      "2.54",
+      "14.32",
+      "5.93",
+      "0.03"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.43",
+      "13.34",
+      "7.41",
+      "0.59"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.27",
+      "3.82",
+      "3.39"
+     ],
+     [
+      "B",
+      "0.06",
+      "–",
+      "–",
+      "0.11",
+      "0.83",
+      "2.87"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "0.03",
+      "0.36"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.04",
+      "0.13",
+      "2.06",
+      "0.18",
+      "0.37"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "14.08"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.03",
+      "–",
+      "19.09"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.76",
+      "–",
+      "23.61"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "–",
+      "0.59",
+      "–",
+      "22.36"
+     ],
+     [
+      "BB",
+      "0.10",
+      "–",
+      "0.35",
+      "–",
+      "7.94"
+     ],
+     [
+      "B",
+      "1.03",
+      "0.12",
+      "0.07",
+      "–",
+      "5.09"
+     ],
+     [
+      "Below B",
+      "0.32",
+      "0.10",
+      "0.11",
+      "–",
+      "0.93"
+     ],
+     [
+      "Not Rated",
+      "0.12",
+      "0.05",
+      "0.19",
+      "–",
+      "3.15"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     62.22,
+     -5.19,
+     67.41
+    ],
+    "Fixed Income": [
+     39.71,
+     -1.03,
+     40.74
+    ],
+    "Cash": [
+     5.09,
+     -0.0,
+     5.09
+    ],
+    "Other": [
+     0.19,
+     null,
+     0.19
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": false,
+    "ytw": false,
+    "dm": true
+   }
+  },
+  {
+   "n": "n20",
+   "isin": "SE0017832439",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001P84Z/portfolio",
+   "title_verified": true,
+   "page_title": "Nordnet One Balanced EUR | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 3.51,
+    "weighted_price": 97.46,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.71",
+      "1.58",
+      "5.61",
+      "1.79",
+      "1.25"
+     ],
+     [
+      "AA",
+      "–",
+      "1.68",
+      "3.87",
+      "0.99",
+      "2.92",
+      "1.00"
+     ],
+     [
+      "A",
+      "0.07",
+      "5.19",
+      "9.01",
+      "7.03",
+      "4.45",
+      "2.01"
+     ],
+     [
+      "BBB",
+      "–",
+      "3.83",
+      "6.64",
+      "4.79",
+      "4.34",
+      "2.54"
+     ],
+     [
+      "BB",
+      "–",
+      "0.14",
+      "0.71",
+      "0.91",
+      "0.18",
+      "0.02"
+     ],
+     [
+      "B",
+      "0.01",
+      "0.15",
+      "0.13",
+      "0.20",
+      "0.01",
+      "–"
+     ],
+     [
+      "Below B",
+      "0.02",
+      "0.00",
+      "0.13",
+      "0.00",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "0.54",
+      "9.04",
+      "6.41",
+      "3.21",
+      "0.66",
+      "0.04"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.98",
+      "0.50",
+      "–",
+      "–",
+      "12.42"
+     ],
+     [
+      "AA",
+      "1.19",
+      "–",
+      "0.19",
+      "–",
+      "11.84"
+     ],
+     [
+      "A",
+      "0.74",
+      "–",
+      "0.25",
+      "–",
+      "28.74"
+     ],
+     [
+      "BBB",
+      "0.81",
+      "–",
+      "0.55",
+      "–",
+      "23.51"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "0.01",
+      "–",
+      "1.97"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.49"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.03",
+      "–",
+      "0.19"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.94",
+      "–",
+      "20.84"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.09",
+      "12.33",
+      "–",
+      "–"
+     ],
+     [
+      "AA",
+      "–",
+      "0.09",
+      "1.21",
+      "8.53",
+      "1.41",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.31",
+      "25.76",
+      "0.09",
+      "0.01"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "1.00",
+      "18.11",
+      "2.54",
+      "0.65"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.03",
+      "1.54",
+      "0.36"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "0.22",
+      "0.14"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.14"
+     ],
+     [
+      "Not Rated",
+      "0.06",
+      "0.07",
+      "2.81",
+      "13.29",
+      "1.47",
+      "0.44"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "12.42"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.60",
+      "–",
+      "11.84"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.58",
+      "–",
+      "28.74"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "1.20",
+      "–",
+      "23.51"
+     ],
+     [
+      "BB",
+      "0.03",
+      "–",
+      "0.01",
+      "–",
+      "1.97"
+     ],
+     [
+      "B",
+      "0.04",
+      "–",
+      "0.08",
+      "–",
+      "0.49"
+     ],
+     [
+      "Below B",
+      "0.02",
+      "–",
+      "0.03",
+      "–",
+      "0.19"
+     ],
+     [
+      "Not Rated",
+      "0.18",
+      "0.06",
+      "2.45",
+      "–",
+      "20.84"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     59.84,
+     0.0,
+     59.84
+    ],
+    "Fixed Income": [
+     43.83,
+     0.18,
+     44.01
+    ],
+    "Preferred": [
+     0.02,
+     0.0,
+     0.02
+    ],
+    "Convertible": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Cash": [
+     -3.7,
+     18.06,
+     14.36
+    ],
+    "Other": [
+     0.01,
+     0.0,
+     0.01
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n21",
+   "isin": "FI4000278676",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001C2KJ/portfolio",
+   "title_verified": true,
+   "page_title": "Säästöpankki Tasapainoinen B | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 3.99,
+    "weighted_price": 95.32,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.19",
+      "0.18",
+      "0.13",
+      "1.52",
+      "0.42"
+     ],
+     [
+      "AA",
+      "–",
+      "3.03",
+      "0.55",
+      "0.13",
+      "1.28",
+      "1.74"
+     ],
+     [
+      "A",
+      "0.07",
+      "10.29",
+      "1.81",
+      "1.81",
+      "1.79",
+      "2.50"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "8.67",
+      "2.14",
+      "3.22",
+      "2.61",
+      "3.14"
+     ],
+     [
+      "BB",
+      "–",
+      "0.38",
+      "1.07",
+      "3.64",
+      "1.98",
+      "0.54"
+     ],
+     [
+      "B",
+      "–",
+      "0.34",
+      "2.08",
+      "2.16",
+      "0.31",
+      "0.33"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.03",
+      "0.49",
+      "0.31",
+      "0.11",
+      "0.05"
+     ],
+     [
+      "Not Rated",
+      "0.47",
+      "3.68",
+      "2.24",
+      "2.76",
+      "0.69",
+      "0.13"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.35",
+      "2.43",
+      "–",
+      "5.22"
+     ],
+     [
+      "AA",
+      "1.70",
+      "0.30",
+      "2.92",
+      "–",
+      "11.64"
+     ],
+     [
+      "A",
+      "1.32",
+      "–",
+      "0.40",
+      "–",
+      "20.00"
+     ],
+     [
+      "BBB",
+      "1.09",
+      "–",
+      "0.37",
+      "–",
+      "21.24"
+     ],
+     [
+      "BB",
+      "0.43",
+      "–",
+      "0.09",
+      "–",
+      "8.14"
+     ],
+     [
+      "B",
+      "0.09",
+      "–",
+      "0.25",
+      "–",
+      "5.55"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.44",
+      "–",
+      "1.43"
+     ],
+     [
+      "Not Rated",
+      "0.47",
+      "–",
+      "5.25",
+      "–",
+      "15.68"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.19",
+      "4.75",
+      "0.00",
+      "0.00"
+     ],
+     [
+      "AA",
+      "–",
+      "0.16",
+      "1.06",
+      "5.84",
+      "3.50",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "2.67",
+      "16.30",
+      "0.59",
+      "0.02"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.01",
+      "1.29",
+      "15.17",
+      "3.67",
+      "0.78"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.79",
+      "4.51",
+      "2.56"
+     ],
+     [
+      "B",
+      "0.00",
+      "–",
+      "0.00",
+      "0.00",
+      "1.76",
+      "2.03"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.01",
+      "0.02",
+      "0.00",
+      "0.06",
+      "0.23"
+     ],
+     [
+      "Not Rated",
+      "0.14",
+      "0.01",
+      "0.50",
+      "3.25",
+      "2.97",
+      "2.05"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.00",
+      "0.00",
+      "0.27",
+      "–",
+      "5.22"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "1.07",
+      "–",
+      "11.64"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.42",
+      "–",
+      "20.00"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "–",
+      "0.31",
+      "–",
+      "21.24"
+     ],
+     [
+      "BB",
+      "0.18",
+      "–",
+      "0.10",
+      "–",
+      "8.14"
+     ],
+     [
+      "B",
+      "1.34",
+      "0.04",
+      "0.38",
+      "–",
+      "5.55"
+     ],
+     [
+      "Below B",
+      "0.71",
+      "0.04",
+      "0.37",
+      "–",
+      "1.43"
+     ],
+     [
+      "Not Rated",
+      "0.68",
+      "0.04",
+      "6.05",
+      "–",
+      "15.68"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     55.06,
+     5.27,
+     60.33
+    ],
+    "Fixed Income": [
+     29.25,
+     5.55,
+     34.8
+    ],
+    "Preferred": [
+     0.01,
+     0.0,
+     0.01
+    ],
+    "Convertible": [
+     0.53,
+     0.0,
+     0.53
+    ],
+    "Cash": [
+     9.38,
+     8.01,
+     17.39
+    ],
+    "Other": [
+     5.77,
+     0.57,
+     6.35
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n22",
+   "isin": "FI4000297817",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001CLIX/portfolio",
+   "title_verified": true,
+   "page_title": "Aktia Wealth Allocation 50 B | Fund | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.74,
+    "weighted_price": 96.5,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.59",
+      "0.78",
+      "0.21",
+      "0.22",
+      "0.01"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.99",
+      "0.51",
+      "0.39",
+      "0.43",
+      "0.23"
+     ],
+     [
+      "A",
+      "0.03",
+      "3.95",
+      "2.02",
+      "4.69",
+      "3.35",
+      "2.00"
+     ],
+     [
+      "BBB",
+      "–",
+      "3.60",
+      "4.10",
+      "6.20",
+      "7.39",
+      "2.81"
+     ],
+     [
+      "BB",
+      "0.02",
+      "1.77",
+      "4.01",
+      "8.01",
+      "2.53",
+      "1.18"
+     ],
+     [
+      "B",
+      "0.12",
+      "2.08",
+      "2.66",
+      "4.11",
+      "0.80",
+      "0.08"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.06",
+      "0.47",
+      "0.20",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "0.46",
+      "5.45",
+      "2.48",
+      "3.16",
+      "0.82",
+      "0.16"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.09",
+      "0.00",
+      "0.54",
+      "–",
+      "2.44"
+     ],
+     [
+      "AA",
+      "0.49",
+      "–",
+      "2.34",
+      "–",
+      "5.39"
+     ],
+     [
+      "A",
+      "0.67",
+      "–",
+      "0.11",
+      "–",
+      "16.82"
+     ],
+     [
+      "BBB",
+      "0.75",
+      "–",
+      "0.83",
+      "–",
+      "25.69"
+     ],
+     [
+      "BB",
+      "0.66",
+      "–",
+      "0.58",
+      "–",
+      "18.75"
+     ],
+     [
+      "B",
+      "0.03",
+      "–",
+      "0.03",
+      "–",
+      "9.91"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.09",
+      "–",
+      "0.82"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "7.55",
+      "–",
+      "20.07"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.26",
+      "0.49",
+      "0.50",
+      "0.56"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.70",
+      "1.63",
+      "2.92",
+      "0.00"
+     ],
+     [
+      "A",
+      "0.06",
+      "0.02",
+      "1.26",
+      "12.66",
+      "1.65",
+      "0.03"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.29",
+      "15.10",
+      "5.93",
+      "3.21"
+     ],
+     [
+      "BB",
+      "0.21",
+      "–",
+      "0.06",
+      "4.14",
+      "9.20",
+      "3.46"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "0.31",
+      "0.61",
+      "4.48",
+      "2.22"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.03",
+      "0.14",
+      "0.29"
+     ],
+     [
+      "Not Rated",
+      "0.06",
+      "0.00",
+      "0.50",
+      "3.96",
+      "2.66",
+      "2.24"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.13",
+      "0.51",
+      "–",
+      "2.44"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.13",
+      "–",
+      "5.39"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.14",
+      "–",
+      "16.82"
+     ],
+     [
+      "BBB",
+      "0.19",
+      "–",
+      "0.97",
+      "–",
+      "25.69"
+     ],
+     [
+      "BB",
+      "1.30",
+      "–",
+      "0.37",
+      "–",
+      "18.75"
+     ],
+     [
+      "B",
+      "1.26",
+      "0.20",
+      "0.82",
+      "–",
+      "9.91"
+     ],
+     [
+      "Below B",
+      "0.22",
+      "0.04",
+      "0.09",
+      "–",
+      "0.82"
+     ],
+     [
+      "Not Rated",
+      "1.34",
+      "0.19",
+      "9.10",
+      "–",
+      "20.07"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     0.0,
+     null,
+     0.0
+    ],
+    "Fixed Income": [
+     null,
+     null,
+     null
+    ],
+    "Cash": [
+     1.9,
+     null,
+     1.9
+    ],
+    "Other": [
+     98.1,
+     null,
+     98.1
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n23",
+   "isin": "FI4000517719",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001OECG/portfolio",
+   "title_verified": true,
+   "page_title": "Säästöpankki Tasapainoinen D | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 3.99,
+    "weighted_price": 95.32,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.19",
+      "0.18",
+      "0.13",
+      "1.52",
+      "0.42"
+     ],
+     [
+      "AA",
+      "–",
+      "3.03",
+      "0.55",
+      "0.13",
+      "1.28",
+      "1.74"
+     ],
+     [
+      "A",
+      "0.07",
+      "10.29",
+      "1.81",
+      "1.81",
+      "1.79",
+      "2.50"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "8.67",
+      "2.14",
+      "3.22",
+      "2.61",
+      "3.14"
+     ],
+     [
+      "BB",
+      "–",
+      "0.38",
+      "1.07",
+      "3.64",
+      "1.98",
+      "0.54"
+     ],
+     [
+      "B",
+      "–",
+      "0.34",
+      "2.08",
+      "2.16",
+      "0.31",
+      "0.33"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.03",
+      "0.49",
+      "0.31",
+      "0.11",
+      "0.05"
+     ],
+     [
+      "Not Rated",
+      "0.47",
+      "3.68",
+      "2.24",
+      "2.76",
+      "0.69",
+      "0.13"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.35",
+      "2.43",
+      "–",
+      "5.22"
+     ],
+     [
+      "AA",
+      "1.70",
+      "0.30",
+      "2.92",
+      "–",
+      "11.64"
+     ],
+     [
+      "A",
+      "1.32",
+      "–",
+      "0.40",
+      "–",
+      "20.00"
+     ],
+     [
+      "BBB",
+      "1.09",
+      "–",
+      "0.37",
+      "–",
+      "21.24"
+     ],
+     [
+      "BB",
+      "0.43",
+      "–",
+      "0.09",
+      "–",
+      "8.14"
+     ],
+     [
+      "B",
+      "0.09",
+      "–",
+      "0.25",
+      "–",
+      "5.55"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.44",
+      "–",
+      "1.43"
+     ],
+     [
+      "Not Rated",
+      "0.47",
+      "–",
+      "5.25",
+      "–",
+      "15.68"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.19",
+      "4.75",
+      "0.00",
+      "0.00"
+     ],
+     [
+      "AA",
+      "–",
+      "0.16",
+      "1.06",
+      "5.84",
+      "3.50",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "2.67",
+      "16.30",
+      "0.59",
+      "0.02"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.01",
+      "1.29",
+      "15.17",
+      "3.67",
+      "0.78"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.79",
+      "4.51",
+      "2.56"
+     ],
+     [
+      "B",
+      "0.00",
+      "–",
+      "0.00",
+      "0.00",
+      "1.76",
+      "2.03"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.01",
+      "0.02",
+      "0.00",
+      "0.06",
+      "0.23"
+     ],
+     [
+      "Not Rated",
+      "0.14",
+      "0.01",
+      "0.50",
+      "3.25",
+      "2.97",
+      "2.05"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.00",
+      "0.00",
+      "0.27",
+      "–",
+      "5.22"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "1.07",
+      "–",
+      "11.64"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.42",
+      "–",
+      "20.00"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "–",
+      "0.31",
+      "–",
+      "21.24"
+     ],
+     [
+      "BB",
+      "0.18",
+      "–",
+      "0.10",
+      "–",
+      "8.14"
+     ],
+     [
+      "B",
+      "1.34",
+      "0.04",
+      "0.38",
+      "–",
+      "5.55"
+     ],
+     [
+      "Below B",
+      "0.71",
+      "0.04",
+      "0.37",
+      "–",
+      "1.43"
+     ],
+     [
+      "Not Rated",
+      "0.68",
+      "0.04",
+      "6.05",
+      "–",
+      "15.68"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     55.06,
+     5.27,
+     60.33
+    ],
+    "Fixed Income": [
+     29.25,
+     5.55,
+     34.8
+    ],
+    "Preferred": [
+     0.01,
+     0.0,
+     0.01
+    ],
+    "Convertible": [
+     0.53,
+     0.0,
+     0.53
+    ],
+    "Cash": [
+     9.38,
+     8.01,
+     17.39
+    ],
+    "Other": [
+     5.77,
+     0.57,
+     6.35
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n24",
+   "isin": "FI4000410949",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0001K0TM/portfolio",
+   "title_verified": true,
+   "page_title": "OP - Tavoite 3A | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": 4.38,
+    "yield_to_worst": null,
+    "modified_duration": 4.33,
+    "yield_to_maturity": 2.79,
+    "weighted_coupon": 3.65,
+    "weighted_price": 95.85,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.00",
+      "0.06",
+      "0.02",
+      "0.02",
+      "0.07"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.06",
+      "1.52",
+      "1.35",
+      "0.82",
+      "0.50"
+     ],
+     [
+      "A",
+      "–",
+      "0.33",
+      "10.91",
+      "11.27",
+      "7.39",
+      "3.90"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.36",
+      "12.12",
+      "13.82",
+      "8.52",
+      "3.05"
+     ],
+     [
+      "BB",
+      "–",
+      "0.32",
+      "5.01",
+      "5.52",
+      "0.39",
+      "–"
+     ],
+     [
+      "B",
+      "–",
+      "0.27",
+      "1.85",
+      "2.09",
+      "0.15",
+      "–"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.05",
+      "0.42",
+      "0.14",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "0.00",
+      "0.30",
+      "1.36",
+      "1.98",
+      "0.77",
+      "0.13"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.06",
+      "–",
+      "0.05",
+      "–",
+      "0.28"
+     ],
+     [
+      "AA",
+      "0.37",
+      "0.02",
+      "0.00",
+      "–",
+      "4.65"
+     ],
+     [
+      "A",
+      "1.08",
+      "0.01",
+      "0.06",
+      "–",
+      "34.95"
+     ],
+     [
+      "BBB",
+      "0.58",
+      "–",
+      "0.36",
+      "–",
+      "38.81"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "0.15",
+      "–",
+      "11.38"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "0.04",
+      "–",
+      "4.41"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.06",
+      "–",
+      "0.66"
+     ],
+     [
+      "Not Rated",
+      "0.01",
+      "–",
+      "0.31",
+      "–",
+      "4.86"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.00",
+      "0.28",
+      "–",
+      "–"
+     ],
+     [
+      "AA",
+      "0.00",
+      "–",
+      "0.01",
+      "4.24",
+      "0.17",
+      "0.03"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.03",
+      "31.68",
+      "0.64",
+      "0.07"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "–",
+      "0.02",
+      "33.89",
+      "3.58",
+      "0.13"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "0.02",
+      "3.55",
+      "6.51",
+      "1.00"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "0.70",
+      "1.74",
+      "0.98"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.25"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.19",
+      "2.69",
+      "1.11",
+      "0.36"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.00",
+      "–",
+      "0.28"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.19",
+      "–",
+      "4.65"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "2.53",
+      "–",
+      "34.95"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "1.18",
+      "–",
+      "38.81"
+     ],
+     [
+      "BB",
+      "0.15",
+      "–",
+      "0.15",
+      "–",
+      "11.38"
+     ],
+     [
+      "B",
+      "0.78",
+      "0.14",
+      "0.06",
+      "–",
+      "4.41"
+     ],
+     [
+      "Below B",
+      "0.28",
+      "0.08",
+      "0.06",
+      "–",
+      "0.66"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.51",
+      "–",
+      "4.86"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     10.02,
+     null,
+     10.02
+    ],
+    "Fixed Income": [
+     85.57,
+     -0.01,
+     85.58
+    ],
+    "Cash": [
+     4.39,
+     -0.65,
+     5.04
+    ],
+    "Other": [
+     0.02,
+     null,
+     0.02
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": false,
+    "ytw": false,
+    "dm": true
+   }
+  },
+  {
+   "n": "n3",
+   "isin": "FI0008806807",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00000HMG/portfolio",
+   "title_verified": true,
+   "page_title": "Nordea Savings 50 Fund A Acc EUR | Fund | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 3.76,
+    "weighted_price": 94.75,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "1.11",
+      "2.35",
+      "2.48",
+      "1.89",
+      "2.08"
+     ],
+     [
+      "AA",
+      "–",
+      "2.51",
+      "1.10",
+      "1.75",
+      "0.63",
+      "1.53"
+     ],
+     [
+      "A",
+      "0.04",
+      "4.40",
+      "3.90",
+      "2.46",
+      "3.50",
+      "1.25"
+     ],
+     [
+      "BBB",
+      "0.11",
+      "2.18",
+      "6.25",
+      "3.58",
+      "3.10",
+      "3.10"
+     ],
+     [
+      "BB",
+      "0.00",
+      "0.15",
+      "1.25",
+      "2.34",
+      "0.92",
+      "0.27"
+     ],
+     [
+      "B",
+      "0.00",
+      "0.13",
+      "1.05",
+      "1.36",
+      "0.26",
+      "0.03"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.01",
+      "0.28",
+      "0.13",
+      "0.05",
+      "0.01"
+     ],
+     [
+      "Not Rated",
+      "0.04",
+      "0.41",
+      "0.93",
+      "1.70",
+      "0.72",
+      "0.24"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.48",
+      "0.01",
+      "7.37",
+      "–",
+      "17.78"
+     ],
+     [
+      "AA",
+      "1.77",
+      "0.17",
+      "9.73",
+      "–",
+      "19.19"
+     ],
+     [
+      "A",
+      "3.31",
+      "0.12",
+      "0.25",
+      "–",
+      "19.23"
+     ],
+     [
+      "BBB",
+      "1.25",
+      "0.04",
+      "0.05",
+      "–",
+      "19.67"
+     ],
+     [
+      "BB",
+      "0.28",
+      "–",
+      "0.27",
+      "–",
+      "5.47"
+     ],
+     [
+      "B",
+      "0.01",
+      "–",
+      "0.05",
+      "–",
+      "2.91"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.07",
+      "–",
+      "0.55"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.17",
+      "–",
+      "4.22"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "1.11",
+      "16.02",
+      "0.59",
+      "0.01"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "1.29",
+      "6.36",
+      "11.51",
+      "0.01"
+     ],
+     [
+      "A",
+      "–",
+      "0.02",
+      "1.92",
+      "13.66",
+      "3.21",
+      "0.01"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.32",
+      "14.93",
+      "3.65",
+      "0.38"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.19",
+      "2.96",
+      "1.99"
+     ],
+     [
+      "B",
+      "0.03",
+      "–",
+      "–",
+      "0.07",
+      "0.47",
+      "1.62"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.00",
+      "0.01",
+      "0.20"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.02",
+      "0.10",
+      "3.38",
+      "0.19",
+      "0.25"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.00",
+      "0.04",
+      "–",
+      "17.78"
+     ],
+     [
+      "AA",
+      "0.01",
+      "–",
+      "0.02",
+      "–",
+      "19.19"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.41",
+      "–",
+      "19.23"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "–",
+      "0.39",
+      "–",
+      "19.67"
+     ],
+     [
+      "BB",
+      "0.08",
+      "–",
+      "0.25",
+      "–",
+      "5.47"
+     ],
+     [
+      "B",
+      "0.61",
+      "0.06",
+      "0.05",
+      "–",
+      "2.91"
+     ],
+     [
+      "Below B",
+      "0.21",
+      "0.05",
+      "0.08",
+      "–",
+      "0.55"
+     ],
+     [
+      "Not Rated",
+      "0.07",
+      "0.03",
+      "0.17",
+      "–",
+      "4.22"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     54.56,
+     -5.72,
+     60.27
+    ],
+    "Fixed Income": [
+     48.35,
+     -4.17,
+     52.53
+    ],
+    "Cash": [
+     4.32,
+     -0.94,
+     5.26
+    ],
+    "Other": [
+     0.12,
+     -0.06,
+     0.17
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": false,
+    "ytw": false,
+    "dm": true
+   }
+  },
+  {
+   "n": "n4",
+   "isin": "FI0008806419",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00000L6Z/portfolio",
+   "title_verified": true,
+   "page_title": "Nordea Premium Asset Management Balanced Fund P Acc EUR | Fund | EUR",
+   "table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.16,
+    "weighted_price": 94.82,
+    "label": "Fixed Income Measures Investment column; 'As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Sep 30, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "1.50",
+      "2.69",
+      "0.74",
+      "0.32",
+      "0.51"
+     ],
+     [
+      "AA",
+      "–",
+      "3.35",
+      "0.91",
+      "1.34",
+      "0.80",
+      "2.06"
+     ],
+     [
+      "A",
+      "0.06",
+      "5.82",
+      "5.05",
+      "2.69",
+      "4.76",
+      "1.29"
+     ],
+     [
+      "BBB",
+      "0.13",
+      "2.67",
+      "3.78",
+      "5.79",
+      "5.56",
+      "2.66"
+     ],
+     [
+      "BB",
+      "0.01",
+      "0.24",
+      "2.15",
+      "3.69",
+      "0.99",
+      "0.24"
+     ],
+     [
+      "B",
+      "0.00",
+      "0.24",
+      "1.90",
+      "2.39",
+      "0.42",
+      "0.04"
+     ],
+     [
+      "Below B",
+      "–",
+      "0.02",
+      "0.51",
+      "0.23",
+      "0.06",
+      "0.01"
+     ],
+     [
+      "Not Rated",
+      "0.05",
+      "0.44",
+      "0.95",
+      "1.06",
+      "0.39",
+      "0.05"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.64",
+      "0.02",
+      "7.67",
+      "–",
+      "14.08"
+     ],
+     [
+      "AA",
+      "1.90",
+      "0.21",
+      "8.51",
+      "–",
+      "19.09"
+     ],
+     [
+      "A",
+      "3.42",
+      "0.15",
+      "0.37",
+      "–",
+      "23.61"
+     ],
+     [
+      "BBB",
+      "1.66",
+      "0.04",
+      "0.07",
+      "–",
+      "22.36"
+     ],
+     [
+      "BB",
+      "0.23",
+      "–",
+      "0.40",
+      "–",
+      "7.94"
+     ],
+     [
+      "B",
+      "0.02",
+      "–",
+      "0.07",
+      "–",
+      "5.09"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.10",
+      "–",
+      "0.93"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.20",
+      "–",
+      "3.15"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "1.50",
+      "12.44",
+      "0.13",
+      "0.01"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "1.76",
+      "6.50",
+      "10.75",
+      "0.04"
+     ],
+     [
+      "A",
+      "–",
+      "0.02",
+      "2.54",
+      "14.32",
+      "5.93",
+      "0.03"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.43",
+      "13.34",
+      "7.41",
+      "0.59"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.27",
+      "3.82",
+      "3.39"
+     ],
+     [
+      "B",
+      "0.06",
+      "–",
+      "–",
+      "0.11",
+      "0.83",
+      "2.87"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "0.03",
+      "0.36"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.04",
+      "0.13",
+      "2.06",
+      "0.18",
+      "0.37"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "14.08"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.03",
+      "–",
+      "19.09"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.76",
+      "–",
+      "23.61"
+     ],
+     [
+      "BBB",
+      "0.01",
+      "–",
+      "0.59",
+      "–",
+      "22.36"
+     ],
+     [
+      "BB",
+      "0.10",
+      "–",
+      "0.35",
+      "–",
+      "7.94"
+     ],
+     [
+      "B",
+      "1.03",
+      "0.12",
+      "0.07",
+      "–",
+      "5.09"
+     ],
+     [
+      "Below B",
+      "0.32",
+      "0.10",
+      "0.11",
+      "–",
+      "0.93"
+     ],
+     [
+      "Not Rated",
+      "0.12",
+      "0.05",
+      "0.19",
+      "–",
+      "3.15"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     62.22,
+     -5.19,
+     67.41
+    ],
+    "Fixed Income": [
+     39.71,
+     -1.03,
+     40.74
+    ],
+    "Cash": [
+     5.09,
+     -0.0,
+     5.09
+    ],
+    "Other": [
+     0.19,
+     null,
+     0.19
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-09-30",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": false,
+    "ytw": false,
+    "dm": true
+   }
+  },
+  {
+   "n": "n5",
+   "isin": "FI0008811484",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00007KOM/portfolio",
+   "title_verified": true,
+   "page_title": "UB Smart I (non-UCITS) | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.8,
+    "weighted_price": 97.51,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.08",
+      "0.50",
+      "0.34",
+      "0.22",
+      "0.30"
+     ],
+     [
+      "AA",
+      "0.02",
+      "8.69",
+      "5.24",
+      "0.09",
+      "0.09",
+      "0.03"
+     ],
+     [
+      "A",
+      "0.00",
+      "4.65",
+      "2.93",
+      "0.83",
+      "0.44",
+      "0.23"
+     ],
+     [
+      "BBB",
+      "–",
+      "12.36",
+      "5.76",
+      "1.17",
+      "1.14",
+      "2.49"
+     ],
+     [
+      "BB",
+      "0.00",
+      "1.60",
+      "3.98",
+      "2.73",
+      "0.67",
+      "0.16"
+     ],
+     [
+      "B",
+      "0.16",
+      "1.56",
+      "2.07",
+      "1.10",
+      "0.16",
+      "0.09"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.01",
+      "0.09",
+      "0.08",
+      "0.05",
+      "0.00"
+     ],
+     [
+      "Not Rated",
+      "2.65",
+      "9.77",
+      "7.49",
+      "7.15",
+      "0.28",
+      "1.19"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.30",
+      "0.08",
+      "–",
+      "–",
+      "1.82"
+     ],
+     [
+      "AA",
+      "0.09",
+      "0.00",
+      "1.68",
+      "–",
+      "15.92"
+     ],
+     [
+      "A",
+      "0.45",
+      "0.00",
+      "0.03",
+      "–",
+      "9.55"
+     ],
+     [
+      "BBB",
+      "0.63",
+      "–",
+      "0.03",
+      "–",
+      "23.58"
+     ],
+     [
+      "BB",
+      "0.31",
+      "–",
+      "0.02",
+      "–",
+      "9.47"
+     ],
+     [
+      "B",
+      "0.03",
+      "–",
+      "0.06",
+      "–",
+      "5.23"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.03",
+      "–",
+      "0.27"
+     ],
+     [
+      "Not Rated",
+      "0.00",
+      "–",
+      "5.63",
+      "–",
+      "34.17"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.42",
+      "1.38",
+      "0.02",
+      "–"
+     ],
+     [
+      "AA",
+      "0.02",
+      "0.01",
+      "2.74",
+      "11.23",
+      "0.22",
+      "0.01"
+     ],
+     [
+      "A",
+      "0.00",
+      "0.01",
+      "1.08",
+      "6.44",
+      "1.86",
+      "0.01"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.00",
+      "1.11",
+      "16.78",
+      "5.27",
+      "0.37"
+     ],
+     [
+      "BB",
+      "0.01",
+      "–",
+      "0.00",
+      "2.61",
+      "5.79",
+      "0.66"
+     ],
+     [
+      "B",
+      "0.03",
+      "–",
+      "0.02",
+      "0.24",
+      "1.36",
+      "1.36"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "–",
+      "0.08"
+     ],
+     [
+      "Not Rated",
+      "0.36",
+      "–",
+      "1.30",
+      "3.04",
+      "9.62",
+      "6.70"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "1.82"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "1.69",
+      "–",
+      "15.92"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.15",
+      "–",
+      "9.55"
+     ],
+     [
+      "BBB",
+      "0.00",
+      "–",
+      "0.05",
+      "–",
+      "23.58"
+     ],
+     [
+      "BB",
+      "0.05",
+      "–",
+      "0.35",
+      "–",
+      "9.47"
+     ],
+     [
+      "B",
+      "1.86",
+      "0.04",
+      "0.32",
+      "–",
+      "5.23"
+     ],
+     [
+      "Below B",
+      "0.11",
+      "0.05",
+      "0.03",
+      "–",
+      "0.27"
+     ],
+     [
+      "Not Rated",
+      "5.37",
+      "0.03",
+      "7.74",
+      "–",
+      "34.17"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     15.13,
+     null,
+     15.13
+    ],
+    "Fixed Income": [
+     66.98,
+     null,
+     66.98
+    ],
+    "Cash": [
+     16.28,
+     -0.8,
+     17.08
+    ],
+    "Other": [
+     2.12,
+     null,
+     2.12
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n6",
+   "isin": "FI4000153358",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00017LW1/portfolio",
+   "title_verified": true,
+   "page_title": "Obsido Rebalanced 50 Fund A1 | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": 3.77,
+    "yield_to_worst": null,
+    "modified_duration": 3.83,
+    "yield_to_maturity": 5.49,
+    "weighted_coupon": 4.31,
+    "weighted_price": 95.36,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.00",
+      "0.18",
+      "1.62",
+      "0.87",
+      "0.03"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.20",
+      "1.78",
+      "5.12",
+      "1.99",
+      "0.26"
+     ],
+     [
+      "A",
+      "–",
+      "1.11",
+      "8.66",
+      "8.00",
+      "3.11",
+      "1.21"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.99",
+      "8.71",
+      "7.54",
+      "2.66",
+      "1.48"
+     ],
+     [
+      "BB",
+      "0.01",
+      "1.58",
+      "6.74",
+      "5.13",
+      "0.83",
+      "0.46"
+     ],
+     [
+      "B",
+      "0.20",
+      "1.50",
+      "2.76",
+      "1.98",
+      "0.09",
+      "–"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.07",
+      "0.57",
+      "0.26",
+      "–",
+      "–"
+     ],
+     [
+      "Not Rated",
+      "0.00",
+      "0.32",
+      "1.33",
+      "1.34",
+      "0.36",
+      "0.53"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.05",
+      "0.00",
+      "–",
+      "–",
+      "2.75"
+     ],
+     [
+      "AA",
+      "0.44",
+      "0.00",
+      "0.00",
+      "–",
+      "9.79"
+     ],
+     [
+      "A",
+      "1.47",
+      "0.11",
+      "0.04",
+      "–",
+      "23.72"
+     ],
+     [
+      "BBB",
+      "1.50",
+      "–",
+      "0.07",
+      "–",
+      "22.94"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "0.03",
+      "–",
+      "14.78"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "0.07",
+      "–",
+      "6.60"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.02",
+      "–",
+      "0.92"
+     ],
+     [
+      "Not Rated",
+      "0.41",
+      "–",
+      "14.21",
+      "–",
+      "18.50"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.00",
+      "2.65",
+      "0.10",
+      "–"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.02",
+      "0.08",
+      "8.27",
+      "1.28",
+      "0.04"
+     ],
+     [
+      "A",
+      "–",
+      "0.02",
+      "1.49",
+      "15.43",
+      "5.80",
+      "0.06"
+     ],
+     [
+      "BBB",
+      "0.00",
+      "0.00",
+      "0.37",
+      "12.36",
+      "6.31",
+      "3.33"
+     ],
+     [
+      "BB",
+      "0.02",
+      "0.00",
+      "0.01",
+      "2.13",
+      "7.92",
+      "2.53"
+     ],
+     [
+      "B",
+      "0.13",
+      "–",
+      "0.05",
+      "0.28",
+      "2.37",
+      "2.42"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "0.01",
+      "0.35"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "0.03",
+      "0.73",
+      "1.92",
+      "0.39",
+      "0.96"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "–",
+      "2.75"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.10",
+      "–",
+      "9.79"
+     ],
+     [
+      "A",
+      "0.00",
+      "–",
+      "0.91",
+      "–",
+      "23.72"
+     ],
+     [
+      "BBB",
+      "0.18",
+      "–",
+      "0.39",
+      "–",
+      "22.94"
+     ],
+     [
+      "BB",
+      "1.99",
+      "0.09",
+      "0.08",
+      "–",
+      "14.78"
+     ],
+     [
+      "B",
+      "0.94",
+      "0.12",
+      "0.29",
+      "–",
+      "6.60"
+     ],
+     [
+      "Below B",
+      "0.35",
+      "0.15",
+      "0.04",
+      "–",
+      "0.92"
+     ],
+     [
+      "Not Rated",
+      "0.01",
+      "0.09",
+      "14.38",
+      "–",
+      "18.50"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     58.68,
+     0.0,
+     58.68
+    ],
+    "Fixed Income": [
+     32.19,
+     0.0,
+     32.19
+    ],
+    "Preferred": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Convertible": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Cash": [
+     9.04,
+     16.22,
+     25.26
+    ],
+    "Other": [
+     0.08,
+     0.0,
+     0.08
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n7",
+   "isin": "FI4000120670",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00016OH7/portfolio",
+   "title_verified": true,
+   "page_title": "OP-Private Strategia 50 A | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 4.65,
+    "weighted_price": 94.57,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.58",
+      "0.27",
+      "0.54",
+      "0.15",
+      "0.46"
+     ],
+     [
+      "AA",
+      "0.02",
+      "0.60",
+      "1.99",
+      "1.22",
+      "1.21",
+      "1.00"
+     ],
+     [
+      "A",
+      "0.01",
+      "0.64",
+      "3.81",
+      "5.44",
+      "5.12",
+      "3.23"
+     ],
+     [
+      "BBB",
+      "0.00",
+      "1.17",
+      "3.83",
+      "5.32",
+      "3.95",
+      "2.39"
+     ],
+     [
+      "BB",
+      "0.03",
+      "0.64",
+      "3.28",
+      "6.30",
+      "1.38",
+      "0.34"
+     ],
+     [
+      "B",
+      "0.04",
+      "0.91",
+      "2.40",
+      "4.32",
+      "0.50",
+      "0.20"
+     ],
+     [
+      "Below B",
+      "0.01",
+      "0.12",
+      "0.48",
+      "0.45",
+      "0.32",
+      "0.17"
+     ],
+     [
+      "Not Rated",
+      "0.11",
+      "1.00",
+      "1.32",
+      "2.21",
+      "0.58",
+      "0.01"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.92",
+      "0.14",
+      "3.88",
+      "–",
+      "6.93"
+     ],
+     [
+      "AA",
+      "1.74",
+      "0.16",
+      "1.45",
+      "–",
+      "9.40"
+     ],
+     [
+      "A",
+      "1.47",
+      "0.07",
+      "0.12",
+      "–",
+      "19.90"
+     ],
+     [
+      "BBB",
+      "0.69",
+      "0.04",
+      "0.25",
+      "–",
+      "17.65"
+     ],
+     [
+      "BB",
+      "0.48",
+      "–",
+      "0.17",
+      "–",
+      "12.62"
+     ],
+     [
+      "B",
+      "0.04",
+      "–",
+      "0.16",
+      "–",
+      "8.57"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.25",
+      "–",
+      "1.80"
+     ],
+     [
+      "Not Rated",
+      "0.01",
+      "–",
+      "3.38",
+      "–",
+      "8.62"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.41",
+      "4.83",
+      "0.07",
+      "0.00"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.00",
+      "0.13",
+      "6.17",
+      "1.72",
+      "0.00"
+     ],
+     [
+      "A",
+      "0.00",
+      "0.01",
+      "0.10",
+      "17.26",
+      "1.34",
+      "0.08"
+     ],
+     [
+      "BBB",
+      "0.00",
+      "0.00",
+      "0.03",
+      "13.35",
+      "3.25",
+      "0.57"
+     ],
+     [
+      "BB",
+      "0.01",
+      "0.00",
+      "0.05",
+      "1.62",
+      "7.79",
+      "2.69"
+     ],
+     [
+      "B",
+      "0.07",
+      "–",
+      "0.00",
+      "0.11",
+      "2.22",
+      "3.32"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "0.00",
+      "0.61"
+     ],
+     [
+      "Not Rated",
+      "0.00",
+      "0.03",
+      "0.36",
+      "0.92",
+      "1.63",
+      "1.30"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.00",
+      "–",
+      "1.61",
+      "–",
+      "6.93"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "1.37",
+      "–",
+      "9.40"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.11",
+      "–",
+      "19.90"
+     ],
+     [
+      "BBB",
+      "0.02",
+      "–",
+      "0.43",
+      "–",
+      "17.65"
+     ],
+     [
+      "BB",
+      "0.27",
+      "–",
+      "0.18",
+      "–",
+      "12.62"
+     ],
+     [
+      "B",
+      "2.34",
+      "0.16",
+      "0.33",
+      "–",
+      "8.57"
+     ],
+     [
+      "Below B",
+      "0.81",
+      "0.09",
+      "0.27",
+      "–",
+      "1.80"
+     ],
+     [
+      "Not Rated",
+      "0.97",
+      "0.08",
+      "3.33",
+      "–",
+      "8.62"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     65.89,
+     -1.23,
+     67.12
+    ],
+    "Fixed Income": [
+     9.78,
+     -1.9,
+     11.67
+    ],
+    "Cash": [
+     6.81,
+     -0.4,
+     7.21
+    ],
+    "Other": [
+     18.51,
+     -0.02,
+     18.53
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": true,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n8",
+   "isin": "FI4000020664",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P0000SUNM/portfolio",
+   "title_verified": true,
+   "page_title": "Alexandria Tasapainoinen | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": null,
+    "yield_to_worst": null,
+    "modified_duration": null,
+    "yield_to_maturity": null,
+    "weighted_coupon": 3.4,
+    "weighted_price": 96.46,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.07",
+      "0.57",
+      "1.85",
+      "3.50",
+      "2.43"
+     ],
+     [
+      "AA",
+      "–",
+      "3.22",
+      "6.65",
+      "1.15",
+      "4.96",
+      "1.96"
+     ],
+     [
+      "A",
+      "0.22",
+      "8.77",
+      "9.39",
+      "8.42",
+      "4.51",
+      "3.10"
+     ],
+     [
+      "BBB",
+      "–",
+      "2.41",
+      "4.19",
+      "3.22",
+      "3.07",
+      "3.42"
+     ],
+     [
+      "BB",
+      "–",
+      "0.10",
+      "0.99",
+      "0.78",
+      "0.33",
+      "0.15"
+     ],
+     [
+      "B",
+      "–",
+      "0.09",
+      "0.32",
+      "0.27",
+      "0.04",
+      "0.03"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.01",
+      "0.01",
+      "0.01",
+      "0.00"
+     ],
+     [
+      "Not Rated",
+      "0.19",
+      "1.71",
+      "0.62",
+      "0.73",
+      "0.21",
+      "0.06"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "1.91",
+      "0.98",
+      "5.42",
+      "–",
+      "16.72"
+     ],
+     [
+      "AA",
+      "2.32",
+      "–",
+      "0.55",
+      "–",
+      "20.81"
+     ],
+     [
+      "A",
+      "1.41",
+      "0.02",
+      "0.46",
+      "–",
+      "36.31"
+     ],
+     [
+      "BBB",
+      "1.66",
+      "–",
+      "0.02",
+      "–",
+      "17.98"
+     ],
+     [
+      "BB",
+      "0.04",
+      "–",
+      "0.00",
+      "–",
+      "2.40"
+     ],
+     [
+      "B",
+      "0.01",
+      "–",
+      "0.01",
+      "–",
+      "0.76"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.05",
+      "–",
+      "0.08"
+     ],
+     [
+      "Not Rated",
+      "0.04",
+      "–",
+      "0.92",
+      "–",
+      "4.48"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "16.71",
+      "–",
+      "0.00"
+     ],
+     [
+      "AA",
+      "–",
+      "0.26",
+      "2.18",
+      "14.65",
+      "2.80",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "3.38",
+      "30.90",
+      "0.22",
+      "–"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.87",
+      "15.62",
+      "0.55",
+      "0.41"
+     ],
+     [
+      "BB",
+      "–",
+      "–",
+      "–",
+      "0.57",
+      "1.16",
+      "0.50"
+     ],
+     [
+      "B",
+      "–",
+      "–",
+      "–",
+      "0.10",
+      "0.22",
+      "0.14"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "–",
+      "–",
+      "0.00"
+     ],
+     [
+      "Not Rated",
+      "0.00",
+      "0.00",
+      "0.06",
+      "1.74",
+      "0.60",
+      "0.54"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "0.00",
+      "–",
+      "–",
+      "16.72"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.92",
+      "–",
+      "20.81"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "1.81",
+      "–",
+      "36.31"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.54",
+      "–",
+      "17.98"
+     ],
+     [
+      "BB",
+      "0.16",
+      "0.01",
+      "0.00",
+      "–",
+      "2.40"
+     ],
+     [
+      "B",
+      "0.20",
+      "0.05",
+      "0.05",
+      "–",
+      "0.76"
+     ],
+     [
+      "Below B",
+      "0.03",
+      "0.00",
+      "0.05",
+      "–",
+      "0.08"
+     ],
+     [
+      "Not Rated",
+      "0.22",
+      "0.02",
+      "1.30",
+      "–",
+      "4.48"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     62.04,
+     0.0,
+     62.04
+    ],
+    "Fixed Income": [
+     31.38,
+     0.25,
+     31.63
+    ],
+    "Preferred": [
+     0.06,
+     0.0,
+     0.06
+    ],
+    "Convertible": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Cash": [
+     4.64,
+     6.09,
+     10.74
+    ],
+    "Other": [
+     1.87,
+     0.0,
+     1.87
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  },
+  {
+   "n": "n9",
+   "isin": "FI0008807078",
+   "url": "https://global.morningstar.com/en-nd/investments/funds/0P00000FXI/portfolio",
+   "title_verified": true,
+   "page_title": "Säästöpankki Ryhti B | Fund | EUR",
+   "table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "ytw_table_footnote": "As of Oct 31, 2026 | Data is based on the long position of the holdings. | Source: Holdings-based calculations.",
+   "direct_measures": {
+    "effective_duration": 4.47,
+    "yield_to_worst": null,
+    "modified_duration": 4.84,
+    "yield_to_maturity": 3.7,
+    "weighted_coupon": 4.66,
+    "weighted_price": 94.26,
+    "label": "Fixed Income Measures Investment column; 'As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations.' No Yield to Worst row.",
+    "as_of_label": "As of Oct 31, 2026 | Category: EAA Fund EUR Moderate Allocation - Global | Source: Manager-reported and holdings-based calculations."
+   },
+   "duration_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 Yrs",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "0.15",
+      "0.10",
+      "1.23",
+      "0.34"
+     ],
+     [
+      "AA",
+      "0.00",
+      "0.01",
+      "0.55",
+      "0.23",
+      "1.07",
+      "1.62"
+     ],
+     [
+      "A",
+      "–",
+      "0.13",
+      "3.03",
+      "3.12",
+      "3.07",
+      "2.60"
+     ],
+     [
+      "BBB",
+      "–",
+      "0.75",
+      "3.90",
+      "5.48",
+      "5.04",
+      "4.03"
+     ],
+     [
+      "BB",
+      "0.01",
+      "0.86",
+      "7.68",
+      "10.03",
+      "3.79",
+      "1.28"
+     ],
+     [
+      "B",
+      "0.19",
+      "1.47",
+      "3.76",
+      "3.96",
+      "1.00",
+      "0.62"
+     ],
+     [
+      "Below B",
+      "0.00",
+      "0.07",
+      "0.68",
+      "0.42",
+      "0.40",
+      "0.03"
+     ],
+     [
+      "Not Rated",
+      "0.36",
+      "2.28",
+      "1.41",
+      "3.42",
+      "0.70",
+      "0.18"
+     ]
+    ]
+   },
+   "duration_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 Yrs",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "0.00",
+      "0.28",
+      "6.05",
+      "–",
+      "8.16"
+     ],
+     [
+      "AA",
+      "1.36",
+      "0.25",
+      "0.00",
+      "–",
+      "5.08"
+     ],
+     [
+      "A",
+      "2.24",
+      "–",
+      "0.21",
+      "–",
+      "14.41"
+     ],
+     [
+      "BBB",
+      "2.98",
+      "–",
+      "0.43",
+      "–",
+      "22.60"
+     ],
+     [
+      "BB",
+      "2.25",
+      "–",
+      "0.16",
+      "–",
+      "26.06"
+     ],
+     [
+      "B",
+      "0.23",
+      "–",
+      "0.30",
+      "–",
+      "11.52"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "0.17",
+      "–",
+      "1.77"
+     ],
+     [
+      "Not Rated",
+      "0.37",
+      "–",
+      "1.68",
+      "–",
+      "10.40"
+     ]
+    ]
+   },
+   "ytw_p1": {
+    "header": [
+     "Credit Rating",
+     "<0 %",
+     "0-1",
+     "1-3",
+     "3-5",
+     "5-7",
+     "7-10"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "–",
+      "4.81",
+      "–",
+      "–"
+     ],
+     [
+      "AA",
+      "0.00",
+      "–",
+      "0.01",
+      "3.27",
+      "1.66",
+      "–"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.00",
+      "10.14",
+      "3.85",
+      "0.00"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "–",
+      "11.13",
+      "10.67",
+      "0.48"
+     ],
+     [
+      "BB",
+      "0.05",
+      "–",
+      "0.01",
+      "6.05",
+      "14.35",
+      "5.20"
+     ],
+     [
+      "B",
+      "0.06",
+      "–",
+      "0.05",
+      "0.47",
+      "3.02",
+      "4.36"
+     ],
+     [
+      "Below B",
+      "–",
+      "–",
+      "–",
+      "0.01",
+      "–",
+      "0.48"
+     ],
+     [
+      "Not Rated",
+      "–",
+      "–",
+      "0.24",
+      "2.45",
+      "3.14",
+      "1.51"
+     ]
+    ]
+   },
+   "ytw_p2": {
+    "header": [
+     "Credit Rating",
+     "10-20 %",
+     ">20",
+     "Unk",
+     "Not Applicable",
+     "Subtotal Weight"
+    ],
+    "rows": [
+     [
+      "AAA",
+      "–",
+      "–",
+      "3.34",
+      "–",
+      "8.16"
+     ],
+     [
+      "AA",
+      "–",
+      "–",
+      "0.13",
+      "–",
+      "5.08"
+     ],
+     [
+      "A",
+      "–",
+      "–",
+      "0.42",
+      "–",
+      "14.41"
+     ],
+     [
+      "BBB",
+      "–",
+      "–",
+      "0.32",
+      "–",
+      "22.60"
+     ],
+     [
+      "BB",
+      "0.24",
+      "–",
+      "0.17",
+      "–",
+      "26.06"
+     ],
+     [
+      "B",
+      "2.74",
+      "0.13",
+      "0.69",
+      "–",
+      "11.52"
+     ],
+     [
+      "Below B",
+      "0.86",
+      "0.23",
+      "0.18",
+      "–",
+      "1.77"
+     ],
+     [
+      "Not Rated",
+      "0.33",
+      "0.02",
+      "2.72",
+      "–",
+      "10.40"
+     ]
+    ]
+   },
+   "allocation_table_bond_tab": {
+    "Equity": [
+     55.2,
+     0.0,
+     55.2
+    ],
+    "Fixed Income": [
+     35.64,
+     0.02,
+     35.66
+    ],
+    "Preferred": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Convertible": [
+     0.01,
+     0.0,
+     0.01
+    ],
+    "Cash": [
+     5.48,
+     0.1,
+     5.58
+    ],
+    "Other": [
+     3.66,
+     0.0,
+     3.66
+    ]
+   },
+   "allocation_header": "Net\tShort\tLong\tCat.\tIndex",
+   "holdings_as_of": "2026-10-31",
+   "economic_exposure_toggle": false,
+   "bond_sectors": null,
+   "_same": {
+    "ed": true,
+    "ytw": true,
+    "dm": true
+   }
+  }
+ ]
+}
